@@ -8,9 +8,9 @@ The final runtime contains two Returned jobs and four ManualException jobs retai
 
 ## Costs and teardown
 
-Azure Cost Management reported INR 2,146.95 for BMG and INR 2,147.04 subscription month-to-date at 11:15 AM IST on 13 September. The report can lag and is not a final invoice. Approximately INR 2,002.33 of the reported POC cost was DNS, VPN and virtual networking. See outputs/stage-f/latest-bill-summary.json.
+Azure Cost Management reported INR 2,452.47 for BMG and INR 2,452.56 subscription month-to-date at 17:26 IST on 13 September. The report can lag and is not a final invoice. See outputs/github-backup/final-cost-query/latest-bill-summary.json; the earlier snapshot remains in outputs/stage-f/latest-bill-summary.json.
 
-No Azure resources were deleted. Automatic approval review blocked deletion of rg-bmg-poc because the user had explicitly instructed us to keep its network. Explicit approval to reverse that instruction is pending. Networking remains provisioned and billable; stopping the worker does not pause those charges. The exact guarded deletion target is recorded in outputs/stage-f/teardown-status.json. Do not bypass this approval block by deleting individual network resources or issuing an indirect deletion.
+The user explicitly authorized deletion after backup. The complete GitHub backup was independently downloaded and all 4,788 archived runtime file hashes verified. Deletion of rg-bmg-poc was requested at 11:53 UTC on 13 September; completion is being checked. The two POC applications and service principals are verified absent. See outputs/stage-f/teardown-status.json for the latest confirmed resource-group state.
 
 ## Deliberate shortcuts and limitations
 
@@ -33,3 +33,5 @@ The LLM initially returned field labels as part of values. The deterministic val
 - Earlier infrastructure, network, identity, classifier and cost evidence: outputs/stage-a through outputs/stage-e
 
 Runtime data remains outside OneDrive at C:\Users\shrut\Documents\BmgPocRuntime. Code, synthetic corpora, model deployment settings, training recipe and results remain in this project. After approved teardown, provision the recorded Azure infrastructure again before using the live worker. The classifier requires retraining from the retained corpus if its Azure resource is deleted.
+
+

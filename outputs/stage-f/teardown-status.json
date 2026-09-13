@@ -1,9 +1,8 @@
 {
-  "reason": "Earlier explicit network-retention instruction needs explicit reversal",
-  "processingStopped": true,
-  "resourcesDeleted": false,
-  "status": "Blocked before execution by automatic approval review",
-  "requestedAt": "2026-09-13T05:56:55.1719247Z",
-  "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
-  "resourceGroup": "rg-bmg-poc"
+  "requestedAt": "2026-09-13T11:53:54.3661745Z",
+  "resourceGroupId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+  "status": "Deletion requested; not yet verified complete",
+  "userAuthorization": "Please continue full back up and then delete the poc azure resources",
+  "backupVerified": true,
+  "resourcesDeleted": false
 }

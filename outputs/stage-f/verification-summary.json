@@ -4,7 +4,7 @@
   "diagramSteps": "2–10",
   "fullAzureFlow": true,
   "workerStopped": true,
-  "networkRetained": true,
+  "networkRetained": false,
   "teardownPerformed": false,
   "clientReady": false,
   "regressionChecks": 21,
@@ -157,5 +157,5 @@
     "Successful full packet combines accepted Stage E templates with field-complete Closing Instructions; integration evidence only.",
     "Client application integration and site-to-site VPN are untested."
   ],
-  "teardownStatus": "Blocked by automatic approval review: explicit approval needed to reverse earlier network-retention instruction"
+  "teardownStatus": "User authorized post-backup deletion; Azure deletion in progress"
 }

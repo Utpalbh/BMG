@@ -1,0 +1,37 @@
+{
+  "id": "subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.CostManagement/query/ff12f43a-aba0-4549-82ef-947d5a0b87ad",
+  "name": "ff12f43a-aba0-4549-82ef-947d5a0b87ad",
+  "type": "Microsoft.CostManagement/query",
+  "location": null,
+  "sku": null,
+  "eTag": null,
+  "properties": {
+    "nextLink": null,
+    "columns": [
+      {
+        "name": "Cost",
+        "type": "Number"
+      },
+      {
+        "name": "ResourceGroupName",
+        "type": "String"
+      },
+      {
+        "name": "Currency",
+        "type": "String"
+      }
+    ],
+    "rows": [
+      [
+        2452.46698681453,
+        "rg-bmg-poc",
+        "INR"
+      ],
+      [
+        0.0893281000500002,
+        "rg-ticketdeflect-poc",
+        "INR"
+      ]
+    ]
+  }
+}

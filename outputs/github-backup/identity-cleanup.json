@@ -1,0 +1,19 @@
+{
+  "removedCertificates": [
+    "Cert:\\CurrentUser\\My\\DD06CCBF4A3BFDBD4E79A91245A394E2FA386DB6",
+    "Cert:\\CurrentUser\\My\\FDD0E943A836DCCE28B36438D41FDD7E5B3C1D57"
+  ],
+  "identities": [
+    {
+      "clientId": "14ddb185-4b82-4c60-962c-ce912b1ac791",
+      "applicationCount": 0,
+      "servicePrincipalCount": 0
+    },
+    {
+      "clientId": "3b991d75-8ada-4127-b549-b6ae089c7b58",
+      "applicationCount": 0,
+      "servicePrincipalCount": 0
+    }
+  ],
+  "checkedAt": "2026-09-13T11:55:01.0411940Z"
+}

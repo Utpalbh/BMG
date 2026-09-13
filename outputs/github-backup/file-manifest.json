@@ -24337,8 +24337,33 @@
     },
     {
       "path": "outputs/POC-Completion.md",
-      "bytes": 4291,
-      "sha256": "0b6323c2a45dab5df79c7b7f4c64f12a5fc8cd5f34ffa7ecc5c16dd44fe88e68"
+      "bytes": 4211,
+      "sha256": "222731266dd82dd76d883d35d07c79ac2cf8f023c0896fef789da006e13b3e2c"
+    },
+    {
+      "path": "outputs/github-backup/final-cost-query/latest-bill-summary.json",
+      "bytes": 1987,
+      "sha256": "b23ae260ed282331bef2d84ba6b814c112bf00d34467138a1885d6d03895445a"
+    },
+    {
+      "path": "outputs/github-backup/final-cost-query/poc-latest-bill-raw.json",
+      "bytes": 1384,
+      "sha256": "d1ab9c901d6c83d72365006ee761b3940ddd212474a7441cb0921465892d98e7"
+    },
+    {
+      "path": "outputs/github-backup/final-cost-query/subscriptionMonthToDate-latest-bill-raw.json",
+      "bytes": 795,
+      "sha256": "48a1442835d3d71782112fc2cc33089cc1fbf854931b387b765d8773ff3fb7cc"
+    },
+    {
+      "path": "outputs/github-backup/identity-cleanup.json",
+      "bytes": 532,
+      "sha256": "dbb0fcf080362ec17030253f655faf88559524264c02cc04eaf5972d8505fdc4"
+    },
+    {
+      "path": "outputs/github-backup/remote-verification.json",
+      "bytes": 458,
+      "sha256": "a54ff042da97db5675d9a52956003665b86fe7f82443fa602eec7cf6d1dd3422"
     },
     {
       "path": "outputs/overnight/Handover.md",
@@ -24486,6 +24511,11 @@
       "sha256": "0ee1a2373f0c70b00c4cdb4a274de7108523b791adb89a0789ea700734a4f90d"
     },
     {
+      "path": "outputs/stage-c/inventory-before-teardown.json",
+      "bytes": 29843,
+      "sha256": "851651e6e1964a610b60b5243b86f666ad79c271adcc5236eda8163e3780c062"
+    },
+    {
       "path": "outputs/stage-c/private-dns-records.json",
       "bytes": 1874,
       "sha256": "ef11913af307168c18af07dff4b4e41112c8d31e02f844fea9ad94b450ec2fb3"
@@ -24504,6 +24534,11 @@
       "path": "outputs/stage-c/supporting-resources.json",
       "bytes": 626,
       "sha256": "df2c8be722d466363982b39c27a942233d09c9f940490e521fa9227c2dfe851d"
+    },
+    {
+      "path": "outputs/stage-c/teardown-status.json",
+      "bytes": 220,
+      "sha256": "c279cfab1c5645cb903c18017e67ba30370148a7f3d229715bb7d6fb46d9a883"
     },
     {
       "path": "outputs/stage-c/verification-summary.json",
@@ -24842,8 +24877,8 @@
     },
     {
       "path": "outputs/stage-f/teardown-status.json",
-      "bytes": 399,
-      "sha256": "750567b565e06b3f72bcd6726eff5a25e186d2222c570a98586b57bffc577e4c"
+      "bytes": 373,
+      "sha256": "9ad6d78871fee1dfe6126b77dce021ba746b18957300ae2dcf745a9a25b1179d"
     },
     {
       "path": "outputs/stage-f/validation-tests.json",
@@ -24852,8 +24887,8 @@
     },
     {
       "path": "outputs/stage-f/verification-summary.json",
-      "bytes": 6259,
-      "sha256": "967f5b33a6138e18aa6a677b00fe49ac5ecc31dfb7a2ac56ca7364d0f70fb2f5"
+      "bytes": 6213,
+      "sha256": "0de5f82fae353c2d4d55c37a47708b7cb263576939ba3fc9be601bfcbde6b902"
     },
     {
       "path": "outputs/stage-f/watcher-results.json",
@@ -25104,6 +25139,11 @@
       "path": "requirements-recreate.txt",
       "bytes": 244,
       "sha256": "4d4b9709e4bf495614417f02b3dcffe1e99f8ca63617fb305cd74a0e630629e7"
+    },
+    {
+      "path": "test",
+      "bytes": 20,
+      "sha256": "c87e2ca771bab6024c269b933389d2a92d4941c848c52f155b9b84e1f109fe35"
     },
     {
       "path": "work/BMG_Intake_Automation_MVP.txt",
