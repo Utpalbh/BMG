@@ -1,0 +1,15 @@
+{
+  "freshCloneVerified": true,
+  "backupCommit": "bb47f2c61d34d9c2e394588801c6f676cbaedec4",
+  "verifiedAt": "2026-09-13T11:53:20.3063135Z",
+  "repository": "https://github.com/Utpalbh/BMG",
+  "requiredFilesVerified": [
+    "infra/main.bicep",
+    "infra/main.json",
+    "infra/runtime.bicep",
+    "infra/runtime.json",
+    "docs/RECREATE.md",
+    "BMG_MVP_End_to_End_Architecture_and_PoC_Spec.docx"
+  ],
+  "runtimeFilesHashVerified": 4788
+}
