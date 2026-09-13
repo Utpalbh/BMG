@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "happy-2",
+  "revision": 1,
+  "status": "Validated",
+  "metadata": {
+    "lenderCode": "LND002",
+    "loanNumber": "BMG-POC-000002",
+    "borrowerName": "Taylor Brooks and Morgan Brooks",
+    "propertyAddress": "202 Test Case Drive, Demo City, TX 75002",
+    "closingDate": "2026-09-23",
+    "loanType": "FHA",
+    "purpose": "Refinance",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: LND002",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: BMG-POC-000002",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Taylor Brooks and Morgan Brooks",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 202 Test Case Drive, Demo City, TX 75002",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 2026-09-23",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: FHA",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Refinance",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [],
+  "executionMode": "Simulated"
+}

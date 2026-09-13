@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-e-eval-025",
+  "revision": 1,
+  "source": "LocalStagingPoC",
+  "submissionType": "Examination",
+  "documents": [
+    {
+      "documentId": "doc-001",
+      "fileName": "document-001.pdf",
+      "sha256": "8247e17b291a3fef750ff373c8204afd877599f847c40f829900d34ee422f3f1"
+    }
+  ]
+}

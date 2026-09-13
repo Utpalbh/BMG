@@ -1,0 +1,24 @@
+PAGE 1
+PROMISSORY NOTE
+Synthetic mortgage note for classifier/extraction testing
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000003
+Note Date:
+2026-09-12
+Borrower(s):
+Avery Reed and Riley Reed
+Lender:
+Sample Lending Group
+Lender Code:
+LND003
+Property:
+303 Sandbox Court, Example Springs, TX 75003
+Principal Amount:
+$352,000.00
+Interest Rate:
+6.0%
+Loan Type:
+VA
+Borrower promises to pay the principal amount plus interest according to the terms of this synthetic note.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

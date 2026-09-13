@@ -1,0 +1,24 @@
+PAGE 1
+PROMISSORY NOTE
+Synthetic mortgage note for classifier/extraction testing
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000002
+Note Date:
+2026-09-11
+Borrower(s):
+Taylor Brooks and Morgan Brooks
+Lender:
+Prototype Mortgage LLC
+Lender Code:
+LND002
+Property:
+202 Test Case Drive, Demo City, TX 75002
+Principal Amount:
+$313,500.00
+Interest Rate:
+5.875%
+Loan Type:
+FHA
+Borrower promises to pay the principal amount plus interest according to the terms of this synthetic note.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

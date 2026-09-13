@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-f-conflict-001",
+  "revision": 1,
+  "source": "LocalStagingPoC",
+  "submissionType": "Examination",
+  "documents": [
+    {
+      "documentId": "doc-001",
+      "fileName": "document-001.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925"
+    },
+    {
+      "documentId": "doc-002",
+      "fileName": "document-002.pdf",
+      "sha256": "f8474ba3bf935b0164a21a1db83a588ee196677f5f2878feafd95b5ac1988900"
+    }
+  ]
+}

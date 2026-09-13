@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "service": "Blob",
+      "host": "stbmgpocwjsvyjg25vqiy.blob.core.windows.net",
+      "systemDnsAddresses": [
+        "10.84.1.7"
+      ],
+      "resolverDnsAddresses": [
+        "10.84.1.7"
+      ],
+      "dnsError": null,
+      "httpStatus": 200,
+      "errorBody": null,
+      "passed": true
+    },
+    {
+      "service": "KeyVault",
+      "host": "kv-bmg-wjsvyjg25vqiy.vault.azure.net",
+      "systemDnsAddresses": [
+        "10.84.1.9"
+      ],
+      "resolverDnsAddresses": [
+        "10.84.1.9"
+      ],
+      "dnsError": null,
+      "httpStatus": 200,
+      "errorBody": null,
+      "passed": true
+    },
+    {
+      "service": "DocumentIntelligence",
+      "host": "di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com",
+      "systemDnsAddresses": [
+        "10.84.1.8"
+      ],
+      "resolverDnsAddresses": [
+        "10.84.1.8"
+      ],
+      "dnsError": null,
+      "httpStatus": 200,
+      "errorBody": null,
+      "passed": true
+    },
+    {
+      "service": "OpenAI",
+      "host": "oai-bmg-wjsvyjg25vqiy.openai.azure.com",
+      "systemDnsAddresses": [
+        "10.84.1.6"
+      ],
+      "resolverDnsAddresses": [
+        "10.84.1.6"
+      ],
+      "dnsError": null,
+      "httpStatus": 200,
+      "errorBody": null,
+      "passed": true
+    },
+    {
+      "service": "Cosmos",
+      "host": "cosmos-bmg-wjsvyjg25vqiy.documents.azure.com",
+      "systemDnsAddresses": [
+        "10.84.1.4"
+      ],
+      "resolverDnsAddresses": [
+        "10.84.1.4"
+      ],
+      "dnsError": null,
+      "httpStatus": 200,
+      "errorBody": null,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "mode": "Connected",
+  "timestamp": "2026-09-11T13:04:49.0503009Z"
+}

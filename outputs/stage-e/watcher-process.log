@@ -1,0 +1,6 @@
+{"timestampUtc":"2026-09-12T09:01:13.9209004+00:00","executionMode":"AzureDocuments","jobId":null,"stage":"Worker","outcome":"Started:AZURE_CLASSIFICATION_AND_OCR"}
+{"timestampUtc":"2026-09-12T09:01:16.4181017+00:00","executionMode":"AzureDocuments","jobId":"3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-12T09:01:21.7912248+00:00","executionMode":"AzureDocuments","jobId":"3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T09:01:39.4389404+00:00","executionMode":"AzureDocuments","jobId":"3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T09:01:47.7245771+00:00","executionMode":"AzureDocuments","jobId":"3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T09:01:53.1289666+00:00","executionMode":"AzureDocuments","jobId":"3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139","stage":"LayoutRead","outcome":"Checkpoint"}

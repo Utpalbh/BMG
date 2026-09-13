@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "happy-4",
+  "revision": 1,
+  "source": "LocalStagingPoC",
+  "submissionType": "Examination",
+  "documents": [
+    {
+      "documentId": "doc-001",
+      "fileName": "note.pdf",
+      "sha256": "528c2b6b5bed78edacb25c02a97f95594e657594f8041a0b482e24ed7a7ac084"
+    },
+    {
+      "documentId": "doc-002",
+      "fileName": "deed-of-trust.pdf",
+      "sha256": "6cd2b1fbdbe317ab82b524d1937342e6bb36aa889a4f2ed1551eae3941dda4bd"
+    },
+    {
+      "documentId": "doc-003",
+      "fileName": "title-commitment.pdf",
+      "sha256": "27205fc490859621bd4211737db1cdb2e7d097c8021b9d56bb322e8a5da658e0"
+    },
+    {
+      "documentId": "doc-004",
+      "fileName": "survey.pdf",
+      "sha256": "264b2eba5076cc67fe781eb28a92ce1e041b4387f3471a2eb36ab6719d5b38ac"
+    },
+    {
+      "documentId": "doc-005",
+      "fileName": "closing-instructions.pdf",
+      "sha256": "1dd152cb14a00182724efb8b4c38f491535d799cc7d8fbdff268930b7fe1dd53"
+    },
+    {
+      "documentId": "doc-006",
+      "fileName": "rider.pdf",
+      "sha256": "d9c65ab33ffddea295f1d9e2d73fa27e29d22d5071c36260ae96d54346ca7f26"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "lastImplementedStage": "Uploaded",
+  "cloudBlobsVerifiedAgainstReceipts": 28,
+  "status": "Complete",
+  "cloudResourcesRemainRunning": true,
+  "automaticDeletion": false,
+  "identityChecksPassed": 6,
+  "demoWorkerStopped": true,
+  "syntheticSubmissionsUploaded": 4,
+  "secretAuditFilesScanned": 150,
+  "regressionTestsPassed": 21,
+  "aiPerformed": false,
+  "executionMode": "AzureUpload",
+  "secretAuditMatches": 0,
+  "stage": "D",
+  "liveAcceptanceTestsPassed": 6,
+  "completedAt": "2026-09-11T13:40:21.515747Z",
+  "failures": 0,
+  "cosmosApplicationWrites": false
+}

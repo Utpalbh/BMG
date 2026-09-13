@@ -1,0 +1,9 @@
+{
+  "executionMode": "Simulated",
+  "submissionId": "test",
+  "revision": 1,
+  "code": "SnapshotIntegrityFailure",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "CredentialReady"
+}

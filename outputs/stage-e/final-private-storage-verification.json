@@ -1,0 +1,13 @@
+{
+  "verifiedUtc": "2026-09-12T09:02:32.156526+00:00",
+  "publicNetworkAccess": "Disabled",
+  "networkRuleSet": {
+    "bypass": "None",
+    "defaultAction": "Deny",
+    "ipRules": [],
+    "ipv6Rules": [],
+    "resourceAccessRules": [],
+    "virtualNetworkRules": []
+  },
+  "trainingRoles": []
+}

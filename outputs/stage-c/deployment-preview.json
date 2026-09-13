@@ -1,0 +1,1439 @@
+{
+  "changes": [
+    {
+      "after": {
+        "apiVersion": "2024-03-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+        "location": "eastus2",
+        "name": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Resources/resourceGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy",
+        "identity": {
+          "type": "SystemAssigned"
+        },
+        "kind": "FormRecognizer",
+        "location": "eastus2",
+        "name": "di-bmg-wjsvyjg25vqiy",
+        "properties": {
+          "customSubDomainName": "di-bmg-wjsvyjg25vqiy",
+          "disableLocalAuth": true,
+          "networkAcls": {
+            "defaultAction": "Deny"
+          },
+          "publicNetworkAccess": "Disabled"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "sku": {
+          "name": "S0"
+        },
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-04-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/b4f40a91-73e6-5510-b0f6-421f2280dc15",
+        "name": "b4f40a91-73e6-5510-b0f6-421f2280dc15",
+        "properties": {
+          "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+          "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.Authorization/roleDefinitions/a97b65f3-24c7-4388-baec-2e87135dc908"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Authorization/roleAssignments"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/b4f40a91-73e6-5510-b0f6-421f2280dc15",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy",
+        "identity": {
+          "type": "SystemAssigned"
+        },
+        "kind": "OpenAI",
+        "location": "eastus2",
+        "name": "oai-bmg-wjsvyjg25vqiy",
+        "properties": {
+          "customSubDomainName": "oai-bmg-wjsvyjg25vqiy",
+          "disableLocalAuth": true,
+          "networkAcls": {
+            "defaultAction": "Deny"
+          },
+          "publicNetworkAccess": "Disabled"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "sku": {
+          "name": "S0"
+        },
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-04-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/10887820-62da-5269-aa4e-06545e571cf0",
+        "name": "10887820-62da-5269-aa4e-06545e571cf0",
+        "properties": {
+          "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+          "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.Authorization/roleDefinitions/5e0bd9bd-7b93-4f28-af87-19fc36ad61bd"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Authorization/roleAssignments"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/10887820-62da-5269-aa4e-06545e571cf0",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-04-15",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy",
+        "kind": "GlobalDocumentDB",
+        "location": "eastus2",
+        "name": "cosmos-bmg-wjsvyjg25vqiy",
+        "properties": {
+          "backupPolicy": {
+            "periodicModeProperties": {
+              "backupIntervalInMinutes": 240,
+              "backupRetentionIntervalInHours": 8,
+              "backupStorageRedundancy": "Local"
+            },
+            "type": "Periodic"
+          },
+          "capabilities": [
+            {
+              "name": "EnableServerless"
+            }
+          ],
+          "consistencyPolicy": {
+            "defaultConsistencyLevel": "Session"
+          },
+          "databaseAccountOfferType": "Standard",
+          "disableKeyBasedMetadataWriteAccess": true,
+          "disableLocalAuth": true,
+          "enableAutomaticFailover": false,
+          "enableMultipleWriteLocations": false,
+          "isVirtualNetworkFilterEnabled": true,
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "isZoneRedundant": false,
+              "locationName": "eastus2"
+            }
+          ],
+          "minimalTlsVersion": "Tls12",
+          "networkAclBypass": "None",
+          "publicNetworkAccess": "Disabled"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-04-15",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlDatabases/bmg-poc",
+        "name": "bmg-poc",
+        "properties": {
+          "resource": {
+            "id": "bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlDatabases/bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-04-15",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlDatabases/bmg-poc/containers/submissions",
+        "name": "submissions",
+        "properties": {
+          "resource": {
+            "id": "submissions",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/submissionId"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlDatabases/bmg-poc/containers/submissions",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-04-15",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleAssignments/116b1652-41e1-544d-8762-3ce5f7811a86",
+        "name": "116b1652-41e1-544d-8762-3ce5f7811a86",
+        "properties": {
+          "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+          "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleDefinitions/00000000-0000-0000-0000-000000000001",
+          "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleAssignments/116b1652-41e1-544d-8762-3ce5f7811a86",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-11-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy",
+        "location": "eastus2",
+        "name": "kv-bmg-wjsvyjg25vqiy",
+        "properties": {
+          "enablePurgeProtection": true,
+          "enableRbacAuthorization": true,
+          "enableSoftDelete": true,
+          "enabledForDeployment": false,
+          "enabledForDiskEncryption": false,
+          "enabledForTemplateDeployment": false,
+          "networkAcls": {
+            "bypass": "None",
+            "defaultAction": "Deny"
+          },
+          "publicNetworkAccess": "Disabled",
+          "sku": {
+            "family": "A",
+            "name": "standard"
+          },
+          "softDeleteRetentionInDays": 7,
+          "tenantId": "e06201f9-0ec7-4863-80fc-85f43be49c1e"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.KeyVault/vaults"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-04-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/7d6548a9-5285-5cf9-9ab0-188a2e5b4ea6",
+        "name": "7d6548a9-5285-5cf9-9ab0-188a2e5b4ea6",
+        "properties": {
+          "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+          "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.Authorization/roleDefinitions/4633458b-17de-408a-b874-0445c86b69e6"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Authorization/roleAssignments"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/7d6548a9-5285-5cf9-9ab0-188a2e5b4ea6",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-05-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc",
+        "location": "eastus2",
+        "name": "dnspr-bmg-poc",
+        "properties": {
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/dnsResolvers"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-05-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc/inboundEndpoints/dnsin-bmg-poc",
+        "location": "eastus2",
+        "name": "dnsin-bmg-poc",
+        "properties": {
+          "ipConfigurations": [
+            {
+              "privateIpAddress": "10.84.2.4",
+              "privateIpAllocationMethod": "Static",
+              "subnet": {
+                "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-dns-inbound",
+                "resourceGroup": "rg-bmg-poc"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/dnsResolvers/inboundEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc/inboundEndpoints/dnsin-bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net",
+        "location": "global",
+        "name": "privatelink.blob.core.windows.net",
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/bmg-vnet-link",
+        "location": "global",
+        "name": "bmg-vnet-link",
+        "properties": {
+          "registrationEnabled": false,
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net/virtualNetworkLinks/bmg-vnet-link",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com",
+        "location": "global",
+        "name": "privatelink.cognitiveservices.azure.com",
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com/virtualNetworkLinks/bmg-vnet-link",
+        "location": "global",
+        "name": "bmg-vnet-link",
+        "properties": {
+          "registrationEnabled": false,
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com/virtualNetworkLinks/bmg-vnet-link",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com",
+        "location": "global",
+        "name": "privatelink.documents.azure.com",
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com/virtualNetworkLinks/bmg-vnet-link",
+        "location": "global",
+        "name": "bmg-vnet-link",
+        "properties": {
+          "registrationEnabled": false,
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com/virtualNetworkLinks/bmg-vnet-link",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com",
+        "location": "global",
+        "name": "privatelink.openai.azure.com",
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com/virtualNetworkLinks/bmg-vnet-link",
+        "location": "global",
+        "name": "bmg-vnet-link",
+        "properties": {
+          "registrationEnabled": false,
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com/virtualNetworkLinks/bmg-vnet-link",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net",
+        "location": "global",
+        "name": "privatelink.vaultcore.azure.net",
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-06-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/bmg-vnet-link",
+        "location": "global",
+        "name": "bmg-vnet-link",
+        "properties": {
+          "registrationEnabled": false,
+          "virtualNetwork": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net/virtualNetworkLinks/bmg-vnet-link",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-blob",
+        "location": "eastus2",
+        "name": "pe-bmg-blob",
+        "properties": {
+          "privateLinkServiceConnections": [
+            {
+              "name": "bmg-blob",
+              "properties": {
+                "groupIds": [
+                  "blob"
+                ],
+                "privateLinkServiceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy"
+              }
+            }
+          ],
+          "subnet": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-private-endpoints",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-blob",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-blob/privateDnsZoneGroups/default",
+        "name": "default",
+        "properties": {
+          "privateDnsZoneConfigs": [
+            {
+              "name": "blob",
+              "properties": {
+                "privateDnsZoneId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-blob/privateDnsZoneGroups/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-cosmos",
+        "location": "eastus2",
+        "name": "pe-bmg-cosmos",
+        "properties": {
+          "privateLinkServiceConnections": [
+            {
+              "name": "bmg-cosmos",
+              "properties": {
+                "groupIds": [
+                  "Sql"
+                ],
+                "privateLinkServiceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy"
+              }
+            }
+          ],
+          "subnet": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-private-endpoints",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-cosmos",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-cosmos/privateDnsZoneGroups/default",
+        "name": "default",
+        "properties": {
+          "privateDnsZoneConfigs": [
+            {
+              "name": "cosmos",
+              "properties": {
+                "privateDnsZoneId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.documents.azure.com"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-cosmos/privateDnsZoneGroups/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-di",
+        "location": "eastus2",
+        "name": "pe-bmg-di",
+        "properties": {
+          "privateLinkServiceConnections": [
+            {
+              "name": "bmg-di",
+              "properties": {
+                "groupIds": [
+                  "account"
+                ],
+                "privateLinkServiceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy"
+              }
+            }
+          ],
+          "subnet": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-private-endpoints",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-di",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-di/privateDnsZoneGroups/default",
+        "name": "default",
+        "properties": {
+          "privateDnsZoneConfigs": [
+            {
+              "name": "di",
+              "properties": {
+                "privateDnsZoneId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.cognitiveservices.azure.com"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-di/privateDnsZoneGroups/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-openai",
+        "location": "eastus2",
+        "name": "pe-bmg-openai",
+        "properties": {
+          "privateLinkServiceConnections": [
+            {
+              "name": "bmg-openai",
+              "properties": {
+                "groupIds": [
+                  "account"
+                ],
+                "privateLinkServiceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy"
+              }
+            }
+          ],
+          "subnet": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-private-endpoints",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-openai",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-openai/privateDnsZoneGroups/default",
+        "name": "default",
+        "properties": {
+          "privateDnsZoneConfigs": [
+            {
+              "name": "openai",
+              "properties": {
+                "privateDnsZoneId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.openai.azure.com"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-openai/privateDnsZoneGroups/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-vault",
+        "location": "eastus2",
+        "name": "pe-bmg-vault",
+        "properties": {
+          "privateLinkServiceConnections": [
+            {
+              "name": "bmg-vault",
+              "properties": {
+                "groupIds": [
+                  "vault"
+                ],
+                "privateLinkServiceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy"
+              }
+            }
+          ],
+          "subnet": {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/snet-private-endpoints",
+            "resourceGroup": "rg-bmg-poc"
+          }
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/privateEndpoints"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-vault",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-vault/privateDnsZoneGroups/default",
+        "name": "default",
+        "properties": {
+          "privateDnsZoneConfigs": [
+            {
+              "name": "vault",
+              "properties": {
+                "privateDnsZoneId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/privateEndpoints/pe-bmg-vault/privateDnsZoneGroups/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/publicIPAddresses/pip-bmg-poc-vpn",
+        "location": "eastus2",
+        "name": "pip-bmg-poc-vpn",
+        "properties": {
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Static"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "sku": {
+          "name": "Standard",
+          "tier": "Regional"
+        },
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/publicIPAddresses",
+        "zones": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/publicIPAddresses/pip-bmg-poc-vpn",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworkGateways/vgw-bmg-poc",
+        "location": "eastus2",
+        "name": "vgw-bmg-poc",
+        "properties": {
+          "activeActive": false,
+          "enableBgp": false,
+          "gatewayType": "Vpn",
+          "ipConfigurations": [
+            {
+              "name": "gateway-ip-config",
+              "properties": {
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/publicIPAddresses/pip-bmg-poc-vpn",
+                  "resourceGroup": "rg-bmg-poc"
+                },
+                "subnet": {
+                  "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc/subnets/GatewaySubnet",
+                  "resourceGroup": "rg-bmg-poc"
+                }
+              }
+            }
+          ],
+          "sku": {
+            "name": "VpnGw1AZ",
+            "tier": "VpnGw1AZ"
+          },
+          "vpnClientConfiguration": {
+            "vpnAuthenticationTypes": [
+              "Certificate"
+            ],
+            "vpnClientAddressPool": {
+              "addressPrefixes": [
+                "172.28.84.0/24"
+              ]
+            },
+            "vpnClientProtocols": [
+              "OpenVPN"
+            ],
+            "vpnClientRootCertificates": [
+              {
+                "name": "BMG-POC-VPN-Root",
+                "properties": {
+                  "publicCertData": "MIIC8TCCAdmgAwIBAgIQWI/sqj/A/IFKQDMvbsRVwjANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBCTUctUE9DLVZQTi1Sb290MB4XDTI2MDkxMTA3MTI0MVoXDTI2MDkxODA3MjI0MVowGzEZMBcGA1UEAwwQQk1HLVBPQy1WUE4tUm9vdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM2ikv10uWmzLyMQnlOA7Kp1PRDMPkgEQiP+DuGI36CJvcLtg7uMZ81+ZQbsJcHNliuAHlPQ9P3MpeBJMavtyK87NoUBKBPayOw7O4ZDnBGbtIwKwYp8D6dBXP7MpXUvHFpKbWtKEVUm+lT9QoK6LqKtPk97inpkqjx2Yn2iJDOfGaWjHqws4yC032hzo/8Y42mDobPHQ7x9LVQG19y8cYRvAYKMLuAUWXN/RNhvkkLLv9AJC+RqU/WdI12a9FrpU5/tdOipIrQeqgPSsXvF7wDNIFtl9UgY5VgFM09ULAqFtHCnu6xOYGcQKfe/pTjODLN4ze4p3g5TjRXPhd6TvdECAwEAAaMxMC8wDgYDVR0PAQH/BAQDAgIEMB0GA1UdDgQWBBS2zZrTSVbIZPeg01p+I+GsIaCPBjANBgkqhkiG9w0BAQsFAAOCAQEAXtpt1pw8/PPHspUQKuZFdZAnPIDUwrxzsZ36ET3z9+0jiRVIWteRf7rtuUGXZ3KhL5OR4L2J8QSlaAOLRmeLO1G3kJ2KYJqnuvPMkRHdCYifaOoaAVLGxrx+9BeBl2AMLvR6nVBaiQB9FEEUfM5bVcmAfcnjvT0l7xuqlPOVN/kgM8b18BMEPKry3VLXxY6+H+v5bqgZq8179L4aLU0w2Bj3NQ1uQbAYple5yQeE8aQnMAvYQ7+HecF0JEgsCLHobR8cbIMb2EynkludXmFH6xp+IFecO26R30B3wOBs55VZEiHIr7apXnfdpcmpTZPtcHSNq80IpaU6fJ6/lp7W2A=="
+                }
+              }
+            ]
+          },
+          "vpnGatewayGeneration": "Generation1",
+          "vpnType": "RouteBased"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/virtualNetworkGateways"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworkGateways/vgw-bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-07-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+        "location": "eastus2",
+        "name": "vnet-bmg-poc",
+        "properties": {
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.84.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.84.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "GatewaySubnet",
+              "properties": {
+                "addressPrefix": "10.84.0.0/27"
+              }
+            },
+            {
+              "name": "snet-dns-inbound",
+              "properties": {
+                "addressPrefix": "10.84.2.0/28",
+                "delegations": [
+                  {
+                    "name": "dns-resolver",
+                    "properties": {
+                      "serviceName": "Microsoft.Network/dnsResolvers"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "snet-private-endpoints",
+              "properties": {
+                "addressPrefix": "10.84.1.0/24",
+                "privateEndpointNetworkPolicies": "Disabled",
+                "privateLinkServiceNetworkPolicies": "Enabled"
+              }
+            }
+          ]
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Network/virtualNetworks"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-01-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy",
+        "kind": "StorageV2",
+        "location": "eastus2",
+        "name": "stbmgpocwjsvyjg25vqiy",
+        "properties": {
+          "accessTier": "Hot",
+          "allowBlobPublicAccess": false,
+          "allowSharedKeyAccess": false,
+          "defaultToOAuthAuthentication": true,
+          "encryption": {
+            "keySource": "Microsoft.Storage",
+            "requireInfrastructureEncryption": true
+          },
+          "minimumTlsVersion": "TLS1_2",
+          "networkAcls": {
+            "bypass": "None",
+            "defaultAction": "Deny"
+          },
+          "publicNetworkAccess": "Disabled",
+          "supportsHttpsTrafficOnly": true
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "tags": {
+          "environment": "synthetic-poc",
+          "expiresAt": "2026-09-11T17:29:24.0356458Z",
+          "managedBy": "BMG-StageC-Bicep",
+          "project": "BMG-POC",
+          "sessionStartedAt": "2026-09-11T07:29:24.0356458Z"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-01-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default",
+        "name": "default",
+        "properties": {
+          "containerDeleteRetentionPolicy": {
+            "days": 1,
+            "enabled": true
+          },
+          "deleteRetentionPolicy": {
+            "days": 1,
+            "enabled": true
+          },
+          "isVersioningEnabled": true
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Storage/storageAccounts/blobServices"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-01-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/analysis",
+        "name": "analysis",
+        "properties": {
+          "publicAccess": "None"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/analysis",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-01-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/submissions",
+        "name": "submissions",
+        "properties": {
+          "publicAccess": "None"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/submissions",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2025-01-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training",
+        "name": "training",
+        "properties": {
+          "publicAccess": "None"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Storage/storageAccounts/blobServices/containers"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-04-01",
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/44323ea6-db4a-5773-b64f-46aded0c9b08",
+        "name": "44323ea6-db4a-5773-b64f-46aded0c9b08",
+        "properties": {
+          "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+          "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.Authorization/roleDefinitions/2a2b9908-6ea1-4ae2-8e65-a410df84e7d1"
+        },
+        "resourceGroup": "rg-bmg-poc",
+        "type": "Microsoft.Authorization/roleAssignments"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/44323ea6-db4a-5773-b64f-46aded0c9b08",
+      "symbolicName": null,
+      "unsupportedReason": null
+    }
+  ],
+  "diagnostics": null,
+  "error": null,
+  "potentialChanges": null,
+  "status": "Succeeded"
+}

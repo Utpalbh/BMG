@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-d-3c10f71d137848f7",
+  "revision": 1,
+  "source": "LocalStagingPoC",
+  "submissionType": "Examination",
+  "documents": [
+    {
+      "documentId": "doc-001",
+      "fileName": "document-001.pdf",
+      "sha256": "4fe86f3be18bf117b7e1c1186ee1c6335acc184940e11351472c48eb66a0ef6b"
+    },
+    {
+      "documentId": "doc-002",
+      "fileName": "document-002.pdf",
+      "sha256": "66255aac26a77a45d23cd10d4501ef4440395002937c382f7634a8de27109d09"
+    },
+    {
+      "documentId": "doc-003",
+      "fileName": "document-003.pdf",
+      "sha256": "8a42d04bfbae9ecb6e7c6f2d8f4aef082cf1e215229ac5da153c5acb3d683f96"
+    },
+    {
+      "documentId": "doc-004",
+      "fileName": "document-004.pdf",
+      "sha256": "51b8ce6a4fa1c1cddc46c408674e578e6dacc55c312638e282754058716f8d2c"
+    },
+    {
+      "documentId": "doc-005",
+      "fileName": "document-005.pdf",
+      "sha256": "e6b23ac028b843b3b4b8d4516132931df8293b4b9c90318ee708fa948af8c484"
+    },
+    {
+      "documentId": "doc-006",
+      "fileName": "document-006.pdf",
+      "sha256": "4b520fbc41eac7c349ee48e5913595e7f84d7cd1c20da709a8f9fecc77b38026"
+    }
+  ]
+}

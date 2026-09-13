@@ -1,0 +1,1882 @@
+{
+  "version": "stage-e-v1",
+  "classificationThreshold": 0.8,
+  "classes": [
+    "Note",
+    "DeedOfTrust",
+    "TitleCommitment",
+    "Survey",
+    "ClosingInstructions",
+    "Rider",
+    "Other"
+  ],
+  "records": [
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/Note/cc04e538-ef5c-540c-92f5-0e0d79b69907.pdf",
+      "sha256": "5ada1fcba706c2a7f485f486155a12efb7a0691695e97fd73ef84b5d9343b83f",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Note/f86621e8-3f8a-5694-b4cf-d53f41d6e4c7.pdf",
+      "sha256": "c2a92a9240e23ddfe0101c352535cbb484b5ca7beebe10ab0e86c6d1451c8474",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/6ea9c257-ea83-5d6f-bbcc-3d928bf90c24.pdf",
+      "sha256": "7a0115944a10013d66b0185d19718f59ebdb4ec7236bed8d2323e9fca45fbae5",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/8c83dc82-bddb-5a7c-a0c0-a7f5da7e7b68.pdf",
+      "sha256": "db5156028775360eecb81e7e76a6d137e96af3fc33a866f7bdca515bdda53614",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/651c3900-03a4-5152-94c3-b0d20be4a400.pdf",
+      "sha256": "f773ccdc4f11aa49bce4476f9c943cd92a0c6b260cae8fc94c41273b73de3e90",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/e8f4292c-798b-55fc-9d01-a5b06030e533.pdf",
+      "sha256": "cf5f0a8465e677b1c23f01355ea0f38f923d77a415ce39bbb03a7bf4a39ae81b",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Note/e21df656-5411-54d5-bd42-67c72d440421.pdf",
+      "sha256": "d0a067372264602a133057b1b9586c35e088a5591a8b3977ed1f90675e5a4cf1",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/b837dc54-7d80-5671-82c3-296927264440.pdf",
+      "sha256": "ae93eaa2bfe491923ecc54722cd468a7c27500da08b80ebd948acbd88e5cbf79",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/0bc9df76-fdfc-5115-8b43-40f48ec73a97.pdf",
+      "sha256": "8f37b836f08ba0800475817b3e5cda3eda436f7ef6896e2b9769b213135952c4",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Note/a3f40979-4d61-502b-b5bc-8a716576a8be.pdf",
+      "sha256": "0adfe0c8d59546819765892e7862292de30f6d521416d14852990128f1295cb0",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/DeedOfTrust/92c28b01-2de0-5b48-ab90-42342307584f.pdf",
+      "sha256": "f7204d4e6a29c88bf93c25f9ca4454d11f9245ddc0d74d5486795e39f1b8575e",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/DeedOfTrust/b53dc498-6805-58a5-be04-278f19b28911.pdf",
+      "sha256": "6cc20be953cd07c52f52bea404f0c02da731844faf70b993030a51004cc7ad03",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/a7907ed3-3d97-5ea1-8b67-177cc418bf26.pdf",
+      "sha256": "6fce2d4ae9c43c38168c0a2100bc6489c92f29902b355c502fdfd25c5febe5f4",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/6db680fa-a893-5990-85fd-fb0e783e40a0.pdf",
+      "sha256": "4b1e13873749b53c986029b1571e01512059493a7007b33cc0ffb3e4929acf0d",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/1160a0e0-470d-5c18-8026-2d3b595c1f7d.pdf",
+      "sha256": "46d544d997b70b989e9d682008826aec0acc16d5f9270887eede0d7fd383be31",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/ec5290a6-4a8a-57da-8da9-e558891e1548.pdf",
+      "sha256": "1bf73bf51f425e6af46e3982e70c86e4c96938ede89d355be98bc86945d8572b",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/DeedOfTrust/2f94ec8b-723a-58f7-90b5-a89a734b4051.pdf",
+      "sha256": "eb081303d86616bfee52923eb03fcf95de37e3e75f2c08efd4c5e5bfdb80a48b",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/c86dbac5-d3ee-5032-8097-9f24f0a851ce.pdf",
+      "sha256": "265ddf58d4cddb8b4ad42ac95a82043531f0170b77ccf5177d264055777ecc42",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/bf250fe2-69d3-57ab-bf33-ed906fc10f21.pdf",
+      "sha256": "735d262d106d7b87f53010c4b9b064577eeee7f03f798c3e07d95923646ea5e0",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/DeedOfTrust/290fd0da-4b7d-582c-9865-c793962ac001.pdf",
+      "sha256": "aeee61de2c6ae27cb59eff40b6da3bfa78eb1e2a0145051221c66d39e7840c92",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/TitleCommitment/f520df96-62c4-5611-b370-c1daa8970805.pdf",
+      "sha256": "de1b7a46c150196352f87a8f4033e30a48a6fd8d97900dbfaaf1aa4b61d9bd59",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/TitleCommitment/72929425-3ad1-5fa1-9c00-c1cb2e1915d4.pdf",
+      "sha256": "c16bd82710a605fc5b2d2bb2e02738702bd8c16e097d64253a4f542516962539",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/411de743-1dfa-57ad-9dd2-fb39e602d9f5.pdf",
+      "sha256": "c2321c47811d497e2c99c857ec53766b867d26da1607076b815c753189795e33",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/4d112cea-fda9-5393-891b-9e480e03d565.pdf",
+      "sha256": "2ebd632848afe9287b62bcf716561170fb18d0775d115951c67fcda019c3ae79",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/35869b8b-2d26-51fa-845d-5cce75abf2ae.pdf",
+      "sha256": "526d39268c611e7aaca63f5713d203a199751e9fc09b90d7fe869929258cbc5d",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/1b2666df-8fe9-540e-8a34-691856ab20f7.pdf",
+      "sha256": "33224133e81c481d25d3b21eb33a367548b2b7b27421d47ce020a57dc6d404cc",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/TitleCommitment/9fb4489c-5159-5260-8183-ed5b261a1234.pdf",
+      "sha256": "2abf3da505f1bbcce33cb56aba0a00f24304d8ad4fe80924ac094b806dcb834a",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/d8256357-ebc4-5fd7-8cac-e6e2f1e22ba9.pdf",
+      "sha256": "88fd56ba6867b589df4a76abc89fbdeeeff8e9bb418748efd8b44af5c961126d",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/a25a06c4-72d2-520f-9da1-113dc651615f.pdf",
+      "sha256": "2b038e1579d504b3b7b14b36809942e03332e98157b3f90b32082d3631ef42ab",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/TitleCommitment/7f3a219e-c41c-5db2-ba7f-08bd2932918c.pdf",
+      "sha256": "84c55aadaffe77dd23bc2af2ca3a0d6ff9601b9d1084054291e16048aa786697",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/Survey/8b1272a5-a45b-5322-b8cf-f511fe0536a3.pdf",
+      "sha256": "a267f224a872c464e91e16359f6f6667417a560847791a2ce1786431a6d73c82",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Survey/c28d010e-4e0f-5683-94b8-43dfd9b33e8b.pdf",
+      "sha256": "32808d730809bf46d7567868eecb64356aad7a20eb5cb0a69869ef75065a41e0",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/3203abef-4075-58d5-a2b3-bf4e0c0893b4.pdf",
+      "sha256": "f53c98fc86ce2325069ae5298feeacf74bd101e554afd28365494a958362b4ba",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/035b9e68-c714-5960-84cf-bfddccc0035c.pdf",
+      "sha256": "86c773a26f1f365bdadda1da3ecfbb7bc7136bc13b76dbe744f0262797d486a7",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/7425cad7-cee7-56fb-a692-1d087c0b3c6f.pdf",
+      "sha256": "52de68eca778d6e210e1f1390f5901b0754fe1feed5362fef79f7d17820fbc54",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/eb4855fd-d9c7-50e3-a853-3c9a17725f13.pdf",
+      "sha256": "b296a78c3e9205bb6db6da67e50255966402a1ce3acbbc4bcc9346f8b1ba35db",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Survey/529a346a-5fe0-52eb-aa5c-9f2429cdf875.pdf",
+      "sha256": "a96675fe48b90e573f955c7597ae425bbe5b35235bddab7004e4936ef7891f1e",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/c7239653-d9d5-5627-ad2f-7e47b933c036.pdf",
+      "sha256": "f4d52a5edc4aedba6e9eb58d79e61d2ec28cd8a33dfdd900071c9fb6c2eb5603",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/86eab2f5-fd37-52a0-88f1-817f1ac455b1.pdf",
+      "sha256": "831165b0634ece6b34bf639bea183e5a15f8efcdf35ec3ba2d9e5f7acfb29262",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Survey/799da593-f663-5593-b949-7be06176923e.pdf",
+      "sha256": "2e3886085284aa29268ad8685309ab9edc38f91818d06593a28e2fa9ab864369",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/ClosingInstructions/8797bd86-9db2-5f22-8f19-59ddb3c408d3.pdf",
+      "sha256": "5756799e08825a34ac7e00002c310fbc7a570a5945eef7e7106a9995418a9106",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/ClosingInstructions/7818f313-c8fa-5e00-977a-a710a01e9991.pdf",
+      "sha256": "83f539b3ab235cdcbeaea8835fbe5573f76368cb035352dabe873c35cd12e310",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/29fcc06c-222c-5ed9-9547-c5299cb144d1.pdf",
+      "sha256": "35a5211a4f75a0da77b6a3c8cffb4eef4a5d3187a0a9a92082d33bc535bcca02",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/35937c55-9097-5ba8-bec4-ae7d78397573.pdf",
+      "sha256": "ad1ed35381370244002a5ac153eccfa9cb0eac8969e162b22294cd9bb1d997c5",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/ad6a61cf-aaed-5975-918a-c9e0d3bf048d.pdf",
+      "sha256": "e264cd2c551305e67bb35995d70f877d2f9a26a684baf406c0845210c9c8ad6a",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/88dbfc2e-63a8-57e8-8750-01b5e54bb2ae.pdf",
+      "sha256": "3f01371fa80137f48838d24c37c17fd060a54088762c5adbd55ee60ec98a0bf7",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/ClosingInstructions/c87185e5-c6fc-58a1-a3f7-06a7a34e7d05.pdf",
+      "sha256": "8a08b06218203f2f4fc0f26860ce925554857c49c803a1a291004e201a521d4d",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/0de85d13-5a44-56fe-90c9-61ff6124c008.pdf",
+      "sha256": "872a3eec4a928e76e07ed887f54fd17723f908e21891c8a632e5f7e1f4207680",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/3eb91d3a-f727-56ab-b961-712181afbcdb.pdf",
+      "sha256": "ce53171dfc90c67406043a43c84962b77aaf6853924cec4fbbee7edb4a969b53",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/ClosingInstructions/f65c08c7-9cfa-53c3-a64c-2d682f25cb20.pdf",
+      "sha256": "a93a5cb89654ef4e243695c0990a05de1b6ccceb6d85e5ff818ddc3c8d5b0d35",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/Rider/73943c51-6978-5dd5-b9e4-45bdc76b5eae.pdf",
+      "sha256": "e7e598e651262b9b96d4ef5da1e01689c989151c60465eb20e27083bed747f97",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Rider/801326e6-1993-5c06-bbd3-7d5d312f15e9.pdf",
+      "sha256": "3261e343343c00a2ac9542dda737cc881c57b3e45adc30b490eaa718c2330473",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/314e6589-b3d0-5a7e-90e7-f65da09acd30.pdf",
+      "sha256": "30719dfccdf440644318910dcfe1b15a6198b150587ccdbbff8c49aa6e69eddb",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/a2313fa8-6740-5fb9-8092-4691f7b82931.pdf",
+      "sha256": "fe639ea36adff8886d8f68e97c1b0288a04e0b9dd7500d5eeda6f5d9ed005555",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/1948cf40-8cb6-5938-bd4e-43610442ce18.pdf",
+      "sha256": "32fb315334f9909b83da6b4883ae8f1101db4ba31f81515706b98e3b7c180d6a",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/a964184b-4e4b-5f6c-9815-ead6ec324699.pdf",
+      "sha256": "70a0c8a7dbd982924523bcfddd46c3940c0a2a7ccb5f62b91d149250da3db668",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Rider/e5368d25-b62b-5621-85b7-aefec61032d0.pdf",
+      "sha256": "75e31e04ef577653308acb1cd86cbd496000e988741b062e164726df069ed610",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/f33ea98c-9e66-5ceb-ad6b-10d9ad274cb4.pdf",
+      "sha256": "6e5fff27e274f2cdb90d7da9c7376d9f4c8fcf5fe596822cdfa4e31923b83b63",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/b139171c-1919-5092-a574-6eb4c6de7670.pdf",
+      "sha256": "3ae0e3ad91efefb25793edfe538f05a2950650cb1cf158ac7fcb7069e05c392c",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Rider/07b31768-98ff-518b-ae64-59fccf505f07.pdf",
+      "sha256": "d0317eed9092afa12fb4454e2664d5988e0d04ea6c1cdb2f540215a9143a514f",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 0,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 2,
+      "path": "train/Other/82155d9a-78c3-5912-95d0-58ee9e740e50.pdf",
+      "sha256": "ed757d25efb05e9c08f4f0cc069dd86e43435eedb1184997e4d6d09aefb296bf",
+      "anchors": [
+        "71000001",
+        "Avery Cedar1"
+      ],
+      "gold": {
+        "loanNumber": "71000001",
+        "borrowerName": "Avery Cedar1",
+        "propertyAddress": "100 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 1,
+      "layoutFamily": "B",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Other/87fa4f12-9d8b-53de-86f0-682687ccc3a2.pdf",
+      "sha256": "bee71bda263e3a51a20d4dbb4d019c17a25dc0840149d0428906ab0c17f795da",
+      "anchors": [
+        "71000002",
+        "Avery Cedar2"
+      ],
+      "gold": {
+        "loanNumber": "71000002",
+        "borrowerName": "Avery Cedar2",
+        "propertyAddress": "117 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 2,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/96387e20-5667-5d06-81a3-b544b3cbf2e6.pdf",
+      "sha256": "9804377265435c30c9dada0eaff54abfed1436159440c4a808f619c8e2c1f781",
+      "anchors": [
+        "71000003",
+        "Avery Cedar3"
+      ],
+      "gold": {
+        "loanNumber": "71000003",
+        "borrowerName": "Avery Cedar3",
+        "propertyAddress": "134 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 3,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/a4bbb59a-30a2-558a-978c-6e5178898d0b.pdf",
+      "sha256": "26cc58442d87994476a9f106d069ce3f544f6102405924421d3ed917dc07a6a8",
+      "anchors": [
+        "71000004",
+        "Avery Cedar4"
+      ],
+      "gold": {
+        "loanNumber": "71000004",
+        "borrowerName": "Avery Cedar4",
+        "propertyAddress": "151 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 4,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/e3671534-2ad8-59de-baf2-f5e79ed98bab.pdf",
+      "sha256": "a86fe1cf8f51f55bff4c2a20e990388e11a03b6591df5e630b529279739db15a",
+      "anchors": [
+        "71000005",
+        "Avery Cedar5"
+      ],
+      "gold": {
+        "loanNumber": "71000005",
+        "borrowerName": "Avery Cedar5",
+        "propertyAddress": "168 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 5,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/048127be-cfeb-5632-9857-00975a36ff9b.pdf",
+      "sha256": "f0962b103408fada8751de012b23de5a305e90815ea73fc550a4c96896b7744c",
+      "anchors": [
+        "71000006",
+        "Avery Cedar6"
+      ],
+      "gold": {
+        "loanNumber": "71000006",
+        "borrowerName": "Avery Cedar6",
+        "propertyAddress": "185 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 6,
+      "layoutFamily": "A",
+      "scanned": true,
+      "pages": 1,
+      "path": "train/Other/d98cf2ba-22cf-5e55-b8cc-e28cd66c0ea3.pdf",
+      "sha256": "20c0e0ab1cfaec2a6c1817d5030447038d2d4a8e672960d41eb2936bcfcb66ea",
+      "anchors": [
+        "71000007",
+        "Avery Cedar7"
+      ],
+      "gold": {
+        "loanNumber": "71000007",
+        "borrowerName": "Avery Cedar7",
+        "propertyAddress": "202 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 7,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/68a345cd-8959-5056-b01b-771c3c13d50f.pdf",
+      "sha256": "dd714bdc1607eb6bb34f72daa4643eae997289ebbf67dcb438d34da781789210",
+      "anchors": [
+        "71000008",
+        "Avery Cedar8"
+      ],
+      "gold": {
+        "loanNumber": "71000008",
+        "borrowerName": "Avery Cedar8",
+        "propertyAddress": "219 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 8,
+      "layoutFamily": "A",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/59b8f03c-578c-57f8-acee-4140664ea244.pdf",
+      "sha256": "ffeb3610c731dbd1621987cd61235d2645ffea979747b0bbd1da3191590ef902",
+      "anchors": [
+        "71000009",
+        "Avery Cedar9"
+      ],
+      "gold": {
+        "loanNumber": "71000009",
+        "borrowerName": "Avery Cedar9",
+        "propertyAddress": "236 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "train",
+      "index": 9,
+      "layoutFamily": "B",
+      "scanned": false,
+      "pages": 1,
+      "path": "train/Other/7be1aad0-1111-5cdf-a177-ab6a1db13e88.pdf",
+      "sha256": "0def58c5efcdb593ef56e4388657549ddddad327418b5052d5beafabf1851408",
+      "anchors": [
+        "71000010",
+        "Avery Cedar10"
+      ],
+      "gold": {
+        "loanNumber": "71000010",
+        "borrowerName": "Avery Cedar10",
+        "propertyAddress": "253 Birch Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/Note/5e8a5841-6128-5a49-86bc-c3d1a60287a6.pdf",
+      "sha256": "b95f2bc8b9bd3b1e9077c1d1363cdb3256de7e39fcc2bc6b7273d441b4e1f524",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/Note/66932d55-0b59-50fb-8996-a884967a860f.pdf",
+      "sha256": "49b88fab32d9ef334c30f76a4c699bdfba8a17ee2cc7276b6f3a3016108234e4",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Note/f6c92504-b41f-51e9-8812-c12d1fdd12f3.pdf",
+      "sha256": "f8474ba3bf935b0164a21a1db83a588ee196677f5f2878feafd95b5ac1988900",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Note/e666e042-740e-5081-8b81-2ed8e286c435.pdf",
+      "sha256": "ac0d35480e3e2c0ae10ab05fece8d8366ecf342dfbd7e3a808a357c47edbc396",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/DeedOfTrust/5eac94f0-1ec9-5912-8994-cd750d998b3e.pdf",
+      "sha256": "200ae800a5990082f4deab95ae2351d46750b2525495cec8c468c98ded50932d",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/DeedOfTrust/16908668-92b6-5515-9398-88513dd9b1e1.pdf",
+      "sha256": "5a8ab4054eada86abc86dc8c8e11a4f976f162b5dd2133f8f136f81b4abc3f25",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/DeedOfTrust/24c05d4b-8fe5-5ccb-a5e7-35e52e57af3a.pdf",
+      "sha256": "5732e3f690936cbfa710215b430f8cb992fca69a334c1001d0c81643e107b607",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/DeedOfTrust/278c9e88-8c3e-57ad-a161-ce67ac318567.pdf",
+      "sha256": "4fd704886c3c2e190cfd5b1642224cd9efe66ad23c1488e1051346700562fecb",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/TitleCommitment/b44711cd-dff2-5828-9210-7fd6de91b41e.pdf",
+      "sha256": "8ca64fc2b0e0caf6f09bd4b19ae8c7e33a7653f3919b5addb6ecc8888fe59978",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/TitleCommitment/e94f8ef1-5316-50d3-8304-5d151d5c66a1.pdf",
+      "sha256": "a8a0037928ce9cdc256367965639ec92ed4701028de398852ace79f1d97b2a56",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/TitleCommitment/df33d70e-a250-5aa5-ae85-e2b13cc9d64b.pdf",
+      "sha256": "6bdce9859fc58be9191fdba3f568f75fab72b8be9e52c76ba2c9a479648951d6",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/TitleCommitment/bca8866b-d026-5c3a-b79e-5f4de4c444e7.pdf",
+      "sha256": "c431ad09c2f954f39eb9d5c20634617aee847a6a91182df96a919b396cee5469",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/Survey/9f78bb12-6a25-50ae-9316-9ed820175f6a.pdf",
+      "sha256": "5bedb877874c26cae60e80e0449389e25ba5be1b153d10ea9541abc9116c4ac6",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/Survey/a7ae4222-0587-523e-8b00-11110fc064f8.pdf",
+      "sha256": "00ac6be1e902f169c908f209854d042d9dad3a981174dcba03e6719f42002164",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Survey/6afe97d3-c0f4-5d81-82c5-0eee24697246.pdf",
+      "sha256": "408df9777b6413b7b4f4b17da928bd30c11a025f9f263096647e75606a1833ca",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Survey",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Survey/b91857bc-d2ff-51e4-9755-1958ad20925f.pdf",
+      "sha256": "d86f5a6215a823f82ab696c531594b575cf5a1fbcc3d464b3674a3feb2cde9eb",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/ClosingInstructions/df12d8bd-b67a-58fb-b9c1-1188628ef782.pdf",
+      "sha256": "76f495101ef3bbf60e3cf2fd76398db49e16242839b895150b3a60903f73b354",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/ClosingInstructions/29ab7da2-5bcb-5c5f-bc52-d9b651fa16b1.pdf",
+      "sha256": "774b1d4f1d80b26198682661142f7cb3eeb4f6b5dab349d22797d46448ebba91",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/ClosingInstructions/d64cd65a-2453-5e63-b896-2ef1b6cffd3d.pdf",
+      "sha256": "a9befe76178f42db1f7c973565a98bfdbd5b95ba28a0f0e3928800da97b80f76",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/ClosingInstructions/066647c8-5674-59db-beea-6f009cfc5f22.pdf",
+      "sha256": "0abc2c4eeca217375c00eba8be16be5c5c125bbec37eb948d1f08c1ba734ae0e",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/Rider/99761ed3-5938-5715-8037-24906e287dda.pdf",
+      "sha256": "0f2edb53c5c5b747c03362580212b9d7941b46826a2f8df7ac6bac7b7f7f8257",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/Rider/44c4486e-c630-50a0-92e8-cfe7c56301d4.pdf",
+      "sha256": "83cb84d14e2d2613d706fc239d16f18dbd79a1cac7545ada85d527d60df9efc7",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Rider/386901aa-c489-5c0e-a9b0-83fc044fb39c.pdf",
+      "sha256": "5df3678a826d247b03c95d258edd2bd79ff8651cd7ca6f03923d055217251131",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Rider",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Rider/7c2459fe-968c-5ff7-9832-28157d7618c8.pdf",
+      "sha256": "3e8bd26bcfc65a5790750e4d1f89446b804dc8c7660e81b5f6bcf6283eabe06c",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "test/Other/d627012c-b0b4-5d9c-8819-8fe34f7fe8a2.pdf",
+      "sha256": "8247e17b291a3fef750ff373c8204afd877599f847c40f829900d34ee422f3f1",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "test",
+      "index": 1,
+      "layoutFamily": "D",
+      "scanned": true,
+      "pages": 1,
+      "path": "test/Other/36822da8-e761-5ef4-92ed-ed680b05340f.pdf",
+      "sha256": "f6ace017b9700e246ecb08097e20a6e2c4a307cf39c1317f3cb8c903ce116f31",
+      "anchors": [
+        "92000002",
+        "Morgan Willow2"
+      ],
+      "gold": {
+        "loanNumber": "92000002",
+        "borrowerName": "Morgan Willow2",
+        "propertyAddress": "117 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Other/b911aa40-3757-54c0-bfee-8eaa18998ecc.pdf",
+      "sha256": "7c59522c0863e0d0d44d6b1d0b2a550fb9c1a68eb3369498358ca85ffbb9c5c1",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      }
+    },
+    {
+      "label": "Other",
+      "split": "test",
+      "index": 3,
+      "layoutFamily": "D",
+      "scanned": false,
+      "pages": 1,
+      "path": "test/Other/ade04b1c-dd92-5fcf-b6a6-c7f20e380af8.pdf",
+      "sha256": "ac532807cf890e5bdfdc7441b6eec06186cc6bc635384fce05125516225dbc99",
+      "anchors": [
+        "92000004",
+        "Morgan Willow4"
+      ],
+      "gold": {
+        "loanNumber": "92000004",
+        "borrowerName": "Morgan Willow4",
+        "propertyAddress": "151 Juniper Lane, Austin, TX 78701"
+      }
+    }
+  ],
+  "limitations": [
+    "Synthetic documents only; no client accuracy claim.",
+    "Template families and identities are disjoint; class-specific vocabulary overlaps by design.",
+    "Other is a sampled negative class, not universal out-of-distribution detection."
+  ]
+}

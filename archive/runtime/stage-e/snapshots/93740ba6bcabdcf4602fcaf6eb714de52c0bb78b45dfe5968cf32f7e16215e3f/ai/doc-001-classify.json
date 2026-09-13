@@ -1,0 +1,41 @@
+{
+  "apiVersion": "2024-11-30",
+  "modelId": "bmg-stage-e-v1",
+  "stringIndexType": "textElements",
+  "content": "",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "angle": -0.23360000550746918,
+      "width": 8.5,
+      "height": 11,
+      "unit": "inch",
+      "words": [],
+      "lines": [],
+      "spans": []
+    }
+  ],
+  "documents": [
+    {
+      "docType": "DeedOfTrust",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0,
+            0,
+            8.5,
+            0,
+            8.5,
+            11,
+            0,
+            11
+          ]
+        }
+      ],
+      "confidence": 0.799,
+      "spans": []
+    }
+  ],
+  "contentFormat": "text"
+}

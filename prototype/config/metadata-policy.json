@@ -1,0 +1,34 @@
+{
+  "contractVersion": "poc-1",
+  "businessStatus": "Synthetic placeholder, not a client-approved invoice contract",
+  "classificationThreshold": 0.8,
+  "classificationThresholdStatus": "Provisional; evaluate on held-out data before accepting",
+  "requiredClasses": [],
+  "requiredClassesExplanation": "Documents must collectively support every required field; six classes in the demo are not an assumed client business requirement.",
+  "conflictPolicy": "Normalize equivalent values; send substantively conflicting required values to ManualException. Source priority selects among consistent evidence and does not silently override a conflict.",
+  "missingValuePolicy": "null; never infer or fabricate",
+  "llmConfidencePolicy": "Do not use model self-reported confidence as calibrated probability",
+  "evidencePolicy": "Validate document identifier, page bounds, and supporting text or approved deterministic transformation for every selected document value; manifest values must match whitelisted manifest fields",
+  "normalization": {
+    "general": "Trim and collapse whitespace, preserve originals",
+    "identifiers": "Preserve leading zeros and punctuation; do not guess corrections",
+    "dates": "ISO YYYY-MM-DD; ambiguous numeric dates require review",
+    "borrowers": "Preserve all borrower names; no fuzzy merges",
+    "addresses": "Whitespace normalization only initially; no geocoding or inferred components"
+  },
+  "fields": {
+    "lenderCode": { "required": true, "sourcePriority": ["ClosingInstructions", "Note"] },
+    "loanNumber": { "required": true, "sourcePriority": ["ClosingInstructions", "Note", "DeedOfTrust", "Rider"] },
+    "borrowerName": { "required": true, "sourcePriority": ["Note", "DeedOfTrust", "ClosingInstructions"] },
+    "propertyAddress": { "required": true, "sourcePriority": ["DeedOfTrust", "ClosingInstructions", "Note"] },
+    "closingDate": { "required": true, "sourcePriority": ["ClosingInstructions"], "format": "date" },
+    "loanType": { "required": true, "sourcePriority": ["ClosingInstructions", "Note"], "allowedValues": ["Conventional", "FHA", "VA", "Home Equity"] },
+    "purpose": { "required": true, "sourcePriority": ["ClosingInstructions"], "allowedValues": ["Purchase", "Refinance", "Home Equity"] },
+    "submissionType": { "required": true, "sourcePriority": ["submission.json"], "allowedValues": ["Examination"], "note": "Whitelisted trigger metadata supplied by the staging manifest; not an LLM guess" }
+  },
+  "stateTransitions": ["Received", "Ready", "Uploaded", "Classified", "LayoutRead", "MetadataExtracted", "MetadataValidated", "Persisted", "Returned"],
+  "failureStates": ["RetryPending", "ManualException", "ConfigurationError"],
+  "completionRule": "Only mark Returned after Cosmos read-back matches the submission/revision and an atomic local result write succeeds",
+  "replayRule": "Same submission ID and same content is a replay; changed content under the same ID requires an explicit new revision, not automatic overwrite",
+  "piiLogPolicy": "Logs contain IDs, stages, timing, model versions, errors and counters; field values and OCR text remain in restricted result/evidence storage"
+}

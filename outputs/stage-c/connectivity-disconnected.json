@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "service": "Blob",
+      "host": "stbmgpocwjsvyjg25vqiy.blob.core.windows.net",
+      "systemDnsAddresses": [
+        "20.60.181.193"
+      ],
+      "resolverDnsAddresses": [],
+      "dnsError": null,
+      "httpStatus": 403,
+      "errorBody": "﻿AuthorizationFailureThis request is not authorized to perform this operation.\nRequestId:ff11a1d7-601e-00b4-1aeb-41d934000000\nTime:2026-09-11T12:48:59.7444418Z",
+      "passed": true
+    },
+    {
+      "service": "KeyVault",
+      "host": "kv-bmg-wjsvyjg25vqiy.vault.azure.net",
+      "systemDnsAddresses": [
+        "40.70.146.74",
+        "52.167.111.160",
+        "20.44.19.172"
+      ],
+      "resolverDnsAddresses": [],
+      "dnsError": null,
+      "httpStatus": 403,
+      "errorBody": "\r\n{\r\n  \"error\": {\r\n    \"code\": \"Forbidden\",\r\n    \"message\": \"Connection is not an approved private link and caller was ignored because bypass is not set to \\u0027AzureServices\\u0027 and PublicNetworkAccess is set to \\u0027Disabled\\u0027. \\r\\nVault: kv-bmg-wjsvyjg25vqiy;location=eastus2\",\r\n    \"innererror\": {\r\n      \"code\": \"ForbiddenByConnection\"\r\n    }\r\n  }\r\n}",
+      "passed": true
+    },
+    {
+      "service": "DocumentIntelligence",
+      "host": "di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com",
+      "systemDnsAddresses": [
+        "20.119.156.98"
+      ],
+      "resolverDnsAddresses": [],
+      "dnsError": null,
+      "httpStatus": 403,
+      "errorBody": "\r\n{\r\n  \"error\": {\r\n    \"code\": \"403\",\r\n    \"message\": \"Public access is disabled. Please configure private endpoint.\"\r\n  }\r\n}",
+      "passed": true
+    },
+    {
+      "service": "OpenAI",
+      "host": "oai-bmg-wjsvyjg25vqiy.openai.azure.com",
+      "systemDnsAddresses": [
+        "20.62.58.26"
+      ],
+      "resolverDnsAddresses": [],
+      "dnsError": null,
+      "httpStatus": 403,
+      "errorBody": "\r\n{\r\n  \"error\": {\r\n    \"code\": \"403\",\r\n    \"message\": \"Public access is disabled. Please configure private endpoint.\"\r\n  }\r\n}",
+      "passed": true
+    },
+    {
+      "service": "Cosmos",
+      "host": "cosmos-bmg-wjsvyjg25vqiy.documents.azure.com",
+      "systemDnsAddresses": [
+        "20.15.13.132"
+      ],
+      "resolverDnsAddresses": [],
+      "dnsError": null,
+      "httpStatus": 403,
+      "errorBody": "\r\n{\r\n  \"code\": \"Forbidden\",\r\n  \"message\": \"Request originated from IP 122.171.23.133 through public internet. This is blocked by your Cosmos DB account firewall settings. More info: https://aka.ms/cosmosdb-tsg-forbidden\\r\\nActivityId: f1a95a94-6909-466e-98b3-2e44407a9ef2, Microsoft.Azure.Documents.Common/2.14.0\"\r\n}",
+      "passed": true
+    }
+  ],
+  "timestamp": "2026-09-11T12:49:11.8711503Z",
+  "mode": "Disconnected",
+  "allPassed": true
+}

@@ -1,0 +1,102 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\n  \u0022candidates\u0022: [\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022lenderCode\u0022,\n      \u0022value\u0022: \u0022FP-017\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022LENDER CODE\\nFP-017\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022lenderCode\u0022,\n      \u0022value\u0022: \u0022FP-017\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022LENDER CODE\\nFP-017\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022loanNumber\u0022,\n      \u0022value\u0022: \u002292000001\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022LOAN NUMBER\\n92000001\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022loanNumber\u0022,\n      \u0022value\u0022: \u002292000001\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022LOAN NUMBER\\n92000001\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022borrowerName\u0022,\n      \u0022value\u0022: \u0022Morgan Willow1\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022BORROWER\\nMorgan Willow1\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022borrowerName\u0022,\n      \u0022value\u0022: \u0022Morgan Willow1\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022BORROWER\\nMorgan Willow1\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022propertyAddress\u0022,\n      \u0022value\u0022: \u0022100 Juniper Lane, Austin, TX 78701\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022propertyAddress\u0022,\n      \u0022value\u0022: \u0022100 Juniper Lane, Austin, TX 78701\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022closingDate\u0022,\n      \u0022value\u0022: \u0022September 18, 2026\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022CLOSING DATE\\nSeptember 18, 2026\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022closingDate\u0022,\n      \u0022value\u0022: \u0022September 18, 2026\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022CLOSING DATE\\nSeptember 18, 2026\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022loanType\u0022,\n      \u0022value\u0022: \u0022Conventional\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022LOAN TYPE\\nConventional\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022loanType\u0022,\n      \u0022value\u0022: \u0022Conventional\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022LOAN TYPE\\nConventional\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022purpose\u0022,\n      \u0022value\u0022: \u0022Purchase\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022PURPOSE\\nPurchase\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-001\u0022,\n      \u0022field\u0022: \u0022purpose\u0022,\n      \u0022value\u0022: \u0022Purchase\u0022,\n      \u0022page\u0022: 2,\n      \u0022quote\u0022: \u0022PURPOSE\\nPurchase\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022lenderCode\u0022,\n      \u0022value\u0022: null,\n      \u0022page\u0022: null,\n      \u0022quote\u0022: null\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022loanNumber\u0022,\n      \u0022value\u0022: \u002292000003\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022LOAN NUMBER\\n92000003\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022borrowerName\u0022,\n      \u0022value\u0022: \u0022Morgan Willow3\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022BORROWER\\nMorgan Willow3\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022propertyAddress\u0022,\n      \u0022value\u0022: \u0022134 Juniper Lane, Austin, TX 78701\u0022,\n      \u0022page\u0022: 1,\n      \u0022quote\u0022: \u0022PROPERTY ADDRESS\\n134 Juniper Lane, Austin, TX 78701\u0022\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022closingDate\u0022,\n      \u0022value\u0022: null,\n      \u0022page\u0022: null,\n      \u0022quote\u0022: null\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022loanType\u0022,\n      \u0022value\u0022: null,\n      \u0022page\u0022: null,\n      \u0022quote\u0022: null\n    },\n    {\n      \u0022documentId\u0022: \u0022doc-002\u0022,\n      \u0022field\u0022: \u0022purpose\u0022,\n      \u0022value\u0022: null,\n      \u0022page\u0022: null,\n      \u0022quote\u0022: null\n    }\n  ]\n}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789278810,
+  "id": "chatcmpl-ENXRa3m9LLn70TG4TfZXXvTghhmP4",
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "routing": {
+    "serving_pipereplica": "d20260818152517-5ea122a3-default-r0-dp0-default"
+  },
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1808,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 704,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 30,
+      "engine_ttlt_ms": 11176,
+      "pre_inference_ms": 156,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 305,
+      "service_ttlt_ms": 11443,
+      "user_visible_ttft_ms": 149
+    },
+    "prompt_tokens": 958,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 2766
+  }
+}

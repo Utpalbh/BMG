@@ -1,0 +1,24 @@
+PAGE 1
+CLOSING INSTRUCTIONS
+Synthetic lender instructions
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000005
+Lender:
+Test State Credit Union
+Lender Code:
+LND005
+Borrower(s):
+Skyler Bennett and Drew Bennett
+Property:
+505 Validation Road, Fiction Hills, TX 75005
+Closing Date:
+2026-09-26
+Loan Type:
+Conventional
+Purpose:
+Refinance
+Submission Type:
+Examination
+Return executed package according to lender instructions. Synthetic content only.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

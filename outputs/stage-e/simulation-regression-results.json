@@ -1,0 +1,115 @@
+{
+  "stage": "B",
+  "executionMode": "Simulated",
+  "azureCallsMade": false,
+  "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\test-runs\\acceptance-20260911-193112-39bbea",
+  "tests": [
+    {
+      "name": "five_happy_submissions",
+      "passed": true,
+      "seconds": 1.156
+    },
+    {
+      "name": "completion_marker_gate",
+      "passed": true,
+      "seconds": 0.703
+    },
+    {
+      "name": "partial_copy_repair",
+      "passed": true,
+      "seconds": 0.703
+    },
+    {
+      "name": "duplicate_replay",
+      "passed": true,
+      "seconds": 1.016
+    },
+    {
+      "name": "same_revision_conflict",
+      "passed": true,
+      "seconds": 0.719
+    },
+    {
+      "name": "explicit_new_revision",
+      "passed": true,
+      "seconds": 0.89
+    },
+    {
+      "name": "crash_after_Uploaded",
+      "passed": true,
+      "seconds": 0.766
+    },
+    {
+      "name": "crash_after_Persisted",
+      "passed": true,
+      "seconds": 0.75
+    },
+    {
+      "name": "crash_after_Returned",
+      "passed": true,
+      "seconds": 0.766
+    },
+    {
+      "name": "transient_retry_after_restart",
+      "passed": true,
+      "seconds": 0.984
+    },
+    {
+      "name": "bounded_durable_retries",
+      "passed": true,
+      "seconds": 3.937
+    },
+    {
+      "name": "missing_required_metadata",
+      "passed": true,
+      "seconds": 0.563
+    },
+    {
+      "name": "invalid_calendar_date",
+      "passed": true,
+      "seconds": 0.703
+    },
+    {
+      "name": "answer_labels_rejected",
+      "passed": true,
+      "seconds": 0.547
+    },
+    {
+      "name": "path_traversal_rejected",
+      "passed": true,
+      "seconds": 0.531
+    },
+    {
+      "name": "unknown_class_exception",
+      "passed": true,
+      "seconds": 0.531
+    },
+    {
+      "name": "windows_powershell_utf8_bom",
+      "passed": true,
+      "seconds": 0.625
+    },
+    {
+      "name": "snapshot_integrity_on_restart",
+      "passed": true,
+      "seconds": 0.954
+    },
+    {
+      "name": "duplicate_json_property_rejected",
+      "passed": true,
+      "seconds": 0.375
+    },
+    {
+      "name": "simulation_requires_explicit_fixture",
+      "passed": true,
+      "seconds": 0.468
+    },
+    {
+      "name": "watcher_and_single_worker_lock",
+      "passed": true,
+      "seconds": 1.328
+    }
+  ],
+  "passed": 21,
+  "failed": 0
+}

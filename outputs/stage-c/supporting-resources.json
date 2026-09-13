@@ -1,0 +1,18 @@
+{
+  "changedTime": "2026-09-11T13:11:00.500197+05:30",
+  "createdTime": "2026-09-11T13:00:57.675952+05:30",
+  "extendedLocation": null,
+  "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus2",
+  "identity": null,
+  "kind": null,
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "NetworkWatcher_eastus2",
+  "plan": null,
+  "properties": null,
+  "provisioningState": "Succeeded",
+  "resourceGroup": "NetworkWatcherRG",
+  "sku": null,
+  "tags": null,
+  "type": "Microsoft.Network/networkWatchers"
+}

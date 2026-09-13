@@ -1,0 +1,72 @@
+{
+  "id": "subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourcegroups/rg-bmg-poc/providers/Microsoft.CostManagement/query/b42d046b-6fe2-463f-9382-6f0ecc5b6c82",
+  "name": "b42d046b-6fe2-463f-9382-6f0ecc5b6c82",
+  "type": "Microsoft.CostManagement/query",
+  "location": null,
+  "sku": null,
+  "eTag": null,
+  "properties": {
+    "nextLink": null,
+    "columns": [
+      {
+        "name": "Cost",
+        "type": "Number"
+      },
+      {
+        "name": "ServiceName",
+        "type": "String"
+      },
+      {
+        "name": "Currency",
+        "type": "String"
+      }
+    ],
+    "rows": [
+      [
+        2.38865625e-05,
+        "Azure Cosmos DB",
+        "INR"
+      ],
+      [
+        992.3642726197,
+        "Azure DNS",
+        "INR"
+      ],
+      [
+        0.0,
+        "Bandwidth",
+        "INR"
+      ],
+      [
+        0.517980107812501,
+        "Foundry Models",
+        "INR"
+      ],
+      [
+        143.70156,
+        "Foundry Tools",
+        "INR"
+      ],
+      [
+        0.014905215,
+        "Key Vault",
+        "INR"
+      ],
+      [
+        0.388447789158001,
+        "Storage",
+        "INR"
+      ],
+      [
+        801.440352562502,
+        "VPN Gateway",
+        "INR"
+      ],
+      [
+        208.521434412351,
+        "Virtual Network",
+        "INR"
+      ]
+    ]
+  }
+}

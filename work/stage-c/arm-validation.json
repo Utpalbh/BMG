@@ -1,0 +1,229 @@
+{
+  "error": null,
+  "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.Resources/deployments/bmg-stage-c",
+  "location": "eastus2",
+  "name": "bmg-stage-c",
+  "properties": {
+    "correlationId": "f74fdccd-30b3-455d-bda1-75f7232f955d",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+            "resourceName": "rg-bmg-poc",
+            "resourceType": "Microsoft.Resources/resourceGroups"
+          }
+        ],
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+        "resourceGroup": "rg-bmg-poc",
+        "resourceName": "bmg-network",
+        "resourceType": "Microsoft.Resources/deployments"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+            "resourceGroup": "rg-bmg-poc",
+            "resourceName": "bmg-network",
+            "resourceType": "Microsoft.Resources/deployments"
+          },
+          {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+            "resourceName": "rg-bmg-poc",
+            "resourceType": "Microsoft.Resources/resourceGroups"
+          },
+          {
+            "apiVersion": "2025-04-01",
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+            "resourceGroup": "rg-bmg-poc",
+            "resourceName": "bmg-network",
+            "resourceType": "Microsoft.Resources/deployments"
+          }
+        ],
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-services",
+        "resourceGroup": "rg-bmg-poc",
+        "resourceName": "bmg-services",
+        "resourceType": "Microsoft.Resources/deployments"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+            "resourceGroup": "rg-bmg-poc",
+            "resourceName": "bmg-network",
+            "resourceType": "Microsoft.Resources/deployments"
+          },
+          {
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+            "resourceName": "rg-bmg-poc",
+            "resourceType": "Microsoft.Resources/resourceGroups"
+          },
+          {
+            "apiVersion": "2025-04-01",
+            "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+            "resourceGroup": "rg-bmg-poc",
+            "resourceName": "bmg-network",
+            "resourceType": "Microsoft.Resources/deployments"
+          }
+        ],
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-gateway",
+        "resourceGroup": "rg-bmg-poc",
+        "resourceName": "bmg-gateway",
+        "resourceType": "Microsoft.Resources/deployments"
+      }
+    ],
+    "diagnostics": [
+      {
+        "additionalInfo": null,
+        "code": "NestedDeploymentShortCircuited",
+        "level": "Warning",
+        "message": "A nested deployment got short-circuited and all its resources got skipped from validation. This is due to a nested template having a parameter that was not fully evaluated (e.g. contains a reference() function). Please see https://aka.ms/WhatIfEvalStopped for more guidance.",
+        "target": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-services"
+      },
+      {
+        "additionalInfo": null,
+        "code": "NestedDeploymentShortCircuited",
+        "level": "Warning",
+        "message": "A nested deployment got short-circuited and all its resources got skipped from validation. This is due to a nested template having a parameter that was not fully evaluated (e.g. contains a reference() function). Please see https://aka.ms/WhatIfEvalStopped for more guidance.",
+        "target": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-gateway"
+      }
+    ],
+    "duration": "PT0S",
+    "error": null,
+    "extensions": [],
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": null,
+    "outputs": null,
+    "parameters": {
+      "expiresAt": {
+        "type": "String",
+        "value": "2026-09-11T17:29:24.0356458Z"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus2"
+      },
+      "operatorObjectId": {
+        "type": "String",
+        "value": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7"
+      },
+      "resourceGroupName": {
+        "type": "String",
+        "value": "rg-bmg-poc"
+      },
+      "sessionStartedAt": {
+        "type": "String",
+        "value": "2026-09-11T07:29:24.0356458Z"
+      },
+      "vpnRootPublicCertificate": {
+        "type": "String",
+        "value": "MIIC8TCCAdmgAwIBAgIQWI/sqj/A/IFKQDMvbsRVwjANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBCTUctUE9DLVZQTi1Sb290MB4XDTI2MDkxMTA3MTI0MVoXDTI2MDkxODA3MjI0MVowGzEZMBcGA1UEAwwQQk1HLVBPQy1WUE4tUm9vdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM2ikv10uWmzLyMQnlOA7Kp1PRDMPkgEQiP+DuGI36CJvcLtg7uMZ81+ZQbsJcHNliuAHlPQ9P3MpeBJMavtyK87NoUBKBPayOw7O4ZDnBGbtIwKwYp8D6dBXP7MpXUvHFpKbWtKEVUm+lT9QoK6LqKtPk97inpkqjx2Yn2iJDOfGaWjHqws4yC032hzo/8Y42mDobPHQ7x9LVQG19y8cYRvAYKMLuAUWXN/RNhvkkLLv9AJC+RqU/WdI12a9FrpU5/tdOipIrQeqgPSsXvF7wDNIFtl9UgY5VgFM09ULAqFtHCnu6xOYGcQKfe/pTjODLN4ze4p3g5TjRXPhd6TvdECAwEAAaMxMC8wDgYDVR0PAQH/BAQDAgIEMB0GA1UdDgQWBBS2zZrTSVbIZPeg01p+I+GsIaCPBjANBgkqhkiG9w0BAQsFAAOCAQEAXtpt1pw8/PPHspUQKuZFdZAnPIDUwrxzsZ36ET3z9+0jiRVIWteRf7rtuUGXZ3KhL5OR4L2J8QSlaAOLRmeLO1G3kJ2KYJqnuvPMkRHdCYifaOoaAVLGxrx+9BeBl2AMLvR6nVBaiQB9FEEUfM5bVcmAfcnjvT0l7xuqlPOVN/kgM8b18BMEPKry3VLXxY6+H+v5bqgZq8179L4aLU0w2Bj3NQ1uQbAYple5yQeE8aQnMAvYQ7+HecF0JEgsCLHobR8cbIMb2EynkludXmFH6xp+IFecO26R30B3wOBs55VZEiHIr7apXnfdpcmpTZPtcHSNq80IpaU6fJ6/lp7W2A=="
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus2"
+            ],
+            "properties": null,
+            "resourceType": "resourceGroups",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "424769794419865325",
+    "templateLink": null,
+    "timestamp": "2026-09-11T07:29:37.748632+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+        "identifiers": null,
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/dnsResolvers/dnspr-bmg-poc/inboundEndpoints/dnsin-bmg-poc",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Network/virtualNetworks/vnet-bmg-poc",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-gateway",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-network",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      },
+      {
+        "apiVersion": null,
+        "extension": null,
+        "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Resources/deployments/bmg-services",
+        "identifiers": null,
+        "resourceGroup": "rg-bmg-poc",
+        "resourceType": null
+      }
+    ],
+    "validationLevel": null
+  },
+  "type": "Microsoft.Resources/deployments"
+}

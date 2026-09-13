@@ -1,0 +1,597 @@
+ppt/slides/slide1.xml
+Mortgage Examination Intelligence Platform
+Prepared for: BM&G
+June 2026
+Modernization Proposal
+
+ppt/slides/slide2.xml
+Solution Overview
+BM&G Business:
+BM&G provides legally mandated mortgage closing document examination to approximately 300 lender clients across Texas and adjacent states. Examination constitutes 80–90% of the firm's total workload. The top 45 lenders account for approximately 80% of total business volume.
+A fixed-team, phased delivery program across 30 weeks and 15 sprints to replace BM&G's entire legacy examination stack with a purpose-built, AI-native Mortgage Examination Intelligence Platform. AI does the work humans currently do manually - reading documents, extracting data, cross-referencing fields, and flagging rule violations. Legal Assistants focus their judgment on exception review and QC sign-off. This is not a digitization of the current workflow. It is a fundamental re-architecture of how examination work gets done.
+Project Manager
+1
+Dedicated Team:
+ 
+6.5 FTEs
+Delivery Team:
+ 
+Dedicated POD for BM&G
+A platform where AI extracts, rules validate, and Legal Assistants review exceptions - not data entry forms.
+Tech Lead / Architect
+0.5
+Part-time
+Senior Full Stack Engineer
+1
+Mid-Level Full Stack Engineer
+1
+Senior React Developer
+1
+Senior Business Analyst
+1
+Senior QA Engineer
+0.5
+DevOps Engineer
+0.5
+Part-time
+Following are key outcomes from Moder Solutions 
+Full legacy stack retired  LoanTrack (Silverlight), JetDocs (ASP.NET), MS Access, and ClosingExpress replaced
+AI extracts approximately 140 data fields from every closing package automatically, with confidence scoring
+Legal Assistants review exceptions, not data entry forms - average handling time materially reduced
+Dynamic queue with multi-office, multi-POD routing and real-time SLA monitoring replaces MS Access
+Modern authenticated lender portal replaces JetDocs, supporting all five submission types
+AI-ready platform foundation built from day one - AI activation is a future decision, not a re-engineering project
+Delivered by a fixed team of 6.5 people over 30 weeks using AI-assisted engineering practices
+Staged Rollout:
+ 
+3 Phases
+Program Duration:
+ 
+30 Weeks
+Delivery Cadence:
+ 
+15 Sprints
+Key Challenges:
+Six disconnected systems with no integration at any boundary 
+Legal Assistants hand-key approximately 140 fields per file 
+Rework rates up to 60% on some accounts due to missing documents discovered mid-review 
+No real-time SLA visibility - operational status requires asking someone 
+
+ppt/slides/slide3.xml
+Business Understanding & Current-State Challenges
+BM&G provides mortgage closing document examination and review services to lenders operating in Texas and adjacent states. Under Texas law, an attorney must review loan closing documents - making this a legally mandated, high-volume service. The firm serves approximately 300 lender clients, with the top 45 lenders accounting for around 80% of total business volume. Examination - reviewing documents and delivering a supplemental closing package - constitutes 80–90% of the firm’s total workload
+.
+The examination process flows through three stages: Intake, Processing, and Release. Each transition between stages is currently a manual human step with no automation at any boundary.
+Intake: Lender uploads documents via JetDocs. Staff manually creates a transaction in LoanTrack, assigns an invoice number, uploads documents to EDM, and places the file in the MS Access queue.
+Processing: A Legal Assistant picks up the file from the Access queue. They open ClosingExpress, manually read every document in the closing package, and enter approximately 140 data fields across seven input screens. They then perform a stare-and-compare review against the Review 1 checklist.
+Release: The Legal Assistant generates the supplemental closing package via ClosingExpress and delivers it through SecureDocs to the lender or title agent.
+The following challenges were identified through discovery sessions, system documentation review, and analysis of the examination process spreadsheet:
+ 
+No integration at any system boundary. Every stage transition is a manual human step, introducing lag and error risk.
+Legacy technology stack. LoanTrack runs on end-of-life Silverlight. JetDocs is aging ASP.NET. MS Access is not a production workflow system.
+Manual data extraction. Legal Assistants hand-key approximately 140 fields per file from six document types. This is the primary driver of handling time.
+Rework rates up to 60% on some accounts. Missing or incomplete documents are not detected at intake - they are discovered by the examiner mid-review, triggering manual email chains.
+Zero operational visibility. No real-time SLA dashboard. No queue analytics. Management cannot see the current state of operations without asking someone.
+Single developer dependency. All custom systems are maintained by one internal developer. Any change, fix, or integration requires a single person with no documented backup.
+ Current-State Challenges
+Current Operational Workflow
+
+ppt/slides/slide4.xml
+Where BM&G Operates Today
+The Six-System Legacy Stack
+JetDocs
+ASP.NET
+MANUAL ↓
+LoanTrack
+Silverlight 
+EDM
+Document Store
+MS Access
+Work Queue
+ClosingExpress
+Examination + Generation
+SecureDocs
+Output Portal
+Root Cause
+: No event-driven orchestration exists at any system boundary. Every stage transition relies on a human acting as the integration layer between disconnected systems.
+Process Summary
+Step
+What Happens
+System
+Submission Received
+Lender uploads via JetDocs. Email notification generated. No automation triggered.
+JetDocs
+Manual Transaction Creation
+Staff manually creates record in LoanTrack, assigns invoice number.
+LoanTrack
+Document Upload
+Staff manually uploads documents to EDM and associates to transaction.
+EDM
+Queue Placement
+Staff manually enters file into MS Access queue. Prioritization is manual.
+MS Access
+Examination
+Legal Assistant opens file in ClosingExpress, reads all documents, hand-keys ~140 fields, performs review checklist.
+ClosingExpress
+Release
+Legal Assistant generates supplemental package, delivers via SecureDocs.
+SecureDocs
+MANUAL ↓
+MANUAL ↓
+MANUAL ↓
+MANUAL ↓
+MANUAL ↓
+
+ppt/slides/slide5.xml
+Strategic Modernization Vision
+ "Replace every legacy system. Build a platform where AI does the extraction work, rules do the validation work,                 and Legal Assistants provide the judgment that only humans can provide."
+TODAY
+FUTURE STATE
+Human reads document → human finds value → human types value into field → repeat × 140
+AI reads all documents → AI populates all fields → AI flags what it is uncertain about
+Legal Assistant fills a 140-field data entry form
+Legal Assistant reviews a pre-filled form and resolves flagged exceptions only
+Missing documents discovered mid-review
+Missing documents detected at intake before any examiner is assigned
+Business rules checked manually against a checklist
+Rules engine checks every rule automatically on every file before QC queue
+Queue is an MS Access spreadsheet with manual prioritization
+Dynamic queue with multi-POD routing, closing date priority, and SLA-aware ordering
+SLA visibility requires asking someone
+Real-time SLA dashboard, aging alerts, manager escalation - fully automated
+1
+Orchestrate First
+Automate all intake-to-queue hand-offs before replacing any system. Every submission processed automatically from upload to queue. Operations benefit from day one.
+2
+AI Extracts, Humans Verify
+Approximately 140 fields extracted per file. Legal Assistants review flagged exceptions - low confidence, rule violations, cross-document mismatches - not the full field set.
+3
+Build for What's Next
+AI-ready schema, event stream, API stubs, and examiner feedback capture are built from Sprint 0. When the firm is ready to activate AI capabilities, the platform is already prepared.
+Three
+ 
+Modernization Principles
+
+ppt/slides/slide6.xml
+Future State Architecture
+Lender Portal
+New Order Submission
+Redraw Trust Review
+Supplemental Upload
+Real-Time Status & Release
+Platform Core
+Document Ingestion & Classification
+AI Extraction Engine → ~140 fields, 6 document types
+Business Rules Engine → configurable, no code changes
+Data Verification Report → cross-document comparison
+Dynamic Queue → multi-office, multi-POD, SLA-aware
+Legal Assistant QC Workbench → PDF highlighting + field review
+Release → Supplemental package generation + delivery
+Integrations
+Sage (AR/Accounting)
+EDM (Document Store)
+SecureDocs (Output)
+LendingPad (Full Doc Prep)
+AI-READY FOUNDATION - Schema · Event Stream · API Stubs · Feedback Loop
+Mortgage Examination Intelligence Platform
+
+ppt/slides/slide7.xml
+Core Platform Components
+Document Ingestion Pipeline
+1
+Handles PDF text extraction, OCR fallback for scanned documents, multi-document PDF splitting, and AI-based document type classification. Classifies each document as Note, Deed of Trust, Title Commitment (Schedules A/B/C), Survey, Closing Instructions, or Rider before extraction begins.
+AI Extraction Engine
+2
+LLM-backed extraction service processing approximately 140 defined data fields across all six document types. Per-document-type prompts return structured JSON with confidence scores per field. Handles Note, DOT, Title Commitment, Survey, Closing Instructions, and Rider extraction in a coordinated pass. Lender code lookup auto-populates lender-specific defaults.
+Business Rules Engine
+3
+Configurable rules covering Note compliance (form type, late charge, grace period), DOT validation (date match, prepared-by, marital status), Title Commitment checks (effective date, title holder, Schedule C lien identification), Home Equity rules (3% fee cap, 80% LTV, owner occupied), and Survey checks. Rules are data, not code - firm staff can update parameters without engineering involvement.
+Data Verification Report
+4
+Configurable rules covering Note compliance (form type, late charge, grace period), DOT validation (date match, prepared-by, marital status), Title Commitment checks (effective date, title holder, Schedule C lien identification), Home Equity rules (3% fee cap, 80% LTV, owner occupied), and Survey checks. Rules are data, not code - firm staff can update parameters without engineering involvement.
+Dynamic Queue Orchestration
+5
+Multi-office, multi-POD routing engine. Queue assignment considers office, loan type, client, and POD availability. Prioritization applies in order: closing date today, rush flag, SLA aging, core client status, FIFO. Only approved staff within the assigned POD can see and claim a file. Manager override for reassignment and rush re-prioritization.
+Legal Assistant QC Workbench
+6
+Split-pane interface: extracted fields on the left grouped by input section, source document on the right. Each field is linked to the page and region it was extracted from. Clicking a field jumps the document view to the relevant highlighted section. Fields are color-coded by status: green (high confidence), amber (low confidence), red (rule violation or mismatch). Legal Assistants work through flagged items, confirm or correct, and every correction is logged as a structured feedback event.
+Supplemental Package Generation
+7
+ClosingExpress wrapper service calls the generation engine with the completed field set. Template selection is determined by loan type, purpose, and lender code. The generated supplemental package is captured and stored in EDM.
+Client Portal
+8
+Authenticated lender-facing portal supporting all five submission types. Real-time order status visible from submission through release. Supplemental package available for download immediately on release, with option to forward directly to title or settlement agent.
+
+ppt/slides/slide8.xml
+Scope of the Engagement
+✓  IN SCOPE
+✗  OUT OF SCOPE
+Five submission type intake portal (New Order, Redraw, Trust Review, Supplemental Upload, Full Doc Prep redirect)
+Document ingestion pipeline - PDF extraction, OCR fallback, document classification
+AI extraction engine - ~140 fields across 6 document types with confidence scoring
+Business rules engine - Note, DOT, Title, Survey, HE, Rider rules, configurable without deployment
+Data Verification Report - cross-document comparison, mismatch flagging
+Dynamic queue - multi-office, multi-POD, rules-based prioritization
+SLA monitoring and alerting - 1-hour queue, 2-hour SLA, 30-minute inactivity alerts
+Legal Assistant QC Workbench - split-pane PDF highlighting, click-through verification
+Supplemental package generation - ClosingExpress wrapper service
+Release workflow - delivery to lender portal, API, or forwarded to title
+Client portal - authenticated submission, status tracking, release download
+Operational and SLA reporting suite
+Sage accounting integration - AR reconciliation
+LoanTrack data migration - open orders, lender master, 90-day history
+Document retention policy per lender - enforced automatically
+AI-ready platform foundation - schema, event stream, API stubs, feedback loop
+Knowledge transfer and full operational documentation
+AI model development and implementation (platform is AI-ready, not AI-activated)
+EDM replacement
+SecureDocs
+ replacement
+CRM / Lender Profiles (Salesforce-equivalent capabilities)
+HMDA data integration (FFIEC)
+Messaging replacing Outlook / internal email platform
+Text messaging to loan officers
+Mobile access for sales team
+MBA weekly applications survey integration
+Full Document Preparation engine (
+LendingPad
+ redirect link only)
+Agreement generation and e-signature for client onboarding
+Hardware procurement and infrastructure costs
+Post go-live BAU support (separate engagement)
+Staffing prediction modelling
+
+ppt/slides/slide9.xml
+Tier 2 - Post-MVP
+Nice-to-Have Enhancements
+01
+Client Portal Messaging
+Direct messaging to assigned staff member, manager, or attorney group from within the portal.
+02
+API Embedding
+API embedding of portal in lender's own system.
+03
+Staffing Prediction
+Staffing prediction based on historical volume and MBA weekly applications data.
+04
+YTD / MTD Comparison Reporting
+YTD/MTD comparison reporting to prior year.
+05
+New Client Onboarding Workflow
+New client onboarding workflow and first-file notification automation.
+06
+Production Breakdown by Loan Type
+Production breakdown by loan type.
+
+ppt/slides/slide10.xml
+Delivery & Transition Strategy
+Phase 1  |  Sprints 0 – 4 · 10 Weeks
+Deploys the orchestration layer alongside existing system
+LoanTrack
+ and 
+ClosingExpress
+ continue operating unchanged
+Select 3–5 lenders from the top 45 lenders are 
+piloted on the new intake flow while the remainder continue on 
+JetDocs
+Phase 2  |  Sprints 5 – 10 · 12 Weeks
+Runs the new modern platform in parallel with 
+LoanTrack
+All active orders, lender master records, and 90-day transaction history migrate
+Phase 3  |  Sprints 11 – 15 · 8 Weeks
+Migrates all 300 lenders to the new intake portal with advance communication and a structured onboarding window.
+ClosingExpress
+ is retained as a backend generation engine behind the new wrapper service before eventual decommission.
+SPRINT GATES
+Sprint 5 Gate
+LoanTrack migration scope confirmed. Full schema analysis complete. If migration complexity exceeds estimate, scope is adjusted before Phase 2 build commits. No surprise mid-delivery.
+DATA MIGRATION STRATEGY
+Active orders and open transactions
+Fully migrated
+Lender master records and per-lender configuration (lender codes, closing conditions, trustee defaults)
+Fully migrated
+Last 90 days of closed transactions
+Migrated for continuity
+Historical data older than 90 days
+Archived in read-only queryable store
+Sprint 11 Gate
+ClosingExpress complexity confirmed. Template inventory complete. Wrapper approach validated as viable. If constraints are identified, Phase 3 plan is adjusted before build begins.
+
+ppt/slides/slide11.xml
+AI-Assisted Engineering Delivery Model
+"AI generates. Engineers direct, validate, and own. Every sprint, every service."
+AI tooling accelerates engineering throughput. It does not replace architecture judgment, security review, or QA gates. The team is sized based on effective output, not headcount - AI productivity uplift of 25–35% on development tasks is built into the team composition and timeline. This is what makes a 6.5-person team credible for a program of this scope over 30 weeks.
+10-DAY SPRINT PATTERN
+Days 1–2
+Define service contracts
+Engineer defines API contracts, data model, business rules. Architect reviews. BA confirms acceptance criteria.
+Day 3
+AI generates first draft
+AI generates service implementation, test suite, and API documentation from defined contracts.
+Days 4–7
+Engineer reviews and refines
+Engineer reviews all AI output, validates against contracts, refines edge cases, integrates with platform.
+Days 8–9
+QA tests
+QA runs integration tests, validates AI-generated test coverage, performs regression on affected services.
+Day 10
+Deploy to staging
+DevOps promotes build to staging. Sprint demo. Stakeholder sign-off. ADR documented.
+GOVERNANCE GATES ON AI OUTPUT
+→
+Architecture review - all AI-generated components reviewed by Tech Lead before integration
+→
+Security gate - every service handling PII undergoes explicit security review before staging
+→
+Human QA mandatory - no AI-generated code ships without engineer sign-off and test coverage confirmed
+→
+Prompt library - all extraction prompts versioned, documented, and handed to BM&G at program close
+
+ppt/slides/slide12.xml
+Delivery Team & Governance Model
+The delivery team is structured for continuity across all three phases. No sudden ramp-ups or ramp-downs. 
+The same people who make the Sprint 0 architecture decisions are present at the Sprint 15 go-live.
+Role
+#
+Duration (in weeks)
+Allocation
+Primary Responsibility
+Project Manager
+1
+30
+Full Time
+Project governance, coordination, and delivery management
+Tech Lead / Architect
+0.5
+30 
+Part-time
+Architecture decisions, integration design, AI extraction prompting, Sprint gate sign-off
+Senior Full Stack Engineer
+1
+30 
+Full-time
+Platform build, extraction service, rules engine, queue backend
+Mid-Level Full Stack Engineer
+1
+30 
+Full-time
+Backend services, data migration, lender code lookup, integrations
+Senior React Developer
+1
+30 
+Full-time
+QC Workbench, client portal, ops dashboards, all frontend surfaces
+Senior Business Analyst
+1
+30 
+Full-time
+Rules definition workshops, UAT, change management, reporting requirements
+Senior QA Engineer
+1
+30 
+Full-time
+Extraction accuracy validation, integration testing, regression, performance
+DevOps Engineer
+0.5
+30 
+Part-time
+On-prem infrastructure, CI/CD, security hardening, cutover execution
+Vendor Investment
+The Tech Lead / Architect is absorbed at vendor cost. This role owns all architecture decisions from Sprint 0 through Sprint 15 - AI extraction prompt design, integration patterns, security architecture, Sprint gate sign-off. Its presence throughout the program is the control that makes AI-assisted delivery safe.
+GOVERNANCE CADENCE
+Sprint planning
+: beginning of each 2-week sprint - backlog prioritization, capacity confirmation, dependency check
+Sprint demo
+: end of each sprint - working software demonstrated to client stakeholders, not slide updates
+Sprint gate reviews
+: Sprint 5 and Sprint 11 - formal go/no-go before Phase 2 and Phase 3 respectively
+Weekly status
+: async written update - sprint progress, risks, decisions required, blockers
+Escalation path
+: any risk that cannot be resolved within the sprint surfaces to client sponsor within 48 hours
+
+ppt/slides/slide13.xml
+Proposed Technology Stack
+The technology choices below reflect four constraints specific to this program: on-premises deployment requirement, a team of senior generalist engineers (not specialists per technology), AI-assisted delivery accelerating the build, and the need for the firm to own and maintain the platform after handover without ongoing vendor dependency.
+Layer
+Technology
+Client Portal
+React ·  Next.js ·  Tailwind CSS  ·  PDF.js
+Backend Services
+.NET 8 (C#)  ·  ASP.NET Core Web API  ·  SQL Server 2022
+Messaging & Orchestration
+Azure Service Bus
+AI Extraction & Rules
+Azure Document Intelligence  ·  LLM API  ·  LangChain.NET  ·  Custom Rules Engine (.NET)
+Infrastructure
+Docker + Docker Compose  ·  Azure DevOps  ·  Azure Active Directory
+Integrations
+EDM API  ·  SecureDocs API  ·  Sage 50 API  ·  ClosingExpress wrapper  ·  LendingPad redirect
+
+ppt/slides/slide14.xml
+Assumptions, Dependencies & Exclusions
+Key Assumptions
+BM&G SPOC is available for structured knowledge transfer sessions throughout Phase 1 and Phase 2. This covers 
+JetDocs
+ web service behaviour, 
+LoanTrack
+ database schema, 
+ClosingExpress
+ template logic, and EDM interface.
+Sample closing packages - minimum one per loan type (Conventional, FHA, VA, Home Equity, Purchase, Refi) - are provided before Sprint 1 begins. These are required to develop and validate the AI extraction service.
+The ‘BMG Help File’ referenced in the examination process spreadsheet as the source for fees and survey exceptions is clarified in Sprint 0 - whether it is a static lookup, a per-lender configuration, or a calculated value.
+Client stakeholders - Legal Assistants, ops team, and accounting - are available for UAT at defined sprint intervals. 
+Key Dependencies
+ClosingExpress
+ has an accessible integration surface for the wrapper approach. Confirmed during Sprint 3 discovery.
+LoanTrack
+ database is accessible at schema level for migration scoping. Required by Sprint 5 gate.
+Exclusions
+The following items are explicitly excluded from this engagement. They may be addressed in future phases or separate engagements:
+CRM / Lender Profiles (Salesforce-equivalent sales enablement)
+HMDA data integration (FFIEC data pull)
+Post go-live BAU support
+ClosingExpress
+ full engine replacement (wrapper approach retains generation engine as backend)
+
+ppt/slides/slide15.xml
+Thank You
+
+ppt/slides/slide16.xml
+Proposed Technology Stack  (Detailed)
+Layer
+Technology
+Role & Rationale
+Client Portal
+React 18
+Frontend framework - component-based, maintainable
+Next.js 14
+SSR/SSG for authenticated portal pages, API routes
+Tailwind CSS
+Utility-first styling - consistent, rapid UI development
+React Query
+Server state management, caching, background sync
+PDF.js
+In-browser PDF rendering for document viewer in QC Workbench
+Platform Core
+.NET 8 (C#)
+Primary backend runtime - cross-platform, mature, strong async support
+ASP.NET Core Web API
+REST API layer - all platform services exposed via typed API contracts
+Entity Framework Core
+ORM for SQL Server - migrations, typed queries, audit logging
+SQL Server 2022
+Primary relational store - transactions, lender master, extraction results
+Azure Service Bus
+Message bus for event-driven intake-to-queue orchestration
+AI Extraction & Rules
+Azure Document Intelligence
+OCR and layout extraction - handles scanned PDFs, table detection
+LLM API
+Field extraction via structured prompting - returns typed JSON per document
+Custom Rules Engine (.NET)
+Configurable business rules - Note, DOT, Title, HE, Survey, Riders
+LangChain.NET
+Orchestration layer for multi-step extraction pipeline and prompt management
+Infrastructure
+Docker + Docker Compose
+Containerized services - consistent dev/staging/prod environments on-prem
+Azure DevOps
+CI/CD pipeline - build, test, deploy on every sprint merge
+Azure Active Directory
+Authentication - SSO, role-based access, integrates with existing AD
+Integrations
+EDM API
+Document store - read/write documents against existing EDM interface
+SecureDocs API
+Output delivery - supplemental package dispatch to client portal
+Sage 50 API / CSV export
+AR reconciliation - order creation triggers AR invoice in Sage
+ClosingExpress wrapper
+Generation engine - .NET service wrapper calls ClosingExpress for package generation
+LendingPad redirect
+Full Document Preparation - URL redirect only, no integration required
+
+ppt/slides/slide17.xml
+Delivery Roadmap  -  30 Weeks · 15 Sprints · 3 Phases
+PHASE 1 - Automate  ·  Sprints 0–4  ·  10 Weeks
+PHASE 2 - Modernize Core  ·  Sprints 5–10  ·  12 Weeks
+PHASE 3 - Complete Retirement  ·  Sprints 11–15  ·  8 Weeks
+Five-type intake automation  
+·  MS Access retired  ·  Multi-POD queue live  ·  SLA monitoring active  ·  Exception routing live  ·  Ops dashboard  ·  Pilot: top 45 lenders
+AI extraction service  
+·  LoanTrack replaced  ·  Rules engine live  ·  Data verification report  ·  Silverlight retired  ·  Sage integrated  ·  Sprint 5 gate: migration scope
+Legal Assistant QC workbench  
+·  Client portal live  ·  JetDocs retired  ·  ClosingExpress retired  ·  Reporting suite live  ·  300 lenders migrated  ·  Sprint 11 gate: ClosingExpress
+Sprint
+Weeks
+Phase
+Key Deliverable
+Sprint 0
+1–2
+P1
+Discovery complete. Environments live. Five-type intake designed. Rules inventory started.
+Sprint 1
+3–4
+Intake pipeline automated. Five submission types routing correctly.
+Sprint 2
+5–6
+Queue service live. MS Access retired in staging. POD access control working.
+Sprint 3
+7–8
+SLA monitor live. Ops dashboard complete. ClosingExpress discovery complete.
+Sprint 4
+9–10
+Phase 1 go-live. MS Access decommissioned. Top 45 lenders on new intake.
+Sprint 5
+11–12
+P2
+GATE: LoanTrack migration scope confirmed. Platform architecture locked.
+Sprint 6
+13–14
+Document ingestion pipeline live. AI extraction service build starts.
+Sprint 7
+15–16
+Extraction service: Note, DOT, Title Commitment fields complete.
+Sprint 8
+17–18
+Rules engine and Data Verification Report live. Full platform UI complete.
+Sprint 9
+19–20
+UAT complete. Parallel run begins. Sage integration live.
+Sprint 10
+21–22
+LoanTrack cutover. Silverlight retired. New platform is system of record.
+Sprint 11
+23–24
+P3
+GATE: ClosingExpress complexity confirmed. QC Workbench and portal build starts.
+Sprint 12
+25–26
+QC Workbench: split-pane PDF viewer, field highlighting, exception navigation.
+Sprint 13
+27–28
+Client portal complete. Security review done. JetDocs cutover plan ready.
+Sprint 14
+29
+UAT: Legal Assistants and lenders. Change management complete.
+Sprint 15
+29–30
+Full go-live. JetDocs and ClosingExpress retired. Prompt library handed over.
+
+ppt/slides/slide18.xml
+Security, Compliance & Risk Management
+Security Architecture
+The platform handles sensitive mortgage documents including PII, financial data, and legal instruments. Security is not a Phase 3 consideration - it is designed into the platform from Sprint 0.
+On-premises deployment for all platform services. No mortgage data leaves the firm's network boundary.
+Encryption at rest for all documents and extracted data, consistent with existing EDM practices.
+Role-based access control: Legal Assistant, Manager, Ops Lead, Admin, Accounting - each with scoped data access.
+Multi-office, multi-POD access scoping: a Legal Assistant in one POD cannot see files assigned to another POD.
+Full audit trail: every action, every state transition, every field override logged with timestamp and actor ID.
+Client portal: authenticated lender access, penetration testing before go-live, HTTPS, secure document handling.
+Per-lender document retention enforcement: automated deletion per lender-specific policy (1 day to 2 years).
+Risk Register
+Data Extraction Field Complexity
+High
+Sprint 0 discovery workshop maps all extraction targets. Sample packages across all loan types obtained before extraction service build begins.
+LoanTrack Schema Complexity
+High
+Sprint 5 gate: full schema analysis before Phase 2 build commits. Migration scope confirmed or adjusted at gate.
+ClosingExpress Template Logic
+High
+Sprint 3: ClosingExpress behavior documentation and template inventory with John. Sprint 11 gate: wrapper approach confirmed viable.
+John Availability
+High
+Formal knowledge transfer sessions in Sprint 0 and Sprint 5. All findings documented as ADRs. No single-developer dependency in new platform.
+Confidence Threshold Policy
+Medium
+Business decision required before extraction build. Client sets threshold in Sprint 0 workshop. Adjustable post-launch based on production data.
+BM&G SPOC's UAT Availability
+Medium
+UAT windows defined at program start. Legal Assistants, ops team, and accounting aligned to sprint schedule before kick-off.
+Document Format Variability
+Medium
+Sample packages across all 300 lenders not required. Representative set across loan types sufficient. Extraction handles 'unknown' gracefully.
+BMG Help File / Fee Logic
+Medium
+Clarify in Sprint 0 whether fees are static lookup, per-lender config, or calculated. Lender code database export from ClosingExpress required.

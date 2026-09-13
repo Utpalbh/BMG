@@ -1,0 +1,21 @@
+{
+  "executionMode": "Simulated",
+  "metadata": {
+    "lenderCode": "LND003",
+    "loanNumber": "BMG-POC-000003",
+    "borrowerName": "Avery Reed and Riley Reed",
+    "propertyAddress": "303 Sandbox Court, Example Springs, TX 75003",
+    "closingDate": "2026-09-24",
+    "loanType": "VA",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "documentTypes": {
+    "doc-001": "Note",
+    "doc-002": "DeedOfTrust",
+    "doc-003": "TitleCommitment",
+    "doc-004": "Survey",
+    "doc-005": "ClosingInstructions",
+    "doc-006": "Rider"
+  }
+}

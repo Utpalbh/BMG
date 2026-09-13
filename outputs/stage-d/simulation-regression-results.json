@@ -1,0 +1,115 @@
+{
+  "stage": "B",
+  "executionMode": "Simulated",
+  "azureCallsMade": false,
+  "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\test-runs\\acceptance-20260911-184701-4ef792",
+  "tests": [
+    {
+      "name": "five_happy_submissions",
+      "passed": true,
+      "seconds": 1.75
+    },
+    {
+      "name": "completion_marker_gate",
+      "passed": true,
+      "seconds": 0.719
+    },
+    {
+      "name": "partial_copy_repair",
+      "passed": true,
+      "seconds": 1.031
+    },
+    {
+      "name": "duplicate_replay",
+      "passed": true,
+      "seconds": 1.656
+    },
+    {
+      "name": "same_revision_conflict",
+      "passed": true,
+      "seconds": 1.485
+    },
+    {
+      "name": "explicit_new_revision",
+      "passed": true,
+      "seconds": 1.594
+    },
+    {
+      "name": "crash_after_Uploaded",
+      "passed": true,
+      "seconds": 1.171
+    },
+    {
+      "name": "crash_after_Persisted",
+      "passed": true,
+      "seconds": 1.407
+    },
+    {
+      "name": "crash_after_Returned",
+      "passed": true,
+      "seconds": 1.172
+    },
+    {
+      "name": "transient_retry_after_restart",
+      "passed": true,
+      "seconds": 1.281
+    },
+    {
+      "name": "bounded_durable_retries",
+      "passed": true,
+      "seconds": 4.484
+    },
+    {
+      "name": "missing_required_metadata",
+      "passed": true,
+      "seconds": 0.703
+    },
+    {
+      "name": "invalid_calendar_date",
+      "passed": true,
+      "seconds": 0.672
+    },
+    {
+      "name": "answer_labels_rejected",
+      "passed": true,
+      "seconds": 0.438
+    },
+    {
+      "name": "path_traversal_rejected",
+      "passed": true,
+      "seconds": 0.422
+    },
+    {
+      "name": "unknown_class_exception",
+      "passed": true,
+      "seconds": 0.562
+    },
+    {
+      "name": "windows_powershell_utf8_bom",
+      "passed": true,
+      "seconds": 0.609
+    },
+    {
+      "name": "snapshot_integrity_on_restart",
+      "passed": true,
+      "seconds": 0.844
+    },
+    {
+      "name": "duplicate_json_property_rejected",
+      "passed": true,
+      "seconds": 0.36
+    },
+    {
+      "name": "simulation_requires_explicit_fixture",
+      "passed": true,
+      "seconds": 0.421
+    },
+    {
+      "name": "watcher_and_single_worker_lock",
+      "passed": true,
+      "seconds": 0.969
+    }
+  ],
+  "passed": 21,
+  "failed": 0
+}

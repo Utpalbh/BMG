@@ -1,0 +1,20 @@
+PAGE 1
+DEED OF TRUST
+Synthetic security instrument
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000001
+Instrument Date:
+2026-09-10
+Grantor/Borrower:
+Jordan Parker and Casey Parker
+Beneficiary/Lender:
+Example Community Bank
+Property Address:
+101 Prototype Lane, Sampletown, TX 75001
+Original Principal:
+$275,000.00
+County:
+Travis
+This synthetic deed of trust grants a security interest solely for proof-of-concept testing.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

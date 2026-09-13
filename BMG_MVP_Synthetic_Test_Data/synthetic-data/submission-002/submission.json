@@ -1,0 +1,38 @@
+{
+  "submissionId": "submission-002",
+  "correlationId": "POC-CORR-0002",
+  "source": "JetDocs-PoC-Simulated",
+  "submissionType": "Examination",
+  "documents": [
+    {
+      "fileName": "note.pdf",
+      "documentType": "Note",
+      "sha256": "9735d2e8fe6361e0f571b6df21827411676f9ffb05cd79fa49a2fcb53e10f1dc"
+    },
+    {
+      "fileName": "deed-of-trust.pdf",
+      "documentType": "DeedOfTrust",
+      "sha256": "c1b6c9fcda6e56aa4373771d28e2fd5f1baaf9ff8f9ab66fe1e0e7b560f17eb6"
+    },
+    {
+      "fileName": "title-commitment.pdf",
+      "documentType": "TitleCommitment",
+      "sha256": "1d6810f62d55646b2e6de2e00f412dc3019c0c354e44c17b984f6f4bb54f6cee"
+    },
+    {
+      "fileName": "survey.pdf",
+      "documentType": "Survey",
+      "sha256": "20523dac7397d7b7af6f5f82d3ce113e11a54ea8664c55b82e4fa3aed634a088"
+    },
+    {
+      "fileName": "closing-instructions.pdf",
+      "documentType": "ClosingInstructions",
+      "sha256": "417548a70ba1dcd85683981fbbfd523e5b3934341ae8eef96b07cb5902f7078d"
+    },
+    {
+      "fileName": "rider.pdf",
+      "documentType": "Rider",
+      "sha256": "3153eed0d9840f1ec2a9aeb7e7904d8fbae6da164029fae3a5c0fdfa6b6ced3d"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "executionMode": "AzureDocuments",
+  "status": "LayoutRead",
+  "apiVersion": "2024-11-30",
+  "files": [
+    {
+      "documentId": "doc-001",
+      "sha256": "8ca64fc2b0e0caf6f09bd4b19ae8c7e33a7653f3919b5addb6ecc8888fe59978",
+      "pages": 2,
+      "characters": 1322,
+      "modelId": "prebuilt-layout",
+      "evidenceFile": "ai/doc-001-layout.json"
+    }
+  ],
+  "llmPerformed": false,
+  "cosmosWritten": false,
+  "finalResultReturned": false
+}

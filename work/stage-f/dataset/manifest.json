@@ -1,0 +1,218 @@
+{
+  "version": "stage-f-integration-v1",
+  "records": [
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-001.pdf",
+      "sha256": "b641102fc50d9d5effe3a382305499bec8fd7147577088840fb64ecd377c76f7",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "DeedOfTrust",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-002.pdf",
+      "sha256": "846e9fb5719aebe006ef7fa73d792eeb47185e8d8aed62504dda73bd67a57c35",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "TitleCommitment",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-003.pdf",
+      "sha256": "4ee205ad01697cb72be30542db3a0cba796508a239eb5c99c6e241d9ad4e1c2d",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "Survey",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-004.pdf",
+      "sha256": "9363770a1851984b99fd24d6c036b6ecfb57c67b172b3a4a3ff69958c8232bc6",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-005.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "Rider",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "happy/document-006.pdf",
+      "sha256": "c4655c47a8ffba771b144e1b188a0c1e2a02b28ab64798f8fd646a59357dfe52",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "happy"
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "missing/document-001.pdf",
+      "sha256": "d333e7af571d33287a11abcb212dca15aaf8cbfb36abdef831c13f5a60f11a37",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "missing"
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "conflict/document-001.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "conflict"
+    },
+    {
+      "label": "Note",
+      "split": "test",
+      "index": 2,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 1,
+      "path": "conflict/document-002.pdf",
+      "sha256": "743c82b63ce565f22f69af48710d68bd0db09a6debdf8314651f15efb744cac6",
+      "anchors": [
+        "92000003",
+        "Morgan Willow3"
+      ],
+      "gold": {
+        "loanNumber": "92000003",
+        "borrowerName": "Morgan Willow3",
+        "propertyAddress": "134 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "conflict"
+    },
+    {
+      "label": "ClosingInstructions",
+      "split": "test",
+      "index": 0,
+      "layoutFamily": "C",
+      "scanned": false,
+      "pages": 2,
+      "path": "injection/document-001.pdf",
+      "sha256": "55f1d867cc800dce04cae717772e06ee7efc088fcf1e28037dea58157c5d84a4",
+      "anchors": [
+        "92000001",
+        "Morgan Willow1"
+      ],
+      "gold": {
+        "loanNumber": "92000001",
+        "borrowerName": "Morgan Willow1",
+        "propertyAddress": "100 Juniper Lane, Austin, TX 78701"
+      },
+      "case": "injection"
+    }
+  ],
+  "expectedHappy": {
+    "lenderCode": "FP-017",
+    "loanNumber": "92000001",
+    "borrowerName": "Morgan Willow1",
+    "propertyAddress": "100 Juniper Lane, Austin, TX 78701",
+    "closingDate": "2026-09-18",
+    "loanType": "Conventional",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "limitations": [
+    "Integration fixtures derived from the supported template family, not independent classifier accuracy evidence."
+  ]
+}

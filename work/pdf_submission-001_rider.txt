@@ -1,0 +1,18 @@
+PAGE 1
+CONDOMINIUM RIDER
+Synthetic rider
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000001
+Rider Type:
+Condominium
+Borrower(s):
+Jordan Parker and Casey Parker
+Property:
+101 Prototype Lane, Sampletown, TX 75001
+Document Date:
+2026-09-10
+Lender:
+Example Community Bank
+This rider modifies the synthetic mortgage instrument solely for test-data purposes.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "d86f5a6215a823f82ab696c531594b575cf5a1fbcc3d464b3674a3feb2cde9eb",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Survey",
+    "confidence": 0.777,
+    "pages": 1,
+    "accepted": false
+  }
+]

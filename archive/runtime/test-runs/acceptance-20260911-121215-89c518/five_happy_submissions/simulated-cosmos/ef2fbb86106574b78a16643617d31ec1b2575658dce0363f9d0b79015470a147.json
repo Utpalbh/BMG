@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "happy-3",
+  "revision": 1,
+  "status": "Validated",
+  "metadata": {
+    "lenderCode": "LND003",
+    "loanNumber": "BMG-POC-000003",
+    "borrowerName": "Avery Reed and Riley Reed",
+    "propertyAddress": "303 Sandbox Court, Example Springs, TX 75003",
+    "closingDate": "2026-09-24",
+    "loanType": "VA",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: LND003",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: BMG-POC-000003",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Avery Reed and Riley Reed",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 303 Sandbox Court, Example Springs, TX 75003",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 2026-09-24",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: VA",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Purchase",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [],
+  "executionMode": "Simulated"
+}

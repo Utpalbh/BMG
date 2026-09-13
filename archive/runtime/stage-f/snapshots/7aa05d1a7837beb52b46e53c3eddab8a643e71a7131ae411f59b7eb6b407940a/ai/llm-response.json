@@ -1,0 +1,102 @@
+{
+  "choices": [
+    {
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "protected_material_code": {
+          "detected": false,
+          "filtered": false
+        },
+        "protected_material_text": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "annotations": [],
+        "content": "{\u0022candidates\u0022:[{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022lenderCode\u0022,\u0022value\u0022:\u0022LENDER CODE\\nFP-017\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022LENDER CODE\\nFP-017\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022lenderCode\u0022,\u0022value\u0022:\u0022LENDER CODE\\nFP-017\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022LENDER CODE\\nFP-017\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022loanNumber\u0022,\u0022value\u0022:\u0022LOAN NUMBER\\n92000001\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022LOAN NUMBER\\n92000001\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022loanNumber\u0022,\u0022value\u0022:\u0022LOAN NUMBER\\n92000001\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022LOAN NUMBER\\n92000001\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022borrowerName\u0022,\u0022value\u0022:\u0022BORROWER\\nMorgan Willow1\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022BORROWER\\nMorgan Willow1\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022borrowerName\u0022,\u0022value\u0022:\u0022BORROWER\\nMorgan Willow1\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022BORROWER\\nMorgan Willow1\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022propertyAddress\u0022,\u0022value\u0022:\u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022propertyAddress\u0022,\u0022value\u0022:\u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022PROPERTY ADDRESS\\n100 Juniper Lane, Austin, TX 78701\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022closingDate\u0022,\u0022value\u0022:\u0022CLOSING DATE\\nSeptember 18, 2026\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022CLOSING DATE\\nSeptember 18, 2026\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022closingDate\u0022,\u0022value\u0022:\u0022CLOSING DATE\\nSeptember 18, 2026\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022CLOSING DATE\\nSeptember 18, 2026\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022loanType\u0022,\u0022value\u0022:\u0022LOAN TYPE\\nConventional\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022LOAN TYPE\\nConventional\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022loanType\u0022,\u0022value\u0022:\u0022LOAN TYPE\\nConventional\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022LOAN TYPE\\nConventional\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022purpose\u0022,\u0022value\u0022:\u0022PURPOSE\\nPurchase\u0022,\u0022page\u0022:1,\u0022quote\u0022:\u0022PURPOSE\\nPurchase\u0022},{\u0022documentId\u0022:\u0022doc-001\u0022,\u0022field\u0022:\u0022purpose\u0022,\u0022value\u0022:\u0022PURPOSE\\nPurchase\u0022,\u0022page\u0022:2,\u0022quote\u0022:\u0022PURPOSE\\nPurchase\u0022}]}",
+        "refusal": null,
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1789278736,
+  "id": "chatcmpl-ENXQOfzPhuXcxzwnH0VSB3FAEXQTi",
+  "model": "gpt-5-mini-2025-08-07",
+  "object": "chat.completion",
+  "prompt_filter_results": [
+    {
+      "prompt_index": 0,
+      "content_filter_results": {
+        "hate": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "jailbreak": {
+          "detected": false,
+          "filtered": false
+        },
+        "self_harm": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "sexual": {
+          "filtered": false,
+          "severity": "safe"
+        },
+        "violence": {
+          "filtered": false,
+          "severity": "safe"
+        }
+      }
+    }
+  ],
+  "routing": {
+    "serving_pipereplica": "d20260818152517-5ea122a3-default-r0-dp0-default"
+  },
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 1007,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 448,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 41,
+      "engine_ttlt_ms": 6926,
+      "pre_inference_ms": 215,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 381,
+      "service_ttlt_ms": 7258,
+      "user_visible_ttft_ms": 166
+    },
+    "prompt_tokens": 785,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "total_tokens": 1792
+  }
+}

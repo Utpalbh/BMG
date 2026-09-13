@@ -1,0 +1,22 @@
+{
+  "storagePublicNetworkAccess": "Disabled",
+  "networkAcls": {
+    "ipv6Rules": [],
+    "resourceAccessRules": [],
+    "bypass": "None",
+    "virtualNetworkRules": [],
+    "ipRules": [],
+    "defaultAction": "Deny"
+  },
+  "removedTemporaryRoleAssignments": [
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/ba0bcb98-e526-48cf-a30f-d9f082c84cea",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/5a570de2-6877-449c-af61-ebd92fb100cf",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/dfa61079-4529-4ca5-b05d-ae386624f32e",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/e41ee554-a9eb-47ff-92ab-9095bff4cc79",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/9bff482e-469a-40ea-aab2-dd2035a64992",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/ef3992a9-086c-4a9a-87a8-5fcee2ed9d5d",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/training/providers/Microsoft.Authorization/roleAssignments/6b66e868-00f9-4440-928d-5aafb0cf4092",
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/abcfc018-a862-4909-8f9b-0f7e3afcabf3"
+  ],
+  "verifiedUtc": "2026-09-11T18:48:43.090147+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-f-conflict-001",
+  "revision": 1,
+  "digest": "823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-13T05:52:59.7964857+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-conflict-001/r1/823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a/document-001.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "etag": "\u00220x8DF115B39D9EF13\u0022",
+      "length": 3686,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-conflict-001/r1/823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a/document-002.pdf",
+      "sha256": "f8474ba3bf935b0164a21a1db83a588ee196677f5f2878feafd95b5ac1988900",
+      "etag": "\u00220x8DF115B3EF1CB10\u0022",
+      "length": 2190,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-conflict-001/r1/823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a/submission.json",
+      "sha256": "823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a",
+      "etag": "\u00220x8DF115B4310E643\u0022",
+      "length": 524,
+      "reused": false
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

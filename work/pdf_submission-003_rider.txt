@@ -1,0 +1,18 @@
+PAGE 1
+VA RIDER
+Synthetic rider
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000003
+Rider Type:
+VA
+Borrower(s):
+Avery Reed and Riley Reed
+Property:
+303 Sandbox Court, Example Springs, TX 75003
+Document Date:
+2026-09-12
+Lender:
+Sample Lending Group
+This rider modifies the synthetic mortgage instrument solely for test-data purposes.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

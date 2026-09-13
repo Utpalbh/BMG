@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "happy-5",
+  "revision": 1,
+  "status": "Validated",
+  "metadata": {
+    "lenderCode": "LND005",
+    "loanNumber": "BMG-POC-000005",
+    "borrowerName": "Skyler Bennett and Drew Bennett",
+    "propertyAddress": "505 Validation Road, Fiction Hills, TX 75005",
+    "closingDate": "2026-09-26",
+    "loanType": "Conventional",
+    "purpose": "Refinance",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: LND005",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: BMG-POC-000005",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Skyler Bennett and Drew Bennett",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 505 Validation Road, Fiction Hills, TX 75005",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 2026-09-26",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Conventional",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Refinance",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [],
+  "executionMode": "Simulated"
+}

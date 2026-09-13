@@ -1,0 +1,38 @@
+{
+  "executionMode": "AzureUpload",
+  "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\test-runs\\azure-upload-20260911-184859-edc12d",
+  "passed": 6,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "real_upload_readback_and_duplicate_suppression",
+      "passed": true,
+      "seconds": 63.02
+    },
+    {
+      "name": "crash_after_real_upload_resumes_without_rewriting_blobs",
+      "passed": true,
+      "seconds": 75.3
+    },
+    {
+      "name": "readiness_marker_blocks_cloud_processing",
+      "passed": true,
+      "seconds": 0.59
+    },
+    {
+      "name": "bad_hash_rejected_before_credentials_or_upload",
+      "passed": true,
+      "seconds": 0.58
+    },
+    {
+      "name": "azure_runtime_rejects_simulated_execution",
+      "passed": true,
+      "seconds": 0.64
+    },
+    {
+      "name": "folder_drop_drives_real_unattended_upload",
+      "passed": true,
+      "seconds": 63.09
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "observedSelector": "Server Cert Hash",
+  "clientSubject": "CN=BMG-POC-VPN-Client",
+  "privateConnectionTested": false,
+  "rootMatchesProfile": true,
+  "timestamp": "2026-09-11T13:02:27.6486049Z",
+  "clientThumbprint": "FDD0E943A836DCCE28B36438D41FDD7E5B3C1D57",
+  "localSigningVerified": true,
+  "rootTrustChainCheck": "UntrustedRoot in Windows default trust store; no trust-store change made",
+  "observedSelectedCertificate": "DigiCert Global Root G2",
+  "duplicateClientCertificates": 1,
+  "hasPrivateKey": true
+}

@@ -1,0 +1,20 @@
+{
+  "operationId": "31377231796_34e4479a-8071-40fe-b364-6b6b6b62b3eb",
+  "kind": "documentClassifierBuild",
+  "status": "failed",
+  "createdDateTime": "2026-09-11T14:16:44Z",
+  "lastUpdatedDateTime": "2026-09-11T14:16:46Z",
+  "resourceLocation": "https://di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com/documentintelligence/documentClassifiers/bmg-stage-e-v1?api-version=2024-11-30",
+  "percentCompleted": 100,
+  "error": {
+    "code": "InvalidRequest",
+    "message": "Invalid request.",
+    "details": [
+      {
+        "code": "ContentSourceNotAccessible",
+        "message": "Content is not accessible: Cannot access container URL."
+      }
+    ]
+  },
+  "apiVersion": "2024-11-30"
+}

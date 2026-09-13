@@ -1,0 +1,10 @@
+{"timestampUtc":"2026-09-13T05:51:32.9246333+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Started:AZURE_FULL_FLOW"}
+{"timestampUtc":"2026-09-13T05:51:35.4501282+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-13T05:51:40.4131521+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:51:57.4262759+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:05.6768446+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:12.9924749+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:24.0954635+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"MetadataExtracted","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:24.1377389+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"MetadataValidated","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:28.7339523+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"Persisted","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:29.5163476+00:00","executionMode":"AzureFull","jobId":"7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a","stage":"Returned","outcome":"Checkpoint"}

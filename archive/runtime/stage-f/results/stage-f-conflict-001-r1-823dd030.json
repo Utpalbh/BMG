@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-f-conflict-001",
+  "revision": 1,
+  "status": "ManualException",
+  "metadata": {
+    "lenderCode": "FP-017",
+    "loanNumber": null,
+    "borrowerName": null,
+    "propertyAddress": null,
+    "closingDate": "2026-09-18",
+    "loanType": "Conventional",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "LENDER CODE\nFP-017",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "CLOSING DATE\nSeptember 18, 2026",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "LOAN TYPE\nConventional",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "PURPOSE\nPurchase",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [
+    "loanNumber:Conflict",
+    "loanNumber:Required",
+    "borrowerName:Conflict",
+    "borrowerName:Required",
+    "propertyAddress:Conflict",
+    "propertyAddress:Required"
+  ],
+  "executionMode": "AzureFull"
+}

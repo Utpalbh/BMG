@@ -1,0 +1,5 @@
+
+Region  SKU            Available Quota
+------  ---            --------- -----
+eastus2 GlobalStandard 5000K TPM 0 (none)
+

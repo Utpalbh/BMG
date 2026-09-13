@@ -1,0 +1,13 @@
+{
+  "schemaResultsValidated": 20,
+  "simulationModeExplicit": true,
+  "acceptanceTestsPassed": 21,
+  "acceptanceTestsFailed": 0,
+  "sdk": "10.0.401",
+  "sqlitePackage": "10.0.12",
+  "azcopy": "10.32.7",
+  "azcopySignature": "Valid Microsoft Corporation",
+  "cloudResourcesCreated": false,
+  "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime",
+  "workerLeftRunning": false
+}

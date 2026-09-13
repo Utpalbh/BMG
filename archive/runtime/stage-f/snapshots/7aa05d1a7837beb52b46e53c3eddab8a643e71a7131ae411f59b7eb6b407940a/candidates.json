@@ -1,0 +1,102 @@
+{
+  "candidates": [
+    {
+      "documentId": "doc-001",
+      "field": "lenderCode",
+      "value": "LENDER CODE\nFP-017",
+      "page": 1,
+      "quote": "LENDER CODE\nFP-017"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "lenderCode",
+      "value": "LENDER CODE\nFP-017",
+      "page": 2,
+      "quote": "LENDER CODE\nFP-017"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanNumber",
+      "value": "LOAN NUMBER\n92000001",
+      "page": 1,
+      "quote": "LOAN NUMBER\n92000001"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanNumber",
+      "value": "LOAN NUMBER\n92000001",
+      "page": 2,
+      "quote": "LOAN NUMBER\n92000001"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "borrowerName",
+      "value": "BORROWER\nMorgan Willow1",
+      "page": 1,
+      "quote": "BORROWER\nMorgan Willow1"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "borrowerName",
+      "value": "BORROWER\nMorgan Willow1",
+      "page": 2,
+      "quote": "BORROWER\nMorgan Willow1"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "propertyAddress",
+      "value": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701",
+      "page": 1,
+      "quote": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "propertyAddress",
+      "value": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701",
+      "page": 2,
+      "quote": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "closingDate",
+      "value": "CLOSING DATE\nSeptember 18, 2026",
+      "page": 1,
+      "quote": "CLOSING DATE\nSeptember 18, 2026"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "closingDate",
+      "value": "CLOSING DATE\nSeptember 18, 2026",
+      "page": 2,
+      "quote": "CLOSING DATE\nSeptember 18, 2026"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanType",
+      "value": "LOAN TYPE\nConventional",
+      "page": 1,
+      "quote": "LOAN TYPE\nConventional"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanType",
+      "value": "LOAN TYPE\nConventional",
+      "page": 2,
+      "quote": "LOAN TYPE\nConventional"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "purpose",
+      "value": "PURPOSE\nPurchase",
+      "page": 1,
+      "quote": "PURPOSE\nPurchase"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "purpose",
+      "value": "PURPOSE\nPurchase",
+      "page": 2,
+      "quote": "PURPOSE\nPurchase"
+    }
+  ]
+}

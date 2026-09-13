@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-f-happy-002",
+  "revision": 1,
+  "status": "Validated",
+  "metadata": {
+    "lenderCode": "FP-017",
+    "loanNumber": "92000001",
+    "borrowerName": "Morgan Willow1",
+    "propertyAddress": "100 Juniper Lane, Austin, TX 78701",
+    "closingDate": "2026-09-18",
+    "loanType": "Conventional",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "LENDER CODE\nFP-017",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "LOAN NUMBER\n92000001",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "BORROWER\nMorgan Willow1",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "CLOSING DATE\nSeptember 18, 2026",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "LOAN TYPE\nConventional",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "PURPOSE\nPurchase",
+      "modelId": "bmg-gpt5-mini",
+      "promptVersion": "bmg-extract-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [],
+  "executionMode": "AzureFull"
+}

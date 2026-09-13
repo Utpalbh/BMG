@@ -1,0 +1,48 @@
+{
+  "invoiceMetadata": {
+    "_note": "PLACEHOLDER schema for PoC. Business must confirm final fields and source-document mapping.",
+    "lenderCode": "LND003",
+    "loanNumber": "BMG-POC-000003",
+    "borrowerName": "Avery Reed and Riley Reed",
+    "propertyAddress": "303 Sandbox Court, Example Springs, TX 75003",
+    "closingDate": "2026-09-24",
+    "loanType": "VA",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "sourcePriority": {
+    "lenderCode": [
+      "ClosingInstructions",
+      "Note"
+    ],
+    "loanNumber": [
+      "ClosingInstructions",
+      "Note",
+      "DeedOfTrust",
+      "Rider"
+    ],
+    "borrowerName": [
+      "Note",
+      "DeedOfTrust",
+      "ClosingInstructions"
+    ],
+    "propertyAddress": [
+      "DeedOfTrust",
+      "ClosingInstructions",
+      "Note"
+    ],
+    "closingDate": [
+      "ClosingInstructions"
+    ],
+    "loanType": [
+      "ClosingInstructions",
+      "Note"
+    ],
+    "purpose": [
+      "ClosingInstructions"
+    ],
+    "submissionType": [
+      "submission.json"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "processExitCode": 0,
+  "fallback": "User imports generated XML through Azure VPN Client + / Import",
+  "profileWasCreated": false,
+  "clientLogOutcome": "Unknown arguments : -i bmg-poc-vpn.xml -f",
+  "clientVersion": "4.0.5.0",
+  "attempt": "AzureVpn.exe -i bmg-poc-vpn.xml -f"
+}

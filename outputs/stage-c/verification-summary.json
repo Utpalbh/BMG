@@ -1,0 +1,22 @@
+{
+  "publicAccessRejectionTestsPassed": 5,
+  "intendedExpiry": "2026-09-11T17:29:24.0356458Z",
+  "stage": "C",
+  "checkov": {
+    "failed": 0,
+    "passed": 21,
+    "skipped": 4,
+    "parsingErrors": 0
+  },
+  "azureVpnClientVersion": "4.0.5.0",
+  "privateEndpointsApproved": 5,
+  "status": "Complete",
+  "cloudSessionStart": "2026-09-11T07:29:24.0356458Z",
+  "automaticDeletion": false,
+  "deploymentSucceeded": true,
+  "connectedTestsPassed": 5,
+  "completedAt": "2026-09-11T13:04:49.0503009Z",
+  "vpnClientAddress": "172.28.84.2",
+  "systemAndResolverDnsAgree": true,
+  "vpnLeftConnected": true
+}

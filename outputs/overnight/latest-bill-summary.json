@@ -1,0 +1,77 @@
+{
+  "queriedUtc": "2026-09-12T08:49:17.218583+00:00",
+  "dataMayLag": true,
+  "notFinalInvoice": true,
+  "poc": {
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
+    "timeframe": "Custom",
+    "reportedTotal": 1022.8440324728223,
+    "currencies": [
+      "INR"
+    ],
+    "breakdown": [
+      {
+        "Cost": 2.38865625e-05,
+        "ServiceName": "Azure Cosmos DB",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 459.660791786392,
+        "ServiceName": "Azure DNS",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 0.0,
+        "ServiceName": "Bandwidth",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 107.48953125,
+        "ServiceName": "Foundry Tools",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 0.01232546625,
+        "ServiceName": "Key Vault",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 0.367920327060001,
+        "ServiceName": "Storage",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 360.016677562501,
+        "ServiceName": "VPN Gateway",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 95.2967621940568,
+        "ServiceName": "Virtual Network",
+        "Currency": "INR"
+      }
+    ],
+    "hasMorePages": false
+  },
+  "subscriptionMonthToDate": {
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363",
+    "timeframe": "MonthToDate",
+    "reportedTotal": 1022.92485313477,
+    "currencies": [
+      "INR"
+    ],
+    "breakdown": [
+      {
+        "Cost": 1022.84403247282,
+        "ResourceGroupName": "rg-bmg-poc",
+        "Currency": "INR"
+      },
+      {
+        "Cost": 0.0808206619500002,
+        "ResourceGroupName": "rg-ticketdeflect-poc",
+        "Currency": "INR"
+      }
+    ],
+    "hasMorePages": false
+  }
+}

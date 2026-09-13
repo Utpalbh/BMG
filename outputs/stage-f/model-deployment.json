@@ -1,0 +1,69 @@
+{
+  "etag": "\"e7dd594f-5be4-4409-b6e8-b96551b081ae\"",
+  "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy/deployments/bmg-gpt5-mini",
+  "name": "bmg-gpt5-mini",
+  "properties": {
+    "callRateLimit": null,
+    "capabilities": {
+      "agentsV2": "true",
+      "area": "US",
+      "assistants": "true",
+      "chatCompletion": "true",
+      "responses": "true"
+    },
+    "capacitySettings": null,
+    "currentCapacity": 30,
+    "dynamicThrottlingEnabled": null,
+    "model": {
+      "callRateLimit": null,
+      "format": "OpenAI",
+      "name": "gpt-5-mini",
+      "publisher": null,
+      "source": null,
+      "sourceAccount": null,
+      "version": "2025-08-07"
+    },
+    "parentDeploymentName": null,
+    "provisioningState": "Succeeded",
+    "raiPolicyName": "Microsoft.DefaultV2",
+    "rateLimits": [
+      {
+        "count": 30.0,
+        "dynamicThrottlingEnabled": null,
+        "key": "request",
+        "matchPatterns": null,
+        "minCount": null,
+        "renewalPeriod": 60.0
+      },
+      {
+        "count": 30000.0,
+        "dynamicThrottlingEnabled": null,
+        "key": "token",
+        "matchPatterns": null,
+        "minCount": null,
+        "renewalPeriod": 60.0
+      }
+    ],
+    "scaleSettings": null,
+    "spilloverDeploymentName": null,
+    "versionUpgradeOption": "NoAutoUpgrade"
+  },
+  "resourceGroup": "rg-bmg-poc",
+  "sku": {
+    "capacity": 30,
+    "family": null,
+    "name": "GlobalStandard",
+    "size": null,
+    "tier": null
+  },
+  "systemData": {
+    "createdAt": "2026-09-12T09:47:47.450585+00:00",
+    "createdBy": "utpal.bhattacharjee@outlook.in",
+    "createdByType": "User",
+    "lastModifiedAt": "2026-09-12T09:47:47.450585+00:00",
+    "lastModifiedBy": "utpal.bhattacharjee@outlook.in",
+    "lastModifiedByType": "User"
+  },
+  "tags": null,
+  "type": "Microsoft.CognitiveServices/accounts/deployments"
+}

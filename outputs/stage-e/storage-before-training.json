@@ -1,0 +1,11 @@
+{
+  "publicNetworkAccess": "Disabled",
+  "networkAcls": {
+    "ipv6Rules": [],
+    "resourceAccessRules": [],
+    "bypass": "None",
+    "virtualNetworkRules": [],
+    "ipRules": [],
+    "defaultAction": "Deny"
+  }
+}

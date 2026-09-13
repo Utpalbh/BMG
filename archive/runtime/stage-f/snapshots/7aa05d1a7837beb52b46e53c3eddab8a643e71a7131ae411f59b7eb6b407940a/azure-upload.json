@@ -1,0 +1,26 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-f-watch-001",
+  "revision": 1,
+  "digest": "7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-13T05:51:57.4149463+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-watch-001/r1/7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a/document-001.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "etag": "\u00220x8DF115B1943B72B\u0022",
+      "length": 3686,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-watch-001/r1/7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a/submission.json",
+      "sha256": "7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a",
+      "etag": "\u00220x8DF115B1DCB34E1\u0022",
+      "length": 351,
+      "reused": false
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

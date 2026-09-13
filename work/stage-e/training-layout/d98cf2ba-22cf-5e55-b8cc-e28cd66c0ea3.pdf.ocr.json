@@ -1,0 +1,2515 @@
+{
+  "status": "succeeded",
+  "createdDateTime": "2026-09-11T14:10:36Z",
+  "lastUpdatedDateTime": "2026-09-11T14:10:40Z",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-layout",
+    "stringIndexType": "textElements",
+    "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION\nGARDEN CLUB MINUTES\nReference\n71000007\nVisitor\nAvery Cedar7\nLocation\nFictional Community Center\nDate\nSeptember 11, 2026\nRecord status\nConfirmed\nActivity details\nReference record for local community services. Keep this copy for your records. Items and attendance were checked by the service desk. Please contact the coordinator for questions about dates and opening hours.\nAuthorized representative:\nDate:\nSynthetic only | Page 1 of 1 | No legal effect",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "angle": -0.11720000207424164,
+        "width": 8.5,
+        "height": 11,
+        "unit": "inch",
+        "words": [
+          {
+            "content": "BMG",
+            "polygon": [
+              0.5918,
+              0.4087,
+              0.8887,
+              0.4077,
+              0.8884,
+              0.5535,
+              0.5916,
+              0.5536
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 0,
+              "length": 3
+            }
+          },
+          {
+            "content": "SYNTHETIC",
+            "polygon": [
+              0.9318,
+              0.4076,
+              1.6335,
+              0.4046,
+              1.633,
+              0.5514,
+              0.9314,
+              0.5532
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 4,
+              "length": 9
+            }
+          },
+          {
+            "content": "TEST",
+            "polygon": [
+              1.6695,
+              0.4045,
+              1.9808,
+              0.4038,
+              1.9803,
+              0.5504,
+              1.6689,
+              0.5513
+            ],
+            "confidence": 0.991,
+            "span": {
+              "offset": 14,
+              "length": 4
+            }
+          },
+          {
+            "content": "MATERIAL",
+            "polygon": [
+              2.0095,
+              0.4037,
+              2.6729,
+              0.4014,
+              2.6723,
+              0.5482,
+              2.009,
+              0.5502
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 19,
+              "length": 8
+            }
+          },
+          {
+            "content": "-",
+            "polygon": [
+              2.7088,
+              0.4013,
+              2.7376,
+              0.4012,
+              2.7369,
+              0.5477,
+              2.7082,
+              0.5479
+            ],
+            "confidence": 0.979,
+            "span": {
+              "offset": 28,
+              "length": 1
+            }
+          },
+          {
+            "content": "NOT",
+            "polygon": [
+              2.7663,
+              0.4012,
+              3.0489,
+              0.4001,
+              3.0481,
+              0.5455,
+              2.7656,
+              0.5475
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 30,
+              "length": 3
+            }
+          },
+          {
+            "content": "FOR",
+            "polygon": [
+              3.0896,
+              0.3999,
+              3.3458,
+              0.3979,
+              3.3447,
+              0.545,
+              3.0888,
+              0.5453
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 34,
+              "length": 3
+            }
+          },
+          {
+            "content": "EXECUTION",
+            "polygon": [
+              3.3866,
+              0.3977,
+              4.1227,
+              0.3931,
+              4.1227,
+              0.5394,
+              3.3854,
+              0.5449
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 38,
+              "length": 9
+            }
+          },
+          {
+            "content": "GARDEN",
+            "polygon": [
+              0.5928,
+              0.8495,
+              1.656,
+              0.8491,
+              1.6552,
+              1.1009,
+              0.5924,
+              1.1017
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 48,
+              "length": 6
+            }
+          },
+          {
+            "content": "CLUB",
+            "polygon": [
+              1.7497,
+              0.8495,
+              2.3973,
+              0.8485,
+              2.3965,
+              1.0962,
+              1.7489,
+              1.1002
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 55,
+              "length": 4
+            }
+          },
+          {
+            "content": "MINUTES",
+            "polygon": [
+              2.4951,
+              0.8487,
+              3.6081,
+              0.845,
+              3.6081,
+              1.0903,
+              2.4944,
+              1.0951
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 60,
+              "length": 7
+            }
+          },
+          {
+            "content": "Reference",
+            "polygon": [
+              0.5936,
+              1.5289,
+              1.2839,
+              1.5287,
+              1.2839,
+              1.6695,
+              0.5931,
+              1.6686
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 68,
+              "length": 9
+            }
+          },
+          {
+            "content": "71000007",
+            "polygon": [
+              2.6093,
+              1.5059,
+              3.308,
+              1.5027,
+              3.307,
+              1.6622,
+              2.609,
+              1.6635
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 78,
+              "length": 8
+            }
+          },
+          {
+            "content": "Visitor",
+            "polygon": [
+              0.5955,
+              1.9204,
+              1.057,
+              1.9214,
+              1.0555,
+              2.0648,
+              0.5946,
+              2.061
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 87,
+              "length": 7
+            }
+          },
+          {
+            "content": "Avery",
+            "polygon": [
+              2.6126,
+              1.9016,
+              3.0143,
+              1.9002,
+              3.0136,
+              2.0732,
+              2.6123,
+              2.076
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 95,
+              "length": 5
+            }
+          },
+          {
+            "content": "Cedar7",
+            "polygon": [
+              3.0628,
+              1.8997,
+              3.5693,
+              1.8937,
+              3.5688,
+              2.0676,
+              3.0621,
+              2.072
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 101,
+              "length": 6
+            }
+          },
+          {
+            "content": "Location",
+            "polygon": [
+              0.6009,
+              2.3112,
+              1.2008,
+              2.3118,
+              1.2005,
+              2.4524,
+              0.6004,
+              2.4504
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 108,
+              "length": 8
+            }
+          },
+          {
+            "content": "Fictional",
+            "polygon": [
+              2.6168,
+              2.2855,
+              3.1882,
+              2.2849,
+              3.1871,
+              2.4558,
+              2.6162,
+              2.4558
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 117,
+              "length": 9
+            }
+          },
+          {
+            "content": "Community",
+            "polygon": [
+              3.2388,
+              2.285,
+              4.0073,
+              2.2826,
+              4.006,
+              2.4548,
+              3.2377,
+              2.4557
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 127,
+              "length": 9
+            }
+          },
+          {
+            "content": "Center",
+            "polygon": [
+              4.0551,
+              2.2823,
+              4.5267,
+              2.2789,
+              4.5267,
+              2.4534,
+              4.0535,
+              2.4546
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 137,
+              "length": 6
+            }
+          },
+          {
+            "content": "Date",
+            "polygon": [
+              0.603,
+              2.6963,
+              0.9242,
+              2.6966,
+              0.9235,
+              2.8344,
+              0.6023,
+              2.8329
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 144,
+              "length": 4
+            }
+          },
+          {
+            "content": "September",
+            "polygon": [
+              2.6139,
+              2.6723,
+              3.3744,
+              2.6694,
+              3.3742,
+              2.843,
+              2.6138,
+              2.8492
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 149,
+              "length": 9
+            }
+          },
+          {
+            "content": "11,",
+            "polygon": [
+              3.4261,
+              2.6696,
+              3.6155,
+              2.6668,
+              3.6153,
+              2.8416,
+              3.4258,
+              2.8425
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 159,
+              "length": 3
+            }
+          },
+          {
+            "content": "2026",
+            "polygon": [
+              3.67,
+              2.6668,
+              4.0176,
+              2.662,
+              4.0176,
+              2.8354,
+              3.6698,
+              2.8408
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 163,
+              "length": 4
+            }
+          },
+          {
+            "content": "Record",
+            "polygon": [
+              0.601,
+              3.0847,
+              1.0825,
+              3.0871,
+              1.0816,
+              3.2326,
+              0.6008,
+              3.233
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 168,
+              "length": 6
+            }
+          },
+          {
+            "content": "status",
+            "polygon": [
+              1.1307,
+              3.0872,
+              1.5439,
+              3.0843,
+              1.5439,
+              3.233,
+              1.1298,
+              3.2325
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 175,
+              "length": 6
+            }
+          },
+          {
+            "content": "Confirmed",
+            "polygon": [
+              2.6198,
+              3.0672,
+              3.3424,
+              3.0659,
+              3.3424,
+              3.2243,
+              2.6194,
+              3.2258
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 182,
+              "length": 9
+            }
+          },
+          {
+            "content": "Activity",
+            "polygon": [
+              0.6047,
+              3.4485,
+              1.2184,
+              3.4524,
+              1.2175,
+              3.6347,
+              0.6041,
+              3.6357
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 192,
+              "length": 8
+            }
+          },
+          {
+            "content": "details",
+            "polygon": [
+              1.2695,
+              3.4523,
+              1.7985,
+              3.4503,
+              1.7985,
+              3.6311,
+              1.2684,
+              3.6341
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 201,
+              "length": 7
+            }
+          },
+          {
+            "content": "Reference",
+            "polygon": [
+              0.6044,
+              3.7883,
+              1.3027,
+              3.7862,
+              1.302,
+              3.9676,
+              0.6037,
+              3.9685
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 209,
+              "length": 9
+            }
+          },
+          {
+            "content": "record",
+            "polygon": [
+              1.3388,
+              3.7862,
+              1.7903,
+              3.7849,
+              1.7894,
+              3.9665,
+              1.3381,
+              3.9675
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 219,
+              "length": 6
+            }
+          },
+          {
+            "content": "for",
+            "polygon": [
+              1.8354,
+              3.7846,
+              2.001,
+              3.7835,
+              2,
+              3.9659,
+              1.8345,
+              3.9663
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 226,
+              "length": 3
+            }
+          },
+          {
+            "content": "local",
+            "polygon": [
+              2.0371,
+              3.7833,
+              2.3682,
+              3.7822,
+              2.3671,
+              3.9653,
+              2.0361,
+              3.9658
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 230,
+              "length": 5
+            }
+          },
+          {
+            "content": "community",
+            "polygon": [
+              2.4193,
+              3.782,
+              3.1537,
+              3.7799,
+              3.153,
+              3.9646,
+              2.4182,
+              3.9652
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 236,
+              "length": 9
+            }
+          },
+          {
+            "content": "services.",
+            "polygon": [
+              3.2019,
+              3.7796,
+              3.7918,
+              3.7759,
+              3.7911,
+              3.9631,
+              3.2012,
+              3.9645
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 246,
+              "length": 9
+            }
+          },
+          {
+            "content": "Keep",
+            "polygon": [
+              3.849,
+              3.7756,
+              4.1801,
+              3.7746,
+              4.1794,
+              3.9618,
+              3.8483,
+              3.9628
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 256,
+              "length": 4
+            }
+          },
+          {
+            "content": "this",
+            "polygon": [
+              4.2162,
+              3.7746,
+              4.4781,
+              3.7742,
+              4.4774,
+              3.9617,
+              4.2155,
+              3.9618
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 261,
+              "length": 4
+            }
+          },
+          {
+            "content": "copy",
+            "polygon": [
+              4.5232,
+              3.7741,
+              4.8453,
+              3.7726,
+              4.8446,
+              3.96,
+              4.5226,
+              3.9617
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 266,
+              "length": 4
+            }
+          },
+          {
+            "content": "for",
+            "polygon": [
+              4.8844,
+              3.7724,
+              5.068,
+              3.7715,
+              5.0673,
+              3.9588,
+              4.8837,
+              3.9598
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 271,
+              "length": 3
+            }
+          },
+          {
+            "content": "your",
+            "polygon": [
+              5.1071,
+              3.7713,
+              5.4081,
+              3.77,
+              5.4074,
+              3.957,
+              5.1064,
+              3.9586
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 275,
+              "length": 4
+            }
+          },
+          {
+            "content": "records.",
+            "polygon": [
+              5.4532,
+              3.7698,
+              5.989,
+              3.7701,
+              5.9884,
+              3.9532,
+              5.4525,
+              3.9568
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 280,
+              "length": 8
+            }
+          },
+          {
+            "content": "Items",
+            "polygon": [
+              6.0522,
+              3.77,
+              6.4134,
+              3.7668,
+              6.4128,
+              3.9507,
+              6.0516,
+              3.9528
+            ],
+            "confidence": 0.963,
+            "span": {
+              "offset": 289,
+              "length": 5
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              6.4585,
+              3.7664,
+              6.7053,
+              3.7653,
+              6.7046,
+              3.9483,
+              6.4579,
+              3.9504
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 295,
+              "length": 3
+            }
+          },
+          {
+            "content": "attendance",
+            "polygon": [
+              6.7565,
+              3.7652,
+              7.5205,
+              3.7653,
+              7.5205,
+              3.9442,
+              6.7558,
+              3.9479
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 299,
+              "length": 10
+            }
+          },
+          {
+            "content": "were",
+            "polygon": [
+              0.6009,
+              4.0485,
+              0.9449,
+              4.0452,
+              0.9446,
+              4.224,
+              0.6005,
+              4.224
+            ],
+            "confidence": 0.99,
+            "span": {
+              "offset": 310,
+              "length": 4
+            }
+          },
+          {
+            "content": "checked",
+            "polygon": [
+              0.9928,
+              4.0448,
+              1.5521,
+              4.0424,
+              1.5519,
+              4.2236,
+              0.9925,
+              4.224
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 315,
+              "length": 7
+            }
+          },
+          {
+            "content": "by",
+            "polygon": [
+              1.606,
+              4.0423,
+              1.7615,
+              4.0412,
+              1.7613,
+              4.2228,
+              1.6057,
+              4.2234
+            ],
+            "confidence": 0.998,
+            "span": {
+              "offset": 323,
+              "length": 2
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              1.8034,
+              4.0409,
+              2.0158,
+              4.0394,
+              2.0155,
+              4.2218,
+              1.8032,
+              4.2226
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 326,
+              "length": 3
+            }
+          },
+          {
+            "content": "service",
+            "polygon": [
+              2.0636,
+              4.0391,
+              2.5392,
+              4.0372,
+              2.539,
+              4.219,
+              2.0634,
+              4.2216
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 330,
+              "length": 7
+            }
+          },
+          {
+            "content": "desk.",
+            "polygon": [
+              2.5871,
+              4.0371,
+              2.9431,
+              4.0362,
+              2.943,
+              4.2178,
+              2.5869,
+              4.2187
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 338,
+              "length": 5
+            }
+          },
+          {
+            "content": "Please",
+            "polygon": [
+              3.0029,
+              4.0361,
+              3.4576,
+              4.0336,
+              3.4576,
+              4.2151,
+              3.0029,
+              4.2177
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 344,
+              "length": 6
+            }
+          },
+          {
+            "content": "contact",
+            "polygon": [
+              3.5054,
+              4.0333,
+              3.999,
+              4.0304,
+              3.9988,
+              4.2121,
+              3.5055,
+              4.2147
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 351,
+              "length": 7
+            }
+          },
+          {
+            "content": "the",
+            "polygon": [
+              4.0379,
+              4.0302,
+              4.2503,
+              4.0293,
+              4.25,
+              4.2111,
+              4.0377,
+              4.2119
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 359,
+              "length": 3
+            }
+          },
+          {
+            "content": "coordinator",
+            "polygon": [
+              4.2981,
+              4.0292,
+              5.0609,
+              4.0252,
+              5.0607,
+              4.2088,
+              4.2979,
+              4.2109
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 363,
+              "length": 11
+            }
+          },
+          {
+            "content": "for",
+            "polygon": [
+              5.0968,
+              4.025,
+              5.2822,
+              4.0243,
+              5.282,
+              4.2082,
+              5.0966,
+              4.2087
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 375,
+              "length": 3
+            }
+          },
+          {
+            "content": "questions",
+            "polygon": [
+              5.3211,
+              4.0242,
+              5.9732,
+              4.0233,
+              5.973,
+              4.2069,
+              5.3208,
+              4.2081
+            ],
+            "confidence": 0.994,
+            "span": {
+              "offset": 379,
+              "length": 9
+            }
+          },
+          {
+            "content": "about",
+            "polygon": [
+              6.0181,
+              4.0233,
+              6.401,
+              4.0217,
+              6.4008,
+              4.2059,
+              6.0179,
+              4.2068
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 389,
+              "length": 5
+            }
+          },
+          {
+            "content": "dates",
+            "polygon": [
+              6.4429,
+              4.0215,
+              6.8138,
+              4.02,
+              6.8134,
+              4.2046,
+              6.4426,
+              4.2058
+            ],
+            "confidence": 0.997,
+            "span": {
+              "offset": 395,
+              "length": 5
+            }
+          },
+          {
+            "content": "and",
+            "polygon": [
+              6.8586,
+              4.02,
+              7.1069,
+              4.0201,
+              7.1064,
+              4.2039,
+              6.8583,
+              4.2045
+            ],
+            "confidence": 0.999,
+            "span": {
+              "offset": 401,
+              "length": 3
+            }
+          },
+          {
+            "content": "opening",
+            "polygon": [
+              7.1578,
+              4.0202,
+              7.7087,
+              4.0209,
+              7.7087,
+              4.2087,
+              7.1572,
+              4.2038
+            ],
+            "confidence": 0.996,
+            "span": {
+              "offset": 405,
+              "length": 7
+            }
+          },
+          {
+            "content": "hours.",
+            "polygon": [
+              0.6039,
+              4.3022,
+              1.0459,
+              4.3037,
+              1.0459,
+              4.4534,
+              0.6029,
+              4.4508
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 413,
+              "length": 6
+            }
+          },
+          {
+            "content": "Authorized",
+            "polygon": [
+              0.6089,
+              5.081,
+              1.2701,
+              5.0829,
+              1.2688,
+              5.2444,
+              0.6081,
+              5.2432
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 420,
+              "length": 10
+            }
+          },
+          {
+            "content": "representative:",
+            "polygon": [
+              1.3016,
+              5.0829,
+              2.2523,
+              5.0813,
+              2.2523,
+              5.2387,
+              1.3004,
+              5.2441
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 431,
+              "length": 15
+            }
+          },
+          {
+            "content": "Date:",
+            "polygon": [
+              3.8202,
+              5.0751,
+              4.167,
+              5.0762,
+              4.167,
+              5.2145,
+              3.8195,
+              5.2131
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 447,
+              "length": 5
+            }
+          },
+          {
+            "content": "Synthetic",
+            "polygon": [
+              0.6303,
+              10.4607,
+              1.1016,
+              10.4615,
+              1.0994,
+              10.6036,
+              0.6294,
+              10.604
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 453,
+              "length": 9
+            }
+          },
+          {
+            "content": "only",
+            "polygon": [
+              1.1316,
+              10.4615,
+              1.3141,
+              10.4608,
+              1.3122,
+              10.6025,
+              1.1295,
+              10.6035
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 463,
+              "length": 4
+            }
+          },
+          {
+            "content": "|",
+            "polygon": [
+              1.3418,
+              10.4605,
+              1.3903,
+              10.46,
+              1.3884,
+              10.6021,
+              1.3399,
+              10.6023
+            ],
+            "confidence": 0.983,
+            "span": {
+              "offset": 468,
+              "length": 1
+            }
+          },
+          {
+            "content": "Page",
+            "polygon": [
+              1.4296,
+              10.4598,
+              1.686,
+              10.4604,
+              1.6845,
+              10.6009,
+              1.4277,
+              10.602
+            ],
+            "confidence": 0.992,
+            "span": {
+              "offset": 470,
+              "length": 4
+            }
+          },
+          {
+            "content": "1",
+            "polygon": [
+              1.723,
+              10.4605,
+              1.7622,
+              10.4603,
+              1.7607,
+              10.6003,
+              1.7214,
+              10.6005
+            ],
+            "confidence": 0.985,
+            "span": {
+              "offset": 475,
+              "length": 1
+            }
+          },
+          {
+            "content": "of",
+            "polygon": [
+              1.8084,
+              10.4601,
+              1.9078,
+              10.4596,
+              1.9062,
+              10.5992,
+              1.8068,
+              10.5999
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 477,
+              "length": 2
+            }
+          },
+          {
+            "content": "1",
+            "polygon": [
+              1.9401,
+              10.4594,
+              1.9794,
+              10.4592,
+              1.978,
+              10.5987,
+              1.9386,
+              10.599
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 480,
+              "length": 1
+            }
+          },
+          {
+            "content": "|",
+            "polygon": [
+              2.0279,
+              10.459,
+              2.0487,
+              10.4589,
+              2.0474,
+              10.5984,
+              2.0267,
+              10.5984
+            ],
+            "confidence": 0.989,
+            "span": {
+              "offset": 482,
+              "length": 1
+            }
+          },
+          {
+            "content": "No",
+            "polygon": [
+              2.0903,
+              10.4585,
+              2.2104,
+              10.4576,
+              2.2085,
+              10.5977,
+              2.0888,
+              10.5982
+            ],
+            "confidence": 0.995,
+            "span": {
+              "offset": 484,
+              "length": 2
+            }
+          },
+          {
+            "content": "legal",
+            "polygon": [
+              2.2381,
+              10.4574,
+              2.4876,
+              10.4562,
+              2.4863,
+              10.5958,
+              2.2363,
+              10.5975
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 487,
+              "length": 5
+            }
+          },
+          {
+            "content": "effect",
+            "polygon": [
+              2.5222,
+              10.4559,
+              2.8167,
+              10.4529,
+              2.8167,
+              10.5931,
+              2.521,
+              10.5958
+            ],
+            "confidence": 0.993,
+            "span": {
+              "offset": 493,
+              "length": 6
+            }
+          }
+        ],
+        "lines": [
+          {
+            "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION",
+            "polygon": [
+              0.591,
+              0.4087,
+              4.1211,
+              0.3931,
+              4.1217,
+              0.5395,
+              0.5916,
+              0.5536
+            ],
+            "spans": [
+              {
+                "offset": 0,
+                "length": 47
+              }
+            ]
+          },
+          {
+            "content": "GARDEN CLUB MINUTES",
+            "polygon": [
+              0.5921,
+              0.8495,
+              3.6066,
+              0.8423,
+              3.6072,
+              1.0922,
+              0.5924,
+              1.0994
+            ],
+            "spans": [
+              {
+                "offset": 48,
+                "length": 19
+              }
+            ]
+          },
+          {
+            "content": "Reference",
+            "polygon": [
+              0.5931,
+              1.5287,
+              1.2811,
+              1.5288,
+              1.2811,
+              1.6684,
+              0.5931,
+              1.6682
+            ],
+            "spans": [
+              {
+                "offset": 68,
+                "length": 9
+              }
+            ]
+          },
+          {
+            "content": "71000007",
+            "polygon": [
+              2.6087,
+              1.5041,
+              3.3041,
+              1.5027,
+              3.3044,
+              1.6595,
+              2.609,
+              1.6609
+            ],
+            "spans": [
+              {
+                "offset": 78,
+                "length": 8
+              }
+            ]
+          },
+          {
+            "content": "Visitor",
+            "polygon": [
+              0.5955,
+              1.9186,
+              1.0544,
+              1.9214,
+              1.0536,
+              2.0627,
+              0.5946,
+              2.0599
+            ],
+            "spans": [
+              {
+                "offset": 87,
+                "length": 7
+              }
+            ]
+          },
+          {
+            "content": "Avery Cedar7",
+            "polygon": [
+              2.612,
+              1.9016,
+              3.5646,
+              1.8933,
+              3.5661,
+              2.066,
+              2.6124,
+              2.0745
+            ],
+            "spans": [
+              {
+                "offset": 95,
+                "length": 12
+              }
+            ]
+          },
+          {
+            "content": "Location",
+            "polygon": [
+              0.6006,
+              2.3112,
+              1.1967,
+              2.3118,
+              1.1966,
+              2.4504,
+              0.6004,
+              2.4497
+            ],
+            "spans": [
+              {
+                "offset": 108,
+                "length": 8
+              }
+            ]
+          },
+          {
+            "content": "Fictional Community Center",
+            "polygon": [
+              2.6156,
+              2.2855,
+              4.5217,
+              2.2788,
+              4.5224,
+              2.4516,
+              2.6162,
+              2.458
+            ],
+            "spans": [
+              {
+                "offset": 117,
+                "length": 26
+              }
+            ]
+          },
+          {
+            "content": "Date",
+            "polygon": [
+              0.603,
+              2.696,
+              0.9189,
+              2.6965,
+              0.9179,
+              2.8329,
+              0.602,
+              2.8306
+            ],
+            "spans": [
+              {
+                "offset": 144,
+                "length": 4
+              }
+            ]
+          },
+          {
+            "content": "September 11, 2026",
+            "polygon": [
+              2.6125,
+              2.6723,
+              4.015,
+              2.6623,
+              4.0162,
+              2.8371,
+              2.6138,
+              2.8471
+            ],
+            "spans": [
+              {
+                "offset": 149,
+                "length": 18
+              }
+            ]
+          },
+          {
+            "content": "Record status",
+            "polygon": [
+              0.6008,
+              3.0847,
+              1.5436,
+              3.0844,
+              1.5436,
+              3.2323,
+              0.6008,
+              3.2326
+            ],
+            "spans": [
+              {
+                "offset": 168,
+                "length": 13
+              }
+            ]
+          },
+          {
+            "content": "Confirmed",
+            "polygon": [
+              2.6191,
+              3.0673,
+              3.3381,
+              3.0657,
+              3.3384,
+              3.2223,
+              2.6194,
+              3.2239
+            ],
+            "spans": [
+              {
+                "offset": 182,
+                "length": 9
+              }
+            ]
+          },
+          {
+            "content": "Activity details",
+            "polygon": [
+              0.6042,
+              3.4485,
+              1.7985,
+              3.449,
+              1.7984,
+              3.6337,
+              0.6041,
+              3.6333
+            ],
+            "spans": [
+              {
+                "offset": 192,
+                "length": 16
+              }
+            ]
+          },
+          {
+            "content": "Reference record for local community services. Keep this copy for your records. Items and attendance",
+            "polygon": [
+              0.6032,
+              3.7875,
+              7.5201,
+              3.7645,
+              7.5205,
+              3.9476,
+              0.6038,
+              3.9693
+            ],
+            "spans": [
+              {
+                "offset": 209,
+                "length": 100
+              }
+            ]
+          },
+          {
+            "content": "were checked by the service desk. Please contact the coordinator for questions about dates and opening",
+            "polygon": [
+              0.6,
+              4.0359,
+              7.7074,
+              4.0191,
+              7.7079,
+              4.2054,
+              0.6005,
+              4.224
+            ],
+            "spans": [
+              {
+                "offset": 310,
+                "length": 102
+              }
+            ]
+          },
+          {
+            "content": "hours.",
+            "polygon": [
+              0.6034,
+              4.3022,
+              1.0408,
+              4.3037,
+              1.0403,
+              4.4512,
+              0.6029,
+              4.4498
+            ],
+            "spans": [
+              {
+                "offset": 413,
+                "length": 6
+              }
+            ]
+          },
+          {
+            "content": "Authorized representative:",
+            "polygon": [
+              0.6081,
+              5.081,
+              2.2503,
+              5.0813,
+              2.2503,
+              5.2431,
+              0.6081,
+              5.2427
+            ],
+            "spans": [
+              {
+                "offset": 420,
+                "length": 26
+              }
+            ]
+          },
+          {
+            "content": "Date:",
+            "polygon": [
+              3.8203,
+              5.0738,
+              4.1651,
+              5.0757,
+              4.1643,
+              5.2133,
+              3.8195,
+              5.2114
+            ],
+            "spans": [
+              {
+                "offset": 447,
+                "length": 5
+              }
+            ]
+          },
+          {
+            "content": "Synthetic only | Page 1 of 1 | No legal effect",
+            "polygon": [
+              0.629,
+              10.4607,
+              2.8127,
+              10.453,
+              2.8132,
+              10.5953,
+              0.6295,
+              10.6029
+            ],
+            "spans": [
+              {
+                "offset": 453,
+                "length": 46
+              }
+            ]
+          }
+        ],
+        "spans": [
+          {
+            "offset": 0,
+            "length": 499
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "rowCount": 5,
+        "columnCount": 2,
+        "cells": [
+          {
+            "rowIndex": 0,
+            "columnIndex": 0,
+            "content": "Reference",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  0.5312,
+                  1.4504,
+                  2.0641,
+                  1.4504,
+                  2.0586,
+                  1.7826,
+                  0.5312,
+                  1.7881
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 68,
+                "length": 9
+              }
+            ],
+            "elements": [
+              "/paragraphs/2"
+            ]
+          },
+          {
+            "rowIndex": 0,
+            "columnIndex": 1,
+            "content": "71000007",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  2.0641,
+                  1.4504,
+                  4.6318,
+                  1.4394,
+                  4.6208,
+                  1.7715,
+                  2.0586,
+                  1.7826
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 78,
+                "length": 8
+              }
+            ],
+            "elements": [
+              "/paragraphs/3"
+            ]
+          },
+          {
+            "rowIndex": 1,
+            "columnIndex": 0,
+            "content": "Visitor",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  0.5312,
+                  1.7881,
+                  2.0586,
+                  1.7826,
+                  2.0586,
+                  2.1701,
+                  0.5312,
+                  2.1756
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 87,
+                "length": 7
+              }
+            ],
+            "elements": [
+              "/paragraphs/4"
+            ]
+          },
+          {
+            "rowIndex": 1,
+            "columnIndex": 1,
+            "content": "Avery Cedar7",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  2.0586,
+                  1.7826,
+                  4.6208,
+                  1.7715,
+                  4.6097,
+                  2.159,
+                  2.0586,
+                  2.1701
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 95,
+                "length": 12
+              }
+            ],
+            "elements": [
+              "/paragraphs/5"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "columnIndex": 0,
+            "content": "Location",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  0.5312,
+                  2.1756,
+                  2.0586,
+                  2.1701,
+                  2.0586,
+                  2.5632,
+                  0.5312,
+                  2.5687
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 108,
+                "length": 8
+              }
+            ],
+            "elements": [
+              "/paragraphs/6"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "columnIndex": 1,
+            "content": "Fictional Community Center",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  2.0586,
+                  2.1701,
+                  4.6097,
+                  2.159,
+                  4.5986,
+                  2.5466,
+                  2.0586,
+                  2.5632
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 117,
+                "length": 26
+              }
+            ],
+            "elements": [
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "columnIndex": 0,
+            "content": "Date",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  0.5312,
+                  2.5687,
+                  2.0586,
+                  2.5632,
+                  2.0586,
+                  2.9562,
+                  0.5312,
+                  2.9618
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 144,
+                "length": 4
+              }
+            ],
+            "elements": [
+              "/paragraphs/8"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "columnIndex": 1,
+            "content": "September 11, 2026",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  2.0586,
+                  2.5632,
+                  4.5986,
+                  2.5466,
+                  4.5876,
+                  2.9396,
+                  2.0586,
+                  2.9562
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 149,
+                "length": 18
+              }
+            ],
+            "elements": [
+              "/paragraphs/9"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "columnIndex": 0,
+            "content": "Record status",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  0.5312,
+                  2.9618,
+                  2.0586,
+                  2.9562,
+                  2.0586,
+                  3.2718,
+                  0.5312,
+                  3.2773
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 168,
+                "length": 13
+              }
+            ],
+            "elements": [
+              "/paragraphs/10"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "columnIndex": 1,
+            "content": "Confirmed",
+            "boundingRegions": [
+              {
+                "pageNumber": 1,
+                "polygon": [
+                  2.0586,
+                  2.9562,
+                  4.5876,
+                  2.9396,
+                  4.582,
+                  3.2662,
+                  2.0586,
+                  3.2718
+                ]
+              }
+            ],
+            "spans": [
+              {
+                "offset": 182,
+                "length": 9
+              }
+            ],
+            "elements": [
+              "/paragraphs/11"
+            ]
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5511,
+              1.4771,
+              4.5415,
+              1.4746,
+              4.5424,
+              3.2389,
+              0.5516,
+              3.241
+            ]
+          }
+        ],
+        "spans": [
+          {
+            "offset": 68,
+            "length": 123
+          }
+        ]
+      }
+    ],
+    "paragraphs": [
+      {
+        "spans": [
+          {
+            "offset": 0,
+            "length": 47
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.591,
+              0.4087,
+              4.1211,
+              0.3931,
+              4.1217,
+              0.5395,
+              0.5916,
+              0.5551
+            ]
+          }
+        ],
+        "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION"
+      },
+      {
+        "spans": [
+          {
+            "offset": 48,
+            "length": 19
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5918,
+              0.8495,
+              3.6066,
+              0.8423,
+              3.6072,
+              1.0922,
+              0.5924,
+              1.0994
+            ]
+          }
+        ],
+        "role": "title",
+        "content": "GARDEN CLUB MINUTES"
+      },
+      {
+        "spans": [
+          {
+            "offset": 68,
+            "length": 9
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5312,
+              1.4504,
+              2.0641,
+              1.4504,
+              2.0586,
+              1.7826,
+              0.5312,
+              1.7881
+            ]
+          }
+        ],
+        "content": "Reference"
+      },
+      {
+        "spans": [
+          {
+            "offset": 78,
+            "length": 8
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              2.0641,
+              1.4504,
+              4.6318,
+              1.4394,
+              4.6208,
+              1.7715,
+              2.0586,
+              1.7826
+            ]
+          }
+        ],
+        "content": "71000007"
+      },
+      {
+        "spans": [
+          {
+            "offset": 87,
+            "length": 7
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5312,
+              1.7881,
+              2.0586,
+              1.7826,
+              2.0586,
+              2.1701,
+              0.5312,
+              2.1756
+            ]
+          }
+        ],
+        "content": "Visitor"
+      },
+      {
+        "spans": [
+          {
+            "offset": 95,
+            "length": 12
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              2.0586,
+              1.7826,
+              4.6208,
+              1.7715,
+              4.6097,
+              2.159,
+              2.0586,
+              2.1701
+            ]
+          }
+        ],
+        "content": "Avery Cedar7"
+      },
+      {
+        "spans": [
+          {
+            "offset": 108,
+            "length": 8
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5312,
+              2.1756,
+              2.0586,
+              2.1701,
+              2.0586,
+              2.5632,
+              0.5312,
+              2.5687
+            ]
+          }
+        ],
+        "content": "Location"
+      },
+      {
+        "spans": [
+          {
+            "offset": 117,
+            "length": 26
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              2.0586,
+              2.1701,
+              4.6097,
+              2.159,
+              4.5986,
+              2.5466,
+              2.0586,
+              2.5632
+            ]
+          }
+        ],
+        "content": "Fictional Community Center"
+      },
+      {
+        "spans": [
+          {
+            "offset": 144,
+            "length": 4
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5312,
+              2.5687,
+              2.0586,
+              2.5632,
+              2.0586,
+              2.9562,
+              0.5312,
+              2.9618
+            ]
+          }
+        ],
+        "content": "Date"
+      },
+      {
+        "spans": [
+          {
+            "offset": 149,
+            "length": 18
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              2.0586,
+              2.5632,
+              4.5986,
+              2.5466,
+              4.5876,
+              2.9396,
+              2.0586,
+              2.9562
+            ]
+          }
+        ],
+        "content": "September 11, 2026"
+      },
+      {
+        "spans": [
+          {
+            "offset": 168,
+            "length": 13
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5312,
+              2.9618,
+              2.0586,
+              2.9562,
+              2.0586,
+              3.2718,
+              0.5312,
+              3.2773
+            ]
+          }
+        ],
+        "content": "Record status"
+      },
+      {
+        "spans": [
+          {
+            "offset": 182,
+            "length": 9
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              2.0586,
+              2.9562,
+              4.5876,
+              2.9396,
+              4.582,
+              3.2662,
+              2.0586,
+              3.2718
+            ]
+          }
+        ],
+        "content": "Confirmed"
+      },
+      {
+        "spans": [
+          {
+            "offset": 192,
+            "length": 16
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.6042,
+              3.4485,
+              1.7985,
+              3.449,
+              1.7984,
+              3.6337,
+              0.6041,
+              3.6333
+            ]
+          }
+        ],
+        "content": "Activity details"
+      },
+      {
+        "spans": [
+          {
+            "offset": 209,
+            "length": 210
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.5991,
+              3.7875,
+              7.7066,
+              3.7638,
+              7.7088,
+              4.429,
+              0.6013,
+              4.4527
+            ]
+          }
+        ],
+        "content": "Reference record for local community services. Keep this copy for your records. Items and attendance were checked by the service desk. Please contact the coordinator for questions about dates and opening hours."
+      },
+      {
+        "spans": [
+          {
+            "offset": 420,
+            "length": 26
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.6081,
+              5.081,
+              2.2503,
+              5.0813,
+              2.2503,
+              5.2431,
+              0.6081,
+              5.2427
+            ]
+          }
+        ],
+        "content": "Authorized representative:"
+      },
+      {
+        "spans": [
+          {
+            "offset": 447,
+            "length": 5
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              3.8203,
+              5.0738,
+              4.1651,
+              5.0757,
+              4.1643,
+              5.2133,
+              3.8195,
+              5.2114
+            ]
+          }
+        ],
+        "content": "Date:"
+      },
+      {
+        "spans": [
+          {
+            "offset": 453,
+            "length": 46
+          }
+        ],
+        "boundingRegions": [
+          {
+            "pageNumber": 1,
+            "polygon": [
+              0.629,
+              10.4607,
+              2.8127,
+              10.453,
+              2.8132,
+              10.5953,
+              0.6295,
+              10.6029
+            ]
+          }
+        ],
+        "role": "pageNumber",
+        "content": "Synthetic only | Page 1 of 1 | No legal effect"
+      }
+    ],
+    "styles": [],
+    "contentFormat": "text",
+    "sections": [
+      {
+        "spans": [
+          {
+            "offset": 0,
+            "length": 452
+          }
+        ],
+        "elements": [
+          "/sections/1",
+          "/sections/2"
+        ]
+      },
+      {
+        "spans": [
+          {
+            "offset": 0,
+            "length": 47
+          }
+        ],
+        "elements": [
+          "/paragraphs/0"
+        ]
+      },
+      {
+        "spans": [
+          {
+            "offset": 48,
+            "length": 404
+          }
+        ],
+        "elements": [
+          "/paragraphs/1",
+          "/tables/0",
+          "/paragraphs/12",
+          "/paragraphs/13",
+          "/paragraphs/14",
+          "/paragraphs/15"
+        ]
+      }
+    ]
+  }
+}

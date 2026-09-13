@@ -1,0 +1,129 @@
+{
+  "privateEndpoints": [
+    {
+      "state": "Succeeded",
+      "name": "pe-bmg-blob",
+      "connections": [
+        {
+          "state": "Approved",
+          "groupIds": [
+            "blob"
+          ],
+          "serviceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy"
+        }
+      ]
+    },
+    {
+      "state": "Succeeded",
+      "name": "pe-bmg-cosmos",
+      "connections": [
+        {
+          "state": "Approved",
+          "groupIds": [
+            "Sql"
+          ],
+          "serviceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy"
+        }
+      ]
+    },
+    {
+      "state": "Succeeded",
+      "name": "pe-bmg-di",
+      "connections": [
+        {
+          "state": "Approved",
+          "groupIds": [
+            "account"
+          ],
+          "serviceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy"
+        }
+      ]
+    },
+    {
+      "state": "Succeeded",
+      "name": "pe-bmg-openai",
+      "connections": [
+        {
+          "state": "Approved",
+          "groupIds": [
+            "account"
+          ],
+          "serviceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy"
+        }
+      ]
+    },
+    {
+      "state": "Succeeded",
+      "name": "pe-bmg-vault",
+      "connections": [
+        {
+          "state": "Approved",
+          "groupIds": [
+            "vault"
+          ],
+          "serviceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy"
+        }
+      ]
+    }
+  ],
+  "allFivePrivateEndpointsApproved": true,
+  "timestamp": "2026-09-11T12:48:03.7554043Z",
+  "services": [
+    {
+      "disableLocalAuth": true,
+      "service": "cosmos",
+      "minimalTlsVersion": "Tls12",
+      "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy",
+      "minimumTlsVersion": null,
+      "allowSharedKeyAccess": null,
+      "publicNetworkAccess": "Disabled",
+      "state": "Succeeded",
+      "enableRbacAuthorization": null
+    },
+    {
+      "disableLocalAuth": true,
+      "service": "documentIntelligence",
+      "minimalTlsVersion": null,
+      "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy",
+      "minimumTlsVersion": null,
+      "allowSharedKeyAccess": null,
+      "publicNetworkAccess": "Disabled",
+      "state": "Succeeded",
+      "enableRbacAuthorization": null
+    },
+    {
+      "disableLocalAuth": null,
+      "service": "keyVault",
+      "minimalTlsVersion": null,
+      "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy",
+      "minimumTlsVersion": null,
+      "allowSharedKeyAccess": null,
+      "publicNetworkAccess": "Disabled",
+      "state": "Succeeded",
+      "enableRbacAuthorization": true
+    },
+    {
+      "disableLocalAuth": true,
+      "service": "openAI",
+      "minimalTlsVersion": null,
+      "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy",
+      "minimumTlsVersion": null,
+      "allowSharedKeyAccess": null,
+      "publicNetworkAccess": "Disabled",
+      "state": "Succeeded",
+      "enableRbacAuthorization": null
+    },
+    {
+      "disableLocalAuth": null,
+      "service": "storage",
+      "minimalTlsVersion": null,
+      "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy",
+      "minimumTlsVersion": "TLS1_2",
+      "allowSharedKeyAccess": false,
+      "publicNetworkAccess": "Disabled",
+      "state": "Succeeded",
+      "enableRbacAuthorization": null
+    }
+  ],
+  "allPublicNetworkAccessDisabled": true
+}

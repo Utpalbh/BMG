@@ -1,0 +1,21 @@
+PAGE 1
+TITLE COMMITMENT
+Schedules A/B/C - synthetic extract
+SYNTHETIC POC DATA
+File Number:
+TC-0002
+Effective Date:
+2026-09-06
+Proposed Insured:
+Prototype Mortgage LLC
+Vested Owner(s):
+Taylor Brooks and Morgan Brooks
+Property:
+202 Test Case Drive, Demo City, TX 75002
+Proposed Loan Amount:
+$313,500.00
+County:
+Collin
+Schedule C Requirements:
+1. Satisfactory payoff/release of any prior lien. 2. Record the deed of trust.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

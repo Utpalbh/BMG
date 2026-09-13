@@ -1,0 +1,20 @@
+{
+  "operationId": "31377232645_abdec3b9-d41c-4203-a58d-5fd303b08d18",
+  "kind": "documentClassifierBuild",
+  "status": "failed",
+  "createdDateTime": "2026-09-11T14:02:35Z",
+  "lastUpdatedDateTime": "2026-09-11T14:02:36Z",
+  "resourceLocation": "https://di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com/documentintelligence/documentClassifiers/bmg-stage-e-v1?api-version=2024-11-30",
+  "percentCompleted": 100,
+  "error": {
+    "code": "InvalidRequest",
+    "message": "Invalid request.",
+    "details": [
+      {
+        "code": "TrainingContentMissing",
+        "message": "Training data is missing: Could not find any training data at the given path."
+      }
+    ]
+  },
+  "apiVersion": "2024-11-30"
+}

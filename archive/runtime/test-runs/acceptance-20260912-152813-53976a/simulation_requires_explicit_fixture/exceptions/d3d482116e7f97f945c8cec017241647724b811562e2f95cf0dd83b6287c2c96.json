@@ -1,0 +1,9 @@
+{
+  "executionMode": "Simulated",
+  "submissionId": "test",
+  "revision": 1,
+  "code": "SimulationFixtureMissing",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "Ready"
+}

@@ -1,0 +1,18 @@
+PAGE 1
+PROPERTY SURVEY CERTIFICATION
+Synthetic survey summary
+SYNTHETIC POC DATA
+Survey Job:
+SV-0004
+Survey Date:
+2026-08-17
+Owner:
+Cameron Hayes and Quinn Hayes
+Property Address:
+404 Mock Data Way, Trial Park, TX 75004
+County:
+Williamson
+Legal Description:
+Synthetic Lot 13, Block 5, POC Subdivision, Williamson County, Texas
+Illustrative property boundary - not to scale
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

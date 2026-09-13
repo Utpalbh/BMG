@@ -1,0 +1,69 @@
+{
+  "status": "Planning baseline; no resources deployed",
+  "scope": { "diagram": "Claude outputs/bmg_mvp_detailed_flow.png", "firstStep": 2, "lastStep": 10 },
+  "azure": {
+    "subscriptionId": "6f841b52-7a6d-4287-b0e3-4591621bb363",
+    "tenantId": "e06201f9-0ec7-4863-80fc-85f43be49c1e",
+    "resourceGroup": "rg-bmg-poc",
+    "region": "eastus2",
+    "publicRuntimeAccess": "Disabled after training network validation",
+    "documentIntelligence": { "kind": "FormRecognizer", "sku": "S0", "apiVersion": "2024-11-30", "classifierModelId": null, "layoutModelId": "prebuilt-layout" },
+    "openAI": { "model": "gpt-5-mini", "version": "2025-08-07", "sku": "GlobalStandard", "deploymentName": "bmg-metadata", "capacityUnits": 30, "reasoningEffort": "low", "maxOutputTokensPerCall": 4096 },
+    "cosmos": { "api": "NoSQL", "capacityMode": "Serverless", "regions": 1, "database": "bmg-poc", "container": "submissions", "partitionKey": "/submissionId", "connectionMode": "Gateway" },
+    "storage": { "replication": "LRS", "containers": ["training", "submissions", "analysis"] },
+    "keyVault": { "sku": "standard", "authorization": "RBAC", "secretPurpose": "Short-lived uploader service-principal credential", "bootstrap": "Separate certificate credential protected in the local Windows certificate store" }
+  },
+  "network": {
+    "connectivity": "Point-to-Site VPN for laptop; client Site-to-Site remains later validation",
+    "vnetCidr": "10.84.0.0/16",
+    "gatewaySubnetCidr": "10.84.0.0/27",
+    "privateEndpointSubnetCidr": "10.84.1.0/24",
+    "resolverInboundSubnetCidr": "10.84.2.0/28",
+    "vpnClientPool": "172.28.84.0/24",
+    "gatewaySku": "VpnGw1AZ",
+    "gatewayGeneration": "Generation1",
+    "activeActive": false,
+    "vpnProtocol": "OpenVPN",
+    "vpnAuthentication": "Certificate",
+    "resolverInboundEndpoints": 1,
+    "resolverOutboundEndpoints": 0,
+    "privateEndpoints": ["Blob", "KeyVault", "DocumentIntelligence", "OpenAI", "CosmosNoSQL"],
+    "privateDnsZones": ["privatelink.blob.core.windows.net", "privatelink.vaultcore.azure.net", "privatelink.cognitiveservices.azure.com", "privatelink.openai.azure.com", "privatelink.documents.azure.com"],
+    "dnsRule": "Use normal service FQDNs, resolved via the VPN-reachable resolver inbound IP; validate each service independently."
+  },
+  "local": {
+    "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime",
+    "runtimeRootStatus": "Proposed non-OneDrive path; not created",
+    "worker": ".NET 10 LTS",
+    "stateStore": "SQLite",
+    "folderNames": ["staging", "completed", "exceptions", "results", "state", "logs"],
+    "completionMarker": "_READY",
+    "reconciliationIntervalSeconds": 10,
+    "maxConcurrentSubmissions": 1,
+    "maxConcurrentAiCalls": 1,
+    "maxAttemptsPerOperation": 4,
+    "maxLlmRequestsPerMinute": 20,
+    "originals": "Preserve; never overwrite source PDFs"
+  },
+  "dataPlan": {
+    "classes": ["Note", "DeedOfTrust", "TitleCommitment", "Survey", "ClosingInstructions", "Rider"],
+    "trainingTargetDocuments": 120,
+    "heldOutTargetDocuments": 60,
+    "trainingAndEvaluationMustBeDisjoint": true,
+    "sameTemplateFamilyMustNotCrossSplits": true,
+    "runtimeMustNotReadExpectedAnswersOrManifestClassLabels": true
+  },
+  "sessionBudget": {
+    "currency": "INR",
+    "referenceBudget": 1000,
+    "planningEnvelope": 1500,
+    "budgetIsHardCap": false,
+    "cloudHoursTargetMaximum": 10,
+    "layoutPageAllowance": 240,
+    "classificationPageAllowance": 120,
+    "llmInputTokenAllowance": 1000000,
+    "llmOutputTokenAllowanceIncludingReasoning": 300000,
+    "actionOnAllowanceReached": "Pause new work, preserve checkpoints, report usage before increasing allowance",
+    "billing": "Planning estimate, not guaranteed charge; include resource provisioning/deletion time and retry usage"
+  }
+}

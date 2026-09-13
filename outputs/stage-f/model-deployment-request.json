@@ -1,0 +1,15 @@
+{
+  "sku": {
+    "name": "GlobalStandard",
+    "capacity": 30
+  },
+  "properties": {
+    "raiPolicyName": "Microsoft.DefaultV2",
+    "model": {
+      "format": "OpenAI",
+      "name": "gpt-5-mini",
+      "version": "2025-08-07"
+    },
+    "versionUpgradeOption": "NoAutoUpgrade"
+  }
+}

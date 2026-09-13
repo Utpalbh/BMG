@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "0abc2c4eeca217375c00eba8be16be5c5c125bbec37eb948d1f08c1ba734ae0e",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "ClosingInstructions",
+    "confidence": 0.799,
+    "pages": 1,
+    "accepted": false
+  }
+]

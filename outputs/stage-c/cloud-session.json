@@ -1,0 +1,9 @@
+{
+  "subscriptionId": "6f841b52-7a6d-4287-b0e3-4591621bb363",
+  "tenantId": "e06201f9-0ec7-4863-80fc-85f43be49c1e",
+  "resourceGroup": "rg-bmg-poc",
+  "deploymentName": "bmg-stage-c",
+  "startedAt": "2026-09-11T07:29:24.0356458Z",
+  "intendedExpiry": "2026-09-11T17:29:24.0356458Z",
+  "automaticDeletion": false
+}

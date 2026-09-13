@@ -1,0 +1,21 @@
+{
+  "executionMode": "Simulated",
+  "metadata": {
+    "lenderCode": "LND005",
+    "loanNumber": "BMG-POC-000005",
+    "borrowerName": "Skyler Bennett and Drew Bennett",
+    "propertyAddress": "505 Validation Road, Fiction Hills, TX 75005",
+    "closingDate": "2026-09-26",
+    "loanType": "Conventional",
+    "purpose": "Refinance",
+    "submissionType": "Examination"
+  },
+  "documentTypes": {
+    "doc-001": "Note",
+    "doc-002": "DeedOfTrust",
+    "doc-003": "TitleCommitment",
+    "doc-004": "Survey",
+    "doc-005": "ClosingInstructions",
+    "doc-006": "Rider"
+  }
+}

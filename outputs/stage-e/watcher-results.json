@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "stagedAfterWorkerStarted": true,
+  "submissionId": "stage-e-watch-001",
+  "finalStatus": "LayoutRead",
+  "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-e\\snapshots\\3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139",
+  "llmPerformed": false,
+  "cosmosWritten": false,
+  "workerStopped": true
+}

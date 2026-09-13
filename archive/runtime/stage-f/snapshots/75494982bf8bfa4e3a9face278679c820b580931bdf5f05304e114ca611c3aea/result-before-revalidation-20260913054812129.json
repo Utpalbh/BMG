@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "stage-f-happy-002",
+  "revision": 1,
+  "status": "ManualException",
+  "metadata": {
+    "lenderCode": null,
+    "loanNumber": null,
+    "borrowerName": null,
+    "propertyAddress": null,
+    "closingDate": null,
+    "loanType": null,
+    "purpose": null,
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [
+    "lenderCode:UnsupportedFieldLabel",
+    "lenderCode:Required",
+    "loanNumber:UnsupportedFieldLabel",
+    "loanNumber:Required",
+    "borrowerName:UnsupportedFieldLabel",
+    "borrowerName:Required",
+    "propertyAddress:UnsupportedFieldLabel",
+    "propertyAddress:Required",
+    "closingDate:UnsupportedFieldLabel",
+    "closingDate:Required",
+    "loanType:UnsupportedFieldLabel",
+    "loanType:Required",
+    "purpose:UnsupportedFieldLabel",
+    "purpose:Required"
+  ],
+  "executionMode": "AzureFull"
+}

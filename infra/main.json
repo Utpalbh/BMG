@@ -1,0 +1,1052 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.41.2.15936",
+      "templateHash": "6524362534959156545"
+    }
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "eastus2",
+      "metadata": {
+        "description": "Approved deployment region."
+      }
+    },
+    "resourceGroupName": {
+      "type": "string",
+      "defaultValue": "rg-bmg-poc",
+      "metadata": {
+        "description": "Dedicated POC resource group."
+      }
+    },
+    "sessionStartedAt": {
+      "type": "string",
+      "metadata": {
+        "description": "UTC session start, recorded once and retained for reruns."
+      }
+    },
+    "expiresAt": {
+      "type": "string",
+      "metadata": {
+        "description": "Intended UTC expiry; informational tag, not an automatic deletion timer."
+      }
+    },
+    "vpnRootPublicCertificate": {
+      "type": "string",
+      "metadata": {
+        "description": "Public Base64 DER VPN root certificate; contains no private key."
+      }
+    },
+    "operatorObjectId": {
+      "type": "string",
+      "metadata": {
+        "description": "Signed-in operator object ID for foundation checks; AI user roles also permit inference."
+      }
+    },
+    "nameSalt": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Optional fresh-session salt to avoid names retained by Key Vault/Cognitive Services soft delete. Empty preserves the original names."
+      }
+    }
+  },
+  "variables": {
+    "tags": {
+      "project": "BMG-POC",
+      "managedBy": "BMG-StageC-Bicep",
+      "environment": "synthetic-poc",
+      "sessionStartedAt": "[parameters('sessionStartedAt')]",
+      "expiresAt": "[parameters('expiresAt')]"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2024-03-01",
+      "name": "[parameters('resourceGroupName')]",
+      "location": "[parameters('location')]",
+      "tags": "[variables('tags')]"
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2025-04-01",
+      "name": "bmg-network",
+      "resourceGroup": "[parameters('resourceGroupName')]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[parameters('location')]"
+          },
+          "tags": {
+            "value": "[variables('tags')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_generator": {
+              "name": "bicep",
+              "version": "0.41.2.15936",
+              "templateHash": "6799293895028813836"
+            }
+          },
+          "parameters": {
+            "location": {
+              "type": "string",
+              "metadata": {
+                "description": "Azure region."
+              }
+            },
+            "tags": {
+              "type": "object",
+              "metadata": {
+                "description": "POC ownership and lifetime tags."
+              }
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.Network/virtualNetworks",
+              "apiVersion": "2024-07-01",
+              "name": "vnet-bmg-poc",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "addressSpace": {
+                  "addressPrefixes": [
+                    "10.84.0.0/16"
+                  ]
+                },
+                "dhcpOptions": {
+                  "dnsServers": [
+                    "10.84.2.4"
+                  ]
+                },
+                "subnets": [
+                  {
+                    "name": "GatewaySubnet",
+                    "properties": {
+                      "addressPrefix": "10.84.0.0/27"
+                    }
+                  },
+                  {
+                    "name": "snet-private-endpoints",
+                    "properties": {
+                      "addressPrefix": "10.84.1.0/24",
+                      "privateEndpointNetworkPolicies": "Disabled",
+                      "privateLinkServiceNetworkPolicies": "Enabled"
+                    }
+                  },
+                  {
+                    "name": "snet-dns-inbound",
+                    "properties": {
+                      "addressPrefix": "10.84.2.0/28",
+                      "delegations": [
+                        {
+                          "name": "dns-resolver",
+                          "properties": {
+                            "serviceName": "Microsoft.Network/dnsResolvers"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "Microsoft.Network/dnsResolvers",
+              "apiVersion": "2025-05-01",
+              "name": "dnspr-bmg-poc",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "virtualNetwork": {
+                  "id": "[resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc')]"
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc')]"
+              ]
+            },
+            {
+              "type": "Microsoft.Network/dnsResolvers/inboundEndpoints",
+              "apiVersion": "2025-05-01",
+              "name": "[format('{0}/{1}', 'dnspr-bmg-poc', 'dnsin-bmg-poc')]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "ipConfigurations": [
+                  {
+                    "privateIpAllocationMethod": "Static",
+                    "privateIpAddress": "10.84.2.4",
+                    "subnet": {
+                      "id": "[format('{0}/subnets/snet-dns-inbound', resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc'))]"
+                    }
+                  }
+                ]
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Network/dnsResolvers', 'dnspr-bmg-poc')]",
+                "[resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc')]"
+              ]
+            }
+          ],
+          "outputs": {
+            "vnetId": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc')]"
+            },
+            "privateEndpointSubnetId": {
+              "type": "string",
+              "value": "[format('{0}/subnets/snet-private-endpoints', resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc'))]"
+            },
+            "gatewaySubnetId": {
+              "type": "string",
+              "value": "[format('{0}/subnets/GatewaySubnet', resourceId('Microsoft.Network/virtualNetworks', 'vnet-bmg-poc'))]"
+            },
+            "dnsResolverAddress": {
+              "type": "string",
+              "value": "[reference(resourceId('Microsoft.Network/dnsResolvers/inboundEndpoints', 'dnspr-bmg-poc', 'dnsin-bmg-poc'), '2025-05-01').ipConfigurations[0].privateIpAddress]"
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[subscriptionResourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2025-04-01",
+      "name": "bmg-services",
+      "resourceGroup": "[parameters('resourceGroupName')]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[parameters('location')]"
+          },
+          "tags": {
+            "value": "[variables('tags')]"
+          },
+          "privateEndpointSubnetId": {
+            "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network'), '2025-04-01').outputs.privateEndpointSubnetId.value]"
+          },
+          "vnetId": {
+            "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network'), '2025-04-01').outputs.vnetId.value]"
+          },
+          "operatorObjectId": {
+            "value": "[parameters('operatorObjectId')]"
+          },
+          "nameSalt": {
+            "value": "[parameters('nameSalt')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_generator": {
+              "name": "bicep",
+              "version": "0.41.2.15936",
+              "templateHash": "15048781419648506191"
+            }
+          },
+          "parameters": {
+            "location": {
+              "type": "string",
+              "metadata": {
+                "description": "Azure region."
+              }
+            },
+            "tags": {
+              "type": "object",
+              "metadata": {
+                "description": "POC ownership and lifetime tags."
+              }
+            },
+            "privateEndpointSubnetId": {
+              "type": "string",
+              "metadata": {
+                "description": "PE subnet resource ID."
+              }
+            },
+            "vnetId": {
+              "type": "string",
+              "metadata": {
+                "description": "Resolver virtual network ID."
+              }
+            },
+            "operatorObjectId": {
+              "type": "string",
+              "metadata": {
+                "description": "Operator object ID for verification roles, removed with RG; AI user roles also permit inference."
+              }
+            },
+            "nameSalt": {
+              "type": "string",
+              "defaultValue": ""
+            }
+          },
+          "variables": {
+            "suffix": "[if(empty(parameters('nameSalt')), uniqueString(resourceGroup().id), uniqueString(resourceGroup().id, parameters('nameSalt')))]",
+            "pairs": [
+              {
+                "name": "blob",
+                "id": "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]",
+                "group": "blob",
+                "zone": "[format('privatelink.blob.{0}', environment().suffixes.storage)]"
+              },
+              {
+                "name": "vault",
+                "id": "[resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix')))]",
+                "group": "vault",
+                "zone": "privatelink.vaultcore.azure.net"
+              },
+              {
+                "name": "di",
+                "id": "[resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix')))]",
+                "group": "account",
+                "zone": "privatelink.cognitiveservices.azure.com"
+              },
+              {
+                "name": "openai",
+                "id": "[resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix')))]",
+                "group": "account",
+                "zone": "privatelink.openai.azure.com"
+              },
+              {
+                "name": "cosmos",
+                "id": "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]",
+                "group": "Sql",
+                "zone": "privatelink.documents.azure.com"
+              }
+            ]
+          },
+          "resources": [
+            {
+              "type": "Microsoft.Storage/storageAccounts",
+              "apiVersion": "2025-01-01",
+              "name": "[format('stbmgpoc{0}', variables('suffix'))]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "kind": "StorageV2",
+              "sku": {
+                "name": "Standard_LRS"
+              },
+              "properties": {
+                "accessTier": "Hot",
+                "supportsHttpsTrafficOnly": true,
+                "minimumTlsVersion": "TLS1_2",
+                "allowBlobPublicAccess": false,
+                "allowSharedKeyAccess": false,
+                "defaultToOAuthAuthentication": true,
+                "publicNetworkAccess": "Disabled",
+                "networkAcls": {
+                  "bypass": "None",
+                  "defaultAction": "Deny",
+                  "ipRules": [],
+                  "virtualNetworkRules": []
+                },
+                "encryption": {
+                  "keySource": "Microsoft.Storage",
+                  "requireInfrastructureEncryption": true,
+                  "services": {
+                    "blob": {
+                      "enabled": true,
+                      "keyType": "Account"
+                    },
+                    "file": {
+                      "enabled": true,
+                      "keyType": "Account"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Storage/storageAccounts/blobServices",
+              "apiVersion": "2025-01-01",
+              "name": "[format('{0}/{1}', format('stbmgpoc{0}', variables('suffix')), 'default')]",
+              "properties": {
+                "deleteRetentionPolicy": {
+                  "enabled": true,
+                  "days": 1
+                },
+                "containerDeleteRetentionPolicy": {
+                  "enabled": true,
+                  "days": 1
+                },
+                "isVersioningEnabled": true
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "copy": {
+                "name": "containers",
+                "count": "[length(createArray('training', 'submissions', 'analysis'))]"
+              },
+              "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+              "apiVersion": "2025-01-01",
+              "name": "[format('{0}/{1}/{2}', format('stbmgpoc{0}', variables('suffix')), 'default', createArray('training', 'submissions', 'analysis')[copyIndex()])]",
+              "properties": {
+                "publicAccess": "None"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts/blobServices', format('stbmgpoc{0}', variables('suffix')), 'default')]"
+              ]
+            },
+            {
+              "type": "Microsoft.KeyVault/vaults",
+              "apiVersion": "2024-11-01",
+              "name": "[format('kv-bmg-{0}', variables('suffix'))]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "tenantId": "[subscription().tenantId]",
+                "sku": {
+                  "family": "A",
+                  "name": "standard"
+                },
+                "enableRbacAuthorization": true,
+                "enableSoftDelete": true,
+                "enablePurgeProtection": true,
+                "softDeleteRetentionInDays": 7,
+                "publicNetworkAccess": "Disabled",
+                "networkAcls": {
+                  "bypass": "None",
+                  "defaultAction": "Deny",
+                  "ipRules": [],
+                  "virtualNetworkRules": []
+                },
+                "accessPolicies": [],
+                "enabledForDeployment": false,
+                "enabledForDiskEncryption": false,
+                "enabledForTemplateDeployment": false
+              }
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts",
+              "apiVersion": "2025-06-01",
+              "name": "[format('di-bmg-{0}', variables('suffix'))]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "kind": "FormRecognizer",
+              "sku": {
+                "name": "S0"
+              },
+              "identity": {
+                "type": "SystemAssigned"
+              },
+              "properties": {
+                "customSubDomainName": "[format('di-bmg-{0}', variables('suffix'))]",
+                "disableLocalAuth": true,
+                "publicNetworkAccess": "Disabled",
+                "networkAcls": {
+                  "defaultAction": "Deny",
+                  "ipRules": [],
+                  "virtualNetworkRules": []
+                }
+              }
+            },
+            {
+              "type": "Microsoft.CognitiveServices/accounts",
+              "apiVersion": "2025-06-01",
+              "name": "[format('oai-bmg-{0}', variables('suffix'))]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "kind": "OpenAI",
+              "sku": {
+                "name": "S0"
+              },
+              "identity": {
+                "type": "SystemAssigned"
+              },
+              "properties": {
+                "customSubDomainName": "[format('oai-bmg-{0}', variables('suffix'))]",
+                "disableLocalAuth": true,
+                "publicNetworkAccess": "Disabled",
+                "networkAcls": {
+                  "defaultAction": "Deny",
+                  "ipRules": [],
+                  "virtualNetworkRules": []
+                }
+              }
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts",
+              "apiVersion": "2025-04-15",
+              "name": "[format('cosmos-bmg-{0}', variables('suffix'))]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "kind": "GlobalDocumentDB",
+              "properties": {
+                "databaseAccountOfferType": "Standard",
+                "capabilities": [
+                  {
+                    "name": "EnableServerless"
+                  }
+                ],
+                "locations": [
+                  {
+                    "locationName": "[parameters('location')]",
+                    "failoverPriority": 0,
+                    "isZoneRedundant": false
+                  }
+                ],
+                "consistencyPolicy": {
+                  "defaultConsistencyLevel": "Session"
+                },
+                "publicNetworkAccess": "Disabled",
+                "disableLocalAuth": true,
+                "minimalTlsVersion": "Tls12",
+                "disableKeyBasedMetadataWriteAccess": true,
+                "isVirtualNetworkFilterEnabled": true,
+                "ipRules": [],
+                "virtualNetworkRules": [],
+                "networkAclBypass": "None",
+                "enableAutomaticFailover": false,
+                "enableMultipleWriteLocations": false,
+                "backupPolicy": {
+                  "type": "Periodic",
+                  "periodicModeProperties": {
+                    "backupIntervalInMinutes": 240,
+                    "backupRetentionIntervalInHours": 8,
+                    "backupStorageRedundancy": "Local"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+              "apiVersion": "2025-04-15",
+              "name": "[format('{0}/{1}', format('cosmos-bmg-{0}', variables('suffix')), 'bmg-poc')]",
+              "properties": {
+                "resource": {
+                  "id": "bmg-poc"
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+              "apiVersion": "2025-04-15",
+              "name": "[format('{0}/{1}/{2}', format('cosmos-bmg-{0}', variables('suffix')), 'bmg-poc', 'submissions')]",
+              "properties": {
+                "resource": {
+                  "id": "submissions",
+                  "partitionKey": {
+                    "paths": [
+                      "/submissionId"
+                    ],
+                    "kind": "Hash",
+                    "version": 2
+                  },
+                  "indexingPolicy": {
+                    "indexingMode": "consistent",
+                    "automatic": true,
+                    "includedPaths": [
+                      {
+                        "path": "/*"
+                      }
+                    ],
+                    "excludedPaths": [
+                      {
+                        "path": "/\"_etag\"/?"
+                      }
+                    ]
+                  }
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', format('cosmos-bmg-{0}', variables('suffix')), 'bmg-poc')]"
+              ]
+            },
+            {
+              "type": "Microsoft.Authorization/roleAssignments",
+              "apiVersion": "2022-04-01",
+              "scope": "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]",
+              "name": "[guid(resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix'))), parameters('operatorObjectId'), 'blob-reader')]",
+              "properties": {
+                "principalId": "[parameters('operatorObjectId')]",
+                "principalType": "User",
+                "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '2a2b9908-6ea1-4ae2-8e65-a410df84e7d1')]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "type": "Microsoft.Authorization/roleAssignments",
+              "apiVersion": "2022-04-01",
+              "scope": "[resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix')))]",
+              "name": "[guid(resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix'))), parameters('operatorObjectId'), 'secrets-user')]",
+              "properties": {
+                "principalId": "[parameters('operatorObjectId')]",
+                "principalType": "User",
+                "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '4633458b-17de-408a-b874-0445c86b69e6')]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "type": "Microsoft.Authorization/roleAssignments",
+              "apiVersion": "2022-04-01",
+              "scope": "[resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix')))]",
+              "name": "[guid(resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix'))), parameters('operatorObjectId'), 'cognitive-user')]",
+              "properties": {
+                "principalId": "[parameters('operatorObjectId')]",
+                "principalType": "User",
+                "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', 'a97b65f3-24c7-4388-baec-2e87135dc908')]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "type": "Microsoft.Authorization/roleAssignments",
+              "apiVersion": "2022-04-01",
+              "scope": "[resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix')))]",
+              "name": "[guid(resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix'))), parameters('operatorObjectId'), 'openai-user')]",
+              "properties": {
+                "principalId": "[parameters('operatorObjectId')]",
+                "principalType": "User",
+                "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd')]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments",
+              "apiVersion": "2025-04-15",
+              "name": "[format('{0}/{1}', format('cosmos-bmg-{0}', variables('suffix')), guid(resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix'))), parameters('operatorObjectId'), 'cosmos-reader'))]",
+              "properties": {
+                "principalId": "[parameters('operatorObjectId')]",
+                "roleDefinitionId": "[format('{0}/sqlRoleDefinitions/00000000-0000-0000-0000-000000000001', resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix'))))]",
+                "scope": "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]"
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]"
+              ]
+            },
+            {
+              "copy": {
+                "name": "endpoints",
+                "count": "[length(variables('pairs'))]"
+              },
+              "type": "Microsoft.Resources/deployments",
+              "apiVersion": "2025-04-01",
+              "name": "[format('bmg-pe-{0}', variables('pairs')[copyIndex()].name)]",
+              "properties": {
+                "expressionEvaluationOptions": {
+                  "scope": "inner"
+                },
+                "mode": "Incremental",
+                "parameters": {
+                  "location": {
+                    "value": "[parameters('location')]"
+                  },
+                  "tags": {
+                    "value": "[parameters('tags')]"
+                  },
+                  "serviceName": {
+                    "value": "[variables('pairs')[copyIndex()].name]"
+                  },
+                  "serviceId": {
+                    "value": "[variables('pairs')[copyIndex()].id]"
+                  },
+                  "groupId": {
+                    "value": "[variables('pairs')[copyIndex()].group]"
+                  },
+                  "zoneName": {
+                    "value": "[variables('pairs')[copyIndex()].zone]"
+                  },
+                  "subnetId": {
+                    "value": "[parameters('privateEndpointSubnetId')]"
+                  },
+                  "vnetId": {
+                    "value": "[parameters('vnetId')]"
+                  }
+                },
+                "template": {
+                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "contentVersion": "1.0.0.0",
+                  "metadata": {
+                    "_generator": {
+                      "name": "bicep",
+                      "version": "0.41.2.15936",
+                      "templateHash": "7910806874558951391"
+                    }
+                  },
+                  "parameters": {
+                    "location": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Azure region."
+                      }
+                    },
+                    "tags": {
+                      "type": "object",
+                      "metadata": {
+                        "description": "POC ownership and lifetime tags."
+                      }
+                    },
+                    "serviceName": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Short logical service name."
+                      }
+                    },
+                    "serviceId": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Target PaaS resource ID."
+                      }
+                    },
+                    "groupId": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Private Link group ID, case sensitive."
+                      }
+                    },
+                    "zoneName": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Private DNS zone FQDN."
+                      }
+                    },
+                    "subnetId": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Private endpoint subnet resource ID."
+                      }
+                    },
+                    "vnetId": {
+                      "type": "string",
+                      "metadata": {
+                        "description": "Resolver virtual network ID."
+                      }
+                    }
+                  },
+                  "resources": [
+                    {
+                      "type": "Microsoft.Network/privateDnsZones",
+                      "apiVersion": "2024-06-01",
+                      "name": "[parameters('zoneName')]",
+                      "location": "global",
+                      "tags": "[parameters('tags')]"
+                    },
+                    {
+                      "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
+                      "apiVersion": "2024-06-01",
+                      "name": "[format('{0}/{1}', parameters('zoneName'), 'bmg-vnet-link')]",
+                      "location": "global",
+                      "tags": "[parameters('tags')]",
+                      "properties": {
+                        "registrationEnabled": false,
+                        "virtualNetwork": {
+                          "id": "[parameters('vnetId')]"
+                        }
+                      },
+                      "dependsOn": [
+                        "[resourceId('Microsoft.Network/privateDnsZones', parameters('zoneName'))]"
+                      ]
+                    },
+                    {
+                      "type": "Microsoft.Network/privateEndpoints",
+                      "apiVersion": "2024-07-01",
+                      "name": "[format('pe-bmg-{0}', parameters('serviceName'))]",
+                      "location": "[parameters('location')]",
+                      "tags": "[parameters('tags')]",
+                      "properties": {
+                        "subnet": {
+                          "id": "[parameters('subnetId')]"
+                        },
+                        "privateLinkServiceConnections": [
+                          {
+                            "name": "[format('bmg-{0}', parameters('serviceName'))]",
+                            "properties": {
+                              "privateLinkServiceId": "[parameters('serviceId')]",
+                              "groupIds": [
+                                "[parameters('groupId')]"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
+                      "apiVersion": "2024-07-01",
+                      "name": "[format('{0}/{1}', format('pe-bmg-{0}', parameters('serviceName')), 'default')]",
+                      "properties": {
+                        "privateDnsZoneConfigs": [
+                          {
+                            "name": "[parameters('serviceName')]",
+                            "properties": {
+                              "privateDnsZoneId": "[resourceId('Microsoft.Network/privateDnsZones', parameters('zoneName'))]"
+                            }
+                          }
+                        ]
+                      },
+                      "dependsOn": [
+                        "[resourceId('Microsoft.Network/privateEndpoints', format('pe-bmg-{0}', parameters('serviceName')))]",
+                        "[resourceId('Microsoft.Network/privateDnsZones', parameters('zoneName'))]"
+                      ]
+                    }
+                  ],
+                  "outputs": {
+                    "endpointId": {
+                      "type": "string",
+                      "value": "[resourceId('Microsoft.Network/privateEndpoints', format('pe-bmg-{0}', parameters('serviceName')))]"
+                    }
+                  }
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]",
+                "[resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix')))]",
+                "[resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix')))]",
+                "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]",
+                "[resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix')))]"
+              ]
+            }
+          ],
+          "outputs": {
+            "inventory": {
+              "type": "object",
+              "value": {
+                "storage": {
+                  "name": "[format('stbmgpoc{0}', variables('suffix'))]",
+                  "id": "[resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix')))]",
+                  "endpoint": "[reference(resourceId('Microsoft.Storage/storageAccounts', format('stbmgpoc{0}', variables('suffix'))), '2025-01-01').primaryEndpoints.blob]"
+                },
+                "keyVault": {
+                  "name": "[format('kv-bmg-{0}', variables('suffix'))]",
+                  "id": "[resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix')))]",
+                  "endpoint": "[reference(resourceId('Microsoft.KeyVault/vaults', format('kv-bmg-{0}', variables('suffix'))), '2024-11-01').vaultUri]"
+                },
+                "documentIntelligence": {
+                  "name": "[format('di-bmg-{0}', variables('suffix'))]",
+                  "id": "[resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix')))]",
+                  "endpoint": "[reference(resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix'))), '2025-06-01').endpoint]",
+                  "managedIdentityPrincipalId": "[reference(resourceId('Microsoft.CognitiveServices/accounts', format('di-bmg-{0}', variables('suffix'))), '2025-06-01', 'full').identity.principalId]"
+                },
+                "openAI": {
+                  "name": "[format('oai-bmg-{0}', variables('suffix'))]",
+                  "id": "[resourceId('Microsoft.CognitiveServices/accounts', format('oai-bmg-{0}', variables('suffix')))]",
+                  "endpoint": "[format('https://{0}.openai.azure.com/', format('oai-bmg-{0}', variables('suffix')))]"
+                },
+                "cosmos": {
+                  "name": "[format('cosmos-bmg-{0}', variables('suffix'))]",
+                  "id": "[resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix')))]",
+                  "endpoint": "[reference(resourceId('Microsoft.DocumentDB/databaseAccounts', format('cosmos-bmg-{0}', variables('suffix'))), '2025-04-15').documentEndpoint]",
+                  "database": "bmg-poc",
+                  "container": "submissions"
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network')]",
+        "[subscriptionResourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2025-04-01",
+      "name": "bmg-gateway",
+      "resourceGroup": "[parameters('resourceGroupName')]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "location": {
+            "value": "[parameters('location')]"
+          },
+          "tags": {
+            "value": "[variables('tags')]"
+          },
+          "gatewaySubnetId": {
+            "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network'), '2025-04-01').outputs.gatewaySubnetId.value]"
+          },
+          "vpnRootPublicCertificate": {
+            "value": "[parameters('vpnRootPublicCertificate')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_generator": {
+              "name": "bicep",
+              "version": "0.41.2.15936",
+              "templateHash": "4974427811737892476"
+            }
+          },
+          "parameters": {
+            "location": {
+              "type": "string",
+              "metadata": {
+                "description": "Azure region."
+              }
+            },
+            "tags": {
+              "type": "object",
+              "metadata": {
+                "description": "POC ownership and lifetime tags."
+              }
+            },
+            "gatewaySubnetId": {
+              "type": "string",
+              "metadata": {
+                "description": "Dedicated GatewaySubnet resource ID; must not have an NSG."
+              }
+            },
+            "vpnRootPublicCertificate": {
+              "type": "string",
+              "metadata": {
+                "description": "Public root certificate only, Base64 DER."
+              }
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.Network/publicIPAddresses",
+              "apiVersion": "2024-07-01",
+              "name": "pip-bmg-poc-vpn",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "sku": {
+                "name": "Standard",
+                "tier": "Regional"
+              },
+              "zones": [
+                "1",
+                "2",
+                "3"
+              ],
+              "properties": {
+                "publicIPAllocationMethod": "Static",
+                "publicIPAddressVersion": "IPv4"
+              }
+            },
+            {
+              "type": "Microsoft.Network/virtualNetworkGateways",
+              "apiVersion": "2024-07-01",
+              "name": "vgw-bmg-poc",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "gatewayType": "Vpn",
+                "vpnType": "RouteBased",
+                "vpnGatewayGeneration": "Generation1",
+                "activeActive": false,
+                "enableBgp": false,
+                "sku": {
+                  "name": "VpnGw1AZ",
+                  "tier": "VpnGw1AZ"
+                },
+                "ipConfigurations": [
+                  {
+                    "name": "gateway-ip-config",
+                    "properties": {
+                      "privateIPAllocationMethod": "Dynamic",
+                      "subnet": {
+                        "id": "[parameters('gatewaySubnetId')]"
+                      },
+                      "publicIPAddress": {
+                        "id": "[resourceId('Microsoft.Network/publicIPAddresses', 'pip-bmg-poc-vpn')]"
+                      }
+                    }
+                  }
+                ],
+                "vpnClientConfiguration": {
+                  "vpnClientAddressPool": {
+                    "addressPrefixes": [
+                      "172.28.84.0/24"
+                    ]
+                  },
+                  "vpnClientProtocols": [
+                    "OpenVPN"
+                  ],
+                  "vpnAuthenticationTypes": [
+                    "Certificate"
+                  ],
+                  "vpnClientRootCertificates": [
+                    {
+                      "name": "BMG-POC-VPN-Root",
+                      "properties": {
+                        "publicCertData": "[parameters('vpnRootPublicCertificate')]"
+                      }
+                    }
+                  ],
+                  "vpnClientRevokedCertificates": []
+                }
+              },
+              "dependsOn": [
+                "[resourceId('Microsoft.Network/publicIPAddresses', 'pip-bmg-poc-vpn')]"
+              ]
+            }
+          ],
+          "outputs": {
+            "gatewayId": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.Network/virtualNetworkGateways', 'vgw-bmg-poc')]"
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network')]",
+        "[subscriptionResourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
+      ]
+    }
+  ],
+  "outputs": {
+    "resourceGroupId": {
+      "type": "string",
+      "value": "[subscriptionResourceId('Microsoft.Resources/resourceGroups', parameters('resourceGroupName'))]"
+    },
+    "serviceInventory": {
+      "type": "object",
+      "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-services'), '2025-04-01').outputs.inventory.value]"
+    },
+    "dnsResolverAddress": {
+      "type": "string",
+      "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network'), '2025-04-01').outputs.dnsResolverAddress.value]"
+    },
+    "gatewayId": {
+      "type": "string",
+      "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-gateway'), '2025-04-01').outputs.gatewayId.value]"
+    },
+    "vnetId": {
+      "type": "string",
+      "value": "[reference(extensionResourceId(format('/subscriptions/{0}/resourceGroups/{1}', subscription().subscriptionId, parameters('resourceGroupName')), 'Microsoft.Resources/deployments', 'bmg-network'), '2025-04-01').outputs.vnetId.value]"
+    }
+  }
+}

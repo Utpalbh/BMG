@@ -1,0 +1,17 @@
+{
+  "Permissions": [
+    {
+      "DataActions": [
+        "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/create",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read"
+      ]
+    }
+  ],
+  "AssignableScopes": [
+    "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy"
+  ],
+  "Id": "6a70bb22-c5d9-4345-a5c9-18c719276c26",
+  "RoleName": "BMG POC create and read results",
+  "Type": "CustomRole"
+}

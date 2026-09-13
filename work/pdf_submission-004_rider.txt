@@ -1,0 +1,18 @@
+PAGE 1
+HOME EQUITY RIDER
+Synthetic rider
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000004
+Rider Type:
+Home Equity
+Borrower(s):
+Cameron Hayes and Quinn Hayes
+Property:
+404 Mock Data Way, Trial Park, TX 75004
+Document Date:
+2026-09-13
+Lender:
+Demo Home Finance
+This rider modifies the synthetic mortgage instrument solely for test-data purposes.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

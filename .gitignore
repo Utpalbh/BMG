@@ -1,0 +1,42 @@
+# Installed tools and reproducible build/dependency caches
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+work/stage-a/python-packages/
+work/**/checkov-packages/
+work/**/node_modules/
+work/**/.venv/
+.venv/
+node_modules/
+.local-runs/
+.backup-tools/
+
+# Never commit credentials, private-key containers or user login state
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem
+*.jks
+*.publishsettings
+azureProfile.json
+msal_token_cache*
+accessTokens.json
+hosts.yml
+*.db-wal
+*.db-shm
+*.lock.tmp
+*.zip
+*.exe
+*.dll
+*.pdb
+*.nupkg
+
+# Generated editor/OS noise
+.vs/
+.idea/
+.DS_Store
+Thumbs.db

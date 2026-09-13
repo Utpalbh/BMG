@@ -1,0 +1,15 @@
+{
+  "checkedUtc": "2026-09-12T09:02:32.156526+00:00",
+  "resourceGroup": "rg-bmg-poc",
+  "stoppableComputeResources": [],
+  "networkPauseAvailable": false,
+  "referenceNetworkInrPerHour": 49.21,
+  "referenceOnlyNotLiveBill": true,
+  "preserveNetworkUnlessDeletionApproved": true,
+  "actionAfterStageE": "Stop local POC processing; retain synthetic data and trained model; shut down laptop as requested. No further application calls while off.",
+  "continuingCharges": "Provisioned VPN gateway, DNS resolver endpoint, private endpoints, public IP, DNS zones and stored data continue billing unless deleted.",
+  "costReportingMayLag": true,
+  "processingStopped": true,
+  "networkRetained": true,
+  "stageEComplete": true
+}

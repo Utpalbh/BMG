@@ -1,0 +1,24 @@
+PAGE 1
+PROMISSORY NOTE
+Synthetic mortgage note for classifier/extraction testing
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000001
+Note Date:
+2026-09-10
+Borrower(s):
+Jordan Parker and Casey Parker
+Lender:
+Example Community Bank
+Lender Code:
+LND001
+Property:
+101 Prototype Lane, Sampletown, TX 75001
+Principal Amount:
+$275,000.00
+Interest Rate:
+5.75%
+Loan Type:
+Conventional
+Borrower promises to pay the principal amount plus interest according to the terms of this synthetic note.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

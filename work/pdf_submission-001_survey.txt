@@ -1,0 +1,18 @@
+PAGE 1
+PROPERTY SURVEY CERTIFICATION
+Synthetic survey summary
+SYNTHETIC POC DATA
+Survey Job:
+SV-0001
+Survey Date:
+2026-08-11
+Owner:
+Jordan Parker and Casey Parker
+Property Address:
+101 Prototype Lane, Sampletown, TX 75001
+County:
+Travis
+Legal Description:
+Synthetic Lot 10, Block 2, POC Subdivision, Travis County, Texas
+Illustrative property boundary - not to scale
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

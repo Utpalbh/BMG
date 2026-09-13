@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "ac532807cf890e5bdfdc7441b6eec06186cc6bc635384fce05125516225dbc99",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Other",
+    "confidence": 0.881,
+    "pages": 1,
+    "accepted": false
+  }
+]

@@ -1,0 +1,4 @@
+# Compiled ARM JSON is intentionally versioned for full restoration.
+*.zip
+*.pfx
+*.key

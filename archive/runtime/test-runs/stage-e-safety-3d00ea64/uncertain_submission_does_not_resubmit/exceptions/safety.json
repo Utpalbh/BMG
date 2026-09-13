@@ -1,0 +1,9 @@
+{
+  "executionMode": "AzureDocuments",
+  "submissionId": "test",
+  "revision": 1,
+  "code": "AiSubmissionOutcomeUnknown",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "Uploaded"
+}

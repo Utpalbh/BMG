@@ -1,0 +1,9 @@
+{
+  "executionMode": "AzureDocuments",
+  "submissionId": "stage-e-eval-016",
+  "revision": 1,
+  "code": "ClassificationRequiresReview",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "Uploaded"
+}

@@ -1,0 +1,7 @@
+{
+  "delaySeconds": 60,
+  "requestedAt": "2026-09-12T09:03:04.9878084Z",
+  "networkRetained": true,
+  "physicalPowerOffObserved": false,
+  "action": "Shutdown requested"
+}

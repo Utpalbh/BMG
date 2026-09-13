@@ -1,0 +1,2776 @@
+{
+  "apiVersion": "2024-11-30",
+  "modelId": "prebuilt-layout",
+  "stringIndexType": "utf16CodeUnit",
+  "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION\nPROMISSORY NOTE\nPRINCIPAL AMOUNT\n$265,000.00\nLENDER\nFictional Prairie Lending\nPROPERTY ADDRESS\n134 Juniper Lane, Austin, TX 78701\nBORROWER\nMorgan Willow3\nLOAN NUMBER\n92000003\nPromise to pay\nReview the following provisions carefully. This borrower promises to pay the principal sum to the lender, with interest. Monthly installments are due on the first day of each month. Late charges apply after fifteen days. This unpaid balance may be accelerated following default.\nAuthorized representative:\nDate:\nSynthetic only | Page 1 of 1 | No legal effect",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "angle": -0.02250000089406967,
+      "width": 8.5,
+      "height": 11,
+      "unit": "inch",
+      "words": [
+        {
+          "content": "BMG",
+          "polygon": [
+            0.6144,
+            0.4005,
+            0.9095,
+            0.3993,
+            0.9095,
+            0.5406,
+            0.6143,
+            0.5407
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 0,
+            "length": 3
+          }
+        },
+        {
+          "content": "SYNTHETIC",
+          "polygon": [
+            0.9517,
+            0.3991,
+            1.652,
+            0.3977,
+            1.6518,
+            0.5409,
+            0.9516,
+            0.5404
+          ],
+          "confidence": 0.994,
+          "span": {
+            "offset": 4,
+            "length": 9
+          }
+        },
+        {
+          "content": "TEST",
+          "polygon": [
+            1.6918,
+            0.3976,
+            2.001,
+            0.3977,
+            2.0007,
+            0.5412,
+            1.6916,
+            0.541
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 14,
+            "length": 4
+          }
+        },
+        {
+          "content": "MATERIAL",
+          "polygon": [
+            2.0291,
+            0.3977,
+            2.6919,
+            0.3974,
+            2.6916,
+            0.5411,
+            2.0288,
+            0.5412
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 19,
+            "length": 8
+          }
+        },
+        {
+          "content": "-",
+          "polygon": [
+            2.7294,
+            0.3974,
+            2.7599,
+            0.3974,
+            2.7595,
+            0.5411,
+            2.729,
+            0.5411
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 28,
+            "length": 1
+          }
+        },
+        {
+          "content": "NOT",
+          "polygon": [
+            2.788,
+            0.3974,
+            3.0667,
+            0.3972,
+            3.0661,
+            0.5405,
+            2.7876,
+            0.5411
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 30,
+            "length": 3
+          }
+        },
+        {
+          "content": "FOR",
+          "polygon": [
+            3.1065,
+            0.3971,
+            3.3665,
+            0.3965,
+            3.3655,
+            0.5406,
+            3.1058,
+            0.5404
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 34,
+            "length": 3
+          }
+        },
+        {
+          "content": "EXECUTION",
+          "polygon": [
+            3.4063,
+            0.3964,
+            4.1449,
+            0.3976,
+            4.1449,
+            0.5411,
+            3.4053,
+            0.5406
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 38,
+            "length": 9
+          }
+        },
+        {
+          "content": "PROMISSORY",
+          "polygon": [
+            0.6174,
+            0.845,
+            2.3183,
+            0.8472,
+            2.3178,
+            1.0892,
+            0.617,
+            1.0887
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 48,
+            "length": 10
+          }
+        },
+        {
+          "content": "NOTE",
+          "polygon": [
+            2.4059,
+            0.8472,
+            3.0934,
+            0.8456,
+            3.0934,
+            1.0882,
+            2.4054,
+            1.089
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 59,
+            "length": 4
+          }
+        },
+        {
+          "content": "PRINCIPAL",
+          "polygon": [
+            0.6139,
+            1.5148,
+            1.3711,
+            1.5163,
+            1.3705,
+            1.6608,
+            0.6138,
+            1.6604
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 64,
+            "length": 9
+          }
+        },
+        {
+          "content": "AMOUNT",
+          "polygon": [
+            1.4092,
+            1.5165,
+            2.0309,
+            1.5139,
+            2.0309,
+            1.6605,
+            1.4086,
+            1.6608
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 74,
+            "length": 6
+          }
+        },
+        {
+          "content": "$265,000.00",
+          "polygon": [
+            2.6286,
+            1.5081,
+            3.4971,
+            1.5044,
+            3.4965,
+            1.6688,
+            2.6291,
+            1.6696
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 81,
+            "length": 11
+          }
+        },
+        {
+          "content": "LENDER",
+          "polygon": [
+            0.6147,
+            1.9078,
+            1.2064,
+            1.9056,
+            1.2064,
+            2.0451,
+            0.6147,
+            2.0453
+          ],
+          "confidence": 0.997,
+          "span": {
+            "offset": 93,
+            "length": 6
+          }
+        },
+        {
+          "content": "Fictional",
+          "polygon": [
+            2.6307,
+            1.8907,
+            3.1992,
+            1.8915,
+            3.1986,
+            2.0613,
+            2.6303,
+            2.0583
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 100,
+            "length": 9
+          }
+        },
+        {
+          "content": "Prairie",
+          "polygon": [
+            3.255,
+            1.8917,
+            3.6869,
+            1.8942,
+            3.6854,
+            2.0656,
+            3.2543,
+            2.0616
+          ],
+          "confidence": 0.994,
+          "span": {
+            "offset": 110,
+            "length": 7
+          }
+        },
+        {
+          "content": "Lending",
+          "polygon": [
+            3.7399,
+            1.8942,
+            4.2832,
+            1.8996,
+            4.2832,
+            2.0705,
+            3.7385,
+            2.0656
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 118,
+            "length": 7
+          }
+        },
+        {
+          "content": "PROPERTY",
+          "polygon": [
+            0.6151,
+            2.2955,
+            1.3888,
+            2.2958,
+            1.3884,
+            2.4414,
+            0.6153,
+            2.4414
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 126,
+            "length": 8
+          }
+        },
+        {
+          "content": "ADDRESS",
+          "polygon": [
+            1.4225,
+            2.2958,
+            2.1139,
+            2.2927,
+            2.1139,
+            2.4403,
+            1.4219,
+            2.4414
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 135,
+            "length": 7
+          }
+        },
+        {
+          "content": "134",
+          "polygon": [
+            2.6435,
+            2.2857,
+            2.8876,
+            2.2863,
+            2.8874,
+            2.458,
+            2.6435,
+            2.458
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 143,
+            "length": 3
+          }
+        },
+        {
+          "content": "Juniper",
+          "polygon": [
+            2.9358,
+            2.2863,
+            3.4382,
+            2.2855,
+            3.4378,
+            2.458,
+            2.9355,
+            2.458
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 147,
+            "length": 7
+          }
+        },
+        {
+          "content": "Lane,",
+          "polygon": [
+            3.4836,
+            2.2854,
+            3.8498,
+            2.2848,
+            3.8495,
+            2.458,
+            3.4832,
+            2.458
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 155,
+            "length": 5
+          }
+        },
+        {
+          "content": "Austin,",
+          "polygon": [
+            3.898,
+            2.2847,
+            4.3607,
+            2.284,
+            4.3603,
+            2.4562,
+            3.8977,
+            2.458
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 161,
+            "length": 7
+          }
+        },
+        {
+          "content": "TX",
+          "polygon": [
+            4.4118,
+            2.2838,
+            4.6076,
+            2.2829,
+            4.6071,
+            2.4561,
+            4.4114,
+            2.4562
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 169,
+            "length": 2
+          }
+        },
+        {
+          "content": "78701",
+          "polygon": [
+            4.653,
+            2.2827,
+            5.069,
+            2.2812,
+            5.069,
+            2.4535,
+            4.6524,
+            2.4559
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 172,
+            "length": 5
+          }
+        },
+        {
+          "content": "BORROWER",
+          "polygon": [
+            0.6174,
+            2.685,
+            1.4775,
+            2.6848,
+            1.4775,
+            2.8289,
+            0.6178,
+            2.8289
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 178,
+            "length": 8
+          }
+        },
+        {
+          "content": "Morgan",
+          "polygon": [
+            2.6287,
+            2.6765,
+            3.1481,
+            2.6743,
+            3.1482,
+            2.8481,
+            2.6288,
+            2.851
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 187,
+            "length": 6
+          }
+        },
+        {
+          "content": "Willow3",
+          "polygon": [
+            3.1961,
+            2.674,
+            3.7353,
+            2.6713,
+            3.7353,
+            2.8448,
+            3.1963,
+            2.8481
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 194,
+            "length": 7
+          }
+        },
+        {
+          "content": "LOAN",
+          "polygon": [
+            0.6148,
+            3.0708,
+            1.007,
+            3.072,
+            1.007,
+            3.219,
+            0.6153,
+            3.2199
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 202,
+            "length": 4
+          }
+        },
+        {
+          "content": "NUMBER",
+          "polygon": [
+            1.0627,
+            3.0713,
+            1.6802,
+            3.0707,
+            1.6796,
+            3.2196,
+            1.0626,
+            3.2187
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 207,
+            "length": 6
+          }
+        },
+        {
+          "content": "92000003",
+          "polygon": [
+            2.63,
+            3.0614,
+            3.3258,
+            3.0597,
+            3.3258,
+            3.2164,
+            2.6302,
+            3.2164
+          ],
+          "confidence": 0.997,
+          "span": {
+            "offset": 214,
+            "length": 8
+          }
+        },
+        {
+          "content": "Promise",
+          "polygon": [
+            0.6152,
+            3.4383,
+            1.2791,
+            3.4445,
+            1.2759,
+            3.6289,
+            0.6145,
+            3.6206
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 223,
+            "length": 7
+          }
+        },
+        {
+          "content": "to",
+          "polygon": [
+            1.3272,
+            3.4453,
+            1.4834,
+            3.4466,
+            1.4805,
+            3.6309,
+            1.3239,
+            3.6295
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 231,
+            "length": 2
+          }
+        },
+        {
+          "content": "pay",
+          "polygon": [
+            1.5405,
+            3.4477,
+            1.8262,
+            3.4495,
+            1.826,
+            3.6349,
+            1.5375,
+            3.6311
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 234,
+            "length": 3
+          }
+        },
+        {
+          "content": "Review",
+          "polygon": [
+            0.6175,
+            3.7771,
+            1.0861,
+            3.7769,
+            1.0859,
+            3.9591,
+            0.6172,
+            3.9575
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 238,
+            "length": 6
+          }
+        },
+        {
+          "content": "the",
+          "polygon": [
+            1.1375,
+            3.7769,
+            1.3551,
+            3.7774,
+            1.3548,
+            3.9596,
+            1.1373,
+            3.9593
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 245,
+            "length": 3
+          }
+        },
+        {
+          "content": "following",
+          "polygon": [
+            1.3914,
+            3.7775,
+            1.996,
+            3.778,
+            1.9954,
+            3.9611,
+            1.391,
+            3.9597
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 249,
+            "length": 9
+          }
+        },
+        {
+          "content": "provisions",
+          "polygon": [
+            2.0322,
+            3.778,
+            2.7456,
+            3.7791,
+            2.745,
+            3.9629,
+            2.0317,
+            3.9612
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 259,
+            "length": 10
+          }
+        },
+        {
+          "content": "carefully.",
+          "polygon": [
+            2.791,
+            3.7792,
+            3.3865,
+            3.7792,
+            3.3861,
+            3.9638,
+            2.7904,
+            3.963
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 270,
+            "length": 10
+          }
+        },
+        {
+          "content": "This",
+          "polygon": [
+            3.4409,
+            3.7791,
+            3.7129,
+            3.7785,
+            3.7126,
+            3.9638,
+            3.4405,
+            3.9638
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 281,
+            "length": 4
+          }
+        },
+        {
+          "content": "borrower",
+          "polygon": [
+            3.7492,
+            3.7784,
+            4.378,
+            3.7774,
+            4.3775,
+            3.9635,
+            3.7488,
+            3.9638
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 286,
+            "length": 8
+          }
+        },
+        {
+          "content": "promises",
+          "polygon": [
+            4.4263,
+            3.7773,
+            5.0339,
+            3.7778,
+            5.0336,
+            3.9638,
+            4.4259,
+            3.9637
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 295,
+            "length": 8
+          }
+        },
+        {
+          "content": "to",
+          "polygon": [
+            5.0793,
+            3.778,
+            5.2062,
+            3.7781,
+            5.2059,
+            3.9638,
+            5.0789,
+            3.9638
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 304,
+            "length": 2
+          }
+        },
+        {
+          "content": "pay",
+          "polygon": [
+            5.2576,
+            3.7781,
+            5.4783,
+            3.7781,
+            5.4779,
+            3.9638,
+            5.2573,
+            3.9638
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 307,
+            "length": 3
+          }
+        },
+        {
+          "content": "the",
+          "polygon": [
+            5.5146,
+            3.7781,
+            5.7322,
+            3.7784,
+            5.7319,
+            3.9638,
+            5.5142,
+            3.9638
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 311,
+            "length": 3
+          }
+        },
+        {
+          "content": "principal",
+          "polygon": [
+            5.7685,
+            3.7785,
+            6.3519,
+            3.7791,
+            6.3516,
+            3.9638,
+            5.7682,
+            3.9638
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 315,
+            "length": 9
+          }
+        },
+        {
+          "content": "sum",
+          "polygon": [
+            6.4063,
+            3.779,
+            6.6844,
+            3.7787,
+            6.6841,
+            3.9638,
+            6.406,
+            3.9638
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 325,
+            "length": 3
+          }
+        },
+        {
+          "content": "to",
+          "polygon": [
+            6.7358,
+            3.7789,
+            6.8597,
+            3.7792,
+            6.8594,
+            3.9638,
+            6.7355,
+            3.9638
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 329,
+            "length": 2
+          }
+        },
+        {
+          "content": "the",
+          "polygon": [
+            6.9051,
+            3.7794,
+            7.0985,
+            3.7799,
+            7.0981,
+            3.9634,
+            6.9047,
+            3.9637
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 332,
+            "length": 3
+          }
+        },
+        {
+          "content": "lender,",
+          "polygon": [
+            7.1348,
+            3.78,
+            7.6257,
+            3.7818,
+            7.6257,
+            3.9638,
+            7.1344,
+            3.9634
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 336,
+            "length": 7
+          }
+        },
+        {
+          "content": "with",
+          "polygon": [
+            0.6086,
+            4.0341,
+            0.868,
+            4.0337,
+            0.8681,
+            4.2106,
+            0.6086,
+            4.2105
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 344,
+            "length": 4
+          }
+        },
+        {
+          "content": "interest.",
+          "polygon": [
+            0.9034,
+            4.0337,
+            1.4577,
+            4.0331,
+            1.4578,
+            4.2106,
+            0.9035,
+            4.2106
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 349,
+            "length": 9
+          }
+        },
+        {
+          "content": "Monthly",
+          "polygon": [
+            1.4931,
+            4.0331,
+            2.0356,
+            4.0316,
+            2.0354,
+            4.2111,
+            1.4931,
+            4.2106
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 359,
+            "length": 7
+          }
+        },
+        {
+          "content": "installments",
+          "polygon": [
+            2.071,
+            4.0315,
+            2.9054,
+            4.0338,
+            2.9055,
+            4.2127,
+            2.0708,
+            4.2112
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 367,
+            "length": 12
+          }
+        },
+        {
+          "content": "are",
+          "polygon": [
+            2.9526,
+            4.0339,
+            3.1648,
+            4.0346,
+            3.1652,
+            4.2127,
+            2.9527,
+            4.2127
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 380,
+            "length": 3
+          }
+        },
+        {
+          "content": "due",
+          "polygon": [
+            3.212,
+            4.0345,
+            3.4626,
+            4.0341,
+            3.4631,
+            4.2132,
+            3.2124,
+            4.2127
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 384,
+            "length": 3
+          }
+        },
+        {
+          "content": "on",
+          "polygon": [
+            3.5098,
+            4.034,
+            3.672,
+            4.0337,
+            3.6725,
+            4.2135,
+            3.5103,
+            4.2133
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 388,
+            "length": 2
+          }
+        },
+        {
+          "content": "the",
+          "polygon": [
+            3.7221,
+            4.0336,
+            3.9314,
+            4.0333,
+            3.9317,
+            4.2134,
+            3.7225,
+            4.2135
+          ],
+          "confidence": 0.999,
+          "span": {
+            "offset": 391,
+            "length": 3
+          }
+        },
+        {
+          "content": "first",
+          "polygon": [
+            3.9757,
+            4.0332,
+            4.2233,
+            4.0329,
+            4.2233,
+            4.2132,
+            3.9758,
+            4.2133
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 395,
+            "length": 5
+          }
+        },
+        {
+          "content": "day",
+          "polygon": [
+            4.2676,
+            4.0329,
+            4.5123,
+            4.0328,
+            4.5124,
+            4.2133,
+            4.2676,
+            4.2132
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 401,
+            "length": 3
+          }
+        },
+        {
+          "content": "of",
+          "polygon": [
+            4.5565,
+            4.0328,
+            4.6892,
+            4.0327,
+            4.6894,
+            4.2133,
+            4.5567,
+            4.2133
+          ],
+          "confidence": 0.997,
+          "span": {
+            "offset": 405,
+            "length": 2
+          }
+        },
+        {
+          "content": "each",
+          "polygon": [
+            4.7275,
+            4.0327,
+            5.0489,
+            4.0324,
+            5.049,
+            4.2135,
+            4.7277,
+            4.2133
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 408,
+            "length": 4
+          }
+        },
+        {
+          "content": "month.",
+          "polygon": [
+            5.1049,
+            4.0324,
+            5.556,
+            4.0325,
+            5.556,
+            4.2148,
+            5.1051,
+            4.2135
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 413,
+            "length": 6
+          }
+        },
+        {
+          "content": "Late",
+          "polygon": [
+            5.615,
+            4.0325,
+            5.9039,
+            4.0331,
+            5.9039,
+            4.2159,
+            5.615,
+            4.215
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 420,
+            "length": 4
+          }
+        },
+        {
+          "content": "charges",
+          "polygon": [
+            5.9511,
+            4.0332,
+            6.4877,
+            4.034,
+            6.4877,
+            4.2169,
+            5.951,
+            4.2161
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 425,
+            "length": 7
+          }
+        },
+        {
+          "content": "apply",
+          "polygon": [
+            6.5349,
+            4.0341,
+            6.9005,
+            4.0344,
+            6.9006,
+            4.2165,
+            6.5349,
+            4.2169
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 433,
+            "length": 5
+          }
+        },
+        {
+          "content": "after",
+          "polygon": [
+            6.9418,
+            4.0344,
+            7.2484,
+            4.0346,
+            7.2485,
+            4.2157,
+            6.9419,
+            4.2164
+          ],
+          "confidence": 0.997,
+          "span": {
+            "offset": 439,
+            "length": 5
+          }
+        },
+        {
+          "content": "fifteen",
+          "polygon": [
+            7.2867,
+            4.0348,
+            7.7197,
+            4.037,
+            7.7197,
+            4.2157,
+            7.2868,
+            4.2157
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 445,
+            "length": 7
+          }
+        },
+        {
+          "content": "days.",
+          "polygon": [
+            0.6132,
+            4.282,
+            0.979,
+            4.2826,
+            0.9789,
+            4.4668,
+            0.613,
+            4.4666
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 453,
+            "length": 5
+          }
+        },
+        {
+          "content": "This",
+          "polygon": [
+            1.0303,
+            4.2825,
+            1.3024,
+            4.2823,
+            1.3021,
+            4.467,
+            1.0302,
+            4.4669
+          ],
+          "confidence": 0.989,
+          "span": {
+            "offset": 459,
+            "length": 4
+          }
+        },
+        {
+          "content": "unpaid",
+          "polygon": [
+            1.3386,
+            4.2823,
+            1.8102,
+            4.2812,
+            1.8099,
+            4.4671,
+            1.3384,
+            4.4671
+          ],
+          "confidence": 0.994,
+          "span": {
+            "offset": 464,
+            "length": 6
+          }
+        },
+        {
+          "content": "balance",
+          "polygon": [
+            1.8676,
+            4.281,
+            2.3784,
+            4.2817,
+            2.3777,
+            4.4666,
+            1.8673,
+            4.467
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 471,
+            "length": 7
+          }
+        },
+        {
+          "content": "may",
+          "polygon": [
+            2.4147,
+            4.2819,
+            2.729,
+            4.2818,
+            2.7285,
+            4.4648,
+            2.414,
+            4.4667
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 479,
+            "length": 3
+          }
+        },
+        {
+          "content": "be",
+          "polygon": [
+            2.7774,
+            4.2817,
+            2.9376,
+            4.2812,
+            2.9371,
+            4.4649,
+            2.7769,
+            4.4644
+          ],
+          "confidence": 0.998,
+          "span": {
+            "offset": 483,
+            "length": 2
+          }
+        },
+        {
+          "content": "accelerated",
+          "polygon": [
+            2.9859,
+            4.281,
+            3.7657,
+            4.2801,
+            3.7647,
+            4.4643,
+            2.9855,
+            4.4651
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 486,
+            "length": 11
+          }
+        },
+        {
+          "content": "following",
+          "polygon": [
+            3.8141,
+            4.2801,
+            4.4035,
+            4.2793,
+            4.403,
+            4.4643,
+            3.8132,
+            4.4642
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 498,
+            "length": 9
+          }
+        },
+        {
+          "content": "default.",
+          "polygon": [
+            4.4549,
+            4.2792,
+            4.9583,
+            4.279,
+            4.9583,
+            4.4631,
+            4.4544,
+            4.4642
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 508,
+            "length": 8
+          }
+        },
+        {
+          "content": "Authorized",
+          "polygon": [
+            0.6085,
+            5.0674,
+            1.2804,
+            5.0693,
+            1.2793,
+            5.2297,
+            0.6077,
+            5.2272
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 517,
+            "length": 10
+          }
+        },
+        {
+          "content": "representative:",
+          "polygon": [
+            1.3299,
+            5.0697,
+            2.2523,
+            5.0705,
+            2.2523,
+            5.2275,
+            1.3288,
+            5.2295
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 528,
+            "length": 15
+          }
+        },
+        {
+          "content": "Date:",
+          "polygon": [
+            3.8216,
+            5.0742,
+            4.167,
+            5.0754,
+            4.1666,
+            5.2145,
+            3.8209,
+            5.2122
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 544,
+            "length": 5
+          }
+        },
+        {
+          "content": "Synthetic",
+          "polygon": [
+            0.612,
+            10.453,
+            1.0813,
+            10.4555,
+            1.0803,
+            10.5957,
+            0.6117,
+            10.5959
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 550,
+            "length": 9
+          }
+        },
+        {
+          "content": "only",
+          "polygon": [
+            1.1112,
+            10.4554,
+            1.293,
+            10.4547,
+            1.2921,
+            10.5955,
+            1.1103,
+            10.5958
+          ],
+          "confidence": 0.986,
+          "span": {
+            "offset": 560,
+            "length": 4
+          }
+        },
+        {
+          "content": "|",
+          "polygon": [
+            1.3206,
+            10.4545,
+            1.3689,
+            10.4542,
+            1.3679,
+            10.595,
+            1.3197,
+            10.5953
+          ],
+          "confidence": 0.99,
+          "span": {
+            "offset": 565,
+            "length": 1
+          }
+        },
+        {
+          "content": "Page",
+          "polygon": [
+            1.408,
+            10.4542,
+            1.6634,
+            10.4548,
+            1.6627,
+            10.5949,
+            1.407,
+            10.5949
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 567,
+            "length": 4
+          }
+        },
+        {
+          "content": "1",
+          "polygon": [
+            1.7025,
+            10.4549,
+            1.7416,
+            10.455,
+            1.7409,
+            10.5948,
+            1.7018,
+            10.5947
+          ],
+          "confidence": 0.993,
+          "span": {
+            "offset": 572,
+            "length": 1
+          }
+        },
+        {
+          "content": "of",
+          "polygon": [
+            1.7899,
+            10.455,
+            1.8866,
+            10.4551,
+            1.8857,
+            10.5948,
+            1.7891,
+            10.5949
+          ],
+          "confidence": 0.996,
+          "span": {
+            "offset": 574,
+            "length": 2
+          }
+        },
+        {
+          "content": "1",
+          "polygon": [
+            1.9188,
+            10.4552,
+            1.9556,
+            10.4552,
+            1.9548,
+            10.5943,
+            1.9179,
+            10.5946
+          ],
+          "confidence": 0.994,
+          "span": {
+            "offset": 577,
+            "length": 1
+          }
+        },
+        {
+          "content": "|",
+          "polygon": [
+            1.9832,
+            10.4552,
+            2.0269,
+            10.4551,
+            2.0261,
+            10.5938,
+            1.9824,
+            10.594
+          ],
+          "confidence": 0.989,
+          "span": {
+            "offset": 579,
+            "length": 1
+          }
+        },
+        {
+          "content": "No",
+          "polygon": [
+            2.0706,
+            10.4547,
+            2.1856,
+            10.4535,
+            2.1847,
+            10.5933,
+            2.0698,
+            10.5936
+          ],
+          "confidence": 0.992,
+          "span": {
+            "offset": 581,
+            "length": 2
+          }
+        },
+        {
+          "content": "legal",
+          "polygon": [
+            2.2133,
+            10.4534,
+            2.4663,
+            10.4532,
+            2.4658,
+            10.5927,
+            2.2124,
+            10.5931
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 584,
+            "length": 5
+          }
+        },
+        {
+          "content": "effect",
+          "polygon": [
+            2.5031,
+            10.453,
+            2.793,
+            10.4529,
+            2.7927,
+            10.5918,
+            2.5026,
+            10.5929
+          ],
+          "confidence": 0.995,
+          "span": {
+            "offset": 590,
+            "length": 6
+          }
+        }
+      ],
+      "lines": [
+        {
+          "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION",
+          "polygon": [
+            0.6143,
+            0.3959,
+            4.1427,
+            0.3965,
+            4.1427,
+            0.5393,
+            0.6143,
+            0.5386
+          ],
+          "spans": [
+            {
+              "offset": 0,
+              "length": 47
+            }
+          ]
+        },
+        {
+          "content": "PROMISSORY NOTE",
+          "polygon": [
+            0.6169,
+            0.8447,
+            3.0892,
+            0.8438,
+            3.0893,
+            1.0868,
+            0.617,
+            1.0877
+          ],
+          "spans": [
+            {
+              "offset": 48,
+              "length": 15
+            }
+          ]
+        },
+        {
+          "content": "PRINCIPAL AMOUNT",
+          "polygon": [
+            0.6138,
+            1.5132,
+            2.0299,
+            1.5132,
+            2.0299,
+            1.6591,
+            0.6138,
+            1.6591
+          ],
+          "spans": [
+            {
+              "offset": 64,
+              "length": 16
+            }
+          ]
+        },
+        {
+          "content": "$265,000.00",
+          "polygon": [
+            2.6286,
+            1.5073,
+            3.4924,
+            1.5044,
+            3.493,
+            1.666,
+            2.6291,
+            1.6689
+          ],
+          "spans": [
+            {
+              "offset": 81,
+              "length": 11
+            }
+          ]
+        },
+        {
+          "content": "LENDER",
+          "polygon": [
+            0.6147,
+            1.9058,
+            1.2034,
+            1.9056,
+            1.2034,
+            2.0427,
+            0.6147,
+            2.043
+          ],
+          "spans": [
+            {
+              "offset": 93,
+              "length": 6
+            }
+          ]
+        },
+        {
+          "content": "Fictional Prairie Lending",
+          "polygon": [
+            2.6308,
+            1.8878,
+            4.2818,
+            1.898,
+            4.2804,
+            2.069,
+            2.6294,
+            2.0555
+          ],
+          "spans": [
+            {
+              "offset": 100,
+              "length": 25
+            }
+          ]
+        },
+        {
+          "content": "PROPERTY ADDRESS",
+          "polygon": [
+            0.615,
+            2.2955,
+            2.1129,
+            2.2925,
+            2.1132,
+            2.4396,
+            0.6153,
+            2.4414
+          ],
+          "spans": [
+            {
+              "offset": 126,
+              "length": 16
+            }
+          ]
+        },
+        {
+          "content": "134 Juniper Lane, Austin, TX 78701",
+          "polygon": [
+            2.6432,
+            2.2857,
+            5.0668,
+            2.281,
+            5.0671,
+            2.4534,
+            2.6435,
+            2.458
+          ],
+          "spans": [
+            {
+              "offset": 143,
+              "length": 34
+            }
+          ]
+        },
+        {
+          "content": "BORROWER",
+          "polygon": [
+            0.6174,
+            2.685,
+            1.4747,
+            2.6844,
+            1.4748,
+            2.827,
+            0.6175,
+            2.8275
+          ],
+          "spans": [
+            {
+              "offset": 178,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "content": "Morgan Willow3",
+          "polygon": [
+            2.6286,
+            2.6765,
+            3.7303,
+            2.6713,
+            3.7311,
+            2.8437,
+            2.6288,
+            2.849
+          ],
+          "spans": [
+            {
+              "offset": 187,
+              "length": 14
+            }
+          ]
+        },
+        {
+          "content": "LOAN NUMBER",
+          "polygon": [
+            0.6148,
+            3.0708,
+            1.6777,
+            3.0702,
+            1.6778,
+            3.2176,
+            0.6149,
+            3.2182
+          ],
+          "spans": [
+            {
+              "offset": 202,
+              "length": 11
+            }
+          ]
+        },
+        {
+          "content": "92000003",
+          "polygon": [
+            2.6298,
+            3.0614,
+            3.3215,
+            3.0597,
+            3.3219,
+            3.2157,
+            2.6302,
+            3.2164
+          ],
+          "spans": [
+            {
+              "offset": 214,
+              "length": 8
+            }
+          ]
+        },
+        {
+          "content": "Promise to pay",
+          "polygon": [
+            0.6152,
+            3.4378,
+            1.8252,
+            3.4492,
+            1.8234,
+            3.633,
+            0.6143,
+            3.6213
+          ],
+          "spans": [
+            {
+              "offset": 223,
+              "length": 14
+            }
+          ]
+        },
+        {
+          "content": "Review the following provisions carefully. This borrower promises to pay the principal sum to the lender,",
+          "polygon": [
+            0.6173,
+            3.7755,
+            7.625,
+            3.7786,
+            7.6249,
+            3.9638,
+            0.6172,
+            3.9597
+          ],
+          "spans": [
+            {
+              "offset": 238,
+              "length": 105
+            }
+          ]
+        },
+        {
+          "content": "with interest. Monthly installments are due on the first day of each month. Late charges apply after fifteen",
+          "polygon": [
+            0.6086,
+            4.0302,
+            7.7144,
+            4.0348,
+            7.7142,
+            4.2155,
+            0.6084,
+            4.2076
+          ],
+          "spans": [
+            {
+              "offset": 344,
+              "length": 108
+            }
+          ]
+        },
+        {
+          "content": "days. This unpaid balance may be accelerated following default.",
+          "polygon": [
+            0.6129,
+            4.2819,
+            4.9545,
+            4.2787,
+            4.9546,
+            4.462,
+            0.613,
+            4.4651
+          ],
+          "spans": [
+            {
+              "offset": 453,
+              "length": 63
+            }
+          ]
+        },
+        {
+          "content": "Authorized representative:",
+          "polygon": [
+            0.608,
+            5.0673,
+            2.2493,
+            5.0706,
+            2.249,
+            5.2293,
+            0.6077,
+            5.226
+          ],
+          "spans": [
+            {
+              "offset": 517,
+              "length": 26
+            }
+          ]
+        },
+        {
+          "content": "Date:",
+          "polygon": [
+            3.8216,
+            5.0727,
+            4.1634,
+            5.0753,
+            4.1624,
+            5.2133,
+            3.8205,
+            5.2107
+          ],
+          "spans": [
+            {
+              "offset": 544,
+              "length": 5
+            }
+          ]
+        },
+        {
+          "content": "Synthetic only | Page 1 of 1 | No legal effect",
+          "polygon": [
+            0.6116,
+            10.453,
+            2.7902,
+            10.4521,
+            2.7903,
+            10.5932,
+            0.6117,
+            10.5941
+          ],
+          "spans": [
+            {
+              "offset": 550,
+              "length": 46
+            }
+          ]
+        }
+      ],
+      "spans": [
+        {
+          "offset": 0,
+          "length": 596
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "rowCount": 5,
+      "columnCount": 2,
+      "cells": [
+        {
+          "rowIndex": 0,
+          "columnIndex": 0,
+          "content": "PRINCIPAL AMOUNT",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.5479,
+                1.4504,
+                2.3685,
+                1.4504,
+                2.363,
+                1.7771,
+                0.5479,
+                1.7771
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 64,
+              "length": 16
+            }
+          ],
+          "elements": [
+            "/paragraphs/2"
+          ]
+        },
+        {
+          "rowIndex": 0,
+          "columnIndex": 1,
+          "content": "$265,000.00",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                2.3685,
+                1.4504,
+                5.1299,
+                1.4504,
+                5.1299,
+                1.7771,
+                2.363,
+                1.7771
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 81,
+              "length": 11
+            }
+          ],
+          "elements": [
+            "/paragraphs/3"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "columnIndex": 0,
+          "content": "LENDER",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.5479,
+                1.7771,
+                2.363,
+                1.7771,
+                2.363,
+                2.1701,
+                0.5423,
+                2.1756
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 93,
+              "length": 6
+            }
+          ],
+          "elements": [
+            "/paragraphs/4"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "columnIndex": 1,
+          "content": "Fictional Prairie Lending",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                2.363,
+                1.7771,
+                5.1299,
+                1.7771,
+                5.1243,
+                2.1646,
+                2.363,
+                2.1701
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 100,
+              "length": 25
+            }
+          ],
+          "elements": [
+            "/paragraphs/5"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "columnIndex": 0,
+          "content": "PROPERTY ADDRESS",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.5423,
+                2.1756,
+                2.363,
+                2.1701,
+                2.363,
+                2.5687,
+                0.5423,
+                2.5687
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 126,
+              "length": 16
+            }
+          ],
+          "elements": [
+            "/paragraphs/6"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "columnIndex": 1,
+          "content": "134 Juniper Lane, Austin, TX 78701",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                2.363,
+                2.1701,
+                5.1243,
+                2.1646,
+                5.1243,
+                2.5576,
+                2.363,
+                2.5687
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 143,
+              "length": 34
+            }
+          ],
+          "elements": [
+            "/paragraphs/7"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "columnIndex": 0,
+          "content": "BORROWER",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.5423,
+                2.5687,
+                2.363,
+                2.5687,
+                2.363,
+                2.9507,
+                0.5423,
+                2.9562
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 178,
+              "length": 8
+            }
+          ],
+          "elements": [
+            "/paragraphs/8"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "columnIndex": 1,
+          "content": "Morgan Willow3",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                2.363,
+                2.5687,
+                5.1243,
+                2.5576,
+                5.1188,
+                2.9451,
+                2.363,
+                2.9507
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 187,
+              "length": 14
+            }
+          ],
+          "elements": [
+            "/paragraphs/9"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "columnIndex": 0,
+          "content": "LOAN NUMBER",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                0.5423,
+                2.9562,
+                2.363,
+                2.9507,
+                2.363,
+                3.2607,
+                0.5368,
+                3.2552
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 202,
+              "length": 11
+            }
+          ],
+          "elements": [
+            "/paragraphs/10"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "columnIndex": 1,
+          "content": "92000003",
+          "boundingRegions": [
+            {
+              "pageNumber": 1,
+              "polygon": [
+                2.363,
+                2.9507,
+                5.1188,
+                2.9451,
+                5.1188,
+                3.2662,
+                2.363,
+                3.2607
+              ]
+            }
+          ],
+          "spans": [
+            {
+              "offset": 214,
+              "length": 8
+            }
+          ],
+          "elements": [
+            "/paragraphs/11"
+          ]
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5698,
+            1.4608,
+            5.1001,
+            1.4612,
+            5.0993,
+            3.2375,
+            0.5687,
+            3.237
+          ]
+        }
+      ],
+      "spans": [
+        {
+          "offset": 64,
+          "length": 158
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "spans": [
+        {
+          "offset": 0,
+          "length": 47
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.6143,
+            0.3959,
+            4.1427,
+            0.3965,
+            4.1427,
+            0.5393,
+            0.6143,
+            0.5386
+          ]
+        }
+      ],
+      "role": "pageHeader",
+      "content": "BMG SYNTHETIC TEST MATERIAL - NOT FOR EXECUTION"
+    },
+    {
+      "spans": [
+        {
+          "offset": 48,
+          "length": 15
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.617,
+            0.8447,
+            3.0892,
+            0.8438,
+            3.0893,
+            1.0868,
+            0.617,
+            1.0877
+          ]
+        }
+      ],
+      "role": "title",
+      "content": "PROMISSORY NOTE"
+    },
+    {
+      "spans": [
+        {
+          "offset": 64,
+          "length": 16
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5479,
+            1.4504,
+            2.3685,
+            1.4504,
+            2.363,
+            1.7771,
+            0.5479,
+            1.7771
+          ]
+        }
+      ],
+      "content": "PRINCIPAL AMOUNT"
+    },
+    {
+      "spans": [
+        {
+          "offset": 81,
+          "length": 11
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            2.3685,
+            1.4504,
+            5.1299,
+            1.4504,
+            5.1299,
+            1.7771,
+            2.363,
+            1.7771
+          ]
+        }
+      ],
+      "content": "$265,000.00"
+    },
+    {
+      "spans": [
+        {
+          "offset": 93,
+          "length": 6
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5479,
+            1.7771,
+            2.363,
+            1.7771,
+            2.363,
+            2.1701,
+            0.5423,
+            2.1756
+          ]
+        }
+      ],
+      "content": "LENDER"
+    },
+    {
+      "spans": [
+        {
+          "offset": 100,
+          "length": 25
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            2.363,
+            1.7771,
+            5.1299,
+            1.7771,
+            5.1243,
+            2.1646,
+            2.363,
+            2.1701
+          ]
+        }
+      ],
+      "content": "Fictional Prairie Lending"
+    },
+    {
+      "spans": [
+        {
+          "offset": 126,
+          "length": 16
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5423,
+            2.1756,
+            2.363,
+            2.1701,
+            2.363,
+            2.5687,
+            0.5423,
+            2.5687
+          ]
+        }
+      ],
+      "content": "PROPERTY ADDRESS"
+    },
+    {
+      "spans": [
+        {
+          "offset": 143,
+          "length": 34
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            2.363,
+            2.1701,
+            5.1243,
+            2.1646,
+            5.1243,
+            2.5576,
+            2.363,
+            2.5687
+          ]
+        }
+      ],
+      "content": "134 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "spans": [
+        {
+          "offset": 178,
+          "length": 8
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5423,
+            2.5687,
+            2.363,
+            2.5687,
+            2.363,
+            2.9507,
+            0.5423,
+            2.9562
+          ]
+        }
+      ],
+      "content": "BORROWER"
+    },
+    {
+      "spans": [
+        {
+          "offset": 187,
+          "length": 14
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            2.363,
+            2.5687,
+            5.1243,
+            2.5576,
+            5.1188,
+            2.9451,
+            2.363,
+            2.9507
+          ]
+        }
+      ],
+      "content": "Morgan Willow3"
+    },
+    {
+      "spans": [
+        {
+          "offset": 202,
+          "length": 11
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.5423,
+            2.9562,
+            2.363,
+            2.9507,
+            2.363,
+            3.2607,
+            0.5368,
+            3.2552
+          ]
+        }
+      ],
+      "content": "LOAN NUMBER"
+    },
+    {
+      "spans": [
+        {
+          "offset": 214,
+          "length": 8
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            2.363,
+            2.9507,
+            5.1188,
+            2.9451,
+            5.1188,
+            3.2662,
+            2.363,
+            3.2607
+          ]
+        }
+      ],
+      "content": "92000003"
+    },
+    {
+      "spans": [
+        {
+          "offset": 223,
+          "length": 14
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.6152,
+            3.4375,
+            1.8252,
+            3.4492,
+            1.8234,
+            3.633,
+            0.6134,
+            3.6213
+          ]
+        }
+      ],
+      "content": "Promise to pay"
+    },
+    {
+      "spans": [
+        {
+          "offset": 238,
+          "length": 278
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.6086,
+            3.7755,
+            7.7145,
+            3.7786,
+            7.7142,
+            4.4682,
+            0.6083,
+            4.4651
+          ]
+        }
+      ],
+      "content": "Review the following provisions carefully. This borrower promises to pay the principal sum to the lender, with interest. Monthly installments are due on the first day of each month. Late charges apply after fifteen days. This unpaid balance may be accelerated following default."
+    },
+    {
+      "spans": [
+        {
+          "offset": 517,
+          "length": 26
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.608,
+            5.0673,
+            2.2493,
+            5.0706,
+            2.249,
+            5.2293,
+            0.6077,
+            5.226
+          ]
+        }
+      ],
+      "content": "Authorized representative:"
+    },
+    {
+      "spans": [
+        {
+          "offset": 544,
+          "length": 5
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            3.8216,
+            5.0727,
+            4.1634,
+            5.0753,
+            4.1624,
+            5.2133,
+            3.8205,
+            5.2107
+          ]
+        }
+      ],
+      "content": "Date:"
+    },
+    {
+      "spans": [
+        {
+          "offset": 550,
+          "length": 46
+        }
+      ],
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0.6116,
+            10.453,
+            2.7902,
+            10.4521,
+            2.7903,
+            10.5932,
+            0.6117,
+            10.5941
+          ]
+        }
+      ],
+      "role": "pageFooter",
+      "content": "Synthetic only | Page 1 of 1 | No legal effect"
+    }
+  ],
+  "styles": [],
+  "contentFormat": "text",
+  "sections": [
+    {
+      "spans": [
+        {
+          "offset": 48,
+          "length": 501
+        }
+      ],
+      "elements": [
+        "/paragraphs/1",
+        "/tables/0",
+        "/paragraphs/12",
+        "/paragraphs/13",
+        "/paragraphs/14",
+        "/paragraphs/15"
+      ]
+    }
+  ]
+}

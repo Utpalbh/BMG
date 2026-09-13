@@ -1,0 +1,18 @@
+PAGE 1
+PROPERTY SURVEY CERTIFICATION
+Synthetic survey summary
+SYNTHETIC POC DATA
+Survey Job:
+SV-0002
+Survey Date:
+2026-08-13
+Owner:
+Taylor Brooks and Morgan Brooks
+Property Address:
+202 Test Case Drive, Demo City, TX 75002
+County:
+Collin
+Legal Description:
+Synthetic Lot 11, Block 3, POC Subdivision, Collin County, Texas
+Illustrative property boundary - not to scale
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

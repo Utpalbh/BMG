@@ -1,0 +1,20 @@
+[
+  {
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleAssignments/a310999a-8e5a-4895-a934-2286618b3ebc",
+    "name": "a310999a-8e5a-4895-a934-2286618b3ebc",
+    "principalId": "45701353-fc17-4a20-929c-a826685bd0b0",
+    "resourceGroup": "rg-bmg-poc",
+    "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleDefinitions/6a70bb22-c5d9-4345-a5c9-18c719276c26",
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/dbs/bmg-poc/colls/submissions",
+    "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments"
+  },
+  {
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleAssignments/116b1652-41e1-544d-8762-3ce5f7811a86",
+    "name": "116b1652-41e1-544d-8762-3ce5f7811a86",
+    "principalId": "72ecc7b4-9bca-425f-9816-2562b5ab1ba7",
+    "resourceGroup": "rg-bmg-poc",
+    "roleDefinitionId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy/sqlRoleDefinitions/00000000-0000-0000-0000-000000000001",
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy",
+    "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments"
+  }
+]

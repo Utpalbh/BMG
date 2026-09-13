@@ -1,0 +1,26 @@
+{
+  "executionMode": "AzureFull",
+  "status": "LayoutRead",
+  "apiVersion": "2024-11-30",
+  "files": [
+    {
+      "documentId": "doc-001",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "pages": 2,
+      "characters": 1566,
+      "modelId": "prebuilt-layout",
+      "evidenceFile": "ai/doc-001-layout.json"
+    },
+    {
+      "documentId": "doc-002",
+      "sha256": "f8474ba3bf935b0164a21a1db83a588ee196677f5f2878feafd95b5ac1988900",
+      "pages": 1,
+      "characters": 596,
+      "modelId": "prebuilt-layout",
+      "evidenceFile": "ai/doc-002-layout.json"
+    }
+  ],
+  "llmPerformed": false,
+  "cosmosWritten": false,
+  "finalResultReturned": false
+}

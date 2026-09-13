@@ -1,0 +1,151 @@
+{
+  "candidates": [
+    {
+      "documentId": "doc-001",
+      "field": "lenderCode",
+      "value": "FP-017",
+      "page": 1,
+      "quote": "LENDER CODE\nFP-017"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "lenderCode",
+      "value": "FP-017",
+      "page": 2,
+      "quote": "LENDER CODE\nFP-017"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanNumber",
+      "value": "92000001",
+      "page": 1,
+      "quote": "LOAN NUMBER\n92000001"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanNumber",
+      "value": "92000001",
+      "page": 2,
+      "quote": "LOAN NUMBER\n92000001"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "borrowerName",
+      "value": "Morgan Willow1",
+      "page": 1,
+      "quote": "BORROWER\nMorgan Willow1"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "borrowerName",
+      "value": "Morgan Willow1",
+      "page": 2,
+      "quote": "BORROWER\nMorgan Willow1"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "propertyAddress",
+      "value": "100 Juniper Lane, Austin, TX 78701",
+      "page": 1,
+      "quote": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "propertyAddress",
+      "value": "100 Juniper Lane, Austin, TX 78701",
+      "page": 2,
+      "quote": "PROPERTY ADDRESS\n100 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "closingDate",
+      "value": "September 18, 2026",
+      "page": 1,
+      "quote": "CLOSING DATE\nSeptember 18, 2026"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "closingDate",
+      "value": "September 18, 2026",
+      "page": 2,
+      "quote": "CLOSING DATE\nSeptember 18, 2026"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanType",
+      "value": "Conventional",
+      "page": 1,
+      "quote": "LOAN TYPE\nConventional"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "loanType",
+      "value": "Conventional",
+      "page": 2,
+      "quote": "LOAN TYPE\nConventional"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "purpose",
+      "value": "Purchase",
+      "page": 1,
+      "quote": "PURPOSE\nPurchase"
+    },
+    {
+      "documentId": "doc-001",
+      "field": "purpose",
+      "value": "Purchase",
+      "page": 2,
+      "quote": "PURPOSE\nPurchase"
+    },
+    {
+      "documentId": "doc-002",
+      "field": "lenderCode",
+      "value": null,
+      "page": null,
+      "quote": null
+    },
+    {
+      "documentId": "doc-002",
+      "field": "loanNumber",
+      "value": "92000003",
+      "page": 1,
+      "quote": "LOAN NUMBER\n92000003"
+    },
+    {
+      "documentId": "doc-002",
+      "field": "borrowerName",
+      "value": "Morgan Willow3",
+      "page": 1,
+      "quote": "BORROWER\nMorgan Willow3"
+    },
+    {
+      "documentId": "doc-002",
+      "field": "propertyAddress",
+      "value": "134 Juniper Lane, Austin, TX 78701",
+      "page": 1,
+      "quote": "PROPERTY ADDRESS\n134 Juniper Lane, Austin, TX 78701"
+    },
+    {
+      "documentId": "doc-002",
+      "field": "closingDate",
+      "value": null,
+      "page": null,
+      "quote": null
+    },
+    {
+      "documentId": "doc-002",
+      "field": "loanType",
+      "value": null,
+      "page": null,
+      "quote": null
+    },
+    {
+      "documentId": "doc-002",
+      "field": "purpose",
+      "value": null,
+      "page": null,
+      "quote": null
+    }
+  ]
+}

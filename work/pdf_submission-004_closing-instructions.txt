@@ -1,0 +1,24 @@
+PAGE 1
+CLOSING INSTRUCTIONS
+Synthetic lender instructions
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000004
+Lender:
+Demo Home Finance
+Lender Code:
+LND004
+Borrower(s):
+Cameron Hayes and Quinn Hayes
+Property:
+404 Mock Data Way, Trial Park, TX 75004
+Closing Date:
+2026-09-25
+Loan Type:
+Home Equity
+Purpose:
+Home Equity
+Submission Type:
+Examination
+Return executed package according to lender instructions. Synthetic content only.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

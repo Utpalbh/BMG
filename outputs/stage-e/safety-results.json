@@ -1,0 +1,28 @@
+{
+  "runtimeRoot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\test-runs\\stage-e-safety-3d00ea64",
+  "tests": [
+    {
+      "name": "malformed",
+      "passed": true
+    },
+    {
+      "name": "encrypted",
+      "passed": true
+    },
+    {
+      "name": "over_page_limit",
+      "passed": true
+    },
+    {
+      "name": "uncertain_submission_does_not_resubmit",
+      "passed": true
+    },
+    {
+      "name": "durable_page_budget_blocks_new_request",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "billableCalls": 0
+}

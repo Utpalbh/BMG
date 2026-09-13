@@ -1,0 +1,785 @@
+{
+  "stage": "E",
+  "status": "Complete",
+  "verifiedUtc": "2026-09-12T09:02:32.156526+00:00",
+  "processingStopped": true,
+  "privateStorageVerified": true,
+  "trainingRolesRemoved": true,
+  "networkRetained": true,
+  "stoppableComputeResources": [],
+  "openAiDeployments": [],
+  "regressionTestsPassed": 21,
+  "safetyTestsPassed": 5,
+  "identityChecksPassed": 7,
+  "heldOut": {
+    "threshold": 0.8,
+    "testDocuments": 28,
+    "correct": 28,
+    "knownAccepted": 19,
+    "knownDocuments": 24,
+    "falseAccepted": 0,
+    "otherRoutedToReview": 4,
+    "otherDocuments": 4,
+    "ocrAnchorsFound": 38,
+    "ocrAnchorsChecked": 38,
+    "confusionMatrix": {
+      "Note": {
+        "Note": 4,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 0,
+        "Survey": 0,
+        "ClosingInstructions": 0,
+        "Rider": 0,
+        "Other": 0
+      },
+      "DeedOfTrust": {
+        "Note": 0,
+        "DeedOfTrust": 4,
+        "TitleCommitment": 0,
+        "Survey": 0,
+        "ClosingInstructions": 0,
+        "Rider": 0,
+        "Other": 0
+      },
+      "TitleCommitment": {
+        "Note": 0,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 4,
+        "Survey": 0,
+        "ClosingInstructions": 0,
+        "Rider": 0,
+        "Other": 0
+      },
+      "Survey": {
+        "Note": 0,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 0,
+        "Survey": 4,
+        "ClosingInstructions": 0,
+        "Rider": 0,
+        "Other": 0
+      },
+      "ClosingInstructions": {
+        "Note": 0,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 0,
+        "Survey": 0,
+        "ClosingInstructions": 4,
+        "Rider": 0,
+        "Other": 0
+      },
+      "Rider": {
+        "Note": 0,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 0,
+        "Survey": 0,
+        "ClosingInstructions": 0,
+        "Rider": 4,
+        "Other": 0
+      },
+      "Other": {
+        "Note": 0,
+        "DeedOfTrust": 0,
+        "TitleCommitment": 0,
+        "Survey": 0,
+        "ClosingInstructions": 0,
+        "Rider": 0,
+        "Other": 4
+      }
+    },
+    "results": [
+      {
+        "expected": "Note",
+        "predicted": "Note",
+        "confidence": 0.855,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-001"
+      },
+      {
+        "expected": "Note",
+        "predicted": "Note",
+        "confidence": 0.772,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-002"
+      },
+      {
+        "expected": "Note",
+        "predicted": "Note",
+        "confidence": 0.823,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-003"
+      },
+      {
+        "expected": "Note",
+        "predicted": "Note",
+        "confidence": 0.802,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-004"
+      },
+      {
+        "expected": "DeedOfTrust",
+        "predicted": "DeedOfTrust",
+        "confidence": 0.849,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-005"
+      },
+      {
+        "expected": "DeedOfTrust",
+        "predicted": "DeedOfTrust",
+        "confidence": 0.799,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-006"
+      },
+      {
+        "expected": "DeedOfTrust",
+        "predicted": "DeedOfTrust",
+        "confidence": 0.818,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-007"
+      },
+      {
+        "expected": "DeedOfTrust",
+        "predicted": "DeedOfTrust",
+        "confidence": 0.804,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-008"
+      },
+      {
+        "expected": "TitleCommitment",
+        "predicted": "TitleCommitment",
+        "confidence": 0.849,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-009"
+      },
+      {
+        "expected": "TitleCommitment",
+        "predicted": "TitleCommitment",
+        "confidence": 0.879,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-010"
+      },
+      {
+        "expected": "TitleCommitment",
+        "predicted": "TitleCommitment",
+        "confidence": 0.844,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-011"
+      },
+      {
+        "expected": "TitleCommitment",
+        "predicted": "TitleCommitment",
+        "confidence": 0.889,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-012"
+      },
+      {
+        "expected": "Survey",
+        "predicted": "Survey",
+        "confidence": 0.845,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-013"
+      },
+      {
+        "expected": "Survey",
+        "predicted": "Survey",
+        "confidence": 0.782,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-014"
+      },
+      {
+        "expected": "Survey",
+        "predicted": "Survey",
+        "confidence": 0.812,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-015"
+      },
+      {
+        "expected": "Survey",
+        "predicted": "Survey",
+        "confidence": 0.777,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-016"
+      },
+      {
+        "expected": "ClosingInstructions",
+        "predicted": "ClosingInstructions",
+        "confidence": 0.88,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-017"
+      },
+      {
+        "expected": "ClosingInstructions",
+        "predicted": "ClosingInstructions",
+        "confidence": 0.825,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-018"
+      },
+      {
+        "expected": "ClosingInstructions",
+        "predicted": "ClosingInstructions",
+        "confidence": 0.853,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-019"
+      },
+      {
+        "expected": "ClosingInstructions",
+        "predicted": "ClosingInstructions",
+        "confidence": 0.799,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-020"
+      },
+      {
+        "expected": "Rider",
+        "predicted": "Rider",
+        "confidence": 0.933,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-021"
+      },
+      {
+        "expected": "Rider",
+        "predicted": "Rider",
+        "confidence": 0.8,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-022"
+      },
+      {
+        "expected": "Rider",
+        "predicted": "Rider",
+        "confidence": 0.906,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-023"
+      },
+      {
+        "expected": "Rider",
+        "predicted": "Rider",
+        "confidence": 0.813,
+        "accepted": true,
+        "status": "LayoutRead",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": [
+          true,
+          true
+        ],
+        "submissionId": "stage-e-eval-024"
+      },
+      {
+        "expected": "Other",
+        "predicted": "Other",
+        "confidence": 0.819,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": false,
+        "pages": 2,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-025"
+      },
+      {
+        "expected": "Other",
+        "predicted": "Other",
+        "confidence": 0.867,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": true,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-026"
+      },
+      {
+        "expected": "Other",
+        "predicted": "Other",
+        "confidence": 0.837,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-027"
+      },
+      {
+        "expected": "Other",
+        "predicted": "Other",
+        "confidence": 0.881,
+        "accepted": false,
+        "status": "ManualException",
+        "scanned": false,
+        "pages": 1,
+        "ocrAnchors": null,
+        "submissionId": "stage-e-eval-028"
+      }
+    ],
+    "pageReservations": [
+      {
+        "kind": "classify",
+        "status": "Succeeded",
+        "requests": 28,
+        "pages": 35
+      },
+      {
+        "kind": "layout",
+        "status": "Succeeded",
+        "requests": 19,
+        "pages": 25
+      }
+    ],
+    "limitations": [
+      "Synthetic documents only; no client accuracy claim.",
+      "Template families and identities are disjoint; class-specific vocabulary overlaps by design.",
+      "Other is a sampled negative class, not universal out-of-distribution detection."
+    ]
+  },
+  "recovery": {
+    "passed": true,
+    "submissionId": "stage-e-supported-demo-001",
+    "packetKind": "Previously evaluated supported synthetic packet",
+    "crashExitCode": 75,
+    "checkpointBeforeCrash": "Classified",
+    "finalStatus": "LayoutRead",
+    "replayAddedAiRequests": 0,
+    "requestRecordsUnchanged": true,
+    "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-e\\snapshots\\eb556fb354bc6cd644e6536a7b01ebcfdef268017c8d8d96db6301e1fecf8245",
+    "classification": [
+      {
+        "documentId": "doc-001",
+        "sha256": "b95f2bc8b9bd3b1e9077c1d1363cdb3256de7e39fcc2bc6b7273d441b4e1f524",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "Note",
+        "confidence": 0.855,
+        "pages": 2,
+        "accepted": true
+      },
+      {
+        "documentId": "doc-002",
+        "sha256": "200ae800a5990082f4deab95ae2351d46750b2525495cec8c468c98ded50932d",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "DeedOfTrust",
+        "confidence": 0.849,
+        "pages": 2,
+        "accepted": true
+      },
+      {
+        "documentId": "doc-003",
+        "sha256": "8ca64fc2b0e0caf6f09bd4b19ae8c7e33a7653f3919b5addb6ecc8888fe59978",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "TitleCommitment",
+        "confidence": 0.849,
+        "pages": 2,
+        "accepted": true
+      },
+      {
+        "documentId": "doc-004",
+        "sha256": "5bedb877874c26cae60e80e0449389e25ba5be1b153d10ea9541abc9116c4ac6",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "Survey",
+        "confidence": 0.845,
+        "pages": 2,
+        "accepted": true
+      },
+      {
+        "documentId": "doc-005",
+        "sha256": "76f495101ef3bbf60e3cf2fd76398db49e16242839b895150b3a60903f73b354",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "ClosingInstructions",
+        "confidence": 0.88,
+        "pages": 2,
+        "accepted": true
+      },
+      {
+        "documentId": "doc-006",
+        "sha256": "0f2edb53c5c5b747c03362580212b9d7941b46826a2f8df7ac6bac7b7f7f8257",
+        "modelId": "bmg-stage-e-v1",
+        "documentType": "Rider",
+        "confidence": 0.933,
+        "pages": 2,
+        "accepted": true
+      }
+    ],
+    "layout": {
+      "executionMode": "AzureDocuments",
+      "status": "LayoutRead",
+      "apiVersion": "2024-11-30",
+      "files": [
+        {
+          "documentId": "doc-001",
+          "sha256": "b95f2bc8b9bd3b1e9077c1d1363cdb3256de7e39fcc2bc6b7273d441b4e1f524",
+          "pages": 2,
+          "characters": 1208,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-001-layout.json"
+        },
+        {
+          "documentId": "doc-002",
+          "sha256": "200ae800a5990082f4deab95ae2351d46750b2525495cec8c468c98ded50932d",
+          "pages": 2,
+          "characters": 1218,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-002-layout.json"
+        },
+        {
+          "documentId": "doc-003",
+          "sha256": "8ca64fc2b0e0caf6f09bd4b19ae8c7e33a7653f3919b5addb6ecc8888fe59978",
+          "pages": 2,
+          "characters": 1322,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-003-layout.json"
+        },
+        {
+          "documentId": "doc-004",
+          "sha256": "5bedb877874c26cae60e80e0449389e25ba5be1b153d10ea9541abc9116c4ac6",
+          "pages": 2,
+          "characters": 1354,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-004-layout.json"
+        },
+        {
+          "documentId": "doc-005",
+          "sha256": "76f495101ef3bbf60e3cf2fd76398db49e16242839b895150b3a60903f73b354",
+          "pages": 2,
+          "characters": 1384,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-005-layout.json"
+        },
+        {
+          "documentId": "doc-006",
+          "sha256": "0f2edb53c5c5b747c03362580212b9d7941b46826a2f8df7ac6bac7b7f7f8257",
+          "pages": 2,
+          "characters": 1320,
+          "modelId": "prebuilt-layout",
+          "evidenceFile": "ai/doc-006-layout.json"
+        }
+      ],
+      "llmPerformed": false,
+      "cosmosWritten": false,
+      "finalResultReturned": false
+    }
+  },
+  "watcher": {
+    "passed": true,
+    "stagedAfterWorkerStarted": true,
+    "submissionId": "stage-e-watch-001",
+    "finalStatus": "LayoutRead",
+    "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-e\\snapshots\\3d26d440499f471a409865b0716fd6da52b70bd0ff5fad27fc03f7a2c6a64139",
+    "llmPerformed": false,
+    "cosmosWritten": false,
+    "workerStopped": true
+  },
+  "jobs": [
+    {
+      "submission_id": "stage-e-eval-001",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-002",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-003",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-004",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-005",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-006",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-007",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-008",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-009",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-010",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-011",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-012",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-013",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-014",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-015",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-016",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-017",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-018",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-019",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-020",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-021",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-022",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-023",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-024",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-eval-025",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-026",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-027",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-eval-028",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-demo-001",
+      "status": "ManualException",
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "submission_id": "stage-e-supported-demo-001",
+      "status": "LayoutRead",
+      "error_code": null
+    },
+    {
+      "submission_id": "stage-e-watch-001",
+      "status": "LayoutRead",
+      "error_code": null
+    }
+  ],
+  "aiRequestTotals": [
+    {
+      "kind": "classify",
+      "status": "Succeeded",
+      "requests": 41,
+      "pages": 54
+    },
+    {
+      "kind": "layout",
+      "status": "Succeeded",
+      "requests": 26,
+      "pages": 38
+    }
+  ],
+  "trainingLayoutPages": 77,
+  "nextStage": "F \u2014 not started"
+}

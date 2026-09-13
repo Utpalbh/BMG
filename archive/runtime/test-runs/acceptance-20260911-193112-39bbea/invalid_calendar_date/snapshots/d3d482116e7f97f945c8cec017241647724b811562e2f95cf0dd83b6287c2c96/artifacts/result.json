@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "test",
+  "revision": 1,
+  "status": "ManualException",
+  "metadata": {
+    "lenderCode": "LND001",
+    "loanNumber": "BMG-POC-000001",
+    "borrowerName": "Jordan Parker and Casey Parker",
+    "propertyAddress": "101 Prototype Lane, Sampletown, TX 75001",
+    "closingDate": null,
+    "loanType": "Conventional",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: LND001",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: BMG-POC-000001",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Jordan Parker and Casey Parker",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 101 Prototype Lane, Sampletown, TX 75001",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Conventional",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Purchase",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [
+    "closingDate:InvalidDate"
+  ],
+  "executionMode": "Simulated"
+}

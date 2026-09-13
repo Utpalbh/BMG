@@ -1,0 +1,25 @@
+{
+  "temporarySetupRoleRemoved": true,
+  "secretStored": true,
+  "createdAt": "2026-09-11T13:14:03.9740515Z",
+  "worker": {
+    "applicationObjectId": "6968aa2c-b689-4f93-9fbd-b19a29b46cb2",
+    "displayName": "bmg-poc-worker-wjsvyjg25vqiy",
+    "servicePrincipalObjectId": "45701353-fc17-4a20-929c-a826685bd0b0",
+    "clientId": "14ddb185-4b82-4c60-962c-ce912b1ac791"
+  },
+  "tenantId": "e06201f9-0ec7-4863-80fc-85f43be49c1e",
+  "secretName": "bmg-uploader-client-secret",
+  "workerCertificateThumbprint": "C01E84363830296CD1C3ECFCAC6880D5716DDD86",
+  "uploader": {
+    "servicePrincipalObjectId": "5467b28f-4883-4526-a4c7-011ff004523a",
+    "passwordKeyId": "76314cb8-98ca-4dde-a9de-0ecb6a402e25",
+    "clientId": "3b991d75-8ada-4127-b549-b6ae089c7b58",
+    "displayName": "bmg-poc-uploader-wjsvyjg25vqiy",
+    "applicationObjectId": "ba7c449f-d05c-45a8-acdd-d3c631ec575d",
+    "credentialExpiresAt": "2026-09-12T01:14:54.6366738Z"
+  },
+  "secretVersionId": "https://kv-bmg-wjsvyjg25vqiy.vault.azure.net/secrets/bmg-uploader-client-secret/1a1c8ef8a3134a9285870c7d5c92de79",
+  "temporarySetupRoleId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy/providers/Microsoft.Authorization/roleAssignments/c845e746-9fdb-402b-9902-45f10cf2e26a",
+  "subscriptionId": "6f841b52-7a6d-4287-b0e3-4591621bb363"
+}

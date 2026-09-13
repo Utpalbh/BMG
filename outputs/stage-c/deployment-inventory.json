@@ -1,0 +1,35 @@
+{
+  "cosmos": {
+    "container": "submissions",
+    "database": "bmg-poc",
+    "endpoint": "https://cosmos-bmg-wjsvyjg25vqiy.documents.azure.com:443/",
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-bmg-wjsvyjg25vqiy",
+    "name": "cosmos-bmg-wjsvyjg25vqiy",
+    "resourceGroup": "rg-bmg-poc"
+  },
+  "documentIntelligence": {
+    "endpoint": "https://di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com/",
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy",
+    "managedIdentityPrincipalId": "116acd80-fcea-4810-b3d8-5cac78c256f5",
+    "name": "di-bmg-wjsvyjg25vqiy",
+    "resourceGroup": "rg-bmg-poc"
+  },
+  "keyVault": {
+    "endpoint": "https://kv-bmg-wjsvyjg25vqiy.vault.azure.net/",
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy",
+    "name": "kv-bmg-wjsvyjg25vqiy",
+    "resourceGroup": "rg-bmg-poc"
+  },
+  "openAI": {
+    "endpoint": "https://oai-bmg-wjsvyjg25vqiy.openai.azure.com/",
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/oai-bmg-wjsvyjg25vqiy",
+    "name": "oai-bmg-wjsvyjg25vqiy",
+    "resourceGroup": "rg-bmg-poc"
+  },
+  "storage": {
+    "endpoint": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/",
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy",
+    "name": "stbmgpocwjsvyjg25vqiy",
+    "resourceGroup": "rg-bmg-poc"
+  }
+}

@@ -1,0 +1,54 @@
+Staged 28 held-out documents with neutral filenames and no gold labels.
+int"}
+{"timestampUtc":"2026-09-11T18:59:26.3149003+00:00","executionMode":"AzureDocuments","jobId":"9838b0d80d19715a3a4be013bd0a0789de36bea803d42aaef354dacf21a1445a","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T18:59:31.5693186+00:00","executionMode":"AzureDocuments","jobId":"9838b0d80d19715a3a4be013bd0a0789de36bea803d42aaef354dacf21a1445a","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T18:59:38.5390236+00:00","executionMode":"AzureDocuments","jobId":"9838b0d80d19715a3a4be013bd0a0789de36bea803d42aaef354dacf21a1445a","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T18:59:39.8367232+00:00","executionMode":"AzureDocuments","jobId":"f28fc088636065ed764d1d618c6b17b9ddedec3f0ac0f4328cefba284b414985","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T18:59:55.8642679+00:00","executionMode":"AzureDocuments","jobId":"f28fc088636065ed764d1d618c6b17b9ddedec3f0ac0f4328cefba284b414985","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:02.7470744+00:00","executionMode":"AzureDocuments","jobId":"f28fc088636065ed764d1d618c6b17b9ddedec3f0ac0f4328cefba284b414985","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:09.6786714+00:00","executionMode":"AzureDocuments","jobId":"f28fc088636065ed764d1d618c6b17b9ddedec3f0ac0f4328cefba284b414985","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:11.0633056+00:00","executionMode":"AzureDocuments","jobId":"596cd61163175fd5acc8bd65eddd28e48dfa0e3596cc5aa7708e2f952277b454","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:27.7332967+00:00","executionMode":"AzureDocuments","jobId":"596cd61163175fd5acc8bd65eddd28e48dfa0e3596cc5aa7708e2f952277b454","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:33.0811148+00:00","executionMode":"AzureDocuments","jobId":"596cd61163175fd5acc8bd65eddd28e48dfa0e3596cc5aa7708e2f952277b454","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:38.209089+00:00","executionMode":"AzureDocuments","jobId":"596cd61163175fd5acc8bd65eddd28e48dfa0e3596cc5aa7708e2f952277b454","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:39.8266263+00:00","executionMode":"AzureDocuments","jobId":"5f83b8e22965fc9cca9534108cc92fb0fae570d0616e5cd19d1b5ca1be614de5","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:00:56.9069346+00:00","executionMode":"AzureDocuments","jobId":"5f83b8e22965fc9cca9534108cc92fb0fae570d0616e5cd19d1b5ca1be614de5","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:01:03.2970624+00:00","executionMode":"AzureDocuments","jobId":"5f83b8e22965fc9cca9534108cc92fb0fae570d0616e5cd19d1b5ca1be614de5","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-11T19:01:04.5284451+00:00","executionMode":"AzureDocuments","jobId":"d6c497d2f46f6218612478637110f77aa9801735f0618e6032944d9317162c6f","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:01:21.4149832+00:00","executionMode":"AzureDocuments","jobId":"d6c497d2f46f6218612478637110f77aa9801735f0618e6032944d9317162c6f","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:01:28.9536877+00:00","executionMode":"AzureDocuments","jobId":"d6c497d2f46f6218612478637110f77aa9801735f0618e6032944d9317162c6f","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-11T19:01:29.9246041+00:00","executionMode":"AzureDocuments","jobId":"72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:01:46.4087537+00:00","executionMode":"AzureDocuments","jobId":"72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:01:51.5071437+00:00","executionMode":"AzureDocuments","jobId":"72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-11T19:01:52.9860407+00:00","executionMode":"AzureDocuments","jobId":"0e29cb50665daba297c4c7452d3413ea2b68e178c74842ab258c887722b1b786","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:02:11.9756019+00:00","executionMode":"AzureDocuments","jobId":"0e29cb50665daba297c4c7452d3413ea2b68e178c74842ab258c887722b1b786","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-11T19:02:17.9232376+00:00","executionMode":"AzureDocuments","jobId":"0e29cb50665daba297c4c7452d3413ea2b68e178c74842ab258c887722b1b786","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-11T19:02:17.9250048+00:00","executionMode":"AzureDocuments","jobId":null,"stage":"Worker","outcome":"Stopped"}
+
+Worker exit 2; Other documents should produce review status.
+{
+  "threshold": 0.8,
+  "testDocuments": 28,
+  "correct": 28,
+  "knownAccepted": 19,
+  "knownDocuments": 24,
+  "falseAccepted": 0,
+  "otherRoutedToReview": 4,
+  "otherDocuments": 4,
+  "ocrAnchorsFound": 38,
+  "ocrAnchorsChecked": 38,
+  "pageReservations": [
+    {
+      "kind": "classify",
+      "status": "Succeeded",
+      "requests": 28,
+      "pages": 35
+    },
+    {
+      "kind": "layout",
+      "status": "Succeeded",
+      "requests": 19,
+      "pages": 25
+    }
+  ]
+}

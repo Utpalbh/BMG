@@ -1,0 +1,24 @@
+PAGE 1
+CLOSING INSTRUCTIONS
+Synthetic lender instructions
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000002
+Lender:
+Prototype Mortgage LLC
+Lender Code:
+LND002
+Borrower(s):
+Taylor Brooks and Morgan Brooks
+Property:
+202 Test Case Drive, Demo City, TX 75002
+Closing Date:
+2026-09-23
+Loan Type:
+FHA
+Purpose:
+Refinance
+Submission Type:
+Examination
+Return executed package according to lender instructions. Synthetic content only.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

@@ -1,0 +1,3023 @@
+{
+    "check_type": "bicep",
+    "results": {
+        "passed_checks": [
+            {
+                "check_id": "CKV_AZURE_35",
+                "bc_check_id": null,
+                "check_name": "Ensure default network access rule for Storage Accounts is set to deny",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties/networkAcls/defaultAction"
+                    ]
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.bicep.checks.resource.azure.StorageAccountDefaultNetworkAccessDeny",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_3",
+                "bc_check_id": null,
+                "check_name": "Ensure that 'supportsHttpsTrafficOnly' is set to 'true'",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties/supportsHttpsTrafficOnly"
+                    ]
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.bicep.checks.resource.azure.StorageAccountsTransportEncryption",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_59",
+                "bc_check_id": null,
+                "check_name": "Ensure that Storage accounts disallow public access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties/publicNetworkAccess"
+                    ]
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.StorageAccountDisablePublicAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_44",
+                "bc_check_id": null,
+                "check_name": "Ensure Storage Account is using the latest version of TLS encryption",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties",
+                        "properties/minimumTlsVersion"
+                    ]
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.StorageAccountMinimumTlsVersion",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_34",
+                "bc_check_id": null,
+                "check_name": "Ensure that 'Public access level' is set to Private for blob containers",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties/publicAccess"
+                    ]
+                },
+                "code_block": [
+                    [
+                        43,
+                        "resource containers 'Microsoft.Storage/storageAccounts/blobServices/containers@2025-01-01' = [for name in ['training', 'submissions', 'analysis']: {\n"
+                    ],
+                    [
+                        44,
+                        "  parent: blobService\n"
+                    ],
+                    [
+                        45,
+                        "  name: name\n"
+                    ],
+                    [
+                        46,
+                        "  properties: { publicAccess: 'None' }\n"
+                    ],
+                    [
+                        47,
+                        "}]\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    43,
+                    47
+                ],
+                "resource": "Microsoft.Storage/storageAccounts/blobServices/containers.containers",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.StorageBlobServiceContainerPrivateAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_189",
+                "bc_check_id": null,
+                "check_name": "Ensure that Azure Key Vault disables public network access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        48,
+                        "resource vault 'Microsoft.KeyVault/vaults@2024-11-01' = {\n"
+                    ],
+                    [
+                        49,
+                        "  name: 'kv-bmg-${suffix}'\n"
+                    ],
+                    [
+                        50,
+                        "  location: location\n"
+                    ],
+                    [
+                        51,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        52,
+                        "  properties: {\n"
+                    ],
+                    [
+                        53,
+                        "    tenantId: subscription().tenantId\n"
+                    ],
+                    [
+                        54,
+                        "    sku: { family: 'A', name: 'standard' }\n"
+                    ],
+                    [
+                        55,
+                        "    enableRbacAuthorization: true\n"
+                    ],
+                    [
+                        56,
+                        "    enableSoftDelete: true\n"
+                    ],
+                    [
+                        57,
+                        "    enablePurgeProtection: true\n"
+                    ],
+                    [
+                        58,
+                        "    softDeleteRetentionInDays: 7\n"
+                    ],
+                    [
+                        59,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        60,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        61,
+                        "    accessPolicies: []\n"
+                    ],
+                    [
+                        62,
+                        "    enabledForDeployment: false\n"
+                    ],
+                    [
+                        63,
+                        "    enabledForDiskEncryption: false\n"
+                    ],
+                    [
+                        64,
+                        "    enabledForTemplateDeployment: false\n"
+                    ],
+                    [
+                        65,
+                        "  }\n"
+                    ],
+                    [
+                        66,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    48,
+                    66
+                ],
+                "resource": "Microsoft.KeyVault/vaults.vault",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.KeyVaultDisablesPublicNetworkAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_109",
+                "bc_check_id": null,
+                "check_name": "Ensure that key vault allows firewall rules settings",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        48,
+                        "resource vault 'Microsoft.KeyVault/vaults@2024-11-01' = {\n"
+                    ],
+                    [
+                        49,
+                        "  name: 'kv-bmg-${suffix}'\n"
+                    ],
+                    [
+                        50,
+                        "  location: location\n"
+                    ],
+                    [
+                        51,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        52,
+                        "  properties: {\n"
+                    ],
+                    [
+                        53,
+                        "    tenantId: subscription().tenantId\n"
+                    ],
+                    [
+                        54,
+                        "    sku: { family: 'A', name: 'standard' }\n"
+                    ],
+                    [
+                        55,
+                        "    enableRbacAuthorization: true\n"
+                    ],
+                    [
+                        56,
+                        "    enableSoftDelete: true\n"
+                    ],
+                    [
+                        57,
+                        "    enablePurgeProtection: true\n"
+                    ],
+                    [
+                        58,
+                        "    softDeleteRetentionInDays: 7\n"
+                    ],
+                    [
+                        59,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        60,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        61,
+                        "    accessPolicies: []\n"
+                    ],
+                    [
+                        62,
+                        "    enabledForDeployment: false\n"
+                    ],
+                    [
+                        63,
+                        "    enabledForDiskEncryption: false\n"
+                    ],
+                    [
+                        64,
+                        "    enabledForTemplateDeployment: false\n"
+                    ],
+                    [
+                        65,
+                        "  }\n"
+                    ],
+                    [
+                        66,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    48,
+                    66
+                ],
+                "resource": "Microsoft.KeyVault/vaults.vault",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.KeyVaultEnablesFirewallRulesSettings",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_110",
+                "bc_check_id": null,
+                "check_name": "Ensure that key vault enables purge protection",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        48,
+                        "resource vault 'Microsoft.KeyVault/vaults@2024-11-01' = {\n"
+                    ],
+                    [
+                        49,
+                        "  name: 'kv-bmg-${suffix}'\n"
+                    ],
+                    [
+                        50,
+                        "  location: location\n"
+                    ],
+                    [
+                        51,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        52,
+                        "  properties: {\n"
+                    ],
+                    [
+                        53,
+                        "    tenantId: subscription().tenantId\n"
+                    ],
+                    [
+                        54,
+                        "    sku: { family: 'A', name: 'standard' }\n"
+                    ],
+                    [
+                        55,
+                        "    enableRbacAuthorization: true\n"
+                    ],
+                    [
+                        56,
+                        "    enableSoftDelete: true\n"
+                    ],
+                    [
+                        57,
+                        "    enablePurgeProtection: true\n"
+                    ],
+                    [
+                        58,
+                        "    softDeleteRetentionInDays: 7\n"
+                    ],
+                    [
+                        59,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        60,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        61,
+                        "    accessPolicies: []\n"
+                    ],
+                    [
+                        62,
+                        "    enabledForDeployment: false\n"
+                    ],
+                    [
+                        63,
+                        "    enabledForDiskEncryption: false\n"
+                    ],
+                    [
+                        64,
+                        "    enabledForTemplateDeployment: false\n"
+                    ],
+                    [
+                        65,
+                        "  }\n"
+                    ],
+                    [
+                        66,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    48,
+                    66
+                ],
+                "resource": "Microsoft.KeyVault/vaults.vault",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.KeyVaultEnablesPurgeProtection",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_111",
+                "bc_check_id": null,
+                "check_name": "Ensure that key vault enables soft delete",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        48,
+                        "resource vault 'Microsoft.KeyVault/vaults@2024-11-01' = {\n"
+                    ],
+                    [
+                        49,
+                        "  name: 'kv-bmg-${suffix}'\n"
+                    ],
+                    [
+                        50,
+                        "  location: location\n"
+                    ],
+                    [
+                        51,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        52,
+                        "  properties: {\n"
+                    ],
+                    [
+                        53,
+                        "    tenantId: subscription().tenantId\n"
+                    ],
+                    [
+                        54,
+                        "    sku: { family: 'A', name: 'standard' }\n"
+                    ],
+                    [
+                        55,
+                        "    enableRbacAuthorization: true\n"
+                    ],
+                    [
+                        56,
+                        "    enableSoftDelete: true\n"
+                    ],
+                    [
+                        57,
+                        "    enablePurgeProtection: true\n"
+                    ],
+                    [
+                        58,
+                        "    softDeleteRetentionInDays: 7\n"
+                    ],
+                    [
+                        59,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        60,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        61,
+                        "    accessPolicies: []\n"
+                    ],
+                    [
+                        62,
+                        "    enabledForDeployment: false\n"
+                    ],
+                    [
+                        63,
+                        "    enabledForDiskEncryption: false\n"
+                    ],
+                    [
+                        64,
+                        "    enabledForTemplateDeployment: false\n"
+                    ],
+                    [
+                        65,
+                        "  }\n"
+                    ],
+                    [
+                        66,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    48,
+                    66
+                ],
+                "resource": "Microsoft.KeyVault/vaults.vault",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.KeyVaultEnablesSoftDelete",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_42",
+                "bc_check_id": null,
+                "check_name": "Ensure the key vault is recoverable",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties",
+                        "properties/enablePurgeProtection",
+                        "properties/enableSoftDelete"
+                    ]
+                },
+                "code_block": [
+                    [
+                        48,
+                        "resource vault 'Microsoft.KeyVault/vaults@2024-11-01' = {\n"
+                    ],
+                    [
+                        49,
+                        "  name: 'kv-bmg-${suffix}'\n"
+                    ],
+                    [
+                        50,
+                        "  location: location\n"
+                    ],
+                    [
+                        51,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        52,
+                        "  properties: {\n"
+                    ],
+                    [
+                        53,
+                        "    tenantId: subscription().tenantId\n"
+                    ],
+                    [
+                        54,
+                        "    sku: { family: 'A', name: 'standard' }\n"
+                    ],
+                    [
+                        55,
+                        "    enableRbacAuthorization: true\n"
+                    ],
+                    [
+                        56,
+                        "    enableSoftDelete: true\n"
+                    ],
+                    [
+                        57,
+                        "    enablePurgeProtection: true\n"
+                    ],
+                    [
+                        58,
+                        "    softDeleteRetentionInDays: 7\n"
+                    ],
+                    [
+                        59,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        60,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        61,
+                        "    accessPolicies: []\n"
+                    ],
+                    [
+                        62,
+                        "    enabledForDeployment: false\n"
+                    ],
+                    [
+                        63,
+                        "    enabledForDiskEncryption: false\n"
+                    ],
+                    [
+                        64,
+                        "    enabledForTemplateDeployment: false\n"
+                    ],
+                    [
+                        65,
+                        "  }\n"
+                    ],
+                    [
+                        66,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    48,
+                    66
+                ],
+                "resource": "Microsoft.KeyVault/vaults.vault",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.KeyvaultRecoveryEnabled",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_238",
+                "bc_check_id": null,
+                "check_name": "Ensure that all Azure Cognitive Services accounts are configured with a managed identity",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        67,
+                        "resource di 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        68,
+                        "  name: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        69,
+                        "  location: location\n"
+                    ],
+                    [
+                        70,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        71,
+                        "  kind: 'FormRecognizer'\n"
+                    ],
+                    [
+                        72,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        73,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        74,
+                        "  properties: {\n"
+                    ],
+                    [
+                        75,
+                        "    customSubDomainName: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        76,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        77,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        78,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        79,
+                        "  }\n"
+                    ],
+                    [
+                        80,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    67,
+                    80
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.di",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesConfigureIdentity",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_134",
+                "bc_check_id": null,
+                "check_name": "Ensure that Cognitive Services accounts disable public network access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        67,
+                        "resource di 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        68,
+                        "  name: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        69,
+                        "  location: location\n"
+                    ],
+                    [
+                        70,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        71,
+                        "  kind: 'FormRecognizer'\n"
+                    ],
+                    [
+                        72,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        73,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        74,
+                        "  properties: {\n"
+                    ],
+                    [
+                        75,
+                        "    customSubDomainName: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        76,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        77,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        78,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        79,
+                        "  }\n"
+                    ],
+                    [
+                        80,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    67,
+                    80
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.di",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesDisablesPublicNetwork",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_236",
+                "bc_check_id": null,
+                "check_name": "Ensure that Cognitive Services accounts disable local authentication",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        67,
+                        "resource di 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        68,
+                        "  name: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        69,
+                        "  location: location\n"
+                    ],
+                    [
+                        70,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        71,
+                        "  kind: 'FormRecognizer'\n"
+                    ],
+                    [
+                        72,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        73,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        74,
+                        "  properties: {\n"
+                    ],
+                    [
+                        75,
+                        "    customSubDomainName: 'di-bmg-${suffix}'\n"
+                    ],
+                    [
+                        76,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        77,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        78,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        79,
+                        "  }\n"
+                    ],
+                    [
+                        80,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    67,
+                    80
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.di",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesEnableLocalAuth",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_238",
+                "bc_check_id": null,
+                "check_name": "Ensure that all Azure Cognitive Services accounts are configured with a managed identity",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        81,
+                        "resource openai 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        82,
+                        "  name: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        83,
+                        "  location: location\n"
+                    ],
+                    [
+                        84,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        85,
+                        "  kind: 'OpenAI'\n"
+                    ],
+                    [
+                        86,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        87,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        88,
+                        "  properties: {\n"
+                    ],
+                    [
+                        89,
+                        "    customSubDomainName: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        90,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        91,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        92,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        93,
+                        "  }\n"
+                    ],
+                    [
+                        94,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    81,
+                    94
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.openai",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesConfigureIdentity",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_134",
+                "bc_check_id": null,
+                "check_name": "Ensure that Cognitive Services accounts disable public network access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        81,
+                        "resource openai 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        82,
+                        "  name: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        83,
+                        "  location: location\n"
+                    ],
+                    [
+                        84,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        85,
+                        "  kind: 'OpenAI'\n"
+                    ],
+                    [
+                        86,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        87,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        88,
+                        "  properties: {\n"
+                    ],
+                    [
+                        89,
+                        "    customSubDomainName: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        90,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        91,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        92,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        93,
+                        "  }\n"
+                    ],
+                    [
+                        94,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    81,
+                    94
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.openai",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesDisablesPublicNetwork",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_236",
+                "bc_check_id": null,
+                "check_name": "Ensure that Cognitive Services accounts disable local authentication",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        81,
+                        "resource openai 'Microsoft.CognitiveServices/accounts@2025-06-01' = {\n"
+                    ],
+                    [
+                        82,
+                        "  name: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        83,
+                        "  location: location\n"
+                    ],
+                    [
+                        84,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        85,
+                        "  kind: 'OpenAI'\n"
+                    ],
+                    [
+                        86,
+                        "  sku: { name: 'S0' }\n"
+                    ],
+                    [
+                        87,
+                        "  identity: { type: 'SystemAssigned' }\n"
+                    ],
+                    [
+                        88,
+                        "  properties: {\n"
+                    ],
+                    [
+                        89,
+                        "    customSubDomainName: 'oai-bmg-${suffix}'\n"
+                    ],
+                    [
+                        90,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        91,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        92,
+                        "    networkAcls: { defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        93,
+                        "  }\n"
+                    ],
+                    [
+                        94,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    81,
+                    94
+                ],
+                "resource": "Microsoft.CognitiveServices/accounts.openai",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CognitiveServicesEnableLocalAuth",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_99",
+                "bc_check_id": null,
+                "check_name": "Ensure Cosmos DB accounts have restricted access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        95,
+                        "resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2025-04-15' = {\n"
+                    ],
+                    [
+                        96,
+                        "  name: 'cosmos-bmg-${suffix}'\n"
+                    ],
+                    [
+                        97,
+                        "  location: location\n"
+                    ],
+                    [
+                        98,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        99,
+                        "  kind: 'GlobalDocumentDB'\n"
+                    ],
+                    [
+                        100,
+                        "  properties: {\n"
+                    ],
+                    [
+                        101,
+                        "    databaseAccountOfferType: 'Standard'\n"
+                    ],
+                    [
+                        102,
+                        "    capabilities: [{ name: 'EnableServerless' }]\n"
+                    ],
+                    [
+                        103,
+                        "    locations: [{ locationName: location, failoverPriority: 0, isZoneRedundant: false }]\n"
+                    ],
+                    [
+                        104,
+                        "    consistencyPolicy: { defaultConsistencyLevel: 'Session' }\n"
+                    ],
+                    [
+                        105,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        106,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        107,
+                        "    minimalTlsVersion: 'Tls12'\n"
+                    ],
+                    [
+                        108,
+                        "    disableKeyBasedMetadataWriteAccess: true\n"
+                    ],
+                    [
+                        109,
+                        "    isVirtualNetworkFilterEnabled: true\n"
+                    ],
+                    [
+                        110,
+                        "    ipRules: []\n"
+                    ],
+                    [
+                        111,
+                        "    virtualNetworkRules: []\n"
+                    ],
+                    [
+                        112,
+                        "    networkAclBypass: 'None'\n"
+                    ],
+                    [
+                        113,
+                        "    enableAutomaticFailover: false\n"
+                    ],
+                    [
+                        114,
+                        "    enableMultipleWriteLocations: false\n"
+                    ],
+                    [
+                        115,
+                        "    backupPolicy: { type: 'Periodic', periodicModeProperties: { backupIntervalInMinutes: 240, backupRetentionIntervalInHours: 8, backupStorageRedundancy: 'Local' } }\n"
+                    ],
+                    [
+                        116,
+                        "  }\n"
+                    ],
+                    [
+                        117,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    95,
+                    117
+                ],
+                "resource": "Microsoft.DocumentDB/databaseAccounts.cosmos",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CosmosDBAccountsRestrictedAccess",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_132",
+                "bc_check_id": null,
+                "check_name": "Ensure cosmosdb does not allow privileged escalation by restricting management plane changes",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": [
+                        "properties",
+                        "properties/disableKeyBasedMetadataWriteAccess"
+                    ]
+                },
+                "code_block": [
+                    [
+                        95,
+                        "resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2025-04-15' = {\n"
+                    ],
+                    [
+                        96,
+                        "  name: 'cosmos-bmg-${suffix}'\n"
+                    ],
+                    [
+                        97,
+                        "  location: location\n"
+                    ],
+                    [
+                        98,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        99,
+                        "  kind: 'GlobalDocumentDB'\n"
+                    ],
+                    [
+                        100,
+                        "  properties: {\n"
+                    ],
+                    [
+                        101,
+                        "    databaseAccountOfferType: 'Standard'\n"
+                    ],
+                    [
+                        102,
+                        "    capabilities: [{ name: 'EnableServerless' }]\n"
+                    ],
+                    [
+                        103,
+                        "    locations: [{ locationName: location, failoverPriority: 0, isZoneRedundant: false }]\n"
+                    ],
+                    [
+                        104,
+                        "    consistencyPolicy: { defaultConsistencyLevel: 'Session' }\n"
+                    ],
+                    [
+                        105,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        106,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        107,
+                        "    minimalTlsVersion: 'Tls12'\n"
+                    ],
+                    [
+                        108,
+                        "    disableKeyBasedMetadataWriteAccess: true\n"
+                    ],
+                    [
+                        109,
+                        "    isVirtualNetworkFilterEnabled: true\n"
+                    ],
+                    [
+                        110,
+                        "    ipRules: []\n"
+                    ],
+                    [
+                        111,
+                        "    virtualNetworkRules: []\n"
+                    ],
+                    [
+                        112,
+                        "    networkAclBypass: 'None'\n"
+                    ],
+                    [
+                        113,
+                        "    enableAutomaticFailover: false\n"
+                    ],
+                    [
+                        114,
+                        "    enableMultipleWriteLocations: false\n"
+                    ],
+                    [
+                        115,
+                        "    backupPolicy: { type: 'Periodic', periodicModeProperties: { backupIntervalInMinutes: 240, backupRetentionIntervalInHours: 8, backupStorageRedundancy: 'Local' } }\n"
+                    ],
+                    [
+                        116,
+                        "  }\n"
+                    ],
+                    [
+                        117,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    95,
+                    117
+                ],
+                "resource": "Microsoft.DocumentDB/databaseAccounts.cosmos",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CosmosDBDisableAccessKeyWrite",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_101",
+                "bc_check_id": null,
+                "check_name": "Ensure that Azure Cosmos DB disables public network access",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        95,
+                        "resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2025-04-15' = {\n"
+                    ],
+                    [
+                        96,
+                        "  name: 'cosmos-bmg-${suffix}'\n"
+                    ],
+                    [
+                        97,
+                        "  location: location\n"
+                    ],
+                    [
+                        98,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        99,
+                        "  kind: 'GlobalDocumentDB'\n"
+                    ],
+                    [
+                        100,
+                        "  properties: {\n"
+                    ],
+                    [
+                        101,
+                        "    databaseAccountOfferType: 'Standard'\n"
+                    ],
+                    [
+                        102,
+                        "    capabilities: [{ name: 'EnableServerless' }]\n"
+                    ],
+                    [
+                        103,
+                        "    locations: [{ locationName: location, failoverPriority: 0, isZoneRedundant: false }]\n"
+                    ],
+                    [
+                        104,
+                        "    consistencyPolicy: { defaultConsistencyLevel: 'Session' }\n"
+                    ],
+                    [
+                        105,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        106,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        107,
+                        "    minimalTlsVersion: 'Tls12'\n"
+                    ],
+                    [
+                        108,
+                        "    disableKeyBasedMetadataWriteAccess: true\n"
+                    ],
+                    [
+                        109,
+                        "    isVirtualNetworkFilterEnabled: true\n"
+                    ],
+                    [
+                        110,
+                        "    ipRules: []\n"
+                    ],
+                    [
+                        111,
+                        "    virtualNetworkRules: []\n"
+                    ],
+                    [
+                        112,
+                        "    networkAclBypass: 'None'\n"
+                    ],
+                    [
+                        113,
+                        "    enableAutomaticFailover: false\n"
+                    ],
+                    [
+                        114,
+                        "    enableMultipleWriteLocations: false\n"
+                    ],
+                    [
+                        115,
+                        "    backupPolicy: { type: 'Periodic', periodicModeProperties: { backupIntervalInMinutes: 240, backupRetentionIntervalInHours: 8, backupStorageRedundancy: 'Local' } }\n"
+                    ],
+                    [
+                        116,
+                        "  }\n"
+                    ],
+                    [
+                        117,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    95,
+                    117
+                ],
+                "resource": "Microsoft.DocumentDB/databaseAccounts.cosmos",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CosmosDBDisablesPublicNetwork",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_140",
+                "bc_check_id": null,
+                "check_name": "Ensure that Local Authentication is disabled on CosmosDB",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        95,
+                        "resource cosmos 'Microsoft.DocumentDB/databaseAccounts@2025-04-15' = {\n"
+                    ],
+                    [
+                        96,
+                        "  name: 'cosmos-bmg-${suffix}'\n"
+                    ],
+                    [
+                        97,
+                        "  location: location\n"
+                    ],
+                    [
+                        98,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        99,
+                        "  kind: 'GlobalDocumentDB'\n"
+                    ],
+                    [
+                        100,
+                        "  properties: {\n"
+                    ],
+                    [
+                        101,
+                        "    databaseAccountOfferType: 'Standard'\n"
+                    ],
+                    [
+                        102,
+                        "    capabilities: [{ name: 'EnableServerless' }]\n"
+                    ],
+                    [
+                        103,
+                        "    locations: [{ locationName: location, failoverPriority: 0, isZoneRedundant: false }]\n"
+                    ],
+                    [
+                        104,
+                        "    consistencyPolicy: { defaultConsistencyLevel: 'Session' }\n"
+                    ],
+                    [
+                        105,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        106,
+                        "    disableLocalAuth: true\n"
+                    ],
+                    [
+                        107,
+                        "    minimalTlsVersion: 'Tls12'\n"
+                    ],
+                    [
+                        108,
+                        "    disableKeyBasedMetadataWriteAccess: true\n"
+                    ],
+                    [
+                        109,
+                        "    isVirtualNetworkFilterEnabled: true\n"
+                    ],
+                    [
+                        110,
+                        "    ipRules: []\n"
+                    ],
+                    [
+                        111,
+                        "    virtualNetworkRules: []\n"
+                    ],
+                    [
+                        112,
+                        "    networkAclBypass: 'None'\n"
+                    ],
+                    [
+                        113,
+                        "    enableAutomaticFailover: false\n"
+                    ],
+                    [
+                        114,
+                        "    enableMultipleWriteLocations: false\n"
+                    ],
+                    [
+                        115,
+                        "    backupPolicy: { type: 'Periodic', periodicModeProperties: { backupIntervalInMinutes: 240, backupRetentionIntervalInHours: 8, backupStorageRedundancy: 'Local' } }\n"
+                    ],
+                    [
+                        116,
+                        "  }\n"
+                    ],
+                    [
+                        117,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    95,
+                    117
+                ],
+                "resource": "Microsoft.DocumentDB/databaseAccounts.cosmos",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.CosmosDBLocalAuthDisabled",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_183",
+                "bc_check_id": null,
+                "check_name": "Ensure that VNET uses local DNS addresses",
+                "check_result": {
+                    "result": "PASSED",
+                    "evaluated_keys": []
+                },
+                "code_block": [
+                    [
+                        6,
+                        "resource vnet 'Microsoft.Network/virtualNetworks@2024-07-01' = {\n"
+                    ],
+                    [
+                        7,
+                        "  // checkov:skip=CKV_AZURE_182:Approved single-laptop short-lived POC uses one managed resolver inbound endpoint; a second endpoint would add cost without meeting a requested HA target.\n"
+                    ],
+                    [
+                        8,
+                        "  name: 'vnet-bmg-poc'\n"
+                    ],
+                    [
+                        9,
+                        "  location: location\n"
+                    ],
+                    [
+                        10,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        11,
+                        "  properties: {\n"
+                    ],
+                    [
+                        12,
+                        "    addressSpace: { addressPrefixes: ['10.84.0.0/16'] }\n"
+                    ],
+                    [
+                        13,
+                        "    // P2S client XML also receives this resolver explicitly after gateway provisioning.\n"
+                    ],
+                    [
+                        14,
+                        "    dhcpOptions: { dnsServers: ['10.84.2.4'] }\n"
+                    ],
+                    [
+                        15,
+                        "    subnets: [\n"
+                    ],
+                    [
+                        16,
+                        "      {\n"
+                    ],
+                    [
+                        17,
+                        "        name: 'GatewaySubnet'\n"
+                    ],
+                    [
+                        18,
+                        "        properties: { addressPrefix: '10.84.0.0/27' }\n"
+                    ],
+                    [
+                        19,
+                        "      }\n"
+                    ],
+                    [
+                        20,
+                        "      {\n"
+                    ],
+                    [
+                        21,
+                        "        name: 'snet-private-endpoints'\n"
+                    ],
+                    [
+                        22,
+                        "        properties: {\n"
+                    ],
+                    [
+                        23,
+                        "          addressPrefix: '10.84.1.0/24'\n"
+                    ],
+                    [
+                        24,
+                        "          privateEndpointNetworkPolicies: 'Disabled'\n"
+                    ],
+                    [
+                        25,
+                        "          privateLinkServiceNetworkPolicies: 'Enabled'\n"
+                    ],
+                    [
+                        26,
+                        "        }\n"
+                    ],
+                    [
+                        27,
+                        "      }\n"
+                    ],
+                    [
+                        28,
+                        "      {\n"
+                    ],
+                    [
+                        29,
+                        "        name: 'snet-dns-inbound'\n"
+                    ],
+                    [
+                        30,
+                        "        properties: {\n"
+                    ],
+                    [
+                        31,
+                        "          addressPrefix: '10.84.2.0/28'\n"
+                    ],
+                    [
+                        32,
+                        "          delegations: [{ name: 'dns-resolver', properties: { serviceName: 'Microsoft.Network/dnsResolvers' } }]\n"
+                    ],
+                    [
+                        33,
+                        "        }\n"
+                    ],
+                    [
+                        34,
+                        "      }\n"
+                    ],
+                    [
+                        35,
+                        "    ]\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\network.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\network.bicep",
+                "repo_file_path": "/infra/modules/network.bicep",
+                "file_line_range": [
+                    6,
+                    37
+                ],
+                "resource": "Microsoft.Network/virtualNetworks.vnet",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.VnetLocalDNS",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            }
+        ],
+        "failed_checks": [],
+        "skipped_checks": [
+            {
+                "check_id": "CKV_AZURE_36",
+                "bc_check_id": null,
+                "check_name": "Ensure 'Trusted Microsoft Services' is enabled for Storage Account access",
+                "check_result": {
+                    "result": "SKIPPED",
+                    "suppress_comment": "Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change."
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.bicep.checks.resource.azure.StorageAccountAzureServicesAccessEnabled",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_43",
+                "bc_check_id": null,
+                "check_name": "Ensure Storage Accounts adhere to the naming rules",
+                "check_result": {
+                    "result": "SKIPPED",
+                    "suppress_comment": "Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total)."
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.StorageAccountName",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_206",
+                "bc_check_id": null,
+                "check_name": "Ensure that Storage Accounts use replication",
+                "check_result": {
+                    "result": "SKIPPED",
+                    "suppress_comment": "Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally."
+                },
+                "code_block": [
+                    [
+                        13,
+                        "resource storage 'Microsoft.Storage/storageAccounts@2025-01-01' = {\n"
+                    ],
+                    [
+                        14,
+                        "  // checkov:skip=CKV_AZURE_36:Private-only runtime intentionally denies trusted-service firewall bypass; any DI training exception is a separate later-stage change.\n"
+                    ],
+                    [
+                        15,
+                        "  // checkov:skip=CKV_AZURE_43:Scanner cannot evaluate uniqueString; ARM-validated name is stbmgpoc plus 13 lowercase alphanumeric characters (21 total).\n"
+                    ],
+                    [
+                        16,
+                        "  // checkov:skip=CKV_AZURE_206:Approved bounded synthetic POC uses Standard_LRS; originals and immutable snapshots are retained locally.\n"
+                    ],
+                    [
+                        17,
+                        "  name: 'stbmgpoc${suffix}'\n"
+                    ],
+                    [
+                        18,
+                        "  location: location\n"
+                    ],
+                    [
+                        19,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        20,
+                        "  kind: 'StorageV2'\n"
+                    ],
+                    [
+                        21,
+                        "  sku: { name: 'Standard_LRS' }\n"
+                    ],
+                    [
+                        22,
+                        "  properties: {\n"
+                    ],
+                    [
+                        23,
+                        "    accessTier: 'Hot'\n"
+                    ],
+                    [
+                        24,
+                        "    supportsHttpsTrafficOnly: true\n"
+                    ],
+                    [
+                        25,
+                        "    minimumTlsVersion: 'TLS1_2'\n"
+                    ],
+                    [
+                        26,
+                        "    allowBlobPublicAccess: false\n"
+                    ],
+                    [
+                        27,
+                        "    allowSharedKeyAccess: false\n"
+                    ],
+                    [
+                        28,
+                        "    defaultToOAuthAuthentication: true\n"
+                    ],
+                    [
+                        29,
+                        "    publicNetworkAccess: 'Disabled'\n"
+                    ],
+                    [
+                        30,
+                        "    networkAcls: { bypass: 'None', defaultAction: 'Deny', ipRules: [], virtualNetworkRules: [] }\n"
+                    ],
+                    [
+                        31,
+                        "    encryption: {\n"
+                    ],
+                    [
+                        32,
+                        "      keySource: 'Microsoft.Storage'\n"
+                    ],
+                    [
+                        33,
+                        "      requireInfrastructureEncryption: true\n"
+                    ],
+                    [
+                        34,
+                        "      services: { blob: { enabled: true, keyType: 'Account' }, file: { enabled: true, keyType: 'Account' } }\n"
+                    ],
+                    [
+                        35,
+                        "    }\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\services.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\services.bicep",
+                "repo_file_path": "/infra/modules/services.bicep",
+                "file_line_range": [
+                    13,
+                    37
+                ],
+                "resource": "Microsoft.Storage/storageAccounts.storage",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.StorageAccountsUseReplication",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            },
+            {
+                "check_id": "CKV_AZURE_182",
+                "bc_check_id": null,
+                "check_name": "Ensure that VNET has at least 2 connected DNS Endpoints",
+                "check_result": {
+                    "result": "SKIPPED",
+                    "suppress_comment": "Approved single-laptop short-lived POC uses one managed resolver inbound endpoint; a second endpoint would add cost without meeting a requested HA target."
+                },
+                "code_block": [
+                    [
+                        6,
+                        "resource vnet 'Microsoft.Network/virtualNetworks@2024-07-01' = {\n"
+                    ],
+                    [
+                        7,
+                        "  // checkov:skip=CKV_AZURE_182:Approved single-laptop short-lived POC uses one managed resolver inbound endpoint; a second endpoint would add cost without meeting a requested HA target.\n"
+                    ],
+                    [
+                        8,
+                        "  name: 'vnet-bmg-poc'\n"
+                    ],
+                    [
+                        9,
+                        "  location: location\n"
+                    ],
+                    [
+                        10,
+                        "  tags: tags\n"
+                    ],
+                    [
+                        11,
+                        "  properties: {\n"
+                    ],
+                    [
+                        12,
+                        "    addressSpace: { addressPrefixes: ['10.84.0.0/16'] }\n"
+                    ],
+                    [
+                        13,
+                        "    // P2S client XML also receives this resolver explicitly after gateway provisioning.\n"
+                    ],
+                    [
+                        14,
+                        "    dhcpOptions: { dnsServers: ['10.84.2.4'] }\n"
+                    ],
+                    [
+                        15,
+                        "    subnets: [\n"
+                    ],
+                    [
+                        16,
+                        "      {\n"
+                    ],
+                    [
+                        17,
+                        "        name: 'GatewaySubnet'\n"
+                    ],
+                    [
+                        18,
+                        "        properties: { addressPrefix: '10.84.0.0/27' }\n"
+                    ],
+                    [
+                        19,
+                        "      }\n"
+                    ],
+                    [
+                        20,
+                        "      {\n"
+                    ],
+                    [
+                        21,
+                        "        name: 'snet-private-endpoints'\n"
+                    ],
+                    [
+                        22,
+                        "        properties: {\n"
+                    ],
+                    [
+                        23,
+                        "          addressPrefix: '10.84.1.0/24'\n"
+                    ],
+                    [
+                        24,
+                        "          privateEndpointNetworkPolicies: 'Disabled'\n"
+                    ],
+                    [
+                        25,
+                        "          privateLinkServiceNetworkPolicies: 'Enabled'\n"
+                    ],
+                    [
+                        26,
+                        "        }\n"
+                    ],
+                    [
+                        27,
+                        "      }\n"
+                    ],
+                    [
+                        28,
+                        "      {\n"
+                    ],
+                    [
+                        29,
+                        "        name: 'snet-dns-inbound'\n"
+                    ],
+                    [
+                        30,
+                        "        properties: {\n"
+                    ],
+                    [
+                        31,
+                        "          addressPrefix: '10.84.2.0/28'\n"
+                    ],
+                    [
+                        32,
+                        "          delegations: [{ name: 'dns-resolver', properties: { serviceName: 'Microsoft.Network/dnsResolvers' } }]\n"
+                    ],
+                    [
+                        33,
+                        "        }\n"
+                    ],
+                    [
+                        34,
+                        "      }\n"
+                    ],
+                    [
+                        35,
+                        "    ]\n"
+                    ],
+                    [
+                        36,
+                        "  }\n"
+                    ],
+                    [
+                        37,
+                        "}\n"
+                    ]
+                ],
+                "file_path": "/modules\\network.bicep",
+                "file_abs_path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Work\\Moder\\BMG\\infra\\modules\\network.bicep",
+                "repo_file_path": "/infra/modules/network.bicep",
+                "file_line_range": [
+                    6,
+                    37
+                ],
+                "resource": "Microsoft.Network/virtualNetworks.vnet",
+                "evaluations": null,
+                "check_class": "checkov.arm.checks.resource.VnetSingleDNSServer",
+                "fixed_definition": null,
+                "entity_tags": null,
+                "caller_file_path": null,
+                "caller_file_line_range": null,
+                "resource_address": null,
+                "severity": null,
+                "bc_category": null,
+                "benchmarks": null,
+                "description": null,
+                "short_description": null,
+                "vulnerability_details": null,
+                "connected_node": null,
+                "guideline": null,
+                "details": [],
+                "check_len": null,
+                "definition_context_file_path": null
+            }
+        ],
+        "parsing_errors": []
+    },
+    "summary": {
+        "passed": 21,
+        "failed": 0,
+        "skipped": 4,
+        "parsing_errors": 0,
+        "resource_count": 28,
+        "checkov_version": "3.3.17"
+    },
+    "url": "Add an api key '--bc-api-key <api-key>' to see more detailed insights via https://bridgecrew.cloud"
+}

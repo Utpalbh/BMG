@@ -1,0 +1,69 @@
+{
+  "operationId": "31377215619_4fff1271-d519-42db-9f8f-d57bf0c82b77",
+  "kind": "documentClassifierBuild",
+  "status": "succeeded",
+  "createdDateTime": "2026-09-11T18:46:21Z",
+  "lastUpdatedDateTime": "2026-09-11T18:47:11Z",
+  "resourceLocation": "https://di-bmg-wjsvyjg25vqiy.cognitiveservices.azure.com/documentintelligence/documentClassifiers/bmg-stage-e-v1?api-version=2024-11-30",
+  "percentCompleted": 100,
+  "result": {
+    "classifierId": "bmg-stage-e-v1",
+    "createdDateTime": "2026-09-11T18:46:25Z",
+    "modifiedDateTime": "2026-09-11T18:46:25Z",
+    "expirationDateTime": "2028-09-10T18:46:25Z",
+    "apiVersion": "2024-11-30",
+    "docTypes": {
+      "Note": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/Note/"
+        }
+      },
+      "DeedOfTrust": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/DeedOfTrust/"
+        }
+      },
+      "TitleCommitment": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/TitleCommitment/"
+        }
+      },
+      "Survey": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/Survey/"
+        }
+      },
+      "ClosingInstructions": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/ClosingInstructions/"
+        }
+      },
+      "Rider": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/Rider/"
+        }
+      },
+      "Other": {
+        "kind": "azureBlob",
+        "azureBlobSource": {
+          "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+          "prefix": "stage-e-v1/Other/"
+        }
+      }
+    },
+    "description": "Synthetic seven-class POC; frozen split stage-e-v1"
+  },
+  "apiVersion": "2024-11-30"
+}

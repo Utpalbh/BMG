@@ -1,0 +1,14 @@
+[
+  {
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy/secrets/bmg-uploader-client-secret/providers/Microsoft.Authorization/roleAssignments/91b4c0da-db19-4cf9-8ffd-2ff6f70cf4be",
+    "principalId": "45701353-fc17-4a20-929c-a826685bd0b0",
+    "roleDefinitionName": "Key Vault Secrets User",
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.KeyVault/vaults/kv-bmg-wjsvyjg25vqiy/secrets/bmg-uploader-client-secret"
+  },
+  {
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/submissions/providers/Microsoft.Authorization/roleAssignments/b5ed53a3-c858-416a-8a1b-5eea02696cd1",
+    "principalId": "5467b28f-4883-4526-a4c7-011ff004523a",
+    "roleDefinitionName": "Storage Blob Data Contributor",
+    "scope": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.Storage/storageAccounts/stbmgpocwjsvyjg25vqiy/blobServices/default/containers/submissions"
+  }
+]

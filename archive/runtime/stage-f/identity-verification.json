@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-12T09:57:52.5916283+00:00",
+  "executionMode": "AzureUpload",
+  "outcomes": {
+    "workerReadsNamedSecret": true,
+    "uploaderReadsSubmissionsContainer": true,
+    "workerDeniedOtherSecret": true,
+    "workerDeniedBlob": true,
+    "uploaderDeniedKeyVault": true,
+    "uploaderDeniedTrainingContainer": true
+  },
+  "allPassed": true
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "kind": "FormRecognizer",
+    "locationInfo": [
+      {
+        "location": "EASTUS2",
+        "zoneDetails": [],
+        "zones": []
+      }
+    ],
+    "locations": [
+      "EASTUS2"
+    ],
+    "name": "F0",
+    "resourceType": "accounts",
+    "restrictions": [],
+    "tier": "Free"
+  },
+  {
+    "kind": "FormRecognizer",
+    "locationInfo": [
+      {
+        "location": "EASTUS2",
+        "zoneDetails": [],
+        "zones": []
+      }
+    ],
+    "locations": [
+      "EASTUS2"
+    ],
+    "name": "S0",
+    "resourceType": "accounts",
+    "restrictions": [],
+    "tier": "Standard"
+  }
+]

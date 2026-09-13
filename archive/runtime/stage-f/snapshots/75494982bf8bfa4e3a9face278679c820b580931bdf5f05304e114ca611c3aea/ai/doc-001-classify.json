@@ -1,0 +1,64 @@
+{
+  "apiVersion": "2024-11-30",
+  "modelId": "bmg-stage-e-v1",
+  "stringIndexType": "textElements",
+  "content": "\n",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "angle": 0,
+      "width": 8.5,
+      "height": 11,
+      "unit": "inch",
+      "words": [],
+      "lines": [],
+      "spans": []
+    },
+    {
+      "pageNumber": 2,
+      "angle": 0,
+      "width": 8.5,
+      "height": 11,
+      "unit": "inch",
+      "words": [],
+      "lines": [],
+      "spans": []
+    }
+  ],
+  "documents": [
+    {
+      "docType": "Note",
+      "boundingRegions": [
+        {
+          "pageNumber": 1,
+          "polygon": [
+            0,
+            0,
+            8.5,
+            0,
+            8.5,
+            11,
+            0,
+            11
+          ]
+        },
+        {
+          "pageNumber": 2,
+          "polygon": [
+            0,
+            0,
+            8.5,
+            0,
+            8.5,
+            11,
+            0,
+            11
+          ]
+        }
+      ],
+      "confidence": 0.855,
+      "spans": []
+    }
+  ],
+  "contentFormat": "text"
+}

@@ -1,0 +1,18 @@
+PAGE 1
+PROPERTY SURVEY CERTIFICATION
+Synthetic survey summary
+SYNTHETIC POC DATA
+Survey Job:
+SV-0003
+Survey Date:
+2026-08-15
+Owner:
+Avery Reed and Riley Reed
+Property Address:
+303 Sandbox Court, Example Springs, TX 75003
+County:
+Denton
+Legal Description:
+Synthetic Lot 12, Block 4, POC Subdivision, Denton County, Texas
+Illustrative property boundary - not to scale
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

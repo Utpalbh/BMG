@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "conflict": {
+    "schemaVersion": "poc-1",
+    "submissionId": "stage-f-conflict-001",
+    "revision": 1,
+    "status": "ManualException",
+    "metadata": {
+      "lenderCode": "FP-017",
+      "loanNumber": null,
+      "borrowerName": null,
+      "propertyAddress": null,
+      "closingDate": "2026-09-18",
+      "loanType": "Conventional",
+      "purpose": "Purchase",
+      "submissionType": "Examination"
+    },
+    "provenance": [
+      {
+        "field": "lenderCode",
+        "sourceKind": "Document",
+        "documentId": "doc-001",
+        "page": 1,
+        "evidenceText": "LENDER CODE\nFP-017",
+        "modelId": "bmg-gpt5-mini",
+        "promptVersion": "bmg-extract-v1"
+      },
+      {
+        "field": "closingDate",
+        "sourceKind": "Document",
+        "documentId": "doc-001",
+        "page": 1,
+        "evidenceText": "CLOSING DATE\nSeptember 18, 2026",
+        "modelId": "bmg-gpt5-mini",
+        "promptVersion": "bmg-extract-v1"
+      },
+      {
+        "field": "loanType",
+        "sourceKind": "Document",
+        "documentId": "doc-001",
+        "page": 1,
+        "evidenceText": "LOAN TYPE\nConventional",
+        "modelId": "bmg-gpt5-mini",
+        "promptVersion": "bmg-extract-v1"
+      },
+      {
+        "field": "purpose",
+        "sourceKind": "Document",
+        "documentId": "doc-001",
+        "page": 1,
+        "evidenceText": "PURPOSE\nPurchase",
+        "modelId": "bmg-gpt5-mini",
+        "promptVersion": "bmg-extract-v1"
+      },
+      {
+        "field": "submissionType",
+        "sourceKind": "Manifest",
+        "documentId": null,
+        "page": null,
+        "evidenceText": "Examination",
+        "modelId": null,
+        "promptVersion": null
+      }
+    ],
+    "validationErrors": [
+      "loanNumber:Conflict",
+      "loanNumber:Required",
+      "borrowerName:Conflict",
+      "borrowerName:Required",
+      "propertyAddress:Conflict",
+      "propertyAddress:Required"
+    ],
+    "executionMode": "AzureFull"
+  },
+  "missingJob": {
+    "id": "136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+    "submission_id": "stage-f-missing-001",
+    "revision": 1,
+    "digest": "136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+    "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+    "stage": 2,
+    "status": "ManualException",
+    "attempts": 1,
+    "next_attempt_utc": 1789278847494,
+    "error_code": "ClassificationRequiresReview"
+  },
+  "missingFieldValidationLive": false,
+  "missingFieldValidatedInLocalTests": true,
+  "invalidMetadataPersisted": false,
+  "limitation": "Missing-field fixture stopped at classifier confidence 0.799; live missing-field extraction not proved."
+}

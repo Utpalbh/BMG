@@ -1,0 +1,20 @@
+PAGE 1
+DEED OF TRUST
+Synthetic security instrument
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000004
+Instrument Date:
+2026-09-13
+Grantor/Borrower:
+Cameron Hayes and Quinn Hayes
+Beneficiary/Lender:
+Demo Home Finance
+Property Address:
+404 Mock Data Way, Trial Park, TX 75004
+Original Principal:
+$390,500.00
+County:
+Williamson
+This synthetic deed of trust grants a security interest solely for proof-of-concept testing.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

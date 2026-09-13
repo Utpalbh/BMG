@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "83cb84d14e2d2613d706fc239d16f18dbd79a1cac7545ada85d527d60df9efc7",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Rider",
+    "confidence": 0.8,
+    "pages": 1,
+    "accepted": true
+  }
+]

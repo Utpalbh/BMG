@@ -1,0 +1,9 @@
+{
+  "executionMode": "AzureDocuments",
+  "submissionId": "test",
+  "revision": 1,
+  "code": "PdfPageLimitExceeded",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "Ready"
+}

@@ -1,0 +1,248 @@
+{
+  "quota": {
+    "currentValue": 30.0,
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.CognitiveServices/locations/eastus2/usages/OpenAI.GlobalStandard.gpt-5-mini",
+    "limit": 1000.0,
+    "name": {
+      "localizedValue": "One Thousand Tokens Per Minute - gpt-5-mini - GlobalStandard",
+      "value": "OpenAI.GlobalStandard.gpt-5-mini"
+    },
+    "nextResetTime": null,
+    "quotaPeriod": null,
+    "status": null,
+    "type": "Microsoft.CognitiveServices/locations/usages",
+    "unit": "Count"
+  },
+  "checkedAt": "2026-09-12T09:52:51.3322174Z",
+  "model": {
+    "description": null,
+    "id": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/providers/Microsoft.CognitiveServices/locations/EastUS2/models/OpenAI.gpt-5-mini.2025-08-07",
+    "kind": "OpenAI",
+    "location": "EastUS2",
+    "model": {
+      "baseModel": null,
+      "callRateLimit": null,
+      "capabilities": {
+        "agentsV2": "true",
+        "area": "US",
+        "assistants": "true",
+        "chatCompletion": "true",
+        "responses": "true"
+      },
+      "deprecation": {
+        "deprecationStatus": null,
+        "fineTune": null,
+        "inference": "2027-02-09T00:00:00Z"
+      },
+      "finetuneCapabilities": null,
+      "format": "OpenAI",
+      "isDefaultVersion": true,
+      "lifecycleStatus": "GenerallyAvailable",
+      "maxCapacity": 3,
+      "modelCatalogAssetId": "azureml://registries/azure-openai/models/gpt-5-mini/versions/2025-08-07",
+      "name": "gpt-5-mini",
+      "publisher": null,
+      "replacementConfig": null,
+      "skus": [
+        {
+          "capacity": {
+            "allowedValues": null,
+            "default": 10,
+            "maximum": 1000000,
+            "minimum": null,
+            "step": null
+          },
+          "cost": null,
+          "costs": [
+            {
+              "name": "NoCachedContextToken",
+              "offeringId": "04277534-376f-5ce0-8ac0-33325bf0ff98",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "NoCachedContextToken.Priority",
+              "offeringId": "3dbaa460-afd3-55d2-9862-7a4f70c46cfa",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "CachedContextToken",
+              "offeringId": "01f74d49-d78b-5726-800a-7fd1b3a39101",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "CachedContextToken.Priority",
+              "offeringId": "3c6a8757-15dc-5935-bb87-0cea838c3f31",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "GeneratedToken",
+              "offeringId": "a334f2c4-2b6d-5358-9f43-ea0c9fb87e07",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "GeneratedToken.Priority",
+              "offeringId": "a59c0e57-f51f-582f-998b-935a5a803416",
+              "unit": "1M Tokens"
+            }
+          ],
+          "deprecationDate": "2027-02-09T05:30:00+05:30",
+          "name": "GlobalStandard",
+          "rateLimits": [
+            {
+              "count": 1.0,
+              "key": "request",
+              "renewalPeriod": 60.0,
+              "rules": null
+            },
+            {
+              "count": 1000.0,
+              "key": "token",
+              "renewalPeriod": 60.0,
+              "rules": null
+            }
+          ],
+          "usageName": "OpenAI.GlobalStandard.gpt-5-mini"
+        },
+        {
+          "capacity": {
+            "allowedValues": null,
+            "default": null,
+            "maximum": 30000,
+            "minimum": 25,
+            "step": 25
+          },
+          "cost": null,
+          "costs": [
+            {
+              "meterId": "",
+              "name": "Hosting",
+              "offeringId": "dbad17fa-3e49-5871-9cda-81a534d012c7",
+              "unit": "1 Hour"
+            }
+          ],
+          "deprecationDate": "2027-02-09T05:30:00+05:30",
+          "name": "ProvisionedManaged",
+          "rateLimits": null,
+          "usageName": "OpenAI.ProvisionedManaged"
+        },
+        {
+          "capacity": {
+            "allowedValues": null,
+            "default": null,
+            "maximum": 100000,
+            "minimum": 15,
+            "step": 5
+          },
+          "cost": null,
+          "costs": [
+            {
+              "meterId": "",
+              "name": "Hosting",
+              "offeringId": "a3a3e931-a913-54e9-9976-c782e8b9c1e0",
+              "unit": "1 Hour"
+            }
+          ],
+          "deprecationDate": "2027-02-09T05:30:00+05:30",
+          "name": "DataZoneProvisionedManaged",
+          "rateLimits": null,
+          "usageName": "OpenAI.DataZoneProvisionedManaged"
+        },
+        {
+          "capacity": {
+            "allowedValues": null,
+            "default": null,
+            "maximum": 30000,
+            "minimum": 15,
+            "step": 5
+          },
+          "cost": null,
+          "costs": [
+            {
+              "meterId": "",
+              "name": "Hosting",
+              "offeringId": "142dc9c2-3cef-572a-933b-7006c665a4f3",
+              "unit": "1 Hour"
+            }
+          ],
+          "deprecationDate": "2027-02-09T05:30:00+05:30",
+          "name": "GlobalProvisionedManaged",
+          "rateLimits": null,
+          "usageName": "OpenAI.GlobalProvisionedManaged"
+        },
+        {
+          "capacity": {
+            "allowedValues": null,
+            "default": 10,
+            "maximum": 1000000,
+            "minimum": null,
+            "step": null
+          },
+          "cost": null,
+          "costs": [
+            {
+              "name": "NoCachedContextToken",
+              "offeringId": "a9f46e78-bce4-59c8-8958-a6d8f3ab4e7c",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "NoCachedContextToken.Priority",
+              "offeringId": "80055797-1775-5c23-8f17-12f498308966",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "CachedContextToken",
+              "offeringId": "943613cc-fbe3-57cd-835e-4054fd1b06dc",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "CachedContextToken.Priority",
+              "offeringId": "cf743cb7-f094-5b97-903c-4742350b9878",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "GeneratedToken",
+              "offeringId": "be544494-76ed-59d9-813f-04edd3f2b11f",
+              "unit": "1M Tokens"
+            },
+            {
+              "name": "GeneratedToken.Priority",
+              "offeringId": "eb96eec3-0be5-5f7b-b7b8-091d9521c841",
+              "unit": "1M Tokens"
+            }
+          ],
+          "deprecationDate": "2027-02-09T05:30:00+05:30",
+          "name": "DataZoneStandard",
+          "rateLimits": [
+            {
+              "count": 1.0,
+              "key": "request",
+              "renewalPeriod": 60.0,
+              "rules": null
+            },
+            {
+              "count": 1000.0,
+              "key": "token",
+              "renewalPeriod": 60.0,
+              "rules": null
+            }
+          ],
+          "usageName": "OpenAI.DataZoneStandard.gpt-5-mini"
+        }
+      ],
+      "source": null,
+      "sourceAccount": null,
+      "systemData": {
+        "createdAt": "2025-08-07T05:30:00+05:30",
+        "createdBy": "Microsoft",
+        "createdByType": "Application",
+        "lastModifiedAt": "2025-08-07T05:30:00+05:30",
+        "lastModifiedBy": "Microsoft",
+        "lastModifiedByType": "Application"
+      },
+      "version": "2025-08-07"
+    },
+    "name": "OpenAI.gpt-5-mini.2025-08-07",
+    "skuName": "S0",
+    "type": "Microsoft.CognitiveServices/locations/models"
+  }
+}

@@ -1,0 +1,24 @@
+PAGE 1
+PROMISSORY NOTE
+Synthetic mortgage note for classifier/extraction testing
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000005
+Note Date:
+2026-09-14
+Borrower(s):
+Skyler Bennett and Drew Bennett
+Lender:
+Test State Credit Union
+Lender Code:
+LND005
+Property:
+505 Validation Road, Fiction Hills, TX 75005
+Principal Amount:
+$429,000.00
+Interest Rate:
+6.25%
+Loan Type:
+Conventional
+Borrower promises to pay the principal amount plus interest according to the terms of this synthetic note.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

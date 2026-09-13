@@ -1,0 +1,54 @@
+{
+  "passed": 12,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "valid_evidence_and_date_normalization",
+      "passed": true
+    },
+    {
+      "name": "labelled_value_normalized_without_losing_evidence",
+      "passed": true
+    },
+    {
+      "name": "fabricated_quote_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_page_rejected",
+      "passed": true
+    },
+    {
+      "name": "value_not_in_quote_rejected",
+      "passed": true
+    },
+    {
+      "name": "substring_identifier_rejected",
+      "passed": true
+    },
+    {
+      "name": "conflict_not_hidden_by_source_priority",
+      "passed": true
+    },
+    {
+      "name": "missing_required_rejected",
+      "passed": true
+    },
+    {
+      "name": "ambiguous_date_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_document_assessment_rejected",
+      "passed": true
+    },
+    {
+      "name": "unknown_document_rejected",
+      "passed": true
+    },
+    {
+      "name": "llm_budget_and_unknown_intent_durable",
+      "passed": true
+    }
+  ]
+}

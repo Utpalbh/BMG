@@ -1,0 +1,21 @@
+{
+  "executionMode": "Simulated",
+  "metadata": {
+    "lenderCode": "LND004",
+    "loanNumber": "BMG-POC-000004",
+    "borrowerName": "Cameron Hayes and Quinn Hayes",
+    "propertyAddress": "404 Mock Data Way, Trial Park, TX 75004",
+    "closingDate": "2026-09-25",
+    "loanType": "Home Equity",
+    "purpose": "Home Equity",
+    "submissionType": "Examination"
+  },
+  "documentTypes": {
+    "doc-001": "Note",
+    "doc-002": "DeedOfTrust",
+    "doc-003": "TitleCommitment",
+    "doc-004": "Survey",
+    "doc-005": "ClosingInstructions",
+    "doc-006": "Rider"
+  }
+}

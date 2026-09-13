@@ -1,0 +1,37 @@
+workerReadsNamedSecret: True
+uploaderReadsSubmissionsContainer: True
+workerDeniedOtherSecret: True
+workerDeniedBlob: True
+uploaderDeniedKeyVault: True
+uploaderDeniedTrainingContainer: True
+workerCanReadClassifiers: True
+{"timestampUtc":"2026-09-12T09:58:48.4516628+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Started:AZURE_FULL_FLOW"}
+{"timestampUtc":"2026-09-12T09:58:48.5847483+00:00","executionMode":"AzureFull","jobId":"4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-12T09:58:55.2021582+00:00","executionMode":"AzureFull","jobId":"4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T09:59:51.2821119+00:00","executionMode":"AzureFull","jobId":"4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:00:34.8026727+00:00","executionMode":"AzureFull","jobId":"4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-12T10:00:34.8040529+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Stopped"}
+{"timestampUtc":"2026-09-12T10:03:24.3291194+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Started:AZURE_FULL_FLOW"}
+{"timestampUtc":"2026-09-12T10:03:24.4288156+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-12T10:03:29.4128877+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:04:23.8354101+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:05:06.4322306+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:05:47.6998045+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:06:22.8038441+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"MetadataExtracted","outcome":"SimulatedProcessCrashBeforeCheckpoint"}
+{"timestampUtc":"2026-09-12T10:06:23.8284788+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Started:AZURE_FULL_FLOW"}
+{"timestampUtc":"2026-09-12T10:06:23.9530155+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"MetadataExtracted","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-12T10:06:24.0830048+00:00","executionMode":"AzureFull","jobId":"75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea","stage":"MetadataExtracted","outcome":"ManualException:MetadataValidationFailed"}
+{"timestampUtc":"2026-09-12T10:06:24.0842176+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Stopped"}
+{"timestampUtc":"2026-09-13T05:52:30.3227455+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Started:AZURE_FULL_FLOW"}
+{"timestampUtc":"2026-09-13T05:52:30.3931001+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-13T05:52:30.4337909+00:00","executionMode":"AzureFull","jobId":"136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116","stage":"Ready","outcome":"Captured"}
+{"timestampUtc":"2026-09-13T05:52:35.075643+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:52:59.8068263+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:53:13.7644348+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"Classified","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:53:27.9002273+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"LayoutRead","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:53:42.245159+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"MetadataExtracted","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:53:42.297171+00:00","executionMode":"AzureFull","jobId":"823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a","stage":"MetadataExtracted","outcome":"ManualException:MetadataValidationFailed"}
+{"timestampUtc":"2026-09-13T05:53:43.7794997+00:00","executionMode":"AzureFull","jobId":"136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116","stage":"CredentialReady","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:53:59.9754912+00:00","executionMode":"AzureFull","jobId":"136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116","stage":"Uploaded","outcome":"Checkpoint"}
+{"timestampUtc":"2026-09-13T05:54:06.4958186+00:00","executionMode":"AzureFull","jobId":"136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116","stage":"Uploaded","outcome":"ManualException:ClassificationRequiresReview"}
+{"timestampUtc":"2026-09-13T05:54:06.4971597+00:00","executionMode":"AzureFull","jobId":null,"stage":"Worker","outcome":"Stopped"}

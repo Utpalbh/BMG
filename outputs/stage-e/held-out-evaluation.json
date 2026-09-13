@@ -1,0 +1,463 @@
+{
+  "threshold": 0.8,
+  "testDocuments": 28,
+  "correct": 28,
+  "knownAccepted": 19,
+  "knownDocuments": 24,
+  "falseAccepted": 0,
+  "otherRoutedToReview": 4,
+  "otherDocuments": 4,
+  "ocrAnchorsFound": 38,
+  "ocrAnchorsChecked": 38,
+  "confusionMatrix": {
+    "Note": {
+      "Note": 4,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 0,
+      "Survey": 0,
+      "ClosingInstructions": 0,
+      "Rider": 0,
+      "Other": 0
+    },
+    "DeedOfTrust": {
+      "Note": 0,
+      "DeedOfTrust": 4,
+      "TitleCommitment": 0,
+      "Survey": 0,
+      "ClosingInstructions": 0,
+      "Rider": 0,
+      "Other": 0
+    },
+    "TitleCommitment": {
+      "Note": 0,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 4,
+      "Survey": 0,
+      "ClosingInstructions": 0,
+      "Rider": 0,
+      "Other": 0
+    },
+    "Survey": {
+      "Note": 0,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 0,
+      "Survey": 4,
+      "ClosingInstructions": 0,
+      "Rider": 0,
+      "Other": 0
+    },
+    "ClosingInstructions": {
+      "Note": 0,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 0,
+      "Survey": 0,
+      "ClosingInstructions": 4,
+      "Rider": 0,
+      "Other": 0
+    },
+    "Rider": {
+      "Note": 0,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 0,
+      "Survey": 0,
+      "ClosingInstructions": 0,
+      "Rider": 4,
+      "Other": 0
+    },
+    "Other": {
+      "Note": 0,
+      "DeedOfTrust": 0,
+      "TitleCommitment": 0,
+      "Survey": 0,
+      "ClosingInstructions": 0,
+      "Rider": 0,
+      "Other": 4
+    }
+  },
+  "results": [
+    {
+      "expected": "Note",
+      "predicted": "Note",
+      "confidence": 0.855,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-001"
+    },
+    {
+      "expected": "Note",
+      "predicted": "Note",
+      "confidence": 0.772,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-002"
+    },
+    {
+      "expected": "Note",
+      "predicted": "Note",
+      "confidence": 0.823,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-003"
+    },
+    {
+      "expected": "Note",
+      "predicted": "Note",
+      "confidence": 0.802,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-004"
+    },
+    {
+      "expected": "DeedOfTrust",
+      "predicted": "DeedOfTrust",
+      "confidence": 0.849,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-005"
+    },
+    {
+      "expected": "DeedOfTrust",
+      "predicted": "DeedOfTrust",
+      "confidence": 0.799,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-006"
+    },
+    {
+      "expected": "DeedOfTrust",
+      "predicted": "DeedOfTrust",
+      "confidence": 0.818,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-007"
+    },
+    {
+      "expected": "DeedOfTrust",
+      "predicted": "DeedOfTrust",
+      "confidence": 0.804,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-008"
+    },
+    {
+      "expected": "TitleCommitment",
+      "predicted": "TitleCommitment",
+      "confidence": 0.849,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-009"
+    },
+    {
+      "expected": "TitleCommitment",
+      "predicted": "TitleCommitment",
+      "confidence": 0.879,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-010"
+    },
+    {
+      "expected": "TitleCommitment",
+      "predicted": "TitleCommitment",
+      "confidence": 0.844,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-011"
+    },
+    {
+      "expected": "TitleCommitment",
+      "predicted": "TitleCommitment",
+      "confidence": 0.889,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-012"
+    },
+    {
+      "expected": "Survey",
+      "predicted": "Survey",
+      "confidence": 0.845,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-013"
+    },
+    {
+      "expected": "Survey",
+      "predicted": "Survey",
+      "confidence": 0.782,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-014"
+    },
+    {
+      "expected": "Survey",
+      "predicted": "Survey",
+      "confidence": 0.812,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-015"
+    },
+    {
+      "expected": "Survey",
+      "predicted": "Survey",
+      "confidence": 0.777,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-016"
+    },
+    {
+      "expected": "ClosingInstructions",
+      "predicted": "ClosingInstructions",
+      "confidence": 0.88,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-017"
+    },
+    {
+      "expected": "ClosingInstructions",
+      "predicted": "ClosingInstructions",
+      "confidence": 0.825,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-018"
+    },
+    {
+      "expected": "ClosingInstructions",
+      "predicted": "ClosingInstructions",
+      "confidence": 0.853,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-019"
+    },
+    {
+      "expected": "ClosingInstructions",
+      "predicted": "ClosingInstructions",
+      "confidence": 0.799,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-020"
+    },
+    {
+      "expected": "Rider",
+      "predicted": "Rider",
+      "confidence": 0.933,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-021"
+    },
+    {
+      "expected": "Rider",
+      "predicted": "Rider",
+      "confidence": 0.8,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-022"
+    },
+    {
+      "expected": "Rider",
+      "predicted": "Rider",
+      "confidence": 0.906,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-023"
+    },
+    {
+      "expected": "Rider",
+      "predicted": "Rider",
+      "confidence": 0.813,
+      "accepted": true,
+      "status": "LayoutRead",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": [
+        true,
+        true
+      ],
+      "submissionId": "stage-e-eval-024"
+    },
+    {
+      "expected": "Other",
+      "predicted": "Other",
+      "confidence": 0.819,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": false,
+      "pages": 2,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-025"
+    },
+    {
+      "expected": "Other",
+      "predicted": "Other",
+      "confidence": 0.867,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": true,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-026"
+    },
+    {
+      "expected": "Other",
+      "predicted": "Other",
+      "confidence": 0.837,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-027"
+    },
+    {
+      "expected": "Other",
+      "predicted": "Other",
+      "confidence": 0.881,
+      "accepted": false,
+      "status": "ManualException",
+      "scanned": false,
+      "pages": 1,
+      "ocrAnchors": null,
+      "submissionId": "stage-e-eval-028"
+    }
+  ],
+  "pageReservations": [
+    {
+      "kind": "classify",
+      "status": "Succeeded",
+      "requests": 28,
+      "pages": 35
+    },
+    {
+      "kind": "layout",
+      "status": "Succeeded",
+      "requests": 19,
+      "pages": 25
+    }
+  ],
+  "limitations": [
+    "Synthetic documents only; no client accuracy claim.",
+    "Template families and identities are disjoint; class-specific vocabulary overlaps by design.",
+    "Other is a sampled negative class, not universal out-of-distribution detection."
+  ]
+}

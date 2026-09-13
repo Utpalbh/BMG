@@ -1,0 +1,81 @@
+[
+  {
+    "records": [
+      {
+        "name": "stbmgpocwjsvyjg25vqiy",
+        "fqdn": "stbmgpocwjsvyjg25vqiy.privatelink.blob.core.windows.net.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.7"
+          }
+        ]
+      }
+    ],
+    "zone": "privatelink.blob.core.windows.net"
+  },
+  {
+    "records": [
+      {
+        "name": "di-bmg-wjsvyjg25vqiy",
+        "fqdn": "di-bmg-wjsvyjg25vqiy.privatelink.cognitiveservices.azure.com.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.8"
+          }
+        ]
+      }
+    ],
+    "zone": "privatelink.cognitiveservices.azure.com"
+  },
+  {
+    "records": [
+      {
+        "name": "cosmos-bmg-wjsvyjg25vqiy",
+        "fqdn": "cosmos-bmg-wjsvyjg25vqiy.privatelink.documents.azure.com.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.4"
+          }
+        ]
+      },
+      {
+        "name": "cosmos-bmg-wjsvyjg25vqiy-eastus2",
+        "fqdn": "cosmos-bmg-wjsvyjg25vqiy-eastus2.privatelink.documents.azure.com.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.5"
+          }
+        ]
+      }
+    ],
+    "zone": "privatelink.documents.azure.com"
+  },
+  {
+    "records": [
+      {
+        "name": "oai-bmg-wjsvyjg25vqiy",
+        "fqdn": "oai-bmg-wjsvyjg25vqiy.privatelink.openai.azure.com.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.6"
+          }
+        ]
+      }
+    ],
+    "zone": "privatelink.openai.azure.com"
+  },
+  {
+    "records": [
+      {
+        "name": "kv-bmg-wjsvyjg25vqiy",
+        "fqdn": "kv-bmg-wjsvyjg25vqiy.privatelink.vaultcore.azure.net.",
+        "aRecords": [
+          {
+            "ipv4Address": "10.84.1.9"
+          }
+        ]
+      }
+    ],
+    "zone": "privatelink.vaultcore.azure.net"
+  }
+]

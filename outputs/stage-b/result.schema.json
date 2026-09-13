@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BMG Stage B simulated result",
+  "description": "Stage B application output. All AI evidence is explicitly simulated. No Azure service has processed these results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "submissionId",
+    "revision",
+    "status",
+    "metadata",
+    "provenance",
+    "validationErrors",
+    "executionMode"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "poc-1"
+    },
+    "submissionId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "Validated",
+        "ManualException"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lenderCode",
+        "loanNumber",
+        "borrowerName",
+        "propertyAddress",
+        "closingDate",
+        "loanType",
+        "purpose",
+        "submissionType"
+      ],
+      "properties": {
+        "lenderCode": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "loanNumber": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "borrowerName": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "propertyAddress": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "closingDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "format": "date"
+        },
+        "loanType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "enum": [
+            "Conventional",
+            "FHA",
+            "VA",
+            "Home Equity",
+            null
+          ]
+        },
+        "purpose": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "enum": [
+            "Purchase",
+            "Refinance",
+            "Home Equity",
+            null
+          ]
+        },
+        "submissionType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "enum": [
+            "Examination",
+            null
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "sourceKind",
+          "documentId",
+          "page",
+          "evidenceText",
+          "modelId",
+          "promptVersion"
+        ],
+        "properties": {
+          "field": {
+            "enum": [
+              "lenderCode",
+              "loanNumber",
+              "borrowerName",
+              "propertyAddress",
+              "closingDate",
+              "loanType",
+              "purpose",
+              "submissionType"
+            ]
+          },
+          "sourceKind": {
+            "enum": [
+              "Document",
+              "Manifest"
+            ]
+          },
+          "documentId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "page": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "modelId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "promptVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "sourceKind": {
+                  "const": "Document"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "documentId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "modelId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "promptVersion": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "documentId": {
+                  "type": "null"
+                },
+                "page": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "validationErrors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "executionMode": {
+      "const": "Simulated"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "Validated"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata": {
+            "properties": {
+              "lenderCode": {
+                "type": "string",
+                "minLength": 1
+              },
+              "loanNumber": {
+                "type": "string",
+                "minLength": 1
+              },
+              "borrowerName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "propertyAddress": {
+                "type": "string",
+                "minLength": 1
+              },
+              "closingDate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "loanType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "purpose": {
+                "type": "string",
+                "minLength": 1
+              },
+              "submissionType": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "provenance": {
+            "minItems": 8
+          },
+          "validationErrors": {
+            "maxItems": 0
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "validationErrors": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "Application must additionally check evidence coverage for every selected field, uniqueness, real source existence, text support, page bounds, normalization, conflicts, classification and replay state. Provenance array size alone is not proof of evidence coverage."
+}

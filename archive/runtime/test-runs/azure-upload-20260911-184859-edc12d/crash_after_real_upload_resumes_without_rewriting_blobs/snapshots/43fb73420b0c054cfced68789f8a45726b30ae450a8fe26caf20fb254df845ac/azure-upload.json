@@ -1,0 +1,61 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-d-1a0c89304777447d",
+  "revision": 1,
+  "digest": "43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-11T13:21:17.5764476+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-001.pdf",
+      "sha256": "9735d2e8fe6361e0f571b6df21827411676f9ffb05cd79fa49a2fcb53e10f1dc",
+      "etag": "\u00220x8DF10076A5916DE\u0022",
+      "length": 2331,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-002.pdf",
+      "sha256": "c1b6c9fcda6e56aa4373771d28e2fd5f1baaf9ff8f9ab66fe1e0e7b560f17eb6",
+      "etag": "\u00220x8DF10076EF88202\u0022",
+      "length": 2251,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-003.pdf",
+      "sha256": "1d6810f62d55646b2e6de2e00f412dc3019c0c354e44c17b984f6f4bb54f6cee",
+      "etag": "\u00220x8DF1007735B2A8F\u0022",
+      "length": 2296,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-004.pdf",
+      "sha256": "20523dac7397d7b7af6f5f82d3ce113e11a54ea8664c55b82e4fa3aed634a088",
+      "etag": "\u00220x8DF10077873146C\u0022",
+      "length": 2246,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-005.pdf",
+      "sha256": "417548a70ba1dcd85683981fbbfd523e5b3934341ae8eef96b07cb5902f7078d",
+      "etag": "\u00220x8DF10077CD46D82\u0022",
+      "length": 2285,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/document-006.pdf",
+      "sha256": "3153eed0d9840f1ec2a9aeb7e7904d8fbae6da164029fae3a5c0fdfa6b6ced3d",
+      "etag": "\u00220x8DF100781CE7C8E\u0022",
+      "length": 2192,
+      "reused": true
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-1a0c89304777447d/r1/43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac/submission.json",
+      "sha256": "43fb73420b0c054cfced68789f8a45726b30ae450a8fe26caf20fb254df845ac",
+      "etag": "\u00220x8DF100785EDF88D\u0022",
+      "length": 1208,
+      "reused": true
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

@@ -1,0 +1,48 @@
+{
+  "classifierId": "bmg-stage-e-v1",
+  "description": "Synthetic seven-class POC; frozen split stage-e-v1",
+  "docTypes": {
+    "Note": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/Note/"
+      }
+    },
+    "DeedOfTrust": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/DeedOfTrust/"
+      }
+    },
+    "TitleCommitment": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/TitleCommitment/"
+      }
+    },
+    "Survey": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/Survey/"
+      }
+    },
+    "ClosingInstructions": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/ClosingInstructions/"
+      }
+    },
+    "Rider": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/Rider/"
+      }
+    },
+    "Other": {
+      "azureBlobSource": {
+        "containerUrl": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/training",
+        "prefix": "stage-e-v1/Other/"
+      }
+    }
+  }
+}

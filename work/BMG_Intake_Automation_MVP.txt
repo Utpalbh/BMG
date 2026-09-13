@@ -1,0 +1,67 @@
+ppt/slides/slide1.xml
+From Upload to Invoice
+How BM&G's new intake automation carries a lender's documents
+all the way to a ready invoice — step by step.
+BM&G MORTGAGE EXAMINATION INTAKE  ·  MVP OVERVIEW
+Prepared for Moder  ·  September 2026
+
+ppt/slides/slide2.xml
+The Whole Journey, at a Glance
+A lender's documents travel from JetDocs, through a private hand-off into Azure, and land back home as a ready-to-work invoice — with no one manually in the middle.
+1 · On-Premises
+
+Lender submits
+2 · Hybrid Connectivity
+
+Secure hand-off
+3 · Azure
+
+Read & organize
+4 · Back On-Premises
+
+Invoice & file
+BM&G Intake Automation MVP
+
+ppt/slides/slide3.xml
+
+
+ppt/slides/slide4.xml
+Four Stages, One Seamless Hand-off
+1
+Lender submits, as usual
+
+A lender uploads documents in JetDocs, exactly like today. The files land in a temporary folder, and our orchestration service notices the new submission right away — nobody has to go looking for it.
+2
+A secure hand-off into Azure
+
+The documents travel over a private, dedicated connection into Azure — never the open internet — and the service proves who it is before anything is allowed to move.
+3
+Azure reads and makes sense of it
+
+Each document is sorted by type (Note, Deed of Trust, Title Commitment, Survey, Closing Instructions), read for its text and layout, and the handful of details needed to raise an invoice are pulled out.
+4
+Invoice created, files delivered home
+
+With that information in hand, the system creates the transaction in LoanTrack, gets the invoice number, and uploads the original documents into EDM under that number. From here, the existing process carries on unchanged.
+BM&G Intake Automation MVP
+
+ppt/slides/slide5.xml
+Why It's Worth Doing
+Three small shifts that add up to a much smoother start for every submission.
+1
+No more manual re-keying
+Coordinators no longer open every document just to create an invoice number — the metadata is captured automatically.
+2
+Faster, more consistent hand-offs
+Classification and extraction happen in seconds and the same way every time, instead of depending on who's at the desk.
+3
+Nothing downstream has to change
+ClosingExpress, SecureDocs, and the MS Access queue keep working exactly as they do today — this simply feeds them faster.
+BM&G Intake Automation MVP
+
+ppt/slides/slide6.xml
+Same Trusted Process Downstream —
+Just a Faster Front Door
+The MVP stops right after the EDM upload. Everything the team does today —
+queueing, examination, and release — continues exactly as it always has.
+QUESTIONS & DISCUSSION

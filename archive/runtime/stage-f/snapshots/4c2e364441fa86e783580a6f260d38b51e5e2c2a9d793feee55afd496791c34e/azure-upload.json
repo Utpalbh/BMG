@@ -1,0 +1,61 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-f-happy-001",
+  "revision": 1,
+  "digest": "4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-12T09:59:51.2542073+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-001.pdf",
+      "sha256": "b641102fc50d9d5effe3a382305499bec8fd7147577088840fb64ecd377c76f7",
+      "etag": "\u00220x8DF10B478E832AC\u0022",
+      "length": 3566,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-002.pdf",
+      "sha256": "846e9fb5719aebe006ef7fa73d792eeb47185e8d8aed62504dda73bd67a57c35",
+      "etag": "\u00220x8DF10B47DF5F857\u0022",
+      "length": 3565,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-003.pdf",
+      "sha256": "4ee205ad01697cb72be30542db3a0cba796508a239eb5c99c6e241d9ad4e1c2d",
+      "etag": "\u00220x8DF10B482465B69\u0022",
+      "length": 3660,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-004.pdf",
+      "sha256": "9363770a1851984b99fd24d6c036b6ecfb57c67b172b3a4a3ff69958c8232bc6",
+      "etag": "\u00220x8DF10B4870F097B\u0022",
+      "length": 3800,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-005.pdf",
+      "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+      "etag": "\u00220x8DF10B48BBDC313\u0022",
+      "length": 3686,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/document-006.pdf",
+      "sha256": "c4655c47a8ffba771b144e1b188a0c1e2a02b28ab64798f8fd646a59357dfe52",
+      "etag": "\u00220x8DF10B4903DCE1B\u0022",
+      "length": 3637,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-f-happy-001/r1/4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e/submission.json",
+      "sha256": "4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e",
+      "etag": "\u00220x8DF10B494BC1A7D\u0022",
+      "length": 1201,
+      "reused": false
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

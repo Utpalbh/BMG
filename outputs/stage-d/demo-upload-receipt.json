@@ -1,0 +1,61 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-d-demo-001",
+  "revision": 1,
+  "digest": "703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-11T13:24:51.1311078+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-001.pdf",
+      "sha256": "4fe86f3be18bf117b7e1c1186ee1c6335acc184940e11351472c48eb66a0ef6b",
+      "etag": "\u00220x8DF1007F1829F8B\u0022",
+      "length": 2341,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-002.pdf",
+      "sha256": "66255aac26a77a45d23cd10d4501ef4440395002937c382f7634a8de27109d09",
+      "etag": "\u00220x8DF1007F62AE6AD\u0022",
+      "length": 2255,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-003.pdf",
+      "sha256": "8a42d04bfbae9ecb6e7c6f2d8f4aef082cf1e215229ac5da153c5acb3d683f96",
+      "etag": "\u00220x8DF1007FA875C52\u0022",
+      "length": 2301,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-004.pdf",
+      "sha256": "51b8ce6a4fa1c1cddc46c408674e578e6dacc55c312638e282754058716f8d2c",
+      "etag": "\u00220x8DF1007FF5B550A\u0022",
+      "length": 2249,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-005.pdf",
+      "sha256": "e6b23ac028b843b3b4b8d4516132931df8293b4b9c90318ee708fa948af8c484",
+      "etag": "\u00220x8DF10080380FCB9\u0022",
+      "length": 2287,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/document-006.pdf",
+      "sha256": "4b520fbc41eac7c349ee48e5913595e7f84d7cd1c20da709a8f9fecc77b38026",
+      "etag": "\u00220x8DF10080941CAB1\u0022",
+      "length": 2212,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-d-demo-001/r1/703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01/submission.json",
+      "sha256": "703d91d78fcfb3cfa7a23746006ad81c1c3677dd9634f03a3f78326f11945c01",
+      "etag": "\u00220x8DF10080DD7F079\u0022",
+      "length": 1200,
+      "reused": false
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "limit": 50000.0,
+    "name": "OpenAI.GlobalBatch.gpt-4.1-mini",
+    "unit": "Count",
+    "used": 0.0
+  },
+  {
+    "limit": 50000.0,
+    "name": "OpenAI.DataZoneBatch.gpt-4.1-mini",
+    "unit": "Count",
+    "used": 0.0
+  },
+  {
+    "limit": 1000.0,
+    "name": "OpenAI.GlobalStandard.gpt-5-mini",
+    "unit": "Count",
+    "used": 0.0
+  },
+  {
+    "limit": 300.0,
+    "name": "OpenAI.DataZoneStandard.gpt-5-mini",
+    "unit": "Count",
+    "used": 0.0
+  }
+]

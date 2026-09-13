@@ -1,0 +1,161 @@
+{
+  "status": "Prototype flow verified; classifier generalization remains limited",
+  "verifiedUtc": "2026-09-13T11:25:21.64719+05:30",
+  "diagramSteps": "2–10",
+  "fullAzureFlow": true,
+  "workerStopped": true,
+  "networkRetained": true,
+  "teardownPerformed": false,
+  "clientReady": false,
+  "regressionChecks": 21,
+  "validatorChecks": 12,
+  "fullHappyFieldsCorrect": 8,
+  "fullHappyFieldsChecked": 8,
+  "liveWatcherPassed": true,
+  "promptInjectionFixturePassed": false,
+  "promptInjectionBlockedAtClassification": true,
+  "conflictRoutingLivePassed": true,
+  "missingFieldValidationLivePassed": false,
+  "missingFieldValidationLocalPassed": true,
+  "llmAndCosmosCrashRecoveryPassed": true,
+  "replayAddedRequests": 0,
+  "publicAccess": {
+    "storage": "Disabled",
+    "di-bmg-wjsvyjg25vqiy": "Disabled",
+    "oai-bmg-wjsvyjg25vqiy": "Disabled",
+    "cosmos": "Disabled",
+    "keyVault": "Disabled"
+  },
+  "jobs": [
+    {
+      "id": "4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e",
+      "submission_id": "stage-f-happy-001",
+      "revision": 1,
+      "digest": "4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\4c2e364441fa86e783580a6f260d38b51e5e2c2a9d793feee55afd496791c34e",
+      "stage": 2,
+      "status": "ManualException",
+      "attempts": 1,
+      "next_attempt_utc": 1789207235803,
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "id": "75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea",
+      "submission_id": "stage-f-happy-002",
+      "revision": 1,
+      "digest": "75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea",
+      "stage": 8,
+      "status": "Returned",
+      "attempts": 0,
+      "next_attempt_utc": 0,
+      "error_code": null
+    },
+    {
+      "id": "bb6a0824e8279e2dae77c68810d52e4142c88b1bc90357517ee0047d1199a208",
+      "submission_id": "stage-f-injection-001",
+      "revision": 1,
+      "digest": "bb6a0824e8279e2dae77c68810d52e4142c88b1bc90357517ee0047d1199a208",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\bb6a0824e8279e2dae77c68810d52e4142c88b1bc90357517ee0047d1199a208",
+      "stage": 2,
+      "status": "ManualException",
+      "attempts": 1,
+      "next_attempt_utc": 1789278644279,
+      "error_code": "ClassificationRequiresReview"
+    },
+    {
+      "id": "7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a",
+      "submission_id": "stage-f-watch-001",
+      "revision": 1,
+      "digest": "7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a",
+      "stage": 8,
+      "status": "Returned",
+      "attempts": 0,
+      "next_attempt_utc": 0,
+      "error_code": null
+    },
+    {
+      "id": "823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a",
+      "submission_id": "stage-f-conflict-001",
+      "revision": 1,
+      "digest": "823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a",
+      "stage": 5,
+      "status": "ManualException",
+      "attempts": 1,
+      "next_attempt_utc": 1789278823340,
+      "error_code": "MetadataValidationFailed"
+    },
+    {
+      "id": "136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+      "submission_id": "stage-f-missing-001",
+      "revision": 1,
+      "digest": "136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+      "snapshot": "C:\\Users\\shrut\\Documents\\BmgPocRuntime\\stage-f\\snapshots\\136a8c05e2153fcb436ea6e96dc373af5a50b68705a979a97c9c0118919a9116",
+      "stage": 2,
+      "status": "ManualException",
+      "attempts": 1,
+      "next_attempt_utc": 1789278847494,
+      "error_code": "ClassificationRequiresReview"
+    }
+  ],
+  "aiTotals": [
+    {
+      "kind": "classify",
+      "status": "Succeeded",
+      "requests": 17,
+      "pagesOrRequests": 33
+    },
+    {
+      "kind": "cosmos",
+      "status": "Succeeded",
+      "requests": 9,
+      "pagesOrRequests": 9
+    },
+    {
+      "kind": "layout",
+      "status": "Succeeded",
+      "requests": 9,
+      "pagesOrRequests": 17
+    },
+    {
+      "kind": "llm",
+      "status": "Succeeded",
+      "requests": 3,
+      "pagesOrRequests": 0
+    }
+  ],
+  "llmUsage": [
+    {
+      "request_key": "75494982bf8bfa4e3a9face278679c820b580931bdf5f05304e114ca611c3aea-llm-bmg-extract-v1",
+      "input_reserved": 15353,
+      "output_reserved": 12000,
+      "input_actual": 2621,
+      "output_actual": 2383
+    },
+    {
+      "request_key": "7aa05d1a7837beb52b46e53c3eddab8a643e71a7131ae411f59b7eb6b407940a-llm-bmg-extract-v1",
+      "input_reserved": 7178,
+      "output_reserved": 12000,
+      "input_actual": 785,
+      "output_actual": 1007
+    },
+    {
+      "request_key": "823dd0307010232b05a2a1c5ccc46a21e29073a12363f4d674af9be500428e7a-llm-bmg-extract-v1",
+      "input_reserved": 7949,
+      "output_reserved": 12000,
+      "input_actual": 958,
+      "output_actual": 1808
+    }
+  ],
+  "totalReportedCosmosRU": 52.010000000000005,
+  "buildSha256": "886b28da413e71dc1cbd4a64f6b5a7ae1d07456be0f4a7e16c7d98c1fc2d0707",
+  "limitations": [
+    "Original six templates failed confidence gating; only one original top label correct.",
+    "Adding metadata rows caused four of six new templates to fall below classification threshold.",
+    "Successful full packet combines accepted Stage E templates with field-complete Closing Instructions; integration evidence only.",
+    "Client application integration and site-to-site VPN are untested."
+  ],
+  "teardownStatus": "Blocked by automatic approval review: explicit approval needed to reverse earlier network-retention instruction"
+}

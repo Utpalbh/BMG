@@ -1,0 +1,18 @@
+PAGE 1
+PROPERTY SURVEY CERTIFICATION
+Synthetic survey summary
+SYNTHETIC POC DATA
+Survey Job:
+SV-0005
+Survey Date:
+2026-08-19
+Owner:
+Skyler Bennett and Drew Bennett
+Property Address:
+505 Validation Road, Fiction Hills, TX 75005
+County:
+Hays
+Legal Description:
+Synthetic Lot 14, Block 6, POC Subdivision, Hays County, Texas
+Illustrative property boundary - not to scale
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

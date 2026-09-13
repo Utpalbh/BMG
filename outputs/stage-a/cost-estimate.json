@@ -1,0 +1,47 @@
+{
+  "currency": "INR",
+  "rateDate": "2026-09-10",
+  "region": "eastus2",
+  "source": "https://prices.azure.com/api/retail/prices",
+  "note": "Estimate, not a spending guarantee. DNS resolver uses a 720-hour September month; zones reserve two daily billing units. LLM and miscellaneous entries are allowances, not verified unit tariffs. Tax is illustrative only. No assumed free credits. Usage allowances include retries. No paid neural extraction training is planned.",
+  "scenarios": [
+    {
+      "cloudHours": 3,
+      "lineItemsINR": {
+        "VPN gateway": 60.19,
+        "DNS resolver inbound endpoint": 71.66,
+        "Five private endpoints": 14.33,
+        "One standard public IPv4": 1.43,
+        "Five private DNS zones allowance for two billing days": 15.92,
+        "Layout allowance including training preprocessing": 229.31,
+        "Classification allowance": 34.4,
+        "LLM usage allowance, not a quoted tariff": 150,
+        "Cosmos one million RU allowance": 23.89,
+        "Blob, vault, DNS queries, transfer and logging allowance": 30
+      },
+      "subtotalINR": 631.14,
+      "contingencyPercent": 20,
+      "illustrativeTaxPercent": 18,
+      "planningTotalINR": 893.69
+    },
+    {
+      "cloudHours": 10,
+      "lineItemsINR": {
+        "VPN gateway": 200.65,
+        "DNS resolver inbound endpoint": 238.87,
+        "Five private endpoints": 47.77,
+        "One standard public IPv4": 4.78,
+        "Five private DNS zones allowance for two billing days": 15.92,
+        "Layout allowance including training preprocessing": 229.31,
+        "Classification allowance": 34.4,
+        "LLM usage allowance, not a quoted tariff": 150,
+        "Cosmos one million RU allowance": 23.89,
+        "Blob, vault, DNS queries, transfer and logging allowance": 30
+      },
+      "subtotalINR": 975.58,
+      "contingencyPercent": 20,
+      "illustrativeTaxPercent": 18,
+      "planningTotalINR": 1381.43
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+word/document.xml
+BM&G Mortgage Examination
+Intake Automation MVP
+End-to-End Architecture, Functional Specification,
+and Azure PoC Build Guide
+Version 1.0 | 26 August 2026
+Implementation-oriented working document
+for architects, developers, and AI coding tools such as Cursor
+CONFIDENTIAL / PROJECT WORKING MATERIAL
+1. Executive Summary
+BM&G's current examination intake is fragmented across JetDocs, LoanTrack, EDM, MS Access, ClosingExpress, and SecureDocs. The existing process requires a coordination desk to manually create a LoanTrack transaction/invoice number, manually upload documents to EDM, manually add the invoice number to the MS Access queue, and distribute work. The broader modernization proposal targets replacement of these legacy handoffs and later AI-assisted examination, but the agreed MVP is deliberately much smaller.
+AGREED MVP IN ONE SENTENCE
+When a lender submission arrives through JetDocs, automatically take the files from the temporary on-premises landing location, send them privately to an Azure AI service for document classification and extraction of the small metadata set required for invoice creation, create the LoanTrack invoice/transaction, and then upload the original documents to EDM using the resulting invoice number as the reference.
+The MVP ends after successful EDM upload. The current MS Access queue, work distribution, ClosingExpress examination process, approximately 140 examination fields, review checklist, and SecureDocs release process remain unchanged.
+Recommended PoC technology direction
+On-premises orchestration: .NET 8 Worker Service running near the JetDocs temporary folder and existing LoanTrack/EDM systems.
+Azure AI: Azure AI Document Intelligence v4.0 using a custom classifier and custom extraction models for MVP metadata. Azure OpenAI is not required for the first PoC unless metadata complexity justifies it.
+Private connectivity: Site-to-Site IPsec/IKE VPN from BM&G on-premises to an Azure VNet; Document Intelligence reachable only through a Private Endpoint; public network access disabled.
+DNS: on-premises DNS forwards Azure private-service queries to Azure DNS Private Resolver so the normal service FQDN resolves to the Private Endpoint IP.
+PoC adapters: simulated Invoice and EDM implementations until the real LoanTrack/EDM contracts are confirmed.
+2. Source Basis, Decision Status, and Terminology
+Status
+Meaning
+CONFIRMED - MVP DECISION
+Explicit decision supplied from the latest workshop/project discussion.
+CONFIRMED - CURRENT STATE
+Supported by the Moder proposal and/or discovery transcript.
+DESIGN RECOMMENDATION
+Architecture choice proposed here to make the MVP buildable and secure.
+TBD / BUSINESS CONFIRMATION
+Not yet supplied; implementation must remain configurable until confirmed.
+Source facts carried forward
+1.  
+Lenders currently upload through JetDocs; the proposal says an email is generated and no automation is triggered.
+2.  
+Coordination desk staff manually create a LoanTrack transaction and obtain an invoice number.
+3.  
+EDM document association depends on the transaction/invoice reference.
+4.  
+The MS Access queue is not integrated with LoanTrack; staff manually enter the invoice number into Access.
+5.  
+Different processing centers support either coordinator assignment or processor self-pickup.
+6.  
+Legal Assistants use ClosingExpress for examination, manually key about 140 fields, and later release through SecureDocs.
+7.  
+Candidate future document classes are Note, Deed of Trust, Title Commitment, Survey, Closing Instructions, and Rider.
+8.  
+The new MVP narrows AI extraction to invoice-creation metadata, not the full approximately 140 examination fields.
+IMPORTANT ARCHITECTURE CHANGE
+The original proposal described an on-prem-only platform where mortgage data would not leave the network boundary. The latest MVP decision supersedes that statement for this slice: documents are sent to an Azure AI service. The control is private hybrid connectivity (S2S VPN + Private Endpoint), and the revised data-processing boundary needs security/legal approval.
+3. MVP Objective, Scope, and Boundary
+Business objective
+Remove the manual intake chain between lender document arrival and EDM association: JetDocs submission -> document understanding -> invoice creation -> EDM upload. The MVP should demonstrate that a lender submission can become a correctly referenced EDM package without a coordinator reading documents or re-keying the metadata required only to create the invoice.
+In scope
+JetDocs-related trigger/temp-folder intake
+Submission grouping and duplicate protection
+Document classification
+Extraction of business-confirmed invoice metadata
+Confidence/source provenance and validation
+LoanTrack invoice/transaction creation through an adapter
+EDM upload/association using invoice number
+Audit, retries, exception handling
+S2S VPN + Azure Private Endpoint + private DNS
+Explicitly unchanged / out of MVP
+JetDocs replacement
+LoanTrack replacement
+EDM replacement
+MS Access queue automation/replacement
+Dynamic routing/SLA
+ClosingExpress and the approximately 140 examination fields
+Business-rule checklist/stare-and-compare
+Legal Assistant QC workbench
+SecureDocs release
+Full Document Preparation / LendingPad
+New lender/client portal
+4. End-to-End MVP Process
+Figure 1 - Confirmed MVP flow and stop point. The orange box is intentionally outside the automation boundary.
+Happy path
+1.  
+Lender uploads documents in JetDocs.
+2.  
+JetDocs/current integration places the documents in an on-premises temporary submission folder and/or emits a trigger.
+3.  
+The MVP Intake Worker receives the trigger and establishes a submission/correlation ID.
+4.  
+The worker waits until the submission is stable/complete enough to process, then computes file hashes and checks idempotency.
+5.  
+Documents are sent over HTTPS through the S2S VPN to Azure AI Document Intelligence through its Private Endpoint.
+6.  
+The AI service classifies each document and runs the configured extraction model for that class.
+7.  
+The worker normalizes extraction results into canonical InvoiceMetadata using configurable source-priority rules.
+8.  
+Required fields and confidence thresholds are validated.
+9.  
+The Invoice Adapter creates the LoanTrack transaction/invoice and returns the invoice number.
+10.  
+The invoice number is persisted before EDM upload starts.
+11.  
+The EDM Adapter uploads/associates every original document with that invoice number.
+12.  
+The submission is marked Completed. Existing MS Access queue and downstream examination/release continue unchanged.
+Invoice creation gate
+Do not create an invoice when the submission cannot be correlated, required metadata is missing, confidence is below the approved threshold, authoritative-source conflicts cannot be resolved, or the submission has already produced an invoice. These cases go to Manual Exception.
+5. Functional Requirements
+ID
+Requirement
+FR-01 Intake trigger
+Begin processing when a JetDocs-related trigger indicates a new lender submission is available. PoC uses a file-system/folder watcher; production trigger mechanism remains TBD.
+FR-02 Submission grouping
+Process one logical submission as an atomic unit. A trigger or folder structure must provide a stable submission ID.
+FR-03 Stable-file detection
+Do not upload files still being copied. Use manifest/completion marker, atomic rename, or repeated size/last-write checks.
+FR-04 Duplicate prevention
+Persist an idempotency key using source submission ID plus document hashes. Replayed triggers must not create a second invoice.
+FR-05 Classification
+Classify configured document classes. Initial candidates: Note, DeedOfTrust, TitleCommitment, Survey, ClosingInstructions, Rider, Unknown.
+FR-06 Metadata extraction
+Extract only metadata required for MVP invoice creation. Final fields/source mappings are business TBD.
+FR-07 Confidence/provenance
+Retain value, source document/page when available, confidence, model ID/version.
+FR-08 Canonical aggregation
+Map document-level results into InvoiceMetadata using configuration-driven source precedence.
+FR-09 Validation
+Required fields and confidence thresholds must gate invoice creation.
+FR-10 Invoice creation
+Create LoanTrack transaction/invoice through an adapter; actual supported LoanTrack integration surface is TBD.
+FR-11 EDM upload
+After invoice creation, upload/associate original lender files to EDM using invoice number.
+FR-12 Partial EDM protection
+Track per-document upload state so interrupted uploads can resume without duplicate documents.
+FR-13 Status/audit
+Persist correlation ID, hashes, stage, attempts, AI results summary, invoice number, EDM status, timestamps/errors.
+FR-14 Manual exception
+Non-retryable/business validation failures must be visible and recoverable; never silently discard.
+FR-15 Downstream preservation
+Do not create MS Access queue entries or alter ClosingExpress/SecureDocs behavior in MVP.
+6. Metadata Contract - Configurable Until Business Confirms
+Business will confirm what metadata is needed and which document(s) are authoritative. The PoC therefore uses a placeholder contract only so implementation can begin without locking production logic.
+Placeholder canonical metadata
+{
+  "lenderCode": "LND001",
+  "loanNumber": "BMG-POC-000001",
+  "borrowerName": "Jordan Parker and Casey Parker",
+  "propertyAddress": "101 Prototype Lane, Sampletown, TX 75001",
+  "closingDate": "2026-09-22",
+  "loanType": "Conventional",
+  "purpose": "Purchase",
+  "submissionType": "Examination"
+}
+TBD
+The fields above are synthetic PoC placeholders, not confirmed BM&G invoice fields. Replace them as soon as business returns the metadata/source mapping.
+Recommended mapping configuration
+{
+  "fields": {
+    "lenderCode": {
+      "required": true,
+      "minConfidence": 0.90,
+      "sourcePriority": ["ClosingInstructions", "Note"]
+    },
+    "loanNumber": {
+      "required": true,
+      "minConfidence": 0.90,
+      "sourcePriority": ["ClosingInstructions", "Note", "DeedOfTrust", "Rider"]
+    }
+  }
+}
+7. Architecture Overview
+Architecture principle: keep orchestration and legacy system integration on premises; use Azure only for the AI document-processing capability and private-network resources required for that capability.
+Figure 2 - Logical MVP architecture. LoanTrack and EDM are isolated behind adapters because their production interfaces are not yet confirmed.
+Core components
+Component
+Location
+Responsibility
+JetDocs/temp landing
+On-prem
+Existing lender submission and temporary file landing.
+MVP Intake Worker
+On-prem
+Trigger, grouping, hashing, AI orchestration, validation, invoice/EDM calls, retry.
+Processing State Store
+On-prem
+Durable state/idempotency/audit. SQLite for PoC; approved SQL Server for production.
+Invoice Adapter
+On-prem
+Encapsulates LoanTrack invoice creation.
+EDM Adapter
+On-prem
+Encapsulates EDM upload/association.
+Azure VPN Gateway
+Azure
+S2S connectivity from BM&G to VNet.
+Azure DNS Private Resolver
+Azure
+Enables on-prem DNS resolution of Azure Private Endpoint names.
+Document Intelligence PE
+Azure VNet
+Private IP path to AI service.
+Azure AI Document Intelligence
+Azure
+Classification + metadata extraction; public access disabled.
+Training Blob Storage
+Azure
+Synthetic/labeled data used for custom model training only.
+8. Hybrid Network and Private Endpoint Design
+Figure 3 - Illustrative S2S VPN, Private Endpoint, and DNS path. CIDRs are examples only and must be replaced with BM&G-approved non-overlapping ranges.
+Network
+Illustrative range
+Purpose
+BM&G on-prem
+10.20.0.0/16
+Example only; replace with actual prefixes.
+Azure VNet
+10.40.0.0/16
+Must not overlap on-prem.
+GatewaySubnet
+10.40.0.0/27
+Azure VPN Gateway.
+Private Endpoint subnet
+10.40.1.0/24
+Document Intelligence PE; optional Blob PE.
+DNS Resolver inbound subnet
+10.40.2.0/28
+Dedicated resolver inbound endpoint subnet.
+DNS flow
+1.  
+Application calls the normal custom-subdomain endpoint such as https://<resource>.cognitiveservices.azure.com/.
+2.  
+Private DNS zone privatelink.cognitiveservices.azure.com contains the PE A record and is linked to the VNet.
+3.  
+Azure DNS Private Resolver exposes an inbound IP reachable over the VPN.
+4.  
+BM&G enterprise DNS conditionally forwards the Azure private service zone to that inbound IP.
+5.  
+From the on-prem worker host, the service FQDN must resolve to the PE private IP. Do not call the privatelink hostname directly.
+Network security baseline
+Disable Document Intelligence public network access after PE validation.
+Runtime traffic is HTTPS/TCP 443 over S2S route.
+Use route-based S2S VPN; prefer IKEv2 unless network standards require otherwise.
+Ensure Azure/on-prem address spaces do not overlap.
+Use NSG/PE-subnet policy per enterprise standard.
+PoC may use one tunnel; production evaluates zone-redundant/active-active requirements.
+9. Azure AI Document Intelligence Design
+Recommended first implementation
+1.  
+Custom classifier identifies document type.
+2.  
+Custom neural extraction model per supported class returns configured fields.
+3.  
+On-prem aggregation resolves source precedence and canonical invoice metadata.
+This keeps the first PoC focused on purpose-built document AI and avoids adding an LLM before the metadata is known. Azure OpenAI can be introduced later only if extraction requires semantic reasoning that Document Intelligence cannot reliably provide.
+Training data
+Microsoft documents a minimum of two classes and five samples per class for a custom classifier, and custom extraction can start with five examples of a document type. The included synthetic dataset supplies five samples for each of six candidate classes (30 PDFs).
+Runtime and training storage
+The on-prem worker can send document bytes directly to the Analyze API/SDK. Azure Blob Storage is included primarily for custom-model training. If storage is network-restricted, give it a Blob Private Endpoint and configure Document Intelligence managed-identity access required for training.
+DATA RETENTION REVIEW REQUIRED
+Microsoft states that Document Intelligence temporarily stores submitted input and analyze results in encrypted Azure Storage in the same region and retains them for up to 24 hours. The Delete Analyze Result API can remove them sooner. Because the original proposal said mortgage data would remain on premises, this revised behavior needs explicit security/legal approval.
+Authentication
+PoC may use an API key stored outside source control or a Microsoft Entra service principal. Production should prefer Entra service-to-service authentication with least privilege (for example Cognitive Services User) subject to BM&G identity standards.
+10. Component Design and Interfaces
+Intake.Worker
+.NET 8 Worker Service
+trigger normalization
+stable-file detection
+SHA-256 hashing/idempotency
+AI calls
+metadata aggregation/validation
+Invoice Adapter call
+EDM Adapter call
+durable state/retry/audit
+completed/failed folder handling
+Key interfaces
+public interface ITriggerSource
+{
+    IAsyncEnumerable<SubmissionEnvelope> ReadAsync(CancellationToken ct);
+}
+public interface IDocumentAiClient
+{
+    Task<ClassifiedDocument> ClassifyAsync(DocumentInput input, CancellationToken ct);
+    Task<DocumentExtraction> ExtractAsync(DocumentInput input, string documentType, CancellationToken ct);
+}
+public interface IInvoiceService
+{
+    Task<InvoiceResult> CreateInvoiceAsync(InvoiceMetadata metadata, string idempotencyKey, CancellationToken ct);
+}
+public interface IEdmService
+{
+    Task<EdmUploadResult> UploadAsync(string invoiceNumber, DocumentInput document, CancellationToken ct);
+}
+PoC adapter behavior
+Adapter
+PoC behavior
+Production behavior
+Trigger
+One subfolder = one submission; submission.json manifest.
+Actual JetDocs trigger/interface TBD.
+AI
+Real Document Intelligence or --simulate-ai ground-truth mode.
+Document Intelligence through PE; model IDs/config approved.
+Invoice
+Generate INV-POC-xxxxxx and persist receipt.
+LoanTrack integration contract TBD.
+EDM
+Copy originals to edm-simulated/<invoice>/ and write JSON receipt.
+EDM API/interface TBD.
+11. Processing State and Idempotency
+Figure 4 - Core state progression. Add RetryPending as an implementation state for transient failures.
+Minimum durable entities
+Entity
+Minimum fields
+SubmissionProcessing
+SubmissionId, IdempotencyKey, Status, ReceivedUtc, UpdatedUtc, InvoiceNumber, AttemptCount, LastErrorCode, LastErrorMessage, AiModelVersion
+SubmissionDocument
+DocumentId, SubmissionId, OriginalFileName, Sha256, DocumentType, ClassificationConfidence, EdmStatus, EdmDocumentId
+ExtractedField
+FieldName, Value, Confidence, SourceDocumentId, SourcePage, ModelId/Version, SelectedFlag
+Idempotency rule
+SHA256(submissionId + sorted(documentSha256s))
+Create a unique constraint on IdempotencyKey. Before invoice creation, acquire a database/application lock. Persist the invoice number immediately after creation; any later retry must reuse it.
+12. Failure Handling and Recovery
+Transient retry
+Use exponential backoff with jitter for network/VPN timeouts, Document Intelligence 408/429/5xx, and temporary LoanTrack/EDM failures. PoC baseline: four attempts with approximately 2s, 5s, 15s, and 30s delays, respecting server retry hints when available.
+Non-retryable examples
+unsupported/password-protected file
+unknown document class below threshold
+missing required invoice metadata
+unresolved source conflict
+LoanTrack business validation failure
+authentication/authorization misconfiguration
+CRITICAL RECOVERY RULE
+If invoice creation succeeds and EDM upload fails, never create a new invoice. Persist the invoice number first, then retry only the EDM stage against the same invoice. Partial multi-document EDM retries should skip already confirmed uploads.
+13. Security, Privacy, Observability, and Audit
+Security controls
+S2S encrypted path to Azure VNet
+Document Intelligence Private Endpoint and disabled public network access
+TLS/HTTPS
+encrypted on-prem state and Azure training storage
+least-privilege service identity
+secrets excluded from source control
+failed/quarantine folders with restricted access
+log redaction: no full document text or sensitive financial/identity values by default
+document/model/field provenance for audit
+explicit on-prem temp/archive retention
+review/capture Azure AI delete-result policy
+Structured log fields
+timestamp, correlationId, submissionId, documentId, stage, attempt, durationMs, outcome, errorCode, invoiceNumber, modelId, modelVersion
+Core metrics
+submissions received/completed/failed
+end-to-end duration
+AI latency/failure rate
+classification confidence distribution
+metadata validation failures by field
+invoice success/failure
+EDM upload success/failure
+duplicates suppressed
+manual exception count
+Health checks
+landing-folder access
+state store
+private DNS resolution
+TCP/TLS to Document Intelligence
+VPN connection status
+LoanTrack adapter
+EDM adapter
+14. Azure PoC Resource Specification
+Resource
+Example
+Notes
+Resource group
+rg-bmg-mvp-ai-poc
+Single PoC RG.
+VNet
+vnet-bmg-mvp-poc
+Non-overlapping CIDR.
+GatewaySubnet
+GatewaySubnet
+Required exact subnet name.
+VPN Gateway
+vng-bmg-mvp-poc
+Route-based S2S.
+Local Network Gateway
+lng-bmg-onprem-poc
+On-prem public VPN IP + prefixes.
+VPN connection
+conn-bmg-onprem-poc
+IPsec/IKE; secret parameter.
+PE subnet
+snet-private-endpoints
+Document Intelligence and optional Blob PEs.
+Document Intelligence
+di-bmg-mvp-<unique>
+Custom subdomain; PE; public access disabled.
+Private DNS
+privatelink.cognitiveservices.azure.com
+Link to VNet.
+DNS Private Resolver
+dnspr-bmg-mvp-poc
+Inbound endpoint for on-prem queries.
+Training storage
+stbmgmvppoc<unique>
+Synthetic/custom model training only.
+Parameterize; do not hard-code
+Azure region
+VNet/subnet CIDRs
+on-prem address prefixes
+on-prem VPN public IP
+VPN authentication secret/certificate
+tenant/subscription IDs
+Document Intelligence SKU/model IDs
+storage names
+15. Recommended Repository Structure for Cursor
+bmg-intake-mvp/
+  README.md
+  docs/
+    architecture.md
+    decisions/
+      ADR-001-hybrid-private-ai.md
+      ADR-002-document-intelligence.md
+      ADR-003-adapter-boundaries.md
+  infra/
+    main.bicep
+    parameters/poc.bicepparam
+    modules/
+      network.bicep
+      vpn.bicep
+      private-dns.bicep
+      document-intelligence.bicep
+      training-storage.bicep
+  src/
+    Bmg.Intake.Worker/
+    Bmg.Intake.Domain/
+    Bmg.Intake.Infrastructure/
+    Bmg.Intake.Adapters.Simulated/
+  tests/
+    Bmg.Intake.UnitTests/
+    Bmg.Intake.IntegrationTests/
+  config/
+    metadata-mapping.poc.json
+    document-types.poc.json
+  synthetic-data/
+  scripts/
+Keep Domain independent of Azure and legacy systems. Add production LoanTrack/EDM adapter projects only after their supported integration surfaces are confirmed.
+16. Synthetic PoC Dataset Included
+The companion dataset contains five entirely synthetic Examination submissions. Each submission contains six candidate mortgage documents (Note, Deed of Trust, Title Commitment, Survey, Closing Instructions, Rider), for 30 PDFs total. Each also includes submission.json and expected-invoice-metadata.json. No real customer data is used.
+Dataset property
+Value
+Submissions
+5
+Document classes
+6
+PDFs
+30
+Samples per class
+5
+Trigger simulation
+submission.json
+Expected output
+expected-invoice-metadata.json
+Data
+Fictitious borrowers/lenders/properties/loan values
+Expected demo: drop submission-001 into the landing root. The worker classifies/extracts all six documents, validates placeholder metadata, generates a single simulated invoice (for example INV-POC-000001), and copies all six originals into the simulated EDM folder for that invoice.
+17. PoC Build Sequence
+Phase A - Local skeleton
+1.  
+Create .NET solution/domain interfaces.
+2.  
+Implement folder watcher, stable-folder rule, SHA-256, SQLite state store.
+3.  
+Implement --simulate-ai mode reading synthetic ground truth.
+4.  
+Implement simulated Invoice and EDM adapters.
+5.  
+Demonstrate idempotent end-to-end local flow.
+Phase B - Private hybrid network
+1.  
+Deploy VNet/subnets.
+2.  
+Deploy Azure VPN Gateway + Local Network Gateway.
+3.  
+Network team configures matching on-prem VPN device.
+4.  
+Verify S2S routes.
+5.  
+Deploy DNS Private Resolver inbound endpoint.
+6.  
+Configure on-prem conditional forwarder.
+Phase C - Document Intelligence
+1.  
+Deploy Document Intelligence custom-subdomain resource.
+2.  
+Create PE/private DNS integration.
+3.  
+Verify FQDN resolves private IP from on-prem.
+4.  
+Disable public network access.
+5.  
+Deploy private training storage.
+6.  
+Train synthetic classifier/extraction models.
+7.  
+Swap simulated AI client for Azure client.
+8.  
+Run all five submissions.
+Phase D - Legacy integration
+1.  
+Confirm LoanTrack invoice contract + required metadata.
+2.  
+Replace placeholder metadata mapping.
+3.  
+Implement LoanTrackInvoiceService.
+4.  
+Confirm EDM interface/metadata/idempotency.
+5.  
+Implement real EdmService.
+6.  
+Run approved non-production tests.
+18. Test Plan and Acceptance Criteria
+Functional acceptance
+new submission detected automatically
+all documents classified
+configured metadata extracted with value/confidence/source
+validation gates invoice creation
+exactly one invoice per unique submission
+invoice persisted before EDM stage
+all originals uploaded/associated using invoice number
+trigger replay does not duplicate invoice/docs
+partial EDM failure resumes same invoice
+low-confidence/missing metadata enters Manual Exception
+Network/security acceptance
+S2S VPN Connected
+on-prem FQDN resolution returns DI Private Endpoint IP
+TCP 443/TLS works through intended path
+Document Intelligence public network access disabled
+unapproved public-network request fails
+no secrets in Git
+logs have correlation/audit without full mortgage content
+Synthetic acceptance
+five submissions complete in happy path
+30 documents classified at agreed PoC threshold
+placeholder metadata matches expected outputs after normalization
+19. Open Questions / Dependencies
+Area
+Questions / decisions needed
+Business metadata
+Exact invoice fields; source document(s); authoritative precedence; required/optional; confidence threshold; defaults/lookups/calculations.
+JetDocs/intake
+Actual trigger mechanism; one folder per submission? completion signal? stable source order ID? supported file types?
+LoanTrack
+Supported integration surface; who generates invoice #; validations/defaults; lookup by source ID for recovery?
+EDM
+API/protocol/auth; required association keys; returned document IDs/checksums; idempotency; document type codes.
+Security/network
+Actual CIDRs/VPN device/public IP; approved Azure region; AI temporary-retention approval; private DNS ownership/process.
+20. Risks and Mitigations
+Risk
+Impact
+Mitigation
+Metadata fields not yet known
+Extraction cannot be finalized
+Externalize mapping/model IDs; use placeholder synthetic schema.
+LoanTrack has no supported API
+Invoice step blocked
+Adapter boundary; discover approved DB/service surface; PoC remains simulated.
+EDM contract unknown
+Final integration blocked
+Adapter boundary + simulated repository.
+JetDocs trigger semantics unknown
+Duplicate/incomplete submissions
+Abstract trigger; stable-folder rule; hashes/idempotency.
+Synthetic training lacks real variability
+AI accuracy misleading
+Use it only for flow/connectivity; later approved representative samples.
+VPN/DNS misconfiguration
+Private endpoint unreachable
+Explicit DNS tests; resolver/conditional forwarding; private-IP verification.
+Original on-prem-only assumption changed
+Governance concern
+Document ADR; approve cloud processing/retention; private path + early deletion.
+AI wrong classification/metadata
+Incorrect invoice data
+Confidence/required-field gates; provenance; no invoice when unresolved.
+Duplicate retry after invoice
+Duplicate invoices
+Persist commit boundary + unique idempotency constraint.
+21. Architecture Decisions to Record
+ADR-001 - Hybrid private AI processing
+Keep orchestration and legacy adapters on premises; access Azure AI through S2S VPN + Private Endpoint.
+ADR-002 - Document Intelligence first
+Use classifier + custom extraction for metadata PoC; add LLM only if business field complexity justifies it.
+ADR-003 - Adapter legacy boundaries
+Do not invent LoanTrack/EDM APIs; isolate them behind interfaces.
+ADR-004 - Invoice is the commit boundary
+Persist invoice number immediately; all downstream retries reuse the same invoice.
+ADR-005 - Downstream unchanged
+MVP ends after EDM upload; queue/examination/release remain current state.
+22. Cursor / AI Coding Tool Build Contract
+Give the AI coding tool this specification plus the synthetic-data folder. Enforce these non-negotiable rules:
+1.  
+Build only the MVP boundary described here.
+2.  
+Use .NET 8 and clean adapter interfaces.
+3.  
+Start with simulated Invoice and EDM adapters; do not invent LoanTrack/EDM APIs.
+4.  
+Start with a file-system trigger; do not invent JetDocs API behavior.
+5.  
+Implement durable idempotency before invoice creation.
+6.  
+Make metadata mapping and thresholds configuration-driven.
+7.  
+Never create an invoice if required metadata validation fails.
+8.  
+Persist invoice number before EDM upload.
+9.  
+Implement resumable per-document EDM state.
+10.  
+Use Document Intelligence via its normal resource FQDN and private DNS/PE path.
+11.  
+Do not place Azure credentials/secrets in Git.
+12.  
+Add integration tests using the provided synthetic submissions.
+13.  
+Add --simulate-ai mode for local end-to-end testing.
+14.  
+Add health checks and structured correlation logging.
+15.  
+Generate parameterized Bicep; do not hard-code network/region/secrets.
+16.  
+Do not automate MS Access queue, ClosingExpress, SecureDocs, the 140 fields, or Full Doc Prep.
+DEFINITION OF DONE
+A developer can clone the repo, run simulated mode locally, drop a synthetic submission folder, and observe one simulated invoice plus six simulated EDM documents. After Azure/network parameters are supplied and models trained, the same orchestration switches to real Document Intelligence without changing domain logic.
+23. References
+Project sources
+Moder - Mortgage Examination Intelligence Platform, Modernization Proposal, June 2026 (current workflow pp. 3-4; future platform pp. 5-8; delivery p.10; proposed stack pp.13/16; security p.18).
+Discovery transcript supplied in the project, including John Gage explanation of LoanTrack invoice creation, separate/manual MS Access queue entry, and coordination-desk assignment/pickup behavior.
+Latest MVP decision supplied 26 August 2026: JetDocs/temp landing -> Azure AI classification/extraction of invoice metadata -> invoice creation -> EDM upload; downstream unchanged.
+Microsoft technical references consulted
+Microsoft Learn - About Azure VPN Gateway.
+Microsoft Learn - Azure DNS Private Resolver Overview.
+Microsoft Learn - Azure Private Endpoint private DNS zone values.
+Microsoft Learn - Configure secure access with managed identities and private endpoints - Document Intelligence.
+Microsoft Learn - Document Intelligence custom classification models.
+Microsoft Learn - Document Intelligence custom models/custom extraction.
+Microsoft Learn - Document Intelligence SDK v4.0 authentication.
+Microsoft Learn - Data, privacy, and security for Document Intelligence.
+Appendix A - Example Application Configuration
+{
+  "Intake": {
+    "LandingRoot": "C:\BmgMvp\landing",
+    "CompletedRoot": "C:\BmgMvp\completed",
+    "FailedRoot": "C:\BmgMvp\failed",
+    "StableFileSeconds": 10
+  },
+  "DocumentIntelligence": {
+    "Endpoint": "https://<resource>.cognitiveservices.azure.com/",
+    "ClassifierModelId": "bmg-doc-classifier-v1",
+    "ExtractionModels": {
+      "Note": "bmg-note-metadata-v1",
+      "DeedOfTrust": "bmg-dot-metadata-v1",
+      "TitleCommitment": "bmg-title-metadata-v1",
+      "Survey": "bmg-survey-metadata-v1",
+      "ClosingInstructions": "bmg-closing-instructions-metadata-v1",
+      "Rider": "bmg-rider-metadata-v1"
+    }
+  },
+  "Processing": {
+    "ClassificationThreshold": 0.80,
+    "RetryCount": 4
+  },
+  "Adapters": {
+    "InvoiceMode": "Simulated",
+    "EdmMode": "Simulated"
+  }
+}
+Secrets are supplied through environment variables or approved secret storage, not this file.
+Appendix B - Example Normalized AI Result
+{
+  "submissionId": "submission-001",
+  "document": "closing-instructions.pdf",
+  "documentType": "ClosingInstructions",
+  "classificationConfidence": 0.987,
+  "modelId": "bmg-closing-instructions-metadata-v1",
+  "fields": {
+    "loanNumber": { "value": "BMG-POC-000001", "confidence": 0.995, "page": 1 },
+    "lenderCode": { "value": "LND001", "confidence": 0.981, "page": 1 },
+    "closingDate": { "value": "2026-09-22", "confidence": 0.972, "page": 1 }
+  }
+}
+Appendix C - MVP Boundary Reminder
+IN SCOPE
+JetDocs/temp landing
+  -> trigger
+  -> AI classification
+  -> MVP metadata extraction
+  -> invoice creation
+  -> EDM upload
+  -> STOP
+UNCHANGED / OUT OF MVP
+MS Access queue
+  -> processor assignment/pickup
+  -> ClosingExpress examination (~140 fields)
+  -> review checklist
+  -> SecureDocs release

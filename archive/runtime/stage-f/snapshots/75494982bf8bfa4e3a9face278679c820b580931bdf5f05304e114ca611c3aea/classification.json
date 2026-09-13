@@ -1,0 +1,56 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "b95f2bc8b9bd3b1e9077c1d1363cdb3256de7e39fcc2bc6b7273d441b4e1f524",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Note",
+    "confidence": 0.855,
+    "pages": 2,
+    "accepted": true
+  },
+  {
+    "documentId": "doc-002",
+    "sha256": "200ae800a5990082f4deab95ae2351d46750b2525495cec8c468c98ded50932d",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "DeedOfTrust",
+    "confidence": 0.849,
+    "pages": 2,
+    "accepted": true
+  },
+  {
+    "documentId": "doc-003",
+    "sha256": "8ca64fc2b0e0caf6f09bd4b19ae8c7e33a7653f3919b5addb6ecc8888fe59978",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "TitleCommitment",
+    "confidence": 0.849,
+    "pages": 2,
+    "accepted": true
+  },
+  {
+    "documentId": "doc-004",
+    "sha256": "5bedb877874c26cae60e80e0449389e25ba5be1b153d10ea9541abc9116c4ac6",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Survey",
+    "confidence": 0.845,
+    "pages": 2,
+    "accepted": true
+  },
+  {
+    "documentId": "doc-005",
+    "sha256": "34f8b42317c3793295dddfd5203b8d95ca6c9e4fcba7a2c66340752ec732d925",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "ClosingInstructions",
+    "confidence": 0.807,
+    "pages": 2,
+    "accepted": true
+  },
+  {
+    "documentId": "doc-006",
+    "sha256": "0f2edb53c5c5b747c03362580212b9d7941b46826a2f8df7ac6bac7b7f7f8257",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "Rider",
+    "confidence": 0.933,
+    "pages": 2,
+    "accepted": true
+  }
+]

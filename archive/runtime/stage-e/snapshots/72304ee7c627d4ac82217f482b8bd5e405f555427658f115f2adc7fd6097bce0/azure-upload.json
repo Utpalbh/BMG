@@ -1,0 +1,26 @@
+{
+  "executionMode": "AzureUpload",
+  "submissionId": "stage-e-eval-027",
+  "revision": 1,
+  "digest": "72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0",
+  "status": "Uploaded",
+  "verifiedAt": "2026-09-11T19:01:46.398088+00:00",
+  "files": [
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-e-eval-027/r1/72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0/document-001.pdf",
+      "sha256": "7c59522c0863e0d0d44d6b1d0b2a550fb9c1a68eb3369498358ca85ffbb9c5c1",
+      "etag": "\u00220x8DF10371A1F3A3E\u0022",
+      "length": 2154,
+      "reused": false
+    },
+    {
+      "blob": "https://stbmgpocwjsvyjg25vqiy.blob.core.windows.net/submissions/stage-e-eval-027/r1/72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0/submission.json",
+      "sha256": "72304ee7c627d4ac82217f482b8bd5e405f555427658f115f2adc7fd6097bce0",
+      "etag": "\u00220x8DF10371F15EA2A\u0022",
+      "length": 350,
+      "reused": false
+    }
+  ],
+  "aiPerformed": false,
+  "cosmosWritten": false
+}

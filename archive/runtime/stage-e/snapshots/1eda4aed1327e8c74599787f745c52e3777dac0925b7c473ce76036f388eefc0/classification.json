@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "6bdce9859fc58be9191fdba3f568f75fab72b8be9e52c76ba2c9a479648951d6",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "TitleCommitment",
+    "confidence": 0.844,
+    "pages": 1,
+    "accepted": true
+  }
+]

@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.py text eol=lf
+*.bicep text eol=lf
+*.md text eol=lf
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.png binary
+*.db binary
+archive/** -text
+work/stage-e/dataset/** -text
+work/stage-e/training-layout/** -text
+work/stage-f/dataset/** -text

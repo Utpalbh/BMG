@@ -1,0 +1,17 @@
+{
+  "publicNetworkAccess": "Enabled",
+  "networkAcls": {
+    "ipv6Rules": [],
+    "resourceAccessRules": [
+      {
+        "resourceId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc/providers/Microsoft.CognitiveServices/accounts/di-bmg-wjsvyjg25vqiy",
+        "tenantId": "e06201f9-0ec7-4863-80fc-85f43be49c1e"
+      }
+    ],
+    "bypass": "None",
+    "virtualNetworkRules": [],
+    "ipRules": [],
+    "defaultAction": "Deny"
+  },
+  "purpose": "Temporary DI system managed identity training fetch only; no IP allowlist or broad trusted-service bypass."
+}

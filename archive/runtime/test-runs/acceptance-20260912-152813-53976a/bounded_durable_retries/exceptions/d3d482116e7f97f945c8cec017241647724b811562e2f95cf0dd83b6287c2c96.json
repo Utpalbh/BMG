@@ -1,0 +1,9 @@
+{
+  "executionMode": "Simulated",
+  "submissionId": "test",
+  "revision": 1,
+  "code": "TransientIoFailure",
+  "status": "RetryExhausted",
+  "attempts": 4,
+  "lastCheckpoint": "CredentialReady"
+}

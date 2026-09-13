@@ -1,0 +1,112 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.41.2.15936",
+      "templateHash": "499988079934050548"
+    }
+  },
+  "parameters": {
+    "openAiAccountName": {
+      "type": "string",
+      "metadata": {
+        "description": "Names from the foundation deployment inventory."
+      }
+    },
+    "cosmosAccountName": {
+      "type": "string"
+    },
+    "workerPrincipalId": {
+      "type": "string"
+    },
+    "deploymentName": {
+      "type": "string",
+      "defaultValue": "bmg-gpt5-mini"
+    },
+    "modelName": {
+      "type": "string",
+      "defaultValue": "gpt-5-mini"
+    },
+    "modelVersion": {
+      "type": "string",
+      "defaultValue": "2025-08-07"
+    },
+    "capacity": {
+      "type": "int",
+      "defaultValue": 30
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts/deployments",
+      "apiVersion": "2024-10-01",
+      "name": "[format('{0}/{1}', parameters('openAiAccountName'), parameters('deploymentName'))]",
+      "sku": {
+        "name": "GlobalStandard",
+        "capacity": "[parameters('capacity')]"
+      },
+      "properties": {
+        "model": {
+          "format": "OpenAI",
+          "name": "[parameters('modelName')]",
+          "version": "[parameters('modelVersion')]"
+        },
+        "versionUpgradeOption": "NoAutoUpgrade",
+        "raiPolicyName": "Microsoft.DefaultV2"
+      }
+    },
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "apiVersion": "2022-04-01",
+      "scope": "[resourceId('Microsoft.CognitiveServices/accounts', parameters('openAiAccountName'))]",
+      "name": "[guid(resourceId('Microsoft.CognitiveServices/accounts', parameters('openAiAccountName')), parameters('workerPrincipalId'), 'openai-user')]",
+      "properties": {
+        "principalId": "[parameters('workerPrincipalId')]",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd')]"
+      }
+    },
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleDefinitions",
+      "apiVersion": "2025-04-15",
+      "name": "[format('{0}/{1}', parameters('cosmosAccountName'), '6a70bb22-c5d9-4345-a5c9-18c719276c26')]",
+      "properties": {
+        "roleName": "BMG POC create and read results",
+        "type": "CustomRole",
+        "assignableScopes": [
+          "[resourceId('Microsoft.DocumentDB/databaseAccounts', parameters('cosmosAccountName'))]"
+        ],
+        "permissions": [
+          {
+            "dataActions": [
+              "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+              "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/create",
+              "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlRoleAssignments",
+      "apiVersion": "2025-04-15",
+      "name": "[format('{0}/{1}', parameters('cosmosAccountName'), guid(resourceId('Microsoft.DocumentDB/databaseAccounts', parameters('cosmosAccountName')), parameters('workerPrincipalId'), 'bmg-result-writer'))]",
+      "properties": {
+        "principalId": "[parameters('workerPrincipalId')]",
+        "roleDefinitionId": "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlRoleDefinitions', parameters('cosmosAccountName'), '6a70bb22-c5d9-4345-a5c9-18c719276c26')]",
+        "scope": "[format('{0}/dbs/bmg-poc/colls/submissions', resourceId('Microsoft.DocumentDB/databaseAccounts', parameters('cosmosAccountName')))]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlRoleDefinitions', parameters('cosmosAccountName'), '6a70bb22-c5d9-4345-a5c9-18c719276c26')]"
+      ]
+    }
+  ],
+  "outputs": {
+    "modelDeploymentId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.CognitiveServices/accounts/deployments', parameters('openAiAccountName'), parameters('deploymentName'))]"
+    }
+  }
+}

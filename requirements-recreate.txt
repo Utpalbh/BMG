@@ -1,0 +1,6 @@
+# Reusing the frozen PDF corpus and completed OCR sidecars requires only Python's standard library.
+# These packages are for fixture regeneration and offline schema verification.
+reportlab==4.4.9
+pypdf==6.10.0
+pillow==12.3.0
+jsonschema==4.25.1

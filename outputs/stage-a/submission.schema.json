@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BMG POC staging manifest",
+  "description": "Runtime manifest for one logical submission. Training labels and expected answers are deliberately excluded. Write _READY only after all files and this manifest are complete.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "submissionId", "revision", "source", "submissionType", "documents"],
+  "properties": {
+    "schemaVersion": { "const": "poc-1" },
+    "submissionId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$" },
+    "revision": { "type": "integer", "minimum": 1 },
+    "source": { "const": "LocalStagingPoC" },
+    "submissionType": { "const": "Examination" },
+    "documents": {
+      "type": "array", "minItems": 1, "maxItems": 30,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["documentId", "fileName", "sha256"],
+        "properties": {
+          "documentId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$" },
+          "fileName": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._ -]{0,150}\\.pdf$" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    }
+  },
+  "$comment": "The application must also enforce unique document IDs/filenames, resolved paths confined to the submission directory, no links/reparse points, PDF signature checks, hash equality, and configured file/page limits. JSON Schema alone cannot enforce those rules."
+}

@@ -1,0 +1,21 @@
+{
+  "executionMode": "Simulated",
+  "metadata": {
+    "lenderCode": "LND001",
+    "loanNumber": "BMG-POC-000001",
+    "borrowerName": "Jordan Parker and Casey Parker",
+    "propertyAddress": "101 Prototype Lane, Sampletown, TX 75001",
+    "closingDate": "2026-09-22",
+    "loanType": "Conventional",
+    "purpose": "Purchase",
+    "submissionType": "Examination"
+  },
+  "documentTypes": {
+    "doc-001": "Note",
+    "doc-002": "DeedOfTrust",
+    "doc-003": "TitleCommitment",
+    "doc-004": "Survey",
+    "doc-005": "ClosingInstructions",
+    "doc-006": "Rider"
+  }
+}

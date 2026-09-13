@@ -1,0 +1,18 @@
+PAGE 1
+ADJUSTABLE RATE RIDER
+Synthetic rider
+SYNTHETIC POC DATA
+Loan Number:
+BMG-POC-000005
+Rider Type:
+Adjustable Rate
+Borrower(s):
+Skyler Bennett and Drew Bennett
+Property:
+505 Validation Road, Fiction Hills, TX 75005
+Document Date:
+2026-09-14
+Lender:
+Test State Credit Union
+This rider modifies the synthetic mortgage instrument solely for test-data purposes.
+For BM&G MVP proof-of-concept testing only. Not a real borrower, lender, property, or legal instrument.

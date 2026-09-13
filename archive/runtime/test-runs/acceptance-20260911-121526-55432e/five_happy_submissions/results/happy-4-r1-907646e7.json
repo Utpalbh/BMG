@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "poc-1",
+  "submissionId": "happy-4",
+  "revision": 1,
+  "status": "Validated",
+  "metadata": {
+    "lenderCode": "LND004",
+    "loanNumber": "BMG-POC-000004",
+    "borrowerName": "Cameron Hayes and Quinn Hayes",
+    "propertyAddress": "404 Mock Data Way, Trial Park, TX 75004",
+    "closingDate": "2026-09-25",
+    "loanType": "Home Equity",
+    "purpose": "Home Equity",
+    "submissionType": "Examination"
+  },
+  "provenance": [
+    {
+      "field": "lenderCode",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: LND004",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanNumber",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: BMG-POC-000004",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "borrowerName",
+      "sourceKind": "Document",
+      "documentId": "doc-001",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Cameron Hayes and Quinn Hayes",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "propertyAddress",
+      "sourceKind": "Document",
+      "documentId": "doc-002",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 404 Mock Data Way, Trial Park, TX 75004",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "closingDate",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: 2026-09-25",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "loanType",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Home Equity",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "purpose",
+      "sourceKind": "Document",
+      "documentId": "doc-005",
+      "page": 1,
+      "evidenceText": "SIMULATED FIXTURE VALUE; NOT OCR EVIDENCE: Home Equity",
+      "modelId": "simulation-fixture-v1",
+      "promptVersion": "simulation-v1"
+    },
+    {
+      "field": "submissionType",
+      "sourceKind": "Manifest",
+      "documentId": null,
+      "page": null,
+      "evidenceText": "Examination",
+      "modelId": null,
+      "promptVersion": null
+    }
+  ],
+  "validationErrors": [],
+  "executionMode": "Simulated"
+}

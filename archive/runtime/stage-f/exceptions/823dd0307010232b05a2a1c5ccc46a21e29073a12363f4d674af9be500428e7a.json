@@ -1,0 +1,9 @@
+{
+  "executionMode": "AzureFull",
+  "submissionId": "stage-f-conflict-001",
+  "revision": 1,
+  "code": "MetadataValidationFailed",
+  "status": "ManualException",
+  "attempts": 1,
+  "lastCheckpoint": "MetadataExtracted"
+}

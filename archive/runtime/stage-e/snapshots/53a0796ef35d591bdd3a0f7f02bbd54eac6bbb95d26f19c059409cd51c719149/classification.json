@@ -1,0 +1,11 @@
+[
+  {
+    "documentId": "doc-001",
+    "sha256": "200ae800a5990082f4deab95ae2351d46750b2525495cec8c468c98ded50932d",
+    "modelId": "bmg-stage-e-v1",
+    "documentType": "DeedOfTrust",
+    "confidence": 0.849,
+    "pages": 2,
+    "accepted": true
+  }
+]

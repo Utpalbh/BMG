@@ -1,0 +1,13 @@
+{
+  "executionMode": "Simulated",
+  "modelId": "simulation-fixture-v1",
+  "documents": {
+    "doc-001": "Note",
+    "doc-002": "DeedOfTrust",
+    "doc-003": "TitleCommitment",
+    "doc-004": "Survey",
+    "doc-005": "ClosingInstructions",
+    "doc-006": "Rider"
+  },
+  "confidence": 0.99
+}
