@@ -26,4 +26,5 @@ The full-flow test returned all eight expected fields, and the live folder watch
 
 Recreation generates new identities, certificates and secrets. Historical operation IDs, identity IDs and SQLite checkpoints are audit evidence, not a new deployment's state. Do not copy the archive into a live runtime. Public network access is disabled; the laptop must use the VPN. Provisioned network services cost money even when no files are processed.
 
-The original cloud environment is scheduled for deletion only after this GitHub backup is verified. See [teardown status](outputs/stage-f/teardown-status.json) for the actual state.
+The original POC resource group and all its active resources were deleted on 13 September 2026 after the GitHub backup was independently verified. See [teardown status](outputs/stage-f/teardown-status.json) for the verification timestamp, identity cleanup and retention notes.
+

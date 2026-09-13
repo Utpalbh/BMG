@@ -10,7 +10,7 @@ The final runtime contains two Returned jobs and four ManualException jobs retai
 
 Azure Cost Management reported INR 2,452.47 for BMG and INR 2,452.56 subscription month-to-date at 17:26 IST on 13 September. The report can lag and is not a final invoice. See outputs/github-backup/final-cost-query/latest-bill-summary.json; the earlier snapshot remains in outputs/stage-f/latest-bill-summary.json.
 
-The user explicitly authorized deletion after backup. The complete GitHub backup was independently downloaded and all 4,788 archived runtime file hashes verified. Deletion of rg-bmg-poc was requested at 11:53 UTC on 13 September; completion is being checked. The two POC applications and service principals are verified absent. See outputs/stage-f/teardown-status.json for the latest confirmed resource-group state.
+The user explicitly authorized deletion after backup. The complete GitHub backup was independently downloaded and all 4,788 archived runtime file hashes verified. Deletion of rg-bmg-poc and all its active resources was verified complete at 2026-09-13T12:12:50.0009209Z; the subscription resource inventory returned zero resources in that group. Both POC applications and service principals are verified absent, and POC worker/VPN certificates were removed. Shared NetworkWatcher infrastructure and unrelated resource groups were preserved. Azure soft-deletion retention applies. See outputs/stage-f/teardown-status.json for the receipt.
 
 ## Deliberate shortcuts and limitations
 
@@ -33,5 +33,6 @@ The LLM initially returned field labels as part of values. The deterministic val
 - Earlier infrastructure, network, identity, classifier and cost evidence: outputs/stage-a through outputs/stage-e
 
 Runtime data remains outside OneDrive at C:\Users\shrut\Documents\BmgPocRuntime. Code, synthetic corpora, model deployment settings, training recipe and results remain in this project. After approved teardown, provision the recorded Azure infrastructure again before using the live worker. The classifier requires retraining from the retained corpus if its Azure resource is deleted.
+
 
 

@@ -1,5 +1,17 @@
 {
   "requestedAt": "2026-09-13T11:53:54.3661745Z",
   "resourceGroupId": "/subscriptions/6f841b52-7a6d-4287-b0e3-4591621bb363/resourceGroups/rg-bmg-poc",
-  "status": "Deletion requested; not yet verified complete"
+  "status": "Completed; resource group and all its active resources verified absent",
+  "userAuthorization": "Please continue full back up and then delete the poc azure resources",
+  "backupVerified": true,
+  "resourcesDeleted": true,
+  "verifiedAt": "2026-09-13T12:12:50.0009209Z",
+  "remainingResourceCount": 0,
+  "notes": [
+    "Both POC Entra applications and service principals verified absent; worker and VPN certificates removed.",
+    "Local project, runtime archives and verification clone retained.",
+    "Shared NetworkWatcher_eastus2 in NetworkWatcherRG was not deleted; unrelated resource groups untouched.",
+    "Soft-deleted service records may remain under Azure retention policies; the purge-protected Key Vault cannot be immediately purged.",
+    "Disconnected Azure VPN Client profile may remain locally; it has no working gateway or POC certificate."
+  ]
 }

@@ -5,7 +5,7 @@
   "fullAzureFlow": true,
   "workerStopped": true,
   "networkRetained": false,
-  "teardownPerformed": false,
+  "teardownPerformed": true,
   "clientReady": false,
   "regressionChecks": 21,
   "validatorChecks": 12,
@@ -157,5 +157,5 @@
     "Successful full packet combines accepted Stage E templates with field-complete Closing Instructions; integration evidence only.",
     "Client application integration and site-to-site VPN are untested."
   ],
-  "teardownStatus": "User authorized post-backup deletion; Azure deletion in progress"
+  "teardownStatus": "Completed; resource group and all its active resources verified absent"
 }

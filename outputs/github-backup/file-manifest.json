@@ -262,8 +262,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2952,
-      "sha256": "beb86a577fee848f4cc3074ca68c4516bbcf2a06fb2b4e4122fb586e68f4ceb4"
+      "bytes": 3049,
+      "sha256": "7949c3ed0b5237d8b9351da07a7b604122eaff7ee2aa0e4799e5c3b2327c19ba"
     },
     {
       "path": "archive/runtime-manifest.json",
@@ -24337,8 +24337,8 @@
     },
     {
       "path": "outputs/POC-Completion.md",
-      "bytes": 4211,
-      "sha256": "222731266dd82dd76d883d35d07c79ac2cf8f023c0896fef789da006e13b3e2c"
+      "bytes": 4434,
+      "sha256": "79e8fe82c0b57f098aa56e669d48f8247442d20c8af7afc735685255f8c58da6"
     },
     {
       "path": "outputs/github-backup/final-cost-query/latest-bill-summary.json",
@@ -24537,8 +24537,8 @@
     },
     {
       "path": "outputs/stage-c/teardown-status.json",
-      "bytes": 220,
-      "sha256": "c279cfab1c5645cb903c18017e67ba30370148a7f3d229715bb7d6fb46d9a883"
+      "bytes": 1047,
+      "sha256": "cf5f4a058d20faa1a1353e820c84faa50e8eeee35d53019f8275a029b48e353e"
     },
     {
       "path": "outputs/stage-c/verification-summary.json",
@@ -24877,8 +24877,8 @@
     },
     {
       "path": "outputs/stage-f/teardown-status.json",
-      "bytes": 373,
-      "sha256": "9ad6d78871fee1dfe6126b77dce021ba746b18957300ae2dcf745a9a25b1179d"
+      "bytes": 1047,
+      "sha256": "cf5f4a058d20faa1a1353e820c84faa50e8eeee35d53019f8275a029b48e353e"
     },
     {
       "path": "outputs/stage-f/validation-tests.json",
@@ -24887,8 +24887,8 @@
     },
     {
       "path": "outputs/stage-f/verification-summary.json",
-      "bytes": 6213,
-      "sha256": "0de5f82fae353c2d4d55c37a47708b7cb263576939ba3fc9be601bfcbde6b902"
+      "bytes": 6218,
+      "sha256": "36d25354e4afd823c5924eea69189e65a723915da20f61aaf710dde151bbd0f8"
     },
     {
       "path": "outputs/stage-f/watcher-results.json",
